@@ -1,0 +1,208 @@
+{
+  "id": "tier_1_chapter",
+  "title": "Tier 1: Der Einstieg",
+  "icon": "minecraft:crafting_table",
+  "default_quest_shape": "circle",
+  "quests": [
+    {
+      "id": "t1_basics_01",
+      "title": "Erste Schritte",
+      "icon": "minecraft:crafting_table",
+      "x": 0.0,
+      "y": 0.0,
+      "subtitle": "Der Beginn aller Dinge",
+      "description": [
+        "Willkommen! Bevor die Maschinen laufen, müssen die Grundlagen stimmen.",
+        "Baue einen Handwerkstisch und fälle deinen ersten Baum."
+      ],
+      "tasks": [
+        {
+          "id": "t1_b_01_task_1",
+          "type": "item",
+          "item": "minecraft:crafting_table",
+          "count": 1
+        },
+        {
+          "id": "t1_b_01_task_2",
+          "type": "item",
+          "item": "minecraft:oak_log",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_b_01_reward_1",
+          "type": "item",
+          "item": "minecraft:stone_pickaxe",
+          "count": 1
+        },
+        {
+          "id": "t1_b_01_reward_2",
+          "type": "item",
+          "item": "minecraft:stone_axe",
+          "count": 1
+        },
+        {
+          "id": "t1_b_01_reward_3",
+          "type": "item",
+          "item": "minecraft:apple",
+          "count": 3
+        },
+        {
+          "id": "t1_b_01_reward_4",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "t1_create_01",
+      "title": "Zahnräder & Energie",
+      "icon": "create:water_wheel",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Der Einstieg in die Create-Physik",
+      "description": [
+        "Das Wasserrad ist dein erster Schritt, um kinetische Energie zu erzeugen.",
+        "Baue es und verbinde es mit einem Schacht."
+      ],
+      "dependencies": ["t1_basics_01"],
+      "tasks": [
+        {
+          "id": "t1_c_01_task_1",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 2
+        },
+        {
+          "id": "t1_c_01_task_2",
+          "type": "item",
+          "item": "create:water_wheel",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_c_01_reward_1",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8
+        },
+        {
+          "id": "t1_c_01_reward_2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "t1_create_02",
+      "title": "Mechanische Presse",
+      "icon": "create:mechanical_press",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Rohmaterialien formen",
+      "description": [
+        "Rohmaterialien müssen verarbeitet werden.",
+        "Die Presse ist das erste Werkzeug, um Platten aus Ingots herzustellen.",
+        "Kombiniere sie mit einem Becken für automatisiertes Pressen."
+      ],
+      "dependencies": ["t1_create_01"],
+      "tasks": [
+        {
+          "id": "t1_c_02_task_1",
+          "type": "item",
+          "item": "create:mechanical_press",
+          "count": 1
+        },
+        {
+          "id": "t1_c_02_task_2",
+          "type": "item",
+          "item": "create:basin",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_c_02_reward_1",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8
+        },
+        {
+          "id": "t1_c_02_reward_2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "t1_create_03",
+      "title": "Crushing Wheels",
+      "icon": "create:crushing_wheel",
+      "x": 0.0,
+      "y": 6.0,
+      "subtitle": "Der Beginn der APEX Ore-Chain",
+      "description": [
+        "Das Herzstück deiner frühen Erzverarbeitung. Zwei Räder, ein Ziel: doppelter Output.",
+        "Ab hier beginnt das echte Ore-Processing. Zeige, was du kannst."
+      ],
+      "dependencies": ["t1_create_02"],
+      "tasks": [
+        {
+          "id": "t1_c_03_task_1",
+          "type": "item",
+          "item": "create:crushing_wheel",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_c_03_reward_1",
+          "type": "item",
+          "item": "minecraft:raw_iron",
+          "count": 4
+        },
+        {
+          "id": "t1_c_03_reward_2",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "t1_util_01",
+      "title": "Waystones",
+      "icon": "waystones:waystone",
+      "x": 3.0,
+      "y": 0.0,
+      "subtitle": "Die Welt ist groß — behalte den Überblick",
+      "description": [
+        "Waystones sind deine Ankerpunkte in der Welt.",
+        "Finde einen in der Natur oder baue deinen ersten."
+      ],
+      "dependencies": ["t1_basics_01"],
+      "tasks": [
+        {
+          "id": "t1_u_01_task_1",
+          "type": "item",
+          "item": "waystones:waystone",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_u_01_reward_1",
+          "type": "item",
+          "item": "waystones:waystone",
+          "count": 1
+        },
+        {
+          "id": "t1_u_01_reward_2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    }
+  ]
+}
