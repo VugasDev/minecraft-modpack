@@ -13,7 +13,9 @@
 [Stufe 1: Handwerk & Erkundung]     ← Casual-freundlicher Einstieg
   Create: Erste Maschinen
   Apotheosis: Enchanting T1-T2
-  Waystones, Quests, Xaero's Maps
+  Artifacts: Erste Funde in Dungeons
+  FTB Chunks (Map), FTB Ultimine (Mining)
+  Waystones, Quests
   ┌─────────────────────────────────┐
   │ Optional: Farmer's Delight      │ ← Komfort-Pfad, jederzeit
   └─────────────────────────────────┘
@@ -47,7 +49,7 @@
   Mekanism: Generators (Solar, Wind)
   AE2: Crafting CPUs, Pattern Provider
   Iron's Spells: Kampf-Magie
-  Dungeon-Runs für Apotheosis-Bosse
+  Bosse: Mowzie's Mobs & Cataclysm (Einstieg)
   ┌─────────────────────────────────────────────────┐
   │ Pneumaticraft: Pressure Chamber 3.5 bar         │
   │ → Enchantment Tier 3 freigeschaltet (Lvl 25)   │ ← Mid-Game OP
@@ -69,7 +71,8 @@
       ▼
 [Endgame: Fliegende Festung]
   Vollautomatisierte fliegende Basis
-  Apotheosis: Alle Bosse besiegt
+  Ars Nouveau: Boss-Farmen via Drygmies
+  Apotheosis & Cataclysm: Alle Bosse besiegt
   Mekanism Fusion Reactor aktiv
   ┌─────────────────────────────────────────────────┐
   │ Pneumaticraft: Extreme-Pressure (7.5 bar)       │
@@ -103,8 +106,10 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 - Alle Vanilla-Features
 - Create: Zahnräder, Wellen, einfache Maschinen (Presse, Mühle)
 - Apotheosis: Verbesserte Enchanting-Tische (T1)
+- **Artifacts**: Erste Trinkets in Dungeons (Handschuhe, Schuhe)
+- **FTB Ultimine**: Erleichtertes Ressourcen-Sammeln
 - Waystones: Erste Wegpunkte
-- Xaero's Minimap & World Map
+- **FTB Chunks**: Minimap & Chunk-Loading freigeschaltet
 - Mystical Agriculture: Tier 1-2 Seeds (Erde, Holz, Stein, Kohle, Eisen)
 - Serene Seasons: Erste Jahreszeit aktiv
 - Farmer's Delight: Freigeschaltet
@@ -113,6 +118,7 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 - Tutorial: Wie funktioniert Create? (Drehmoment, Drehzahl)
 - Erste Ausrüstung und Rüstung
 - Welt erkunden, erste Strukturen finden
+- **Relics**: Suche dein erstes Relikt (Quest-Belohnung: Starter-Relikt)
 - Erste Mystical Agriculture Farm anlegen (T1 Seeds)
 - APEX Ore Chain T2: Erste Crushing Wheels
 
@@ -139,6 +145,7 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 - "Baue deine erste automatisierte Eisenmine"
 - "Lege dein erstes Schienennetz"
 - "Erkunde einen verbesserten Dungeon"
+- **Boss**: Besiege den Ferrous Wroughtnaut (Mowzie's Mobs)
 - "APEX T2: Richte Crushing Wheels ein" (x2 Multiplier)
 
 **Custom Rezepte (Balancing):**
@@ -163,6 +170,7 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 **Quest-Fokus:**
 - "Dein erstes ME-Netzwerk"
 - "Verbinde Create-Rotationsenergie mit Mekanism"
+- **Relics**: Level dein Relikt auf Stufe 5
 - "APEX T3: x4 Multiplikation (Create + Mekanism Enrichment)"
 - "Osmium Crop: Mystical Agriculture T4 freigeschaltet"
 - "Erste Pneumaticraft-Druckluft-Infrastruktur"
@@ -186,7 +194,7 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 
 **Quest-Fokus:**
 - "Baue ein vollautomatisches Crafting-System"
-- "Besiege den Apotheosis-Lich"
+- **Bosse**: Besiege den Netherite Monstrosity (Cataclysm)
 - "APEX T4: x8 Multiplikation (Mekanism Purification + O₂)"
 - "Erste Fusionsreaktor-Komponenten"
 - "Pneumaticraft: Plastik aus Öl-Raffinerie"
@@ -208,6 +216,8 @@ Vollständige Mechanik → `planning/mods/ore-processing-system.md`
 **Quest-Fokus:**
 - "Dein erstes Luftschiff"
 - "Bau eine fliegende Fabrik"
+- **Apex-Bosse**: Besiege Ignis und den Harbinger (Cataclysm)
+- "OP Loot": Sammle ein vollständiges Set aus Cataclysm-Waffen + Apotheosis Mythic Gems
 - "APEX T5: x16 Multiplikation (Pressure Chamber 4 bar + Plastik)"
 - "Fusion Reactor: Die Sonne in deiner Basis"
 - "Mystical Agriculture T6: Insanium Crops"

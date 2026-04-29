@@ -18,11 +18,20 @@
 | **ModernFix** | Ladezeiten & allg. Performance | Pflicht | |
 | **Distant Horizons** | Level-of-Detail Chunks (weite Sicht) | Pflicht | Client-only |
 | **Voxy** | Alternative zu DH ⚠️ | Optional | Ggf. statt DH |
+| **Chunky** | World Pre-Generation | Pflicht | **Essenziell für 32km Exploration** |
+| **C2ME** | Multi-Core Chunk Management | Pflicht | **Essenziell für 800er Height** |
+| **Radium Reforged** | Game-Logic Optimierung (Lithium-Port) | Pflicht | |
+| **Krypton Reno** | Netzwerk-Stack Optimierung | Pflicht | |
+| **Noisium** | Welt-Gen Mathematik Optimierung | Pflicht | |
+| **ServerCore** | Dynamische Server-Optimierung | Pflicht | |
 | **NeoForge** | Mod Loader | Pflicht | |
 | **Kotlin for Forge** | Kotlin-Library (für manche Mods) | Pflicht | |
 | **Cloth Config API** | Config-Library | Pflicht | |
 | **Architectury API** | Cross-Loader API | Pflicht | |
 | **Patchouli** | In-Game Guidebooks | Pflicht | Für Create-Handbuch etc. |
+| **Citadel** | Library für Cataclysm | Pflicht | |
+| **GeckoLib** | Animation-Library | Pflicht | Für Mowzie's Mobs & Spells |
+| **OctoLib** | Library für Relics | Pflicht | |
 
 ---
 
@@ -116,6 +125,9 @@
 | Mod | Zweck | Balancing-Bedarf | Anmerkung |
 |-----|-------|-----------------|-----------|
 | **Terralith** | Vanilla+ Weltgenerierung | Niedrig | Client+Server |
+| **Tectonic** | Massive Berge & weite Landschaften | **Mittel** | **Essentiell für 800er World Height** |
+| **Artifacts** | Seltene Accessoires in Dungeons | Mittel | **Adventure-Fokus** |
+| **Relics** | Mächtige Artefakte mit Level-System | Mittel | **Adventure-Fokus** |
 | **YUNG's Better Dungeons** | Verbesserte Dungeons | Niedrig | |
 | **YUNG's Better Mineshafts** | Verbesserte Minen | Niedrig | |
 | **YUNG's Better Strongholds** | Verbesserte Strongholds | Niedrig | |
@@ -124,6 +136,18 @@
 | **When Dungeons Arise** ⚠️ | Große Dungeons & Türme | Niedrig | Auf 1.21.1 prüfen |
 | **Repurposed Structures** | Neue Vanilla-Strukturvarianten | Niedrig | |
 | **Waystones** | Schnellreise-Punkte | Niedrig | Wichtig für Casual |
+| **Compact Machines** | Miniatur-Dimensionen für Maschinen | Niedrig | **Platz- & Performance-Optimierung** |
+
+---
+
+## BOSSE & ABENTEUER (Zusätzliche Herausforderungen)
+
+| Mod | Zweck | Balancing-Bedarf | Anmerkung |
+|-----|-------|-----------------|-----------|
+| **L_Ender's Cataclysm** | Epische Bosse (Ignis, Harbinger) | **Hoch** | Quelle für "OP Loot" |
+| **Bosses of Mass Destruction** | Zusätzliche Bosse in Dimensionen | Mittel | |
+| **Mowzie's Mobs** | Einzigartige, animierte Bosse | Mittel | ✓ NeoForge 1.21.1 |
+| **Simple Magnets** | Magnet-Trinket (QoL) | Niedrig | |
 
 ---
 
@@ -132,10 +156,10 @@
 | Mod | Zweck | Anmerkung |
 |-----|-------|-----------|
 | **FTB Quests** | Quest-System | Kern-Feature |
+| **FTB Chunks** | Minimap, Worldmap & Chunk-Loading | **Wichtig für Automation** |
+| **FTB Ultimine** | Schnelles Mining (Veinminer) | QoL / Casual |
 | **Roughly Enough Items (REI)** | Rezepte & Item-Browser | NeoForge-kompatibel |
 | **Jade** | Block/Entity-Info beim Hinschauen | |
-| **Xaero's Minimap** | Minimap | |
-| **Xaero's World Map** | Vollständige Weltkarte | |
 | **Inventory Profiles Next** | Inventar sortieren | ⚠️ NeoForge 1.21.1 prüfen |
 | **Iron Chests: Restocked** | Größere Truhen | |
 | **Sophisticated Backpacks** | Rucksäcke mit Filtern | Wichtig für Exploration |
@@ -160,7 +184,6 @@
 | **Create: Ore Excavation** | Unendliche Erzadern via Create Rotational Force | Mittel | ✓ NeoForge 1.21.1 — APEX-Synergie |
 | **Serene Seasons** | Jahreszeiten — beeinflusst MA-Wachstum, Farming | Niedrig | ✓ NeoForge 1.21.1 |
 | **Powah: Rebooted** | Energie-Brücke T2→T3 (vor Mekanism Generators) | Mittel | ✓ NeoForge 1.21.1 |
-| **VeinMiner** | QoL: Ganze Erzadern mit einem Schlag (Early-Game) | Niedrig | ✓ NeoForge 1.21.1 |
 
 ---
 
