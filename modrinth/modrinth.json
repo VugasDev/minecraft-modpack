@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "game": "minecraft",
+  "versionId": "0.1.0-alpha",
+  "name": "TBD Modpack Name",
+  "summary": "TBD — kurze Beschreibung für Modrinth",
+  "files": [],
+  "dependencies": {
+    "minecraft": "TBD",
+    "fabric-loader": "TBD"
+  }
+}
