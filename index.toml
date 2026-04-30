@@ -60,6 +60,21 @@ hash = "89213937ee347c19bde57055ab13a93e9dd84978363c95810e34dbf44d44e1bc"
 metafile = true
 
 [[files]]
+file = "mods/apothic-attributes.pw.toml"
+hash = "014ee07aad95d234a4be89ab018d7cc72b9b41999bf0d5f45de11b509a10bd5e"
+metafile = true
+
+[[files]]
+file = "mods/apothic-enchanting.pw.toml"
+hash = "96354bc8654702df8ccc9ce6d91479e2e8fd4a3b60f5eb001ab761608de5c22d"
+metafile = true
+
+[[files]]
+file = "mods/apothic-spawners.pw.toml"
+hash = "73c6535aa33ece6287b6434c21edc5c16635003442e95c57b410b3acb4957a95"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "716d930feff599bf9ce732e05979fbae8025dc8a3c13ccf4f1cb207a70883bc6"
 metafile = true
@@ -92,6 +107,11 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "9121b274bd87552ae976983d9bdd56061274c126a4a1b7b2e13605b1a1ec0599"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
 metafile = true
 
 [[files]]
@@ -190,11 +210,6 @@ hash = "133e7c9295b9e7e8577b5ca36cf9548b4c590eeb0708fdeb9cb59c2758759ac8"
 metafile = true
 
 [[files]]
-file = "mods/embeddium.pw.toml"
-hash = "778c42263b2ba7c9e73553bdcd70f48a3e485ba52b6a83474160d48be696b71f"
-metafile = true
-
-[[files]]
 file = "mods/enchantment-library-standalone.pw.toml"
 hash = "dba50a64df0a868a2795df0a0617daf0b2c5fe1204e681cee8d85ff9d8052dd2"
 metafile = true
@@ -260,6 +275,11 @@ hash = "dbd756dd9bb17e6ecebcf2d7052a67a2da1c7dd378bc2089bc154916080fe031"
 metafile = true
 
 [[files]]
+file = "mods/glodium.pw.toml"
+hash = "8b30d03470cc27030f42b6719cdb8975f163ed336fc8592f0277a4291bb08aec"
+metafile = true
+
+[[files]]
 file = "mods/guideme.pw.toml"
 hash = "b8aee2057378b6f054f94550684d9a3f41ded7cc47794c8b01c107c8c2115ceb"
 metafile = true
@@ -282,6 +302,11 @@ metafile = true
 [[files]]
 file = "mods/iris.pw.toml"
 hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
+metafile = true
+
+[[files]]
+file = "mods/irons-lib.pw.toml"
+hash = "5fd6319cbba6abaca989daaca456c052b49f388f7789eb1657fbaf736b4009cb"
 metafile = true
 
 [[files]]
@@ -400,6 +425,16 @@ hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
 metafile = true
 
 [[files]]
+file = "mods/placebo.pw.toml"
+hash = "201e0be56d2d9430843688b4a04dea207732b6d60f8001fb9e6396d48aea287f"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "93284ca7f2f23f0bb76d42b797cabf2aea1914ee9825bec82bf6ffe4c60dda0d"
+metafile = true
+
+[[files]]
 file = "mods/pneumaticcraft-repressurized.pw.toml"
 hash = "36c8ca1d7ead3cc21e19d10c8521f7f2606f61221385a7765b19a453e11c8a60"
 metafile = true
@@ -425,6 +460,11 @@ hash = "9431c7ba50753e7c340b62d7fbf4a8d18f3cf355d446155731ec30baeed918c7"
 metafile = true
 
 [[files]]
+file = "mods/rhino.pw.toml"
+hash = "6b91f46291891e725189b0bd54d0db0f66925b1e785bdfa737592dfcf41a79a3"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
@@ -447,6 +487,11 @@ metafile = true
 [[files]]
 file = "mods/smartbrainlib.pw.toml"
 hash = "27c6365bdc19eff05f3231bff86a4f09b2d584fed40de92d67c00b4cbd52862a"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
 metafile = true
 
 [[files]]
