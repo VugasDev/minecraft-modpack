@@ -197,7 +197,7 @@
 | **Veggies Delight** | Mehr Gemüse + Strukturen | ✓ NeoForge 1.21.1 |
 | **More Delight** | Mehr Mahlzeiten & Zutaten | ✓ NeoForge 1.21.1 |
 | **Chef's Delight** | Koch/Bäcker-Villager-Profession | ✓ NeoForge 1.21.1 |
-| **Serene Seasons** | Jahreszeiten (Farming-Synergie) | ✓ NeoForge 1.21.1 |
+| **Serene Seasons** | Jahreszeiten (Farming-Synergie) | ✓ NeoForge 1.21.1 (auch in RESSOURCEN-GENERIERUNG gelistet) |
 
 ---
 
@@ -205,10 +205,10 @@
 
 | Mod | Grund |
 |-----|-------|
-| Sodium | Fabric-only — Embeddium ist der NeoForge-Ersatz |
-| Lithium | Fabric-only |
-| Quark | Kompatibilitätsprobleme mit Create häufig |
-| ProjectE | Zu stark für Casual-Balance (EMC bricht Progression) |
+| **Sodium** | Fabric-only — Embeddium ist der NeoForge-Ersatz |
+| **Lithium** | Fabric-only |
+| **Quark** | Kompatibilitätsprobleme mit Create häufig |
+| **ProjectE** | Zu stark für Casual-Balance (EMC bricht Progression) |
 | **Botania** | ⛔ Kein NeoForge 1.21.1 Port (kein ETA) |
 | **Applied Botanics** | ⛔ Hängt von Botania ab |
 | **Thermal Foundation/Expansion** | ⛔ Kein Modrinth-Port für NeoForge 1.21.1 |
@@ -216,7 +216,7 @@
 | **Compressed Creativity** | ⛔ Nur bis 1.20.1 — beobachten für zukünftigen Port |
 | **Voxy** | ⛔ Kein NeoForge 1.21.1 Port — Fabric-only auf Modrinth (Stand 2026-04-30) |
 | **PneumaticCraft: Aeronautics** | ⛔ Kein eigenständiger Mod auf Modrinth auffindbar (Stand 2026-04-30) |
-| **Enigmatic Legacy** (Original) | Kein NeoForge 1.21.1 Port — Nachfolger: **Enigmatic Legacy+** (in Mod-Liste als Optional geführt) |
+| **Enigmatic Legacy** (Original) | ⛔ Kein NeoForge 1.21.1 Port — Nachfolger: **Enigmatic Legacy+** (in Mod-Liste als Optional geführt) |
 
 ---
 
