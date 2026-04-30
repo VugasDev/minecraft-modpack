@@ -1,6 +1,6 @@
 name = "Radium"
 filename = "radium-mc1.21.1-0.13.1+git.4994e83.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/2gvRmQXx/versions/pSBrVnrI/radium-mc1.21.1-0.13.1%2Bgit.4994e83.jar"
