@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "game": "minecraft",
   "versionId": "0.1.0-alpha",
-  "name": "TBD Modpack Name",
-  "summary": "TBD — kurze Beschreibung für Modrinth",
+  "name": "APEX Modpack",
+  "summary": "Create-centric Kitchen Sink Modpack — Automation, Magic & Epic Progression. WIP Alpha.",
   "files": [],
   "dependencies": {
-    "minecraft": "TBD",
-    "fabric-loader": "TBD"
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.228"
   }
 }

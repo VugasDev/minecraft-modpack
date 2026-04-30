@@ -1,0 +1,13 @@
+name = "APEX Modpack"
+author = "VugasDev"
+version = "0.1.0-alpha"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "a8e9d94f2fe143866f5aac33126303a2635cb068a67fa1559c8fda3c38a3b43e"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.228"

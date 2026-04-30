@@ -1,0 +1,181 @@
+hash-format = "sha256"
+
+[[files]]
+file = "CLAUDE.md"
+hash = "01b6572f0041b42516af867d3ae8e57ab6b3882d36908f8f24bfb27c68c1f6cd"
+
+[[files]]
+file = "ai-workflows/prompts/quest-generation.md"
+hash = "aac91db35061ea5ea019b07691cbdbdd910279a9acbc64323f6f3601765b1843"
+
+[[files]]
+file = "ai-workflows/prompts/recipe-balancing.md"
+hash = "4c14481fb08617c3fcf0eec3c149b36b4b49ebf51aeed379029fdad7131158c6"
+
+[[files]]
+file = "ai-workflows/scripts/gemma-agent.py"
+hash = "0ebf3d3c61ac7d8b1ac7338ebfa9c96c91909bb618ff0153f8266af1052c6abf"
+
+[[files]]
+file = "ai-workflows/scripts/generate_quests.py"
+hash = "d836cb622326730efba107cc9994a3dc7d22fd3a2f73634304115d2934e31817"
+
+[[files]]
+file = "ai-workflows/scripts/review-outputs.py"
+hash = "ac0aba40993a8aaa7723553ddd7dda6f2ec3a332e6a748eaca13050046e51681"
+
+[[files]]
+file = "config/chunky/default-preset.json"
+hash = "2fcfce29acca66171800ea788ec77fcd5c26b23c35a2bb0039207f0caf42e317"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/tier_1.json"
+hash = "f82854349bb91970574dd6b6640d72e19a8299556de66b8a83227c6dc32b5d4c"
+
+[[files]]
+file = "config/tectonic-common.toml"
+hash = "ebfea15042e490d0894ab17febf7f2b87bb7e9ffed95272bbfd6e2c7ff93da29"
+
+[[files]]
+file = "config/terralith-common.toml"
+hash = "c6a49616231d5407c1024a04501f6a700a035143d3a21151e6711d99f145c7ff"
+
+[[files]]
+file = "docs/balancing-notes.md"
+hash = "be88b4b7789338a720de2935fe00d2b1dcd9e1f4a0d0f441c08e0a688e3ab373"
+
+[[files]]
+file = "docs/concept.md"
+hash = "950b56ad3ba622096439ed3cb921eaed022c6ed6de3e0720206df1e1f97d7d1e"
+
+[[files]]
+file = "docs/mod-list.md"
+hash = "52decf1348d9d5e5ef490c0b50f902d5faca26b5e0734ca6a0b59cbb2fcfb6bf"
+
+[[files]]
+file = "docs/progression.md"
+hash = "f9dac2028879150e4752dc7d8c27a94345806f744532e2e499e1986fd152558a"
+
+[[files]]
+file = "docs/server-setup.md"
+hash = "34d75ee83da59358372434e9cdadee52c81ba28e382addc0be96fc13abe569d6"
+
+[[files]]
+file = "docs/superpowers/plans/2026-04-30-milestone-0.1.x-fundament.md"
+hash = "b0e92bfb300c3d1115731b6bb93c183767dc8ec609ecf52fd38e130a23772ea8"
+
+[[files]]
+file = "docs/superpowers/specs/2026-04-30-milestone-plan-design.md"
+hash = "a876ca0614db17c8d61c07212edf810d86df17385d6479c4faf3c7a7cffde3c6"
+
+[[files]]
+file = "kubejs/server_scripts/01_resource_unification.js"
+hash = "50079b5b81bbee8daaa72c89a06289b8797b8d686cbde402411d65426a8971f2"
+
+[[files]]
+file = "kubejs/server_scripts/02_recipe_harmonization.js"
+hash = "047a98ae12f198205ca169f74fc3c720eebf75b3b46e391bc231940100208677"
+
+[[files]]
+file = "kubejs/server_scripts/03_ui_cleanup.js"
+hash = "e3b557639387231935570cbf7a8614528193e79712335322be4475ebd5b1f526"
+
+[[files]]
+file = "kubejs/server_scripts/04_gaia_scanner.js"
+hash = "2b9e2f9ee93198f79a810b07cf658056cb266b47f0b3bf45210a41ed19ee9a38"
+
+[[files]]
+file = "kubejs/server_scripts/05_progression_gates.js"
+hash = "daf49f289c25c6f125ab90dbaa79e12651ea9fe409dfa8a2a23c5a2640d6390f"
+
+[[files]]
+file = "kubejs/server_scripts/06_loot_modifications.js"
+hash = "a436d6d3b87caa06019398fc7fe19434f3a468db220abd43a4b1efc690b06deb"
+
+[[files]]
+file = "kubejs/startup_scripts/00_custom_items.js"
+hash = "6269237e81d6e0950d4dd557dd843c1ae25401e5b54dbd7139811007bccd1d00"
+
+[[files]]
+file = "modrinth/modrinth.json"
+hash = "2d327c9a3de52944e3fc4c375e60cf8ccca4f5b9ab61d074c9c7d362ac5b47c2"
+
+[[files]]
+file = "planning/mods/boss-loot-system.md"
+hash = "87ce188a224ebb42779248eb7abdf796ee734c767b189b1589e068f1771a9bc3"
+
+[[files]]
+file = "planning/mods/categories.md"
+hash = "8c5976105c7c23e83daf921567101340c454094ffa7da18d15aff1c70ae0ea93"
+
+[[files]]
+file = "planning/mods/create-ore-excavation.md"
+hash = "cf6fb641b311107c95571e4a9d024936b9b2432c8340c9585e57d1beeb801602"
+
+[[files]]
+file = "planning/mods/interconnectivity-addons.md"
+hash = "3ae9ae8fa29f58bef3944250aeee4e9dd655d12ba843ef560f50bfb71596461f"
+
+[[files]]
+file = "planning/mods/ore-processing-system.md"
+hash = "6afa90ffd908b40c67d542640794bd518e8a3951b9a2ed312dc43471874ff69d"
+
+[[files]]
+file = "planning/mods/resource-generation.md"
+hash = "1097b2097d044fe489f1fe053970ecc8cf87aec8d0aa9cc6b79ff960f2ce6682"
+
+[[files]]
+file = "planning/quests/enchantment-system.md"
+hash = "e225c8d40b1c2f2ca29ecbf63f204072175176592633edd5f6d76aeb0241398a"
+
+[[files]]
+file = "planning/quests/master-quest-list.md"
+hash = "0bc5979c23f5c1b0f55192684bff25a30da81356d493d35f335c1b9abd967f69"
+
+[[files]]
+file = "planning/quests/pneumaticraft-enchantment-path.md"
+hash = "cd2d17296aa3a37481724f2b6802d6bf5f8e76905b01cad0d9a22e0cf4f3de3e"
+
+[[files]]
+file = "planning/quests/tier-1/t1_basics_01.md"
+hash = "d150e25ad4e1af3d52318d9695f44a480731b4006dcf667a7f4bd0f6d541448d"
+
+[[files]]
+file = "planning/quests/tier-1/t1_create_01.md"
+hash = "69d921ab155cad08f3e152391f476ce2275ae0ba5df4bafb42ee1447e7b10755"
+
+[[files]]
+file = "planning/quests/tier-1/t1_create_02.md"
+hash = "67dbe1eafbed6a76fdaa4858b9095b57f89be5edb996805e34e965f6b015f293"
+
+[[files]]
+file = "planning/quests/tier-1/t1_create_03.md"
+hash = "f867a6488b7511205e4116803ea110332f7e8d8aaa114060a9854f5cea71d6e1"
+
+[[files]]
+file = "planning/quests/tier-1/t1_util_01.md"
+hash = "3eff3833cff40e92c6dbe067a2e6f74294dc1726eadc396c026f30cbad26e66b"
+
+[[files]]
+file = "planning/quests/tier-2/t2_ars_01.md"
+hash = "d362dffa72369ccf200f3b946ca62d7cc04f4cce397f5a5a59ad1c474fda657f"
+
+[[files]]
+file = "planning/quests/tier-2/t2_create_01.md"
+hash = "b18fd967237a3b0757be73fb330d0a1fc750d11c238f00a1587dfe270eb7c7a3"
+
+[[files]]
+file = "planning/quests/tier-3/t3_ae2_01.md"
+hash = "7597b08cc5c40c05cf4e23b61da9c2a2c38d5fab009b6cd6a93418cabaf40ad1"
+
+[[files]]
+file = "planning/quests/tier-4/t4_mek_01.md"
+hash = "66505c42e02aa7e14fad923d60a9aec5666d82d2048ae1f2328d5a5279a4be38"
+
+[[files]]
+file = "planning/quests/tier-5/t5_gaia_01.md"
+hash = "df5406e21b7281bba3ece749421b166330af23bb5db5080a8a991b8c6035c623"
+
+[[files]]
+file = "planning/world-gen.md"
+hash = "b12580c7bab68e89103c8e5d6c3b7dcc94077701121282160ecef1af8008b910"
