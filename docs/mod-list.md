@@ -1,6 +1,6 @@
 # Mod-Liste — NeoForge 1.21.1
 
-> **Status**: Erster Entwurf — 2026-04-29
+> **Status**: Verifiziert für 0.1.x — 2026-04-30
 > Alle Mods müssen auf Modrinth verfügbar sein.
 > ⚠️ = Verfügbarkeit für NeoForge 1.21.1 vor Einbau prüfen
 
@@ -17,7 +17,7 @@
 | **Clumps** | XP-Kugeln zusammenfassen (Performance) | Pflicht | |
 | **ModernFix** | Ladezeiten & allg. Performance | Pflicht | |
 | **Distant Horizons** | Level-of-Detail Chunks (weite Sicht) | Pflicht | Client-only |
-| **Voxy** | Alternative zu DH ⚠️ | Optional | Ggf. statt DH |
+| ~~Voxy~~ | ~~Alternative zu DH~~ | — | ⛔ Kein NeoForge 1.21.1 Port (Fabric-only auf Modrinth) |
 | **Chunky** | World Pre-Generation | Pflicht | **Essenziell für 32km Exploration** |
 | **C2ME** | Multi-Core Chunk Management | Pflicht | **Essenziell für 800er Height** |
 | **Radium Reforged** | Game-Logic Optimierung (Lithium-Port) | Pflicht | |
@@ -29,6 +29,8 @@
 | **Cloth Config API** | Config-Library | Pflicht | |
 | **Architectury API** | Cross-Loader API | Pflicht | |
 | **Patchouli** | In-Game Guidebooks | Pflicht | Für Create-Handbuch etc. |
+| **LootJS** | Loot-Table Modifikation via KubeJS (Boss-Drops) | Pflicht | Benötigt für 06_loot_modifications.js |
+| **KubeJS REI Integration** | REI-Items via KubeJS verstecken | Pflicht | Benötigt für 03_ui_cleanup.js |
 | **Citadel** | Library für Cataclysm | Pflicht | |
 | **GeckoLib** | Animation-Library | Pflicht | Für Mowzie's Mobs & Spells |
 | **OctoLib** | Library für Relics | Pflicht | |
@@ -40,13 +42,13 @@
 | Mod | Zweck | Balancing-Bedarf | Anmerkung |
 |-----|-------|-----------------|-----------|
 | **Create** | Kern-Mod — Mechanik, Automation | Hoch | Basis für alles |
-| **Create Aeronautics** | Fliegende Fahrzeuge & Strukturen | Mittel | ⚠️ Alpha für 1.21.1 — Kernfeature! |
+| **Create Aeronautics** | Fliegende Fahrzeuge & Strukturen | Optional | ⚠️ Alpha — für 0.1.x deaktiviert, ab 0.4.x evaluieren |
 | **Create: Steam 'n' Rails** | Erweiterte Züge & Schienen | Niedrig | Gut zur Aeronautics-Synergie |
 | **Create: Crafts & Additions** | Elektromotoren, Akkus (Create↔FE) | Mittel | Brücke zu Mekanism/AE2 |
 | **Create Deco** | Dekorative Create-Blöcke | Niedrig | Optisch, kein Balancing |
 | **Create: Interiors** | Möbel & Innenausstattung | Niedrig | Gut für Luftschiff-Innenräume |
 | **Create: Diesel Generators** | Kraftstoff-basierte Energie | Mittel | Alternative Energiequelle |
-| **Create: Dreams & Desires** | Neue Maschinen & Rezepte ⚠️ | Optional | Auf 1.21.1-Verfügbarkeit prüfen |
+| **Create: Dreams & Desires** | Neue Maschinen & Rezepte | Optional | ✓ NeoForge 1.21.1 — noch Beta (v2.2d-BETA), Stabilität beobachten |
 
 ---
 
@@ -80,8 +82,8 @@
 | **Ars Additions** | Ars Nouveau QoL + Glyphen | Niedrig | ✓ NeoForge 1.21.1 |
 | **Ars Creo** | **Create ↔ Ars Nouveau Brücke** | Niedrig | ✓ NeoForge 1.21.1 — Pflicht-Addon |
 | **Iron's Spells 'n Spellbooks** | Kampf-Magie, Klassen | Niedrig | Ergänzt Ars Nouveau |
-| **Occultism** ⚠️ | Dämonologie, Dimensional Storage | Optional | **Botania-Ersatz** — NeoForge 1.21.1 prüfen |
-| **Enigmatic Legacy** ⚠️ | Artefakte & Relikte | Optional | NeoForge 1.21.1 prüfen |
+| **Occultism** | Dämonologie, Dimensional Storage | Optional | **Botania-Ersatz** — ✓ NeoForge 1.21.1 |
+| **Enigmatic Legacy+** | Artefakte & Relikte | Optional | ✓ NeoForge 1.21.1 — Achtung: Modrinth-Mod heißt "Enigmatic Legacy+" (1.21.1-Port) |
 
 > ⛔ **Botania**: NICHT verfügbar für NeoForge 1.21.1 (kein Port, kein ETA).
 > Botania fällt raus — Ars Nouveau ist Haupt-Magie. Occultism als zweiter optionaler Pfad wenn verfügbar.
@@ -112,7 +114,7 @@
 | Mod | Zweck | Balancing-Bedarf | Anmerkung |
 |-----|-------|-----------------|-----------|
 | **Pneumaticraft: Repressurized** | Druckluft-Technik + Pressure Chamber | **Sehr hoch** | Kern-Mechanismus für OP-Enchants |
-| **PneumaticCraft: Aeronautics** ⚠️ | Drone-Automation | Optional | Synergie mit Create Aeronautics? |
+| ~~PneumaticCraft: Aeronautics~~ | ~~Drone-Automation~~ | — | ⛔ Kein eigenständiger Mod auf Modrinth gefunden — gestrichen |
 
 **Rolle von Pneumaticraft im Enchantment-System** (große Sprünge):
 - Sprung 1: Pressure Chamber (2.5 bar) → Level 10 → Level 25 (Mekanism Obsidian + Apotheosis Normal Gems)
@@ -133,7 +135,7 @@
 | **YUNG's Better Strongholds** | Verbesserte Strongholds | Niedrig | |
 | **YUNG's Better Witch Huts** | Verbesserte Hexenhütten | Niedrig | |
 | **Dungeons and Taverns** | Neue Strukturen | Niedrig | |
-| **When Dungeons Arise** ⚠️ | Große Dungeons & Türme | Niedrig | Auf 1.21.1 prüfen |
+| **When Dungeons Arise** | Große Dungeons & Türme | Niedrig | ✓ NeoForge 1.21.1 |
 | **Repurposed Structures** | Neue Vanilla-Strukturvarianten | Niedrig | |
 | **Waystones** | Schnellreise-Punkte | Niedrig | Wichtig für Casual |
 | **Compact Machines** | Miniatur-Dimensionen für Maschinen | Niedrig | **Platz- & Performance-Optimierung** |
@@ -160,7 +162,7 @@
 | **FTB Ultimine** | Schnelles Mining (Veinminer) | QoL / Casual |
 | **Roughly Enough Items (REI)** | Rezepte & Item-Browser | NeoForge-kompatibel |
 | **Jade** | Block/Entity-Info beim Hinschauen | |
-| **Inventory Profiles Next** | Inventar sortieren | ⚠️ NeoForge 1.21.1 prüfen |
+| **Inventory Profiles Next** | Inventar sortieren | ✓ NeoForge 1.21.1 |
 | **Iron Chests: Restocked** | Größere Truhen | |
 | **Sophisticated Backpacks** | Rucksäcke mit Filtern | Wichtig für Exploration |
 | **Sophisticated Storage** | Erweiterte Truhen | Synergie mit Backpacks |
@@ -195,7 +197,7 @@
 | **Veggies Delight** | Mehr Gemüse + Strukturen | ✓ NeoForge 1.21.1 |
 | **More Delight** | Mehr Mahlzeiten & Zutaten | ✓ NeoForge 1.21.1 |
 | **Chef's Delight** | Koch/Bäcker-Villager-Profession | ✓ NeoForge 1.21.1 |
-| **Serene Seasons** | Jahreszeiten (Farming-Synergie) | ⚠️ NeoForge 1.21.1 prüfen |
+| **Serene Seasons** | Jahreszeiten (Farming-Synergie) | ✓ NeoForge 1.21.1 |
 
 ---
 
@@ -212,6 +214,8 @@
 | **Thermal Foundation/Expansion** | ⛔ Kein Modrinth-Port für NeoForge 1.21.1 |
 | **Ars Elemental** | ⛔ CurseForge-exklusiv |
 | **Compressed Creativity** | ⛔ Nur bis 1.20.1 — beobachten für zukünftigen Port |
+| **Voxy** | ⛔ Kein NeoForge 1.21.1 Port — Fabric-only auf Modrinth (Stand 2026-04-30) |
+| **PneumaticCraft: Aeronautics** | ⛔ Kein eigenständiger Mod auf Modrinth auffindbar (Stand 2026-04-30) |
 
 ---
 
@@ -227,7 +231,7 @@
 
 ## OFFENE FRAGEN
 
-- [ ] Occultism NeoForge 1.21.1-Status prüfen (Botania-Ersatz)
+- [x] Occultism NeoForge 1.21.1-Status geprüft — ✓ verfügbar (v1.207.1, Stand 2026-04-30)
 - [ ] Mystical Agradditions: Welche Mod-Crops enthalten? (Osmium, Certus, Compressed Iron?)
 - [ ] Serene Seasons Einfluss auf Mystical Agriculture Wachstum testen
 - [ ] Create: Simple Ore Doubling vs. reines KubeJS-Rezept — entscheiden
