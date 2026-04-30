@@ -1,0 +1,12 @@
+# Projektdateien — nicht ins mrpack
+CLAUDE.md
+docs/
+planning/
+ai-workflows/
+
+# Packwiz-Output — komplett ausschließen
+modrinth/
+
+# Git
+.git/
+.gitignore

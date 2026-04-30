@@ -1,0 +1,13 @@
+name = "Enchantment Library Standalone"
+filename = "enchantmentlibrary-1.21.1-1.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PhX2mgEj/versions/9PhWCQOq/enchantmentlibrary-1.21.1-1.1.3.jar"
+hash-format = "sha512"
+hash = "204a585ad69b6176624b8d1fc5da8dea798313d433ec657d36f2c3d1cff4bbaf52f5be72e1c36bf92a4c957be22f6338f123f18297faa2545a30d641f19fcc48"
+
+[update]
+[update.modrinth]
+mod-id = "PhX2mgEj"
+version = "9PhWCQOq"

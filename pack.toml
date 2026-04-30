@@ -1,4 +1,4 @@
-name = "APEX Modpack"
+name = "Gaia Awakening"
 author = "VugasDev"
 version = "0.1.0-alpha"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "a8e9d94f2fe143866f5aac33126303a2635cb068a67fa1559c8fda3c38a3b43e"
+hash = "6a5771d6c7e71016aaab11674dbfc1621103454f2e81fa3475260e3a661290e0"
 
 [versions]
 minecraft = "1.21.1"
