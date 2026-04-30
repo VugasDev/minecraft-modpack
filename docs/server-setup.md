@@ -5,6 +5,8 @@
 ## Voraussetzungen
 
 - Java 21 (empfohlen: Eclipse Temurin 21 — https://adoptium.net)
+  - Java-Version prüfen: `java -version` — muss `21.x.x` zeigen
+  - Falls mehrere Java-Versionen installiert: `sudo update-alternatives --config java` (Ubuntu)
 - Mindestens 8 GB RAM für den Server-Prozess
 - Linux (Ubuntu 22.04+) oder Windows Server 2019+
 - Port 25565 TCP/UDP im Router freigegeben
@@ -27,21 +29,24 @@ echo "eula=true" > eula.txt
 
 ## 2. Startskript einrichten
 
-Datei `start.sh` erstellen:
+NeoForge generiert nach der Installation automatisch ein `run.sh` (Linux) bzw. `run.bat` (Windows). JVM-Flags werden in `user_jvm_args.txt` gesetzt, nicht direkt im Startskript.
 
-```bash
-#!/bin/bash
-java -Xmx8G -Xms4G \
-  -XX:+UseG1GC \
-  -XX:+ParallelRefProcEnabled \
-  -XX:MaxGCPauseMillis=200 \
-  -XX:+UnlockExperimentalVMOptions \
-  -XX:+DisableExplicitGC \
-  -jar libraries/net/neoforged/neoforge/21.1.x/neoforge-21.1.x-server.jar nogui
+Datei `user_jvm_args.txt` anpassen:
+
+```
+-Xmx8G
+-Xms4G
+-XX:+UseG1GC
+-XX:+ParallelRefProcEnabled
+-XX:MaxGCPauseMillis=200
+-XX:+DisableExplicitGC
 ```
 
+Server starten:
+
 ```bash
-chmod +x start.sh
+chmod +x run.sh
+./run.sh nogui
 ```
 
 ## 3. Modpack deployen
@@ -63,13 +68,15 @@ Alle Mod-JARs aus dem Modrinth mrpack in `apex-server/mods/` ablegen.
 
 ```properties
 max-players=10
-view-distance=12
+view-distance=10
 simulation-distance=8
 online-mode=true
 difficulty=normal
 spawn-protection=0
 level-seed=
 ```
+
+> Für Modded-Server mit Terralith empfohlen: 8–10. Werte über 12 können bei begrenztem RAM zu TPS-Problemen führen.
 
 > `level-seed` leer lassen für zufälligen Seed, oder einen festen Seed eintragen.
 > **Wichtig:** Seed nach Welt-Erstellung dokumentieren — kann nicht mehr geändert werden.
@@ -92,7 +99,7 @@ grep -i "error\|exception\|crash" logs/latest.log
 
 KubeJS-Fehler separat prüfen:
 ```bash
-cat logs/kubejs/server.log | grep -i "error"
+grep -i "error" logs/kubejs/server.log
 ```
 
 ## 6. Chunky Pre-Gen ausführen
