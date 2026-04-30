@@ -1,0 +1,8 @@
+[world]
+# Aktiviert erweiterte Welthöhe (Standard Tectonic: 384, Extended: ~800)
+# WICHTIG: Erfordert neue Welt — kann nicht auf bestehender Welt aktiviert werden
+tallWorldHeight = true
+
+[terrain]
+# Tectonic Erosion für natürlichere Berge und Täler
+erosion = true

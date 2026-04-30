@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "world": "minecraft:overworld",
+      "shape": "square",
+      "centerX": 0,
+      "centerZ": 0,
+      "radius": 3000,
+      "comment": "3km x 3km Overworld Pre-Gen — ausreichend für Early-bis-Midgame"
+    },
+    {
+      "world": "minecraft:the_nether",
+      "shape": "square",
+      "centerX": 0,
+      "centerZ": 0,
+      "radius": 1500,
+      "comment": "1.5km x 1.5km Nether Pre-Gen (1:8 Skala zur Overworld)"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[compatibility]
+# Tectonic-Kompatibilität: Terralith Biome an die erhöhte Welthöhe anpassen
+betterLandmasses = true
+
+[misc]
+# Spawn-Biom: Standard Terralith Meadow für freundlicheren Einstieg
+spawnOnPreferredBiome = true
