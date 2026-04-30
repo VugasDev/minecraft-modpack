@@ -216,6 +216,7 @@
 | **Compressed Creativity** | ⛔ Nur bis 1.20.1 — beobachten für zukünftigen Port |
 | **Voxy** | ⛔ Kein NeoForge 1.21.1 Port — Fabric-only auf Modrinth (Stand 2026-04-30) |
 | **PneumaticCraft: Aeronautics** | ⛔ Kein eigenständiger Mod auf Modrinth auffindbar (Stand 2026-04-30) |
+| **Enigmatic Legacy** (Original) | Kein NeoForge 1.21.1 Port — Nachfolger: **Enigmatic Legacy+** (in Mod-Liste als Optional geführt) |
 
 ---
 
