@@ -1,7 +1,9 @@
 [compatibility]
-# Tectonic-Kompatibilität: Terralith Biome an die erhöhte Welthöhe anpassen
+# Tectonic-Kompatibilität: Terralith Biome skalieren auf die erhöhte Welthöhe.
+# Lithostitched übernimmt die technische Kompatibilität zwischen beiden Mods.
 betterLandmasses = true
 
 [misc]
-# Spawn-Biom: Standard Terralith Meadow für freundlicheren Einstieg
+# Spawn in einer Wiese (Terralith Meadow) für freundlicheren Einstieg.
+# Verhindert Spawn in extremen Biomen (Wüste, Eiswüste, etc.)
 spawnOnPreferredBiome = true

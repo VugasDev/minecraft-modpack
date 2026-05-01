@@ -1,8 +1,13 @@
 [world]
-# Aktiviert erweiterte Welthöhe (Standard Tectonic: 384, Extended: ~800)
-# WICHTIG: Erfordert neue Welt — kann nicht auf bestehender Welt aktiviert werden
+# Erweiterte Welthöhe: Y -128 bis ~512 (Tectonic Tall World Mode)
+# WICHTIG: Erfordert eine neue Welt. Nicht auf bestehenden Welten aktivieren.
 tallWorldHeight = true
 
 [terrain]
-# Tectonic Erosion für natürlichere Berge und Täler
+# Erosion: Natürlichere Berge, tiefere Täler, ausgewaschene Höhlen
 erosion = true
+
+# Hinweis: Tectonic 3.x generiert mit tallWorldHeight die Zonen
+# Y +192 bis +512: Massive Gipfel (keine Erze — reiner Exploration-Raum)
+# Y   -0 bis +192: Normale Oberwelt
+# Y -128 bis   -0: Tiefer Untergrund (Abyss-Erze, s. planning/ore-distribution.md)
