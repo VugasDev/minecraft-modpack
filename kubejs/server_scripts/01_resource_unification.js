@@ -5,8 +5,8 @@ ServerEvents.tags('item', event => {
     // tin/lead/uranium entfernt — kein Mod im Pack liefert diese Metalle
     const standardMetals = ['iron', 'gold', 'copper']
     standardMetals.forEach(metal => {
-        event.add(`neoforge:ingots/${metal}`, `*:${metal}_ingot`)
-        event.add(`neoforge:dusts/${metal}`, `*:${metal}_dust`)
+        event.add(`neoforge:ingots/${metal}`, new RegExp(`.*:${metal}_ingot`))
+        event.add(`neoforge:dusts/${metal}`, new RegExp(`.*:${metal}_dust`))
     })
 
     // Mekanism nutzt umgekehrte Konvention: ingot_metal statt metal_ingot

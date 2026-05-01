@@ -18,7 +18,7 @@ hash = "c6a49616231d5407c1024a04501f6a700a035143d3a21151e6711d99f145c7ff"
 
 [[files]]
 file = "kubejs/server_scripts/01_resource_unification.js"
-hash = "50079b5b81bbee8daaa72c89a06289b8797b8d686cbde402411d65426a8971f2"
+hash = "b2f4a65f9a363e87cd6ab4ce2dd5b2b28692b0d0b5d7282d594a33ec37f9e1aa"
 
 [[files]]
 file = "kubejs/server_scripts/02_recipe_harmonization.js"
@@ -340,6 +340,11 @@ hash = "0d2a00252d64ed7d2d9b19994f7accb780304be61f3903d36e810714b414c6cb"
 metafile = true
 
 [[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "5c936e47a14beddf1a8461fab6ea79edb6f0ba10d73c9b8f093c4b4892546433"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "58e0bebd41fa44f3f0dd6c053ec3eb1529d4bfe0c054c0741ba6e2e1b8e4523e"
 metafile = true
@@ -352,6 +357,11 @@ metafile = true
 [[files]]
 file = "mods/lootjs.pw.toml"
 hash = "9b32e1374a3d85ccdd4803c8932f72fbeb6357e69d895980e3f24e1974a07ca6"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "114b4f1097f17b916cc5df3334aa57e34c6f4a108b87cb911e29134dd5ff980d"
 metafile = true
 
 [[files]]
