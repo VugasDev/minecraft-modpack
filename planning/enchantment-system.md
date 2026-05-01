@@ -20,12 +20,13 @@ Das absolute Endgame-Limit ist keine Zahl, sondern die verfügbaren Ressourcen �
 ## Tier-Übersicht
 
 ```
-TIER   MAX-LEVEL   UPGRADE-CAP   GATE
-  1        30           V        Apotheosis Holz/Stein Regale
-  2        50          XI        Blazing/Hellish Regale + Nether
-  3        75         XVI        Crystalline Regale + Osmium + Certus
-  4       100          XXV       Enderby Regale + Refined Obsidian + End
-  5     Uncapped     Uncapped    Create:EI Super Liquid XP (nur Ressourcen-Gate)
+TIER   MAX-LEVEL   UPGRADE-CAP   ERFOLGS-CHANCE     GATE
+  1        30           V        100% (garantiert)  Apotheosis Holz/Stein Regale
+  2        50          XI        100% (garantiert)  Blazing/Hellish Regale + Nether
+  3        75         XVI        85% → 65%          Crystalline Regale + Osmium + Certus
+  4       100          XXV       70% → 35%          Enderby Regale + Refined Obsidian + End
+  5     Uncapped     Uncapped    60% → 25%  (Super) Create:EI Super Liquid XP
+                                 99% → 90% (Mythic) Create:EI Mythic Liquid XP
 ```
 
 ---
@@ -43,18 +44,61 @@ Input: Enchanted Book (niedriger Level) + Druck + Materialien → Output: höher
 
 Create: Enchantment Industry liefert ab T5 unendlich Super Liquid XP als einzige Schranke.
 
-### Upgrade-Caps pro Tier
+### Upgrade-Caps und Erfolgswahrscheinlichkeiten
 
-| Tier | Sharpness-Beispiel | Methode | Ressourcen |
-|------|--------------------|---------|------------|
-| T1 | I → V | Apotheosis Table + Standard-Regale | Lapis, XP |
-| T2 | V → XI | Apotheosis Table + Blazing Regale, Amboss-Combine | Blaze Rod, XP |
-| T3 | XI → XVI | PNC Pressure Chamber (3.5 bar) | Osmium, Certus, Druck-Gas |
-| T4 | XVI → XXV | PNC Pressure Chamber (5.5 bar) | Refined Obsidian, Fluix Crystal |
-| T5 | XXV → ∞ | Create:EI Enchanting Infusion + Super Liquid XP | Super Liquid XP (beliebig viel) |
+| Tier | Von → Bis | Erfolg | Bei Misserfolg | Methode |
+|------|-----------|--------|----------------|---------|
+| T1 | I → V | 100% | — | Apotheosis Table |
+| T2 | V → XI | 100% | — | Apotheosis Amboss-Combine |
+| T3 | XI → XVI | 85%→65% | Alle Inputs verloren | PNC 3.5 bar |
+| T4 | XVI → XXV | 70%→35% | Alle Inputs verloren | PNC 5.5 bar |
+| T5 (Super) | XXV → ∞ | 60%→25% | Alle Inputs verloren | Create:EI Super XP |
+| T5 (Mythic) | XXV → ∞ | 99%→90% | Alle Inputs verloren | Create:EI Mythic XP |
 
-> Die Caps gelten für **alle** Enchantments, nicht nur Sharpness. Protection, Efficiency,
-> Fortune etc. folgen demselben Schema.
+**Misserfolg-Regel (ab T3):** Bei jedem Fehlversuch werden Buch, Materialien und XP vollständig
+verbraucht. Das Enchantment-Level bleibt unverändert. Kein Teilrückgabe.
+
+**Erfolg-Regel:** Immer genau +1 Level. Nie mehr.
+
+> Die Caps gelten für **alle** Enchantments: Protection, Efficiency, Fortune etc.
+
+### Wahrscheinlichkeits-Kurve im Detail
+
+**T3 (PNC 3.5 bar)** — Einstieg ins Risiko:
+| Upgrade | Erfolg |
+|---------|--------|
+| XI → XII | 85% |
+| XII → XIII | 80% |
+| XIII → XIV | 75% |
+| XIV → XV | 70% |
+| XV → XVI | 65% |
+
+**T4 (PNC 5.5 bar)** — Echtes Risiko:
+| Upgrade | Erfolg |
+|---------|--------|
+| XVI → XVII | 70% |
+| XVII → XIX | 65% |
+| XIX → XXI | 55% |
+| XXI → XXIII | 45% |
+| XXIII → XXV | 35% |
+
+**T5 Super Liquid XP** — Hochrisiko, Ressourcen-Gate:
+| Level-Bereich | Erfolg |
+|---------------|--------|
+| XXV – XXX | 60% |
+| XXX – L | 50% |
+| L – C | 40% |
+| C – CC | 30% |
+| CC+ | 25% (Floor) |
+
+**T5 Mythic Liquid XP** — Nahezu garantiert, extreme Kosten:
+| Level-Bereich | Erfolg |
+|---------------|--------|
+| XXV – L | 99% |
+| L – C | 97% |
+| C – CC | 95% |
+| CC – D | 92% |
+| D+ | 90% (Floor) |
 
 ### T1→T2 Upgrade: Apotheosis Amboss-Combine
 
@@ -66,44 +110,89 @@ Max bei T2: XI
 ```
 Kostet XP (steigt linear mit dem Level). Mit Create:EI Liquid XP automatisierbar.
 
-### T2→T3 Upgrade: Erste Pressure Chamber Nutzung
+### T2→T3 Upgrade: Erste Pressure Chamber Nutzung (Risiko beginnt)
 
-Ab T3 kann die Pressure Chamber Bücher direkt upgraden:
+Ab T3 kann die Pressure Chamber Bücher direkt upgraden — **erstmals mit Verlustrisiko**:
 ```
-Input:  Sharpness XI Buch + 2x Osmium Ingot + 1x Certus Crystal + 3.5 bar
-Output: Sharpness XIII Buch
+Input:   Sharpness XI Buch + 2x Osmium Ingot + 1x Certus Crystal + 3.5 bar
+Erfolg:  Sharpness XII Buch  (85%)
+Fehler:  Alles verloren, Sharpness bleibt bei XI  (15%)
 ```
-Mehrere Durchläufe bis XVI. Kosten pro Level-Sprung steigen mit dem Level.
+Mehrere Durchläufe bis XVI. Jedes Stufe senkt die Erfolgschance um ~5%.
+PNC unterstützt native Wahrscheinlichkeits-Outputs — kein KubeJS-Workaround nötig.
 
-### T3→T4 Upgrade: Pressure Chamber 5.5 bar
+### T3→T4 Upgrade: Pressure Chamber 5.5 bar (Risiko steigt)
 
 ```
-Input:  Sharpness XVI Buch + 1x Refined Obsidian + 1x Fluix Crystal + 5.5 bar
-Output: Sharpness XIX Buch
+Input:   Sharpness XVI Buch + 1x Refined Obsidian + 1x Fluix Crystal + 5.5 bar
+Erfolg:  Sharpness XVII Buch  (70%)
+Fehler:  Alles verloren, Sharpness bleibt bei XVI  (30%)
 ```
-Bis XXV möglich. Refined Obsidian ist der Haupt-Engpass (teuer in Mekanism).
+Von XVI bis XXV dauert es im Schnitt ~8-10 Versuche bei sinkender Erfolgsrate.
+Refined Obsidian und Fluix Crystal sind die Hauptengpässe — beide teuer genug, dass
+jeder Fehlversuch spürbar schmerzt.
 
-### T4→T5: Create:EI Super Liquid XP — Das Endgame-Gate
+### T4→T5: Create:EI Liquid XP — Drei Stufen, eine Entscheidung
 
-Create: Enchantment Industry führt **Liquid Experience** ein:
-- Normales Liquid XP: Aus XP-Kugeln, Mob-Farmen, Spieler-XP via XP Drain
-- **Super Liquid XP**: Komprimiertes Liquid XP (10.000 mB normales XP → 1.000 mB Super XP)
-  erfordert Create-Kompressor-Setup
+Create: Enchantment Industry führt drei XP-Typen ein:
 
-Ab T5 funktioniert das Upgraden so:
 ```
-Input:  Beliebiges Enchanted Book (beliebiger Level) + X mB Super Liquid XP
-Output: +1 Level auf diese Verzauberung
-
-Je höher das aktuelle Level, desto mehr Super Liquid XP pro Level-Sprung nötig.
-Level 25 → 26:   500 mB Super XP
-Level 50 → 51:   2.000 mB Super XP
-Level 100 → 101: 10.000 mB Super XP
+Liquid XP       — 1:1 aus XP-Kugeln/Mob-Farm (normales Liquid XP)
+Super Liquid XP — 10.000 mB Liquid XP → 1.000 mB Super XP (Kompressor)
+Mythic Liquid XP — 1.000.000 mB Liquid XP (≙ 1.000 mB Super XP) → 1 mB Mythic XP
 ```
 
-Das einzige Limit ist der Durchsatz der Super-XP-Produktion. Eine große Mob-Farm +
-Create:EI XP-Kompressor-Kette kann stundenlang Super XP produzieren und erlaubt so
-theortisch unbegrenzt hohe Enchantments — aber jeder Level kostet mehr als der vorherige.
+#### Super Liquid XP — Hochrisiko, mittlere Kosten
+
+```
+Input:   Enchanted Book (Level N) + X mB Super Liquid XP
+Erfolg:  Buch mit Level N+1  (60% bei Level XXV, sinkend bis 25% Floor)
+Fehler:  Alles verloren — kein Level-Change  (restliche %)
+```
+
+Kosten-Skalierung (Super XP pro Versuch):
+| Level | Super XP / Versuch | Ø Versuche bis Erfolg | Ø Super XP bis +1 Level |
+|-------|--------------------|-----------------------|-------------------------|
+| XXV → XXVI | 500 mB | ~1,7 | ~850 mB |
+| L → LI | 2.000 mB | ~2,5 | ~5.000 mB |
+| C → CI | 10.000 mB | ~4,0 | ~40.000 mB |
+| CC → CCI | 50.000 mB | ~4,0 | ~200.000 mB |
+
+#### Mythic Liquid XP — Nahezu garantiert, extreme Kosten
+
+```
+Input:   Enchanted Book (Level N) + Y mB Mythic Liquid XP
+Erfolg:  Buch mit Level N+1  (99% bei Level XXV, min. 90% Floor)
+Fehler:  Alles verloren  (1-10%)
+```
+
+Mythic XP ist 1000× konzentrierter als Super XP — eine Kompressor-Kette der höchsten
+Create-Stufe (hohe RPM, mehrere Stufen) braucht Stunden für wenige mB Mythic XP.
+Dafür sind Fehlversuche extrem selten. Für Spieler, die ein spezifisches Item auf
+Level CC bringen wollen ohne 200 Fehlversuche zu riskieren.
+
+**Produktion Mythic XP:**
+```
+[Mob Farm] → Liquid XP → [Super Compressor Stufe 1] → Super Liquid XP
+Super Liquid XP → [Super Compressor Stufe 2, max RPM] → Mythic Liquid XP
+```
+~1 mB Mythic XP pro ~30 Minuten optimierter Anlage (Richtwert, nach Testing kalibrieren).
+
+**KubeJS Implementation (T5 Chance-Mechanic):**
+```javascript
+// kubejs/server_scripts/enchanting_infusion.js
+// Da Create:EI kein natives Chance-System hat, wird per KubeJS-Event eine
+// Wahrscheinlichkeitsprüfung eingebaut
+ItemEvents.rightClicked('apex:enchanting_infusion_altar', event => {
+    const level = getEnchantLevel(event.item)
+    const successChance = getSuperXPChance(level)  // 0.60 bis 0.25
+    if (Math.random() < successChance) {
+        upgradeEnchant(event.item)  // +1 Level
+    }
+    consumeInputs(event)  // immer: Inputs verbrauchen
+})
+```
+> Exakte API nach Testing verifizieren — möglicherweise über Custom Block + KubeJS Block Events.
 
 ---
 
@@ -221,30 +310,28 @@ Output: Sharpness XIX Buch
 
 **Neue Mechaniken:**
 - **Mythic Gem Socketing** (stärkste passive Boni im Spiel)
-- **Super Liquid XP Gate**: Jeder Level-Sprung über XXV kostet exponentiell mehr Super XP
+- **Super Liquid XP**: Jeder Level-Sprung kostet exponentiell mehr — mit 25%-60% Erfolg
+- **Mythic Liquid XP**: 1000× konzentrierter, 90-99% Erfolgsrate — extreme Produktionskosten
 - Apotheosis Unique Enchants (nur aus Boss-Loot, nicht craftbar)
 - Create:EI Enchanting Infusion Altar: Hauptmechanik für unlimitiertes Upgraden
 
-**Super Liquid XP Produktion:**
+**Die Entscheidung ab T5:**
 ```
-Mob Farm → XP Kugeln → Create:EI XP Drain → Liquid XP Tank
-Liquid XP Tank → Create:EI Compressor (Rotationsenergie) → Super Liquid XP Tank
-Super Liquid XP → Enchanting Infusion Altar → Beliebiges Book +1 Level
+Viele billige Super-XP-Versuche    ──→  25-60% Erfolg, häufige Verluste
+Wenige teure Mythic-XP-Versuche   ──→  90-99% Erfolg, extreme Produktionszeit
+```
+Beide Wege führen zum Ziel. Super XP ist schneller pro Versuch, Mythic XP sicherer pro
+Level-Sprung. Wer eine effiziente Mob-Farm hat, bevorzugt Super XP. Wer ein einzelnes
+Prestige-Item auf Level CCC bringen will, spart Mythic XP an.
+
+**XP-Pipeline:**
+```
+Mob Farm → XP Drain → Liquid XP → Super Compressor 1 → Super Liquid XP
+                                   Super Compressor 2 → Mythic Liquid XP
+                                   (max RPM, Create Tier 3+ erforderlich)
 ```
 
-**Kosten-Skalierung (exponentiell):**
-| Von → Nach | Super Liquid XP |
-|-----------|-----------------|
-| XXV → XXVI | 500 mB |
-| L → LI | 2.000 mB |
-| C → CI | 10.000 mB |
-| CC → CCI | 50.000 mB |
-
-Eine optimierte XP-Farm + Create:EI Kompressor produziert ~5.000-10.000 mB Super XP/h.
-Damit sind praktisch Level 50-75 das realistische Maximum für normale Spieler.
-Hardcore-Automatisierer können darüber hinaus gehen — das ist der Prestige-Aspekt.
-
-**Quest:** "Der Endlos-Aufstieg" (nach allen 4 Cataclysm-Bossen) → Belohnung: Mythic Gem Socketing-Werkbank freigeschaltet
+**Quest:** "Der Endlos-Aufstieg" (nach allen 4 Cataclysm-Bossen) → Mythic Gem Socketing-Werkbank freigeschaltet + Enchanting Infusion Altar Schematic
 
 ---
 
@@ -298,16 +385,22 @@ Ziel: Sharpness 50 sollte ~10-15h aktiver Mob-Farm-Laufzeit kosten.
 
 ---
 
-## Zusammenfassung — Macht-Kurve
+## Zusammenfassung — Macht-Kurve & Risiko
 
 ```
-Sharpness  V  ████░░░░░░░░  T1 — Vanilla, unangetastet
-Sharpness XI  ██████░░░░░░  T2 — Nether + Create T2 Blaze
-Sharpness XVI ████████░░░░  T3 — Mekanism + AE2 + PNC 3.5 bar
-Sharpness XXV ██████████░░  T4 — End + Refined Obsidian + PNC 5.5 bar
-Sharpness ∞   ████████████  T5 — Super Liquid XP, nur Ressourcen-Gate
+Tier   Level-Cap   Erfolg    Ressourcen-Verlust möglich?
+  1         V      100%      Nein
+  2        XI      100%      Nein
+  3       XVI      65-85%    Ja — Osmium + Certus
+  4       XXV      35-70%    Ja — Refined Obsidian + Fluix Crystal
+  5 (S)    ∞       25-60%    Ja — Super Liquid XP (viel)
+  5 (M)    ∞       90-99%    Ja — Mythic Liquid XP (wenig, aber extrem teuer)
 ```
 
-Der wichtigste Design-Gedanke: Es gibt **kein Hard-Cap im Endgame**. Spieler die
-massiv automatisieren können sich Sharpness 100+ verdienen. Das fühlt sich verdient
-an, nicht gegrinded — weil die Automatisierung selbst das Spiel ist.
+**Der zentrale Design-Gedanke:** T1 und T2 sind frustrationsfrei. Erst ab T3 wird
+Enchanting zu einem System mit echten Entscheidungen: Wann ist das Risiko es wert?
+Möchte ich lieber viele billige Versuche mit Super XP, oder spare ich für Mythic XP?
+
+Es gibt kein Hard-Cap. Ein Spieler mit maximaler Automatisierung kann Sharpness 100+
+erreichen — aber jeder Level über 50 ist ein bewusstes Investment, kein Selbstläufer.
+Das fühlt sich verdient an, nicht gegrinded.
