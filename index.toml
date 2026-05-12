@@ -1,8 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/apotheosis/enchanting.toml"
+hash = "73adf442dabdd1f8596ea4142cc17b7d199ad42971aeb7cc9c795d27cc926121"
+
+[[files]]
 file = "config/chunky/default-preset.json"
 hash = "2fcfce29acca66171800ea788ec77fcd5c26b23c35a2bb0039207f0caf42e317"
+
+[[files]]
+file = "config/createoreexcavation-common.toml"
+hash = "0f340e1e45ae630ffac3dc8bc688c4a059bc9489f7753d2b3a959ab3c31967cd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1.json"
@@ -10,11 +18,551 @@ hash = "f82854349bb91970574dd6b6640d72e19a8299556de66b8a83227c6dc32b5d4c"
 
 [[files]]
 file = "config/tectonic-common.toml"
-hash = "ebfea15042e490d0894ab17febf7f2b87bb7e9ffed95272bbfd6e2c7ff93da29"
+hash = "bb9a9e0aeb321042e48226d33cdd615968f6702ed13bb86df62228dec2d9fc93"
 
 [[files]]
 file = "config/terralith-common.toml"
-hash = "c6a49616231d5407c1024a04501f6a700a035143d3a21151e6711d99f145c7ff"
+hash = "0176be4d2e3864749db9178d5f0e2039812a16aea2f3a5197369a70d3bb73d63"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/checksums/checksums.lock"
+hash = "f9ad5e99ef4431891df369c6c27ae5a5781ced8f12c8e01d3c39dc0abbd93cbb"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/checksums/md5-checksums.bin"
+hash = "f248b576291025feee821b7f8d892d426c67feef289d826e6464460bd1131bcc"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/checksums/sha1-checksums.bin"
+hash = "8f7a5f3168e5aa462807cd986803f4937de618d277af1053b74a8f41d70ec088"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/dependencies-accessors/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/fileChanges/last-build.bin"
+hash = "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/fileHashes/fileHashes.lock"
+hash = "c7c6fbefb4ac0f12ba9df3375553a410348ece21c7e04c3acd11d216be2bbf84"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.7-rc-4/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/checksums/checksums.lock"
+hash = "aec7b3e0282bdc51f28e7affd73cf913dd5186030dd1f2a785f748fd904e8af2"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/checksums/md5-checksums.bin"
+hash = "1bd9ea740b0035add0e9e223a24f74aaf3e83d5be821459bf7257701a6f3edf9"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/checksums/sha1-checksums.bin"
+hash = "17538cbbf2da96d7e2b7b7ba3a5eca70186d5aea267c711cea533e2cf0e8ce73"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/dependencies-accessors/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/executionHistory/executionHistory.bin"
+hash = "dbe555a056526984c12f8d960f6f1932b38c0b56b71def0e0e984bf356ce4ab8"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/executionHistory/executionHistory.lock"
+hash = "085ca97116febb768226625d78a25d2888e1f9f9b81e40c4ab9ea2ed941b8906"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/fileChanges/last-build.bin"
+hash = "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/fileHashes/fileHashes.bin"
+hash = "9b15a4fda88cf1795989948d84c8ebf65e70a22b6241c00064fe7022e24e4322"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/fileHashes/fileHashes.lock"
+hash = "3fca9429df544dbb7d57e41e9e35c8400f827e33157de1b956aafab90bfa0d9c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/fileHashes/resourceHashesCache.bin"
+hash = "9532726fe5f407db1d095bfa0538e35dd9a6a265cb734ec87120bae7496d1482"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/8.8/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/9.2.0/fileHashes/fileHashes.lock"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/9.2.0/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/buildOutputCleanup/buildOutputCleanup.lock"
+hash = "d1898dd67cb8ee9d06e19db6506a532089e7cc13a11c79a497cb27ea3f809df8"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/buildOutputCleanup/cache.properties"
+hash = "0d6ad6f602946699d34d5f1137518cf8d449e2ed1739302cae68ae47503ef085"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/buildOutputCleanup/outputFiles.bin"
+hash = "895503319a3e85143481cef1cd0eb0c753d41fde927c9654534d7935f86f2ccb"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/file-system.probe"
+hash = "cbe75743bcbf75b9ba2a05bd77685a8a10dd3ca2e0a1488399b90c206ee4d52b"
+
+[[files]]
+file = "custom_mods/apex_worldgen/.gradle/vcs-1/gc.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build.gradle"
+hash = "957f1d8e288c4e1114e686e9ba4f411fb4297764ca9bdb6fc35deef2ffd2dd73"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/FracturedHorizonsMod.class"
+hash = "fa6a1b5e1723f184d155f48544a03dcf18e881cf874fb8ab2e77ff441f793970"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/config/FracturedConfig.class"
+hash = "4580d34170634a3c3aac4cb420d4b0f2b03a10648222c2eb60e7334276ff97ca"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/preset/FracturedWorldPresets.class"
+hash = "a00c7156104ed05e63f1a54643d6b80be45fe3504998f24f1c4e47235d4ab051"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/registry/FracturedRegistries.class"
+hash = "a09f9a43b2a4a142670c58b0c62ae83ae8b0eff281cfd0e4b8d286ea09f84d9c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/FracturedChunkGenerator.class"
+hash = "75ca9af3834368c3b8cce00231bb131c964d088dabab70cb962bd9493976cd93"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/FracturedDensityFunction.class"
+hash = "726bba2ecf2f8272a60a7bfe2754d1e32de38dd311eeb881bcb3e78771ff56fb"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/FracturedGeneratorSettings.class"
+hash = "f5f7c52d1bc9b8bfa594cacbc5f84cb07b585681c3a4d9338b4d398eb6397774"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/RadialZoneCalculator.class"
+hash = "375a68ef458c3d8a3c75187be106a0fe97fde34ff374360a2f6b9d45c79e1739"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/Zone.class"
+hash = "91a6c4bdeaae54c04ff7c12efe600a0d2fcc279db786f43f1cff241b92da3580"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/classes/java/main/com/fracturedhorizons/terrain/ZoneSample.class"
+hash = "dc7d269216bc2f208311c2eb44573224980f51d4208821342b48823ed8cd5dc4"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/artifacts/neoforge-21.1.72-client-extra-aka-minecraft-resources.jar"
+hash = "8e9cf6f4b6eafb1c6bf745a67a61dd1736f31865cad409e5b2bec918667dab5e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/artifacts/neoforge-21.1.72-merged.jar"
+hash = "871c26a89ad31b431a0a1b644b2c6ef4c0c0c74854412fef1259da98d765948c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/artifacts/neoforge-21.1.72-sources.jar"
+hash = "48d0d42cc7580d0599a008f008be8a75349d989e9b92c267aab89766e237fae7"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/artifacts/neoforge-21.1.72.jar"
+hash = "6cba00168863b4bdd6a37ad4a8b0860c618fc8da3ddea6016ba3c235d048d620"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/clientLegacyClasspath.txt"
+hash = "c6186d6b59eb0bcaf79f189fdd1e62d457c3d4ccdb950eb7bc0d8a83ba6b57eb"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/clientLog4j2.xml"
+hash = "c030dc5b9a8973363bc89d49ba493f5f48b770a21bfc67a53d6ec5c98a2bc1a6"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/clientRunProgramArgs.txt"
+hash = "517d19bfccb85cf7eda2420f799377dd09247420cbd1f1c023bbf2fd301c087b"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/clientRunVmArgs.txt"
+hash = "663e44c6f40fae81d48d2f04f34abfcb7017af8196ef11c24e114e07a9cd1f3a"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/moddev/minecraft_assets.properties"
+hash = "1884fd76f8d7d51b2d396e5ed332569a2c086ab80246e9030e06a3d259e911cf"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/resources/main/META-INF/neoforge.mods.toml"
+hash = "1b72b054fe85aa6fc6f137bbe7f171c16ca972209a43fb3cbb4ca14c622ce405"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/resources/main/data/fractured_horizons/worldgen/world_preset/mainland_only.json"
+hash = "7401b48e5003c5126e9775e3423f1632cadf8006d1ed51efad9fdfaad7be82d7"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/resources/main/data/fractured_horizons/worldgen/world_preset/shattered_lands.json"
+hash = "f0e3d022b61d39a7de7a8176794a7f283e6ee89ca872960daad0b7da21d92406"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/resources/main/data/fractured_horizons/worldgen/world_preset/skybound_only.json"
+hash = "c8f11411643e845a6ea01cbac6df7114c345657b0c25af5373af82c97855622c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/compileJava/previous-compilation-data.bin"
+hash = "93bd9c6ad383788d894bb24a6f51e8c71c4da98728d29b152c0de291fa7aa62b"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties"
+hash = "2300ebc5e6ffe86ec368bfe7791220fb9a35cd6b4d1d1a185004cfae2ee10253"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/downloadAssets/nfrt_artifact_manifest.properties"
+hash = "af3f8ee8a9a4cfbc0f0231d339c9268552450ce97e98f61c5480058736e29fc4"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213800_extractServer/console_output.txt"
+hash = "0c1e2594fc9a342ffcae3b034c34a065afa0f9fa132e0abbe518451d7e7863a4"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213801_mergeMappings/config/joined.tsrg"
+hash = "8081431dcb7c2428db07582db7135be739fa50b123103b3eaf14b2ae16ea37a6"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213801_mergeMappings/console_output.txt"
+hash = "319248e1c707eb30ada79a1d40b08b31a7812b12b73dbd3e4fcf3801c52ddbd6"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213802_merge/console_output.txt"
+hash = "649cceac5a1171b649296b47cc1a73d29b6a625d6d88600a561eea29709267a3"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213804_rename/console_output.txt"
+hash = "e157bc72a7ce2a80ad3dd8ef5aebdcf0080838bf8644a5b4dc135c0d3dabf022"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213806_decompile/console_output.txt"
+hash = "225d37859a81983f7b91bbe7638b75f8658a8bbb1ac7c85448433979993b801c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213832_patch/console_output.txt"
+hash = "a0a921a9e4d21653b099ad3809e91e914bab33114518025723ebaf997b6e6268"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213834_applyNeoforgePatches/console_output.txt"
+hash = "b34b3dc7a7f945f1dd6f569bb82f878977bfd7d7106c045946b99024aa6e9981"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213835_transformSources/ats/_script_neoforge.cfg"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213835_transformSources/ats/accesstransformer.cfg"
+hash = "e489cc406b8ec2682e57232643acb3c88a47e801cb2b07e0eee9820f9aa0bbd9"
+
+[[files]]
+file = "custom_mods/apex_worldgen/build/tmp/neoformruntime/20260501-213835_transformSources/console_output.txt"
+hash = "d20e65eb22ca5e5f5759299aff8087993c9813cacf6ab94b52265c199d567ba4"
+
+[[files]]
+file = "custom_mods/apex_worldgen/gradle.properties"
+hash = "0c478a718e099af3fc952bb7d01583912e80b4243bdf2a74f403e533171cd956"
+
+[[files]]
+file = "custom_mods/apex_worldgen/gradle/wrapper/gradle-wrapper.jar"
+hash = "cb0da6751c2b753a16ac168bb354870ebb1e162e9083f116729cec9c781156b8"
+
+[[files]]
+file = "custom_mods/apex_worldgen/gradle/wrapper/gradle-wrapper.properties"
+hash = "05e7bec397ce5a52628d31dcc4c8b636cbdc55e28f8cef19d097c71b5c5fbb42"
+
+[[files]]
+file = "custom_mods/apex_worldgen/gradlew"
+hash = "bf2ca3f9d7c42b831380b47ab9e7594ddc33054b3e09253a0c4862353d5d604b"
+
+[[files]]
+file = "custom_mods/apex_worldgen/gradlew.bat"
+hash = "e54283c0f86074fa408c1161d08ef8f63992323a8c940c66f3626e8abc5bd8cc"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/command_history.txt"
+hash = "f40c73ee13d61dc6a1801bf98947be095b640830451386a871ee57e34ae24bf6"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/config/fml.toml"
+hash = "6abe509ea7db47b010aedbc80eac20b81f7f41870b1436d4210ab8c060f4fb9e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/config/fractured_horizons-common.toml"
+hash = "ff71dd456c3366b485ee3cfba78a362aed4e3cec3494790cacbde3c5756ed85f"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/config/neoforge-client.toml"
+hash = "a5f0eb38f8daf8574f7672a8393a0ab5c668d6ec6e7ae43fc8669e928786929d"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/config/neoforge-common.toml"
+hash = "b5e25c34930138ea9c4f43fda8a083c8295e971c8d433e059436923c6685c3b5"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/config/neoforge-server.toml"
+hash = "0f1415d7fef6d7f6194275501d500b633dd3310aea40d64128edd1b096372f60"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/downloads/log.json"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/logs/debug.log"
+hash = "0e2638a0222e0c387b7d5a159cda130fd830393aa1c906958f971f7389b19a30"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/logs/latest.log"
+hash = "0e2638a0222e0c387b7d5a159cda130fd830393aa1c906958f971f7389b19a30"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/options.txt"
+hash = "18c33e71e0bb5fccd230fddb3dfa7cc79e2167667fd36464b778ce8db344bbbc"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/DIM-1/data/neoforge_data_attachments.dat"
+hash = "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/DIM-1/data/raids.dat"
+hash = "1abe4a9649ac7ebb793a3b8d014bf20121b242e5ca3921b86023f80b320539ac"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/DIM1/data/neoforge_data_attachments.dat"
+hash = "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/DIM1/data/raids_end.dat"
+hash = "1abe4a9649ac7ebb793a3b8d014bf20121b242e5ca3921b86023f80b320539ac"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json"
+hash = "9685476f566a21bd7a4527de1dc622545eb58f5e20af4cea40c73a3f43973252"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/data/neoforge_data_attachments.dat"
+hash = "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/data/raids.dat"
+hash = "1abe4a9649ac7ebb793a3b8d014bf20121b242e5ca3921b86023f80b320539ac"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/data/random_sequences.dat"
+hash = "bb29a1ecf335efb14773c6dfdeadcad9c0fc6b54f74278cc300e47a4a94e4721"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/entities/r.-1.-1.mca"
+hash = "0718262ad9a84a970de8a3848e870466431351611438ddc5197803b15a21f222"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/entities/r.-1.0.mca"
+hash = "7a139f6bd9ddf6929ff28cadcc69f0b3bd994c2e22dab0c878d0d83a00278810"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/entities/r.0.-1.mca"
+hash = "8160da4f0f0dc3be585f52f79e79e64f3bbc5722c2a4a04b32f555fb921172e1"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/entities/r.0.0.mca"
+hash = "0d9f8e39d6cb6a4159083097ff32bde0c96ae680a633abce6fd16f8094179a03"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/icon.png"
+hash = "feeca77e8897d56af2f9e87b07219eb13557239aef45abee06a06efca1445939"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/level.dat"
+hash = "81547fe96ebeed2f89a4a6685dbe7e06d0b3c8585d18b4425224a9708ad74541"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/level.dat_old"
+hash = "aed37d9cd28f1521708cf86d7ee876b04f4f27dcdca30bf70a074e50064dd07b"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat"
+hash = "e6464d60574c6940bce583725005930f2b9034d49951d53450e4788f9733c6f4"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old"
+hash = "f5387f2d325f6748975202a78baceaa48098100fd82438c58cc922ca311e3634"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/poi/r.-1.-1.mca"
+hash = "fb8959ebbf172f54c5b2e7504ec331f791cf65a43c76a064b72fa70ef22a3f56"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/poi/r.-1.0.mca"
+hash = "bedde2c19fe4d81ec16efb3174b0392fb80636367b74f5ce9d521bdaff575e06"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/poi/r.0.-1.mca"
+hash = "b1ab13923ddc8d29156d942317fcd220e87ef5871bf21c8916603a536ba41a8e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/poi/r.0.0.mca"
+hash = "c8ebdf20d6a968e80082d6b4c0ea2d87eab40bc5630f37c0f1c157a2c7b0529c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.-1.-1.mca"
+hash = "cb80c085b8620e4aeaca807a903f5af5569e2e2efa399151c378bb36ed5a2d3e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.-1.-2.mca"
+hash = "6c71de294be8c161b808838f123099d966bc96977ca73ef773f03e3a28bbef29"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.-1.0.mca"
+hash = "911ac3497c580e90376214f29ddc757502ad139a4b6ebbd9054ffb191fdfbe86"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.0.-1.mca"
+hash = "c0a20f847fb8a29d673fb5ff8d096ad9a567a3c08625174a3e693b1e7501f23e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.0.-2.mca"
+hash = "1c1057ae34d08b52827cd46bddb4f83520f91a93f7925349b29dce53528d9c7a"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/region/r.0.0.mca"
+hash = "768dd3147e2be59096193ba3b5533bd682f37746d2dd03083878a464018a3e6e"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/serverconfig/readme.txt"
+hash = "b1022ab932f8f0ea0cf78d9f312e95b85a4f96f59ca430e63f9a435e512d1186"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/session.lock"
+hash = "51643361c79ecaef25a8de802de24f570ba25d9c2df1d22d94fade11b4f466cc"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json"
+hash = "e2683d7e21e9b8c8e8fb0f26d4b3d4263fa5e45aabdb4345cf805db4e34004af"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/usercache.json"
+hash = "2c6bedbe2b70ec5fd6e5dfc825fedce6beedd0d70bd0b98a5df7d681cbb756e2"
+
+[[files]]
+file = "custom_mods/apex_worldgen/run/usernamecache.json"
+hash = "4573accdd1c6ca24d4a35e0edc97fa46484e409866e5921a40c2f0402d2b46c8"
+
+[[files]]
+file = "custom_mods/apex_worldgen/settings.gradle"
+hash = "ad2b90b0b7509ba0b9a23e45c8a2f985ada70e117e1a47562e5a7e8660ebfc44"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/FracturedHorizonsMod.java"
+hash = "01812327d32580ac7dc68dbac1cdabf880757f19cf522a394d93034d5261a954"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/config/FracturedConfig.java"
+hash = "d4fd9a463e8a916009c86a1eb9b67f445580fc512a1023c4851552e3d23f7920"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/config/SkyIslandConfig.java"
+hash = "06d64843f6e227245d9ffe57c9c701c2887100788d8e20348bbb0c681b469607"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/preset/FracturedWorldPresets.java"
+hash = "bd8f7ba84372150ee99680d9dad7154663901d8fdf01ca96d28eba8ad09324a2"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/registry/FracturedRegistries.java"
+hash = "3dce1ed571f82a91b6ca54e9c604075663b2e0c99a944762299add15e55ffaa3"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/FracturedChunkGenerator.java"
+hash = "e28602ce6a84aae956a7b3c20b3a1a597e4dc1ad17e2d67ca01199828a2b3ffe"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/FracturedDensityFunction.java"
+hash = "9d635a5d29bcdad4a684ad5c886e5517bd6d7519437b4876ebb5eaaef6afc9e5"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/FracturedGeneratorSettings.java"
+hash = "3a2feafb257bd090907465811b72307623a41c29d76bd4f0e247ddbaeb11d1b0"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/IslandInstance.java"
+hash = "877f72d2a808bb8cff208be9e2bf1a6a2737909f1c4d6402edecc4d25192a317"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/IslandShapeSampler.java"
+hash = "d38f575ddf6a83351a7d4567a598bbeb2864e6fe8f1676433dd85c18ac69adbf"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/IslandTerrainStyle.java"
+hash = "ec3d0465c9fa9e1c6e38755a60f3766401f439e1ffc4467e5d6146a8bb740bdc"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/OuterIslandLocator.java"
+hash = "5c637e0626456032c472d4d77887cb4ed68b13fac1e8fe925c5d6e1566d2781a"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/RadialZoneCalculator.java"
+hash = "fd797dd2a854e1026e0b0c64eb9d56972ed7b2ed46a86a24a767c3023c06e96f"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/Zone.java"
+hash = "5d2a893c31dc1f4acedf563edc3d32bdc3e49dff4bd284e7cb022b1e0e3e038a"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/ZoneResolver.java"
+hash = "5def8ef66fa94bd23aac1c5ca89de3ea76a95abb34951d234fa70830c5b7ce90"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/java/com/fracturedhorizons/terrain/ZoneSample.java"
+hash = "0d58848720ac18a890f43feffba3480b91fd91e07738a61c4512aea33d241521"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/META-INF/neoforge.mods.toml"
+hash = "7a4faa972ab2704e595107e86820ae2b8fc7122180ddcc7dadf333c2ad124442"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/data/fractured_horizons/dimension_type/shattered_type.json"
+hash = "365a685ec14061bd2ce091f8215578c11fb0ae7f721ca43c870db50bc98d1c3d"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/data/fractured_horizons/worldgen/noise_settings/shattered_settings.json"
+hash = "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/data/fractured_horizons/worldgen/world_preset/mainland_only.json"
+hash = "7401b48e5003c5126e9775e3423f1632cadf8006d1ed51efad9fdfaad7be82d7"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/data/fractured_horizons/worldgen/world_preset/shattered_lands.json"
+hash = "f0e3d022b61d39a7de7a8176794a7f283e6ee89ca872960daad0b7da21d92406"
+
+[[files]]
+file = "custom_mods/apex_worldgen/src/main/resources/data/fractured_horizons/worldgen/world_preset/skybound_only.json"
+hash = "c8f11411643e845a6ea01cbac6df7114c345657b0c25af5373af82c97855622c"
+
+[[files]]
+file = "custom_mods/apex_worldgen/test.txt"
+hash = "f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2"
+
+[[files]]
+file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
+hash = "ea395168e9edf40c8d1b09fb2b1d08176ec31abaa8041ac393376e888ce47260"
 
 [[files]]
 file = "kubejs/server_scripts/01_resource_unification.js"
@@ -41,8 +589,20 @@ file = "kubejs/server_scripts/06_loot_modifications.js"
 hash = "a436d6d3b87caa06019398fc7fe19434f3a468db220abd43a4b1efc690b06deb"
 
 [[files]]
+file = "kubejs/server_scripts/07_enchanting_system.js"
+hash = "87dbab95a46a2887584e4e21200de97071d043cbc3e5fb5bdaa129d6b68570d2"
+
+[[files]]
+file = "kubejs/server_scripts/enchantment_automation.js"
+hash = "ae127c66ec70b1ff291d56010ef3b2de3f4cb4de6a4da6ecaa371f2d875221a6"
+
+[[files]]
+file = "kubejs/server_scripts/ore_processing_system.js"
+hash = "7c4ba3cdf971b394501e38f9f22b96d9d6bf3da0f92e0976099aabfc7b82a6f1"
+
+[[files]]
 file = "kubejs/startup_scripts/00_custom_items.js"
-hash = "6269237e81d6e0950d4dd557dd843c1ae25401e5b54dbd7139811007bccd1d00"
+hash = "974fd7183dbbcc5556c5edaf536f5901f48a0a6836caa2445c6bdbfeb8438910"
 
 [[files]]
 file = "mods/ae2.pw.toml"

@@ -37,9 +37,13 @@ T3 = tiefer, Osmium/Certus-Nodes, Create-Automation ausbauen → T4-T5 = Abyss-N
 
 ## Natürliche Erzverteilung — Tiefenzonen
 
+**Beta-Phase: Vanilla-Höhe (Y -64 bis +320)** — Tectonic vertical_scale 2.25
+**Post-Beta: Tall World (Y -128 bis ~512)** — Tectonic increased_height + scale 3.5+
+
 ```
-Y +512  ┌─────────────────────────────────────────────────────┐
-        │   Berggipfel / Tectonic Peaks                       │  Keine Erze
+Beta-Setup (Vanilla Y-Limit, Tectonic dramatische Berge)
+Y +320  ┌─────────────────────────────────────────────────────┐  ← Build-Limit
+        │   Berggipfel / Tectonic Peaks (Y +200 Snow Line)   │  Keine Erze
 Y +192  ├─────────────────────────────────────────────────────┤
         │   Zone 1: Oberfläche                                │  Coal, Iron, Copper (reduziert)
 Y   +64 ├─────────────────────────────────────────────────────┤
@@ -48,9 +52,10 @@ Y     0 ├═══════════════════════
         │   Zone 3: Tiefe Höhlen                              │  Osmium, Certus, Diamond (sehr selten)
 Y   -48 ├─────────────────────────────────────────────────────┤
         │   Zone 4: Abyss                                     │  Uranium, Lead, Fluorite (extrem selten)
-Y   -96 ├─────────────────────────────────────────────────────┤
-        │   Zone 5: Void-Schicht                              │  Ancient Debris + Osmium-Cluster
-Y  -128 └─────────────────────────────────────────────────────┘  ← Bedrock
+Y   -64 └─────────────────────────────────────────────────────┘  ← Bedrock (Beta)
+
+(Post-Beta: Y-Range erweitert sich auf -128 unten und ~512 oben, Zone 5
+"Void-Schicht" wird unter Y -96 freigeschaltet für Ancient Debris + Osmium-Mega-Cluster)
 ```
 
 ---
