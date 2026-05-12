@@ -164,7 +164,7 @@ function checkFundament(level, pos) {
             missing.push(`Säule ${i+1} fehlt — erwartet bei §e(${tx}, ${pos.y}, ${tz})§c`)
         }
     })
-    return { ok: missing.length === 0, missing }
+    return { ok: missing.length === 0, missing: missing }
 }
 
 function checkDigital(level, pos) {
@@ -176,7 +176,7 @@ function checkDigital(level, pos) {
     if (units < AE2_CRAFTING_COUNT) {
         missing.push(`Nur ${units}/${AE2_CRAFTING_COUNT} AE2 Crafting Units gefunden`)
     }
-    return { ok: missing.length === 0, missing }
+    return { ok: missing.length === 0, missing: missing }
 }
 
 function checkReactor(level, pos) {
@@ -184,7 +184,7 @@ function checkReactor(level, pos) {
     if (!findBlock(level, pos.x, pos.y, pos.z, REACTOR_RADIUS, ['mekanismgenerators:fusion_reactor_controller'])) {
         missing.push('Mekanism Fusion Reactor nicht gefunden (Radius ' + REACTOR_RADIUS + ')')
     }
-    return { ok: missing.length === 0, missing }
+    return { ok: missing.length === 0, missing: missing }
 }
 
 function checkCreate(level, pos) {
@@ -228,7 +228,7 @@ function checkCreate(level, pos) {
     // Optional: Kreisverkehr (kein Fail — nur Bonus-Feedback)
     let hasRoundabout = findRailRoundabout(railSet)
 
-    return { ok: missing.length === 0, missing, hasRoundabout }
+    return { ok: missing.length === 0, missing: missing, hasRoundabout: hasRoundabout }
 }
 
 // ========================

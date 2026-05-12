@@ -36,4 +36,35 @@ StartupEvents.registry('block', event => {
         .displayName('Gaia Pillar')
         .hardness(30)
         .resistance(3600)
+
+    // --- Enchanting-System Bookshelves ---
+
+    // Crystalline Bookshelf — T3 Enchanting (Gate: Mekanism Osmium + AE2 Certus)
+    // Apotheosis Stats: Eterna +4.0 / Quanta +0.75 / Arcana +0.5
+    // Shelf-Registrierung: kubejs/data/apotheosis/enchanting/shelves/crystalline_bookshelf.json
+    event.create('apex:crystalline_bookshelf')
+        .displayName('Crystalline Bookshelf')
+        .hardness(1.5)
+        .resistance(1.5)
+
+    // Stellar Bookshelf — T4 Enchanting (Gate: Refined Obsidian + End-Tier)
+    // Apotheosis Stats: Eterna +6.0 / Quanta +1.0 / Arcana +0.75
+    // Shelf-Registrierung: kubejs/data/apotheosis/enchanting/shelves/stellar_bookshelf.json
+    event.create('apex:stellar_bookshelf')
+        .displayName('Stellar Bookshelf')
+        .hardness(1.5)
+        .resistance(1.5)
+})
+
+StartupEvents.registry('item', event => {
+
+    // Mythic XP Shard — konzentriertes Mythic Liquid XP
+    // Repräsentiert ~10.000 mB Mythic Liquid XP (Create:EI Integration kommt via Fluid-System)
+    // Crafting-Gate: Apotheosis Gem Dust + Create:EI XP Item + Singularity Shard
+    // Rezept: server_scripts/07_enchanting_system.js
+    event.create('apex:mythic_xp_shard')
+        .displayName('Mythic XP Shard')
+        .maxStackSize(64)
+        .rarity('epic')
+        .glow(true)
 })

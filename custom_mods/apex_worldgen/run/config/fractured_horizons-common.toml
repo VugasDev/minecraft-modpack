@@ -1,0 +1,14 @@
+[zones]
+	#The radius of the mainland area. Use small values like 512 for debugging.
+	#Range: 0.0 ~ 1000000.0
+	mainlandRadius = 10000.0
+	#The radius where the outer rim starts. Use small values like 2048 for debugging.
+	#Range: 0.0 ~ 1000000.0
+	outerRimStart = 32000.0
+	#Strength of the terrain collapse in the transition zone.
+	#Range: 0.0 ~ 1.0
+	transitionCollapseStrength = 0.65
+
+[debug]
+	#Enable debug logging or visual markers for zone bands.
+	showZoneBands = false

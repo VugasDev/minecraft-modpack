@@ -17,24 +17,28 @@
 
 ---
 
-## Die Zonen-Einteilung (Distanz-basiert)
+## Die Zonen-Einteilung & Geologische Kernvision
 
-Das Terrain moduliert sich basierend auf der Entfernung vom Spawn (0,0):
+### Geologische Kernvision: "Mantle Descent" & Void Buffer
 
-1.  **Zone: Apex Mainland (0 - 10.000 Blöcke)**
-    *   Massive Berge (Tectonic) bis Y=512 auf festem Boden.
-    *   Hauptgebiet für den technischen Aufbau.
+Die Welt beginnt im Apex Mainland als scheinbar normale Oberwelt. Oberhalb der tiefen Schichten bleibt das Terrain klassisch und zusammenhängend, mit regulärem Landmassengefühl für frühen Basisbau, Erkundung und Infrastruktur. 
 
-2.  **Zone: The Transition (10.000 - 32.000 Blöcke)**
-    *   Das Land wird zerklüfteter, riesige Schluchten bis zum Bedrock.
-    *   Vorbereitung auf den "Absturz" des Terrains.
+Es bietet gewöhnliches Terrain bis in die tiefen Schichten; unterhalb von Y=-64 bis etwa Y=-96 beginnt der Übergang in die Mantle-Zone. Diese zusätzliche Mantle-Zone ist ein Blackstone- und Magma-dominierter Layer, der geologisch wie ein Vorhof zum Nether wirkt. Diese Schicht dient als visuelle und spielerische Andeutung eines heißen Weltkerns, was einen mantelartigen, nethernahen Tiefenbiom andeutet, und ist der bevorzugte Bereich für seltene hitzeverwandte Ressourcen wie Ancient Debris.
 
-3.  **Zone: Shattered Outer Rim (> 32.000 Blöcke)**
-    *   **Kein durchgehender Boden**.
-    *   Schwebende Insel-Archipele in drei Layern:
-        *   Low-Orbit (Y=0 bis 128)
-        *   Cloud-Layer (Y=256 bis 384)
-        *   High-Apex (Y=512 bis 640) - Endgame Bosse & OP Loot.
+Mit wachsender Distanz vom Spawn verändert sich nicht nur die Oberfläche, sondern auch die Stabilität des Untergrunds. In der Transitionszone wird das Terrain zunehmend flacher, zugleich heben sich Landmassen optisch stärker an und der unterste Abschluss der Welt beginnt zu zerbrechen: Das Bedrock wird nach außen hin schrittweise weggecarvt, sodass immer größere vertikale Öffnungen und Abbruchkanten entstehen.
+
+Kurz vor dem eigentlichen Outer Rim erreicht die Welt eine Bufferzone. Diese Randzone ist kein vollwertiges Inselreich, sondern ein instabiler Vorbereich mit stark ausgedünntem Boden, Fragmentresten und einem klar spürbaren Void-Layer als Trennschicht. Erst hinter dieser Pufferzone beginnt der Shattered Outer Rim mit seinen vollständig entkoppelten, schwebenden Archipelen in mehreren Höhenlagen.
+
+Diese Staffelung ist spielerisch stark, weil sie Progression nicht nur über Loot, sondern über Weltlogik vermittelt: je weiter außen, desto weniger "sicher" verhält sich die Welt als klassische Minecraft-Oberwelt.
+
+### Zonierung konkret
+
+| Zone | Distanz (ca.) | Charakter | Untergrund | Funktion |
+|------|---------------|-----------|------------|----------|
+| **1. Apex Mainland** | 0 - 10.000 | Normale, massive Overworld mit Hochgebirgen (Tectonic) bis Y=512 | Deepslate geht in Blackstone/Magma-Mantle über (-64 bis -96) | Sicherer Start, Tech-Aufbau, frühe Exploration |
+| **2. Transition** | 10.000 - 28.000 | Flacher, instabiler, stärker zerklüftet | Bedrock wird abschnittsweise entfernt, große Tiefenrisse | Gefühl von geologischem Kollaps |
+| **3. Bufferzone** | 28.000 - 32.000 | Fragmentierter Randbereich vor dem Absturz | Teilweise Void, Restboden, harte Bruchkanten | Dramatische Vorbereitung auf Outer Rim |
+| **4. Shattered Outer Rim** | > 32.000 | Kein durchgehender Boden mehr. Schwebende Inseln in 3 Layern (Low-Orbit, Cloud-Layer, High-Apex) | Reiner Insel-/Void-Raum | Aeronautik, Endgame, Bosse, OP Loot |
 
 ---
 
@@ -87,6 +91,12 @@ Um maximale Flexibilität zu bieten, definieren wir vier World Presets in `data/
 ---
 
 ## Implementierungs-Details (KubeJS / Datapack)
+
+### Technische Einordnung
+Für die vertikale Basis dieser Vision ist entscheidend, dass benutzerdefinierte Dimensionen `min_y` und `height` in 16er-Schritten erlauben und die Gesamthöhe bis weit über Vanilla hinaus definierbar ist. 
+
+Die eigentliche "nach außen zerfallende" Weltform wird nicht allein über `dimension_type`, sondern über Worldgen-Logik gelöst, etwa per Datapack/KubeJS plus Carver-/Biome-/Noise-Steuerung; NeoForge unterstützt dabei datengetriebene Eingriffe wie das Hinzufügen oder Entfernen von Carvern über Biome Modifier.
+
 ...
 
 *   **Datenmenge**: Eine 32km Welt ist riesig.

@@ -574,11 +574,11 @@ hash = "047a98ae12f198205ca169f74fc3c720eebf75b3b46e391bc231940100208677"
 
 [[files]]
 file = "kubejs/server_scripts/03_ui_cleanup.js"
-hash = "e3b557639387231935570cbf7a8614528193e79712335322be4475ebd5b1f526"
+hash = "d4f60290b92430c51d1c4554d8ce31b1af79ad4b509fd5bcbebcf3aa540ded5c"
 
 [[files]]
 file = "kubejs/server_scripts/04_gaia_scanner.js"
-hash = "2b9e2f9ee93198f79a810b07cf658056cb266b47f0b3bf45210a41ed19ee9a38"
+hash = "8bea6edc56baa0774d55c5016a1c3367c984f958850ec3485e8d431e46dd40f9"
 
 [[files]]
 file = "kubejs/server_scripts/05_progression_gates.js"
@@ -880,6 +880,16 @@ hash = "b6e0a61fea06f8d6d8e1672cf07b682625c4b74efd548d5093cd9c1fed167eec"
 metafile = true
 
 [[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "f565820169e3cd71f18fd0b18eab2405bc400668813d04f3f3eb75b6c8924bcc"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "054a1887da4f14b791910660a2a7a2035ac1382461b881a65fe07b224c03735f"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
 metafile = true
@@ -916,7 +926,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootjs.pw.toml"
-hash = "9b32e1374a3d85ccdd4803c8932f72fbeb6357e69d895980e3f24e1974a07ca6"
+hash = "e42581d8eb65aa947dcbe6edb71b2082e84f31936b01f131758395d88dabc919"
 metafile = true
 
 [[files]]
@@ -972,6 +982,11 @@ metafile = true
 [[files]]
 file = "mods/mystical-agriculture.pw.toml"
 hash = "582f907ddfa3c0a3aaa93ec380319372c69c3d5bf1ab71d08318b418a2d49162"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "35acdf433fe8f8599f59975e848efdb717663c2c471d3a5dc18743799795a736"
 metafile = true
 
 [[files]]
