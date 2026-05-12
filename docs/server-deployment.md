@@ -105,9 +105,30 @@ Existiert nach erstem Start. Wichtige Einstellungen:
 - Contraption-Limit erhöhen wenn Aeronautics-Lag droht
 - `config/create-server.toml` → `kineticStats.maxContraptionEntities`
 
-### Distant Horizons
-- Auf dem Server **deaktivieren** (Server-side keine Render-LODs nötig)
-- Spart Disk-Space und Save-Zeit deutlich
+### Distant Horizons (LOD-Server-Modus)
+DH bleibt auf dem Server **aktiv** — DH 2.x kann LODs zentral generieren und an
+Clients streamen. Das spart jedem Spieler die lokale LOD-Generierung und liefert
+identische Fernsicht für alle. Wichtige Server-Konfiguration:
+
+**`config/distanthorizons.toml`** (nach erstem Start):
+- `multiplayer.serverNetworking = true` (oder ähnliches Feld, exakter Name nach
+  erstem Boot in der generierten Config prüfen)
+- LOD-Render-Distanz: hoch setzen (z.B. 256 chunks) — der Server berechnet
+  einmalig, alle Clients profitieren
+- `worldGenerator.enableDistantGeneration = true` damit der Server LODs
+  proaktiv erzeugt während des Pre-Gen
+
+**Pre-Gen-Strategie für LODs:**
+1. Chunky Pre-Gen läuft → erzeugt Vanilla-Chunks
+2. DH läuft parallel/danach mit, generiert LODs für alle Chunky-Chunks
+3. Spieler erhalten beim Login die LODs vom Server (kein eigener Compute nötig)
+
+**Trade-off:** Save-Zeiten werden länger (LOD-Blobs sind groß), und Disk-Space
+steigt deutlich (~2-3× vanilla Welt-Größe). Auf einem Server mit SSD und genug
+Storage ist das aber das richtige Trade-off für Multiplayer-Komfort.
+
+**Singleplayer-Workflow für mich (Vugas):** Bei langem "Saving World"-Screen
+warten — DH schreibt LOD-Blobs. Notfalls Force-Quit (region/ ist bereits geschrieben).
 
 ---
 
