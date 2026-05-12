@@ -21,3 +21,4 @@ Thumbs.db
 # Modpack build artifacts
 *.mrpack
 build/
+custom_mods/
