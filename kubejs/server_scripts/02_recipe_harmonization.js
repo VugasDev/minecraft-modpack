@@ -17,13 +17,13 @@ ServerEvents.recipes(event => {
 
     // --- 2. APEX Ore Processing: Create Crushed Ore → Mekanism Dust ---
     // Mekanism 1.21.1 hat keine lead/tin Dusts — entfernt
+    // Nutzt KubeJS High-Level Mekanism API (vermeidet Recipe-JSON Format-Probleme)
     const crushedOres = ['iron', 'gold', 'copper', 'osmium']
     crushedOres.forEach(metal => {
-        event.custom({
-            type: 'mekanism:enriching',
-            input: { ingredient: { item: `create:crushed_raw_${metal}` } },
-            output: { item: `mekanism:dust_${metal}`, count: 2 }
-        })
+        event.recipes.mekanism.enriching(
+            `2x mekanism:dust_${metal}`,
+            `create:crushed_raw_${metal}`
+        )
     })
 
     // --- 3. Pneumaticraft Druckluft-Gate ---

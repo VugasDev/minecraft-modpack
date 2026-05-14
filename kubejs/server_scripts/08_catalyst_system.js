@@ -47,17 +47,13 @@ ServerEvents.recipes(event => {
     // TODO: Exakte Create-Spout-Recipe-API in KubeJS 2101.x verifizieren.
     //       Falls 'create:filling' nicht funktioniert: Alternative via BlockEvents
     //       und Item-NBT-Counter implementieren.
-    event.custom({
-        type: 'create:filling',
-        ingredients: [
-            { item: 'apex:catalyst_altar' },
-            { fluid: 'create_enchantment_industry:hyper_experience', amount: 1000 }
-        ],
-        results: [
-            { item: 'apex:resource_catalyst', count: 1 },
-            { item: 'apex:catalyst_altar', count: 1 }
-        ]
-    })
+    // High-Level KubeJS Create-API für Spout (Filling).
+    // Spout sprüht 1000 mB Hyper XP auf Catalyst Altar Item → erzeugt Resource Catalyst.
+    // Altar bleibt erhalten (per Recipe-Output zurückgegeben).
+    event.recipes.create.filling(
+        ['apex:resource_catalyst', 'apex:catalyst_altar'],
+        ['apex:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
+    )
 
     // ==========================================================================
     // MA SEED-OVERRIDES — T3 Seeds verlangen apex:resource_catalyst zusätzlich

@@ -1186,7 +1186,7 @@ hash = "b2f4a65f9a363e87cd6ab4ce2dd5b2b28692b0d0b5d7282d594a33ec37f9e1aa"
 
 [[files]]
 file = "kubejs/server_scripts/02_recipe_harmonization.js"
-hash = "047a98ae12f198205ca169f74fc3c720eebf75b3b46e391bc231940100208677"
+hash = "ef8092e6989df98f46dd90eacc0c858cd3e9937412f139b60857ebbbed929710"
 
 [[files]]
 file = "kubejs/server_scripts/03_ui_cleanup.js"
@@ -1210,15 +1210,15 @@ hash = "87dbab95a46a2887584e4e21200de97071d043cbc3e5fb5bdaa129d6b68570d2"
 
 [[files]]
 file = "kubejs/server_scripts/08_catalyst_system.js"
-hash = "6f1802369b497f4702e28a9bc97e0c6ea7bf8d0a5ece3e38d7c516de7db801ac"
+hash = "8463cbd377e836c43230e140a7ff244c7c7245d113bb970642aabd3e00fee4e0"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment_automation.js"
-hash = "ae127c66ec70b1ff291d56010ef3b2de3f4cb4de6a4da6ecaa371f2d875221a6"
+hash = "a13ce1644fce26ed533a3e66db95c90a5fa3a4f08b4dab717fab0c0e005ab11b"
 
 [[files]]
 file = "kubejs/server_scripts/ore_processing_system.js"
-hash = "7c4ba3cdf971b394501e38f9f22b96d9d6bf3da0f92e0976099aabfc7b82a6f1"
+hash = "04d49755a49c02e4504f187d5db0388f399ce0b0c80f286eef381b258efb38d1"
 
 [[files]]
 file = "kubejs/startup_scripts/00_custom_items.js"
