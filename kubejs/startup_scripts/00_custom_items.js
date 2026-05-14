@@ -77,4 +77,33 @@ StartupEvents.registry('item', event => {
     event.create('apex:refined_iron_pellet').displayName('Refined Iron Pellet').rarity('uncommon')
     event.create('apex:refined_gold_pellet').displayName('Refined Gold Pellet').rarity('uncommon')
     event.create('apex:refined_osmium_pellet').displayName('Refined Osmium Pellet').rarity('uncommon')
+
+    // --- Catalyst-System (T3 / T4 MA Seed-Gates) ---
+    // Pfade: Passiv (Ore Excavation Drops), MA-Alternativ (Mech Crafter), Aktiv (Boss/Dungeon/Altar)
+    // Details: server_scripts/08_catalyst_system.js
+    event.create('apex:resource_catalyst')
+        .displayName('Resource Catalyst')
+        .maxStackSize(64)
+        .rarity('rare')
+        .glow(true)
+
+    event.create('apex:mythic_catalyst')
+        .displayName('Mythic Catalyst')
+        .maxStackSize(16)
+        .rarity('epic')
+        .glow(true)
+})
+
+StartupEvents.registry('block', event => {
+    // Catalyst Altar — Pfad 3c: Aktive Catalyst-Erzeugung via Create:EI Liquid XP Spout
+    // Mechanik: Spieler stellt 4× Apotheosis Gems um Altar, sprüht Hyper Experience auf Altar
+    //          → erzeugt 1× apex:resource_catalyst (Cooldown via Block-State)
+    // Vollständige Logik: server_scripts/08_catalyst_system.js
+    event.create('apex:catalyst_altar')
+        .displayName('Catalyst Altar')
+        .hardness(3.5)
+        .resistance(6.0)
+        .lightLevel(0.4)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
 })

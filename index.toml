@@ -1202,11 +1202,15 @@ hash = "8da119c0a1b3ecc9201bb6651fdc67e2bdd8d6e902e6f93bba05bfc18acce60a"
 
 [[files]]
 file = "kubejs/server_scripts/06_loot_modifications.js"
-hash = "a436d6d3b87caa06019398fc7fe19434f3a468db220abd43a4b1efc690b06deb"
+hash = "687fc6f0b4300bfa692ed853ddd3110ef8a6dd77ab955331a95f7fee9f2a3a3e"
 
 [[files]]
 file = "kubejs/server_scripts/07_enchanting_system.js"
 hash = "87dbab95a46a2887584e4e21200de97071d043cbc3e5fb5bdaa129d6b68570d2"
+
+[[files]]
+file = "kubejs/server_scripts/08_catalyst_system.js"
+hash = "6f1802369b497f4702e28a9bc97e0c6ea7bf8d0a5ece3e38d7c516de7db801ac"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment_automation.js"
@@ -1218,7 +1222,7 @@ hash = "7c4ba3cdf971b394501e38f9f22b96d9d6bf3da0f92e0976099aabfc7b82a6f1"
 
 [[files]]
 file = "kubejs/startup_scripts/00_custom_items.js"
-hash = "7edc5570b1c8b066af883904019a35ef52dc4c52b5f17a1450b33bd3d2da492b"
+hash = "d7dad93cdd4356e8f727aa9ec58c3a316230e620ff0baf0d47250549cc153810"
 
 [[files]]
 file = "mods/ae2.pw.toml"
