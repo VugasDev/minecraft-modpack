@@ -1082,7 +1082,7 @@ hash = "bb9a9e0aeb321042e48226d33cdd615968f6702ed13bb86df62228dec2d9fc93"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "46dda2055ba66633a39e9904b0cd8abe43dedbe5651b60684291b632c2138060"
+hash = "2a5b38570280d477198212b6e5cc20b765c120dd1d7a3ab6d797dff8de011af3"
 
 [[files]]
 file = "config/terralith-common.toml"
@@ -1115,6 +1115,10 @@ hash = "26e112246e902d93bc7c6ae6c169cd810f2e61dd825918ecb86186e40629667e"
 [[files]]
 file = "config/xnetgases.toml"
 hash = "39b423a5786f48f0f479cac4004734fc2eae55a9607b5e931a6f9f4373b5e945"
+
+[[files]]
+file = "kubejs/client_scripts/version_display.js"
+hash = "df39a0a85dfb74e80ba274eb2582bbdc48cc1d685de577e63a40fde39b703492"
 
 [[files]]
 file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
