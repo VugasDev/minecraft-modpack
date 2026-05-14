@@ -1198,7 +1198,7 @@ hash = "8bea6edc56baa0774d55c5016a1c3367c984f958850ec3485e8d431e46dd40f9"
 
 [[files]]
 file = "kubejs/server_scripts/05_progression_gates.js"
-hash = "daf49f289c25c6f125ab90dbaa79e12651ea9fe409dfa8a2a23c5a2640d6390f"
+hash = "8da119c0a1b3ecc9201bb6651fdc67e2bdd8d6e902e6f93bba05bfc18acce60a"
 
 [[files]]
 file = "kubejs/server_scripts/06_loot_modifications.js"
