@@ -62,7 +62,7 @@ hash = "d0e129bb5c552e991f673aa841236844b0e35fcebb38e253cffe37cf5974a66c"
 
 [[files]]
 file = "config/Mekanism/world.toml"
-hash = "e4f20adff1bedc918445de3d149e5275b7cf642a49ca8bdd3480cf54f6a455a1"
+hash = "5f083463b25794347e72205a8fc8ca3c881d40ab8b7cb974488f427b2b786c51"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -1121,26 +1121,6 @@ file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
 hash = "ea395168e9edf40c8d1b09fb2b1d08176ec31abaa8041ac393376e888ce47260"
 
 [[files]]
-file = "kubejs/data/mekanism/worldgen/placed_feature/ore_fluorite.json"
-hash = "eed9699cfe743e7bc473509b23a0c384328d02112af04fccf0ebd3caaa3de4f2"
-
-[[files]]
-file = "kubejs/data/mekanism/worldgen/placed_feature/ore_lead.json"
-hash = "7b10978b1fc42e429e875652229e5e0f1d6f2eeb66490aa325ffc046000b4749"
-
-[[files]]
-file = "kubejs/data/mekanism/worldgen/placed_feature/ore_osmium_small.json"
-hash = "66f7d27df9f4b42b43e76d65f52fca59377586171710907b08bd47ea7c49db62"
-
-[[files]]
-file = "kubejs/data/mekanism/worldgen/placed_feature/ore_tin.json"
-hash = "170caf9db32549436e3e015c4552af7e89f5d75a5c6186fdfea9d4c68d941962"
-
-[[files]]
-file = "kubejs/data/mekanism/worldgen/placed_feature/ore_uranium.json"
-hash = "981a20d845536a85eeb90343ddb00bd759cef743ea29b7d5c297930a1e2238d8"
-
-[[files]]
 file = "kubejs/data/minecraft/worldgen/placed_feature/ore_coal_lower.json"
 hash = "7c30e412d771b20a70aa4b13401180e9194091d1bbb0967fe228ab272c41ef7d"
 
@@ -1149,16 +1129,8 @@ file = "kubejs/data/minecraft/worldgen/placed_feature/ore_coal_upper.json"
 hash = "ec61b46c701026097107c56724ea765d6d2be1709cb5600afdce43c0d137574a"
 
 [[files]]
-file = "kubejs/data/minecraft/worldgen/placed_feature/ore_copper.json"
-hash = "44936a0554d530a1cfb8e3dfe4434d49ee1363ca4aba46f616c611a788513bee"
-
-[[files]]
 file = "kubejs/data/minecraft/worldgen/placed_feature/ore_copper_large.json"
 hash = "d4bbe9a0079bc3a5299699bf4b268eeef3440332e67f0104d87229bba5ca190a"
-
-[[files]]
-file = "kubejs/data/minecraft/worldgen/placed_feature/ore_diamond.json"
-hash = "8bc9cb2313c4d733de5ad8db3670cbd59b47d7c8b8032e3243275c572cf31195"
 
 [[files]]
 file = "kubejs/data/minecraft/worldgen/placed_feature/ore_diamond_buried.json"

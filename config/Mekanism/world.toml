@@ -17,7 +17,7 @@ userWorldGenVersion = 0
 		#Chance that Small Tin Veins generates in a chunk.
 		# Default: 14
 		# Range: 1 ~ 256
-		perChunk = 14
+		perChunk = 2
 		#Maximum number of blocks in a Small Tin Vein.
 		# Default: 4
 		# Range: 1 ~ 64
@@ -61,7 +61,7 @@ userWorldGenVersion = 0
 		#Chance that Large Tin Veins generates in a chunk.
 		# Default: 12
 		# Range: 1 ~ 256
-		perChunk = 12
+		perChunk = 1
 		#Maximum number of blocks in a Large Tin Vein.
 		# Default: 9
 		# Range: 1 ~ 64
@@ -110,7 +110,7 @@ userWorldGenVersion = 0
 		#Chance that Upper Osmium Veins generates in a chunk.
 		# Default: 65
 		# Range: 1 ~ 256
-		perChunk = 65
+		perChunk = 8
 		#Maximum number of blocks in a Upper Osmium Vein.
 		# Default: 7
 		# Range: 1 ~ 64
@@ -154,7 +154,7 @@ userWorldGenVersion = 0
 		#Chance that Middle Osmium Veins generates in a chunk.
 		# Default: 6
 		# Range: 1 ~ 256
-		perChunk = 6
+		perChunk = 1
 		#Maximum number of blocks in a Middle Osmium Vein.
 		# Default: 9
 		# Range: 1 ~ 64
@@ -198,7 +198,7 @@ userWorldGenVersion = 0
 		#Chance that Small Osmium Veins generates in a chunk.
 		# Default: 8
 		# Range: 1 ~ 256
-		perChunk = 8
+		perChunk = 1
 		#Maximum number of blocks in a Small Osmium Vein.
 		# Default: 4
 		# Range: 1 ~ 64
@@ -247,7 +247,7 @@ userWorldGenVersion = 0
 		#Chance that Small Uranium Veins generates in a chunk.
 		# Default: 4
 		# Range: 1 ~ 256
-		perChunk = 4
+		perChunk = 1
 		#Maximum number of blocks in a Small Uranium Vein.
 		# Default: 4
 		# Range: 1 ~ 64
@@ -291,7 +291,7 @@ userWorldGenVersion = 0
 		#Chance that Buried Uranium Veins generates in a chunk.
 		# Default: 7
 		# Range: 1 ~ 256
-		perChunk = 7
+		perChunk = 1
 		#Maximum number of blocks in a Buried Uranium Vein.
 		# Default: 9
 		# Range: 1 ~ 64
@@ -340,7 +340,7 @@ userWorldGenVersion = 0
 		#Chance that Normal Fluorite Veins generates in a chunk.
 		# Default: 5
 		# Range: 1 ~ 256
-		perChunk = 5
+		perChunk = 1
 		#Maximum number of blocks in a Normal Fluorite Vein.
 		# Default: 5
 		# Range: 1 ~ 64
@@ -384,7 +384,7 @@ userWorldGenVersion = 0
 		#Chance that Buried Fluorite Veins generates in a chunk.
 		# Default: 3
 		# Range: 1 ~ 256
-		perChunk = 3
+		perChunk = 1
 		#Maximum number of blocks in a Buried Fluorite Vein.
 		# Default: 13
 		# Range: 1 ~ 64
@@ -433,7 +433,7 @@ userWorldGenVersion = 0
 		#Chance that Normal Lead Veins generates in a chunk.
 		# Default: 8
 		# Range: 1 ~ 256
-		perChunk = 8
+		perChunk = 1
 		#Maximum number of blocks in a Normal Lead Vein.
 		# Default: 9
 		# Range: 1 ~ 64
