@@ -1117,8 +1117,8 @@ file = "config/xnetgases.toml"
 hash = "39b423a5786f48f0f479cac4004734fc2eae55a9607b5e931a6f9f4373b5e945"
 
 [[files]]
-file = "kubejs/client_scripts/version_display.js"
-hash = "df39a0a85dfb74e80ba274eb2582bbdc48cc1d685de577e63a40fde39b703492"
+file = "kubejs/assets/minecraft/texts/splashes.txt"
+hash = "23e66ecf4c6470408d9ba4802207ea2d7d1d4e62f041a3bcb1198757abc3d5a7"
 
 [[files]]
 file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
