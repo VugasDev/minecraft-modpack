@@ -67,4 +67,14 @@ StartupEvents.registry('item', event => {
         .maxStackSize(64)
         .rarity('epic')
         .glow(true)
+
+    // --- APEX Ore Processing Items (T2 + T5) ---
+    // Referenziert in: server_scripts/ore_processing_system.js
+    // T2: Crushed Osmium (Create-Crushing-Output für Osmium)
+    event.create('apex:crushed_osmium').displayName('Crushed Raw Osmium')
+
+    // T5: Refined Pellets (PNC Pressure Chamber x16 Output, schmelzbar zu Ingot)
+    event.create('apex:refined_iron_pellet').displayName('Refined Iron Pellet').rarity('uncommon')
+    event.create('apex:refined_gold_pellet').displayName('Refined Gold Pellet').rarity('uncommon')
+    event.create('apex:refined_osmium_pellet').displayName('Refined Osmium Pellet').rarity('uncommon')
 })

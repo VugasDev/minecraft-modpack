@@ -1,0 +1,17 @@
+{
+  "_comment": "VERIFY: Mekanism 10.7.19 placed_feature ID — Uranium extrem selten via rarity_filter",
+  "feature": "mekanism:ore_uranium",
+  "placement": [
+    { "type": "minecraft:rarity_filter", "chance": 4 },
+    { "type": "minecraft:in_square" },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": -96 },
+        "max_inclusive": { "absolute": -48 }
+      }
+    },
+    { "type": "minecraft:biome" }
+  ]
+}

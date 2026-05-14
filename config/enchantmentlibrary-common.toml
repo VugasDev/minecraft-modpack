@@ -1,0 +1,38 @@
+#Whether XP is required to extract enchantments.
+requireXpForExtraction = true
+#Base multiplier for XP extraction cost. Cost = baseXpMultiplier * (level * level).
+# Default: 40
+# Range: 0 ~ 100000
+baseXpMultiplier = 40
+#Enables/disables disenchant button functionality.
+enableDisenchantButton = true
+#If true, library keeps stored data when broken.
+keepInventory = true
+#If keepInventory is false and this is true, data is kept only when broken with a Silk Touch pickaxe.
+requireSilkTouchForKeepInventory = false
+#Blacklist of enchantment ids (e.g. minecraft:sharpness). Blacklisted enchants are not storable/extractable. If an enchantment in the library is blacklisted, it will be deleted from the library.
+enchantmentBlacklist = []
+#Max enchantment level storable/extractable in tier 1 library.
+# Default: 5
+# Range: 1 ~ 50
+tier1MaxLevel = 5
+#Max enchantment level storable/extractable in tier 2 library.
+# Default: 10
+# Range: 1 ~ 50
+tier2MaxLevel = 10
+#Max enchantment level storable/extractable in tier 3 library.
+# Default: 30
+# Range: 1 ~ 50
+tier3MaxLevel = 30
+#Max enchantment points storable per enchantment in tier 1 library.
+# Default: 160
+# Range: 1 ~ 5629499534213120
+tier1MaxPoints = 160
+#Max enchantment points storable per enchantment in tier 2 library.
+# Default: 5120
+# Range: 1 ~ 5629499534213120
+tier2MaxPoints = 5120
+#Max enchantment points storable per enchantment in tier 3 library.
+# Default: 5368709120
+# Range: 1 ~ 5629499534213120
+tier3MaxPoints = 5368709120

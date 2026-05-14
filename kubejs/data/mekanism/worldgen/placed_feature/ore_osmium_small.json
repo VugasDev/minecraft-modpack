@@ -1,0 +1,17 @@
+{
+  "_comment": "VERIFY: Mekanism 10.7.19 placed_feature ID 'mekanism:ore_osmium_small' — falls falsch im latest.log nach Boot suchen",
+  "feature": "mekanism:ore_osmium_small",
+  "placement": [
+    { "type": "minecraft:count", "count": 1 },
+    { "type": "minecraft:in_square" },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": -48 },
+        "max_inclusive": { "absolute": 16 }
+      }
+    },
+    { "type": "minecraft:biome" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "VERIFY: Mekanism 10.7.19 placed_feature ID",
+  "feature": "mekanism:ore_tin",
+  "placement": [
+    { "type": "minecraft:count", "count": 1 },
+    { "type": "minecraft:in_square" },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": -32 },
+        "max_inclusive": { "absolute": 20 }
+      }
+    },
+    { "type": "minecraft:biome" }
+  ]
+}

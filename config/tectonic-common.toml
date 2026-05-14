@@ -1,0 +1,37 @@
+# Tectonic Beta-Setup für Gaia Awakening
+# Vanilla-Welthöhe (Y -64 bis 320) — Tall World folgt im Post-Beta
+#
+# WICHTIG: Erfordert eine neue Welt. Nicht auf bestehender Welt aktivieren.
+# Section-Namen nach erstem Boot verifizieren (NeoForge loggt unbekannte Felder).
+
+[general]
+mod_enabled = true
+increased_height = false
+
+[terrain]
+# Mountains 2.25× vanilla — dramatisch, aber lässt Luft zum Build-Limit (Y 320)
+vertical_scale = 2.25
+# Größere Kontinente = weniger Ozean-Reisen in Multiplayer
+continents_scale = 0.08
+# Moderate Erosion: natürliche Berge & Täler ohne übertriebene Schluchten
+erosion_scale = 0.20
+erosion = true
+rolling_hills = true
+ultrasmooth = false
+
+[oceans]
+ocean_offset = -0.5
+ocean_depth = -0.30
+deep_ocean_depth = -0.55
+
+[climate]
+snow_start_offset = 200
+
+[caves]
+lava_tunnels = true
+underground_rivers = true
+river_lanterns = true
+# Moderat hoch — weniger zerklüftete Oberflächen-Höhleneingänge,
+# tiefere Höhlen bleiben unangetastet
+depth_cutoff_start = 0.7
+depth_cutoff_size = 0.3
