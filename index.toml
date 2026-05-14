@@ -62,7 +62,7 @@ hash = "d0e129bb5c552e991f673aa841236844b0e35fcebb38e253cffe37cf5974a66c"
 
 [[files]]
 file = "config/Mekanism/world.toml"
-hash = "5f083463b25794347e72205a8fc8ca3c881d40ab8b7cb974488f427b2b786c51"
+hash = "bee6d111fe6b20e6f9142fd789ef95840ac79eef954d85288b7e0af3c00db444"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -1082,7 +1082,7 @@ hash = "bb9a9e0aeb321042e48226d33cdd615968f6702ed13bb86df62228dec2d9fc93"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "71bf44fba8e40988423a37853520c2607a9d8f25a226d7147f25551b57e96c80"
+hash = "46dda2055ba66633a39e9904b0cd8abe43dedbe5651b60684291b632c2138060"
 
 [[files]]
 file = "config/terralith-common.toml"
