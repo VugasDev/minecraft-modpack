@@ -4,6 +4,7 @@
   "icon": "minecraft:crafting_table",
   "default_quest_shape": "circle",
   "quests": [
+
     {
       "id": "t1_basics_01",
       "title": "Erste Schritte",
@@ -55,12 +56,154 @@
         }
       ]
     },
+
+    {
+      "id": "t1_basics_02",
+      "title": "Feuer und Erz",
+      "icon": "minecraft:furnace",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Der erste Schmelzofen",
+      "description": [
+        "Kohle und Eisenerz — die Basis jeder Zivilisation.",
+        "Baue deinen ersten Ofen und schmelze Eisen zu Barren."
+      ],
+      "dependencies": ["t1_basics_01"],
+      "tasks": [
+        {
+          "id": "t1_b_02_task_1",
+          "type": "item",
+          "item": "minecraft:furnace",
+          "count": 1
+        },
+        {
+          "id": "t1_b_02_task_2",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_b_02_reward_1",
+          "type": "item",
+          "item": "minecraft:coal",
+          "count": 8
+        },
+        {
+          "id": "t1_b_02_reward_2",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+
+    {
+      "id": "t1_basics_03",
+      "title": "Eiserne Entschlossenheit",
+      "icon": "minecraft:iron_chestplate",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Rüstung schützt. Kein Wenn, kein Aber.",
+      "description": [
+        "Die Welt da draußen ist gefährlich — besonders nachts.",
+        "Stelle dir eine vollständige Eisen-Rüstung her und beweise, dass du bereit bist."
+      ],
+      "dependencies": ["t1_basics_02"],
+      "tasks": [
+        {
+          "id": "t1_b_03_task_1",
+          "type": "item",
+          "item": "minecraft:iron_helmet",
+          "count": 1
+        },
+        {
+          "id": "t1_b_03_task_2",
+          "type": "item",
+          "item": "minecraft:iron_chestplate",
+          "count": 1
+        },
+        {
+          "id": "t1_b_03_task_3",
+          "type": "item",
+          "item": "minecraft:iron_leggings",
+          "count": 1
+        },
+        {
+          "id": "t1_b_03_task_4",
+          "type": "item",
+          "item": "minecraft:iron_boots",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_b_03_reward_1",
+          "type": "item",
+          "item": "minecraft:iron_sword",
+          "count": 1
+        },
+        {
+          "id": "t1_b_03_reward_2",
+          "type": "item",
+          "item": "minecraft:shield",
+          "count": 1
+        },
+        {
+          "id": "t1_b_03_reward_3",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+
+    {
+      "id": "t1_basics_04",
+      "title": "Überleben gesichert",
+      "icon": "minecraft:cooked_beef",
+      "x": 0.0,
+      "y": 6.0,
+      "subtitle": "Ein Bett, ein Brot, ein Plan",
+      "description": [
+        "Hunger ist der stille Feind.",
+        "Stelle Nahrung sicher und schlafe, um deinen Spawn zu setzen."
+      ],
+      "dependencies": ["t1_basics_02"],
+      "tasks": [
+        {
+          "id": "t1_b_04_task_1",
+          "type": "item",
+          "item": "minecraft:white_bed",
+          "count": 1
+        },
+        {
+          "id": "t1_b_04_task_2",
+          "type": "item",
+          "item": "minecraft:bread",
+          "count": 6
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_b_04_reward_1",
+          "type": "item",
+          "item": "minecraft:golden_apple",
+          "count": 1
+        },
+        {
+          "id": "t1_b_04_reward_2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+
     {
       "id": "t1_create_01",
       "title": "Zahnräder & Energie",
       "icon": "create:water_wheel",
-      "x": 0.0,
-      "y": 2.0,
+      "x": 4.0,
+      "y": 0.0,
       "subtitle": "Der Einstieg in die Create-Physik",
       "description": [
         "Das Wasserrad ist dein erster Schritt, um kinetische Energie zu erzeugen.",
@@ -95,12 +238,13 @@
         }
       ]
     },
+
     {
       "id": "t1_create_02",
       "title": "Mechanische Presse",
       "icon": "create:mechanical_press",
-      "x": 0.0,
-      "y": 4.0,
+      "x": 4.0,
+      "y": 2.0,
       "subtitle": "Rohmaterialien formen",
       "description": [
         "Rohmaterialien müssen verarbeitet werden.",
@@ -136,16 +280,18 @@
         }
       ]
     },
+
     {
       "id": "t1_create_03",
       "title": "Crushing Wheels",
       "icon": "create:crushing_wheel",
-      "x": 0.0,
-      "y": 6.0,
+      "x": 4.0,
+      "y": 4.0,
       "subtitle": "Der Beginn der APEX Ore-Chain",
       "description": [
-        "Das Herzstück deiner frühen Erzverarbeitung. Zwei Räder, ein Ziel: doppelter Output.",
-        "Ab hier beginnt das echte Ore-Processing. Zeige, was du kannst."
+        "Das Herzstück deiner frühen Erzverarbeitung.",
+        "Zwei Räder, ein Ziel: doppelter Output.",
+        "Ab hier beginnt das echte Ore-Processing — zeige, was du kannst."
       ],
       "dependencies": ["t1_create_02"],
       "tasks": [
@@ -170,11 +316,108 @@
         }
       ]
     },
+
+    {
+      "id": "t1_create_04",
+      "title": "Förderbänder & Trichter",
+      "icon": "create:mechanical_belt",
+      "x": 4.0,
+      "y": 6.0,
+      "subtitle": "Automatisierung beginnt hier",
+      "description": [
+        "Kein Spieler soll ewig Items von Hand verschieben.",
+        "Förderbänder und mechanische Trichter sind die Grundlage jeder Automatisierung.",
+        "Baue deine erste automatische Transportkette."
+      ],
+      "dependencies": ["t1_create_03"],
+      "tasks": [
+        {
+          "id": "t1_c_04_task_1",
+          "type": "item",
+          "item": "create:mechanical_belt",
+          "count": 1
+        },
+        {
+          "id": "t1_c_04_task_2",
+          "type": "item",
+          "item": "create:andesite_funnel",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_c_04_reward_1",
+          "type": "item",
+          "item": "create:andesite_funnel",
+          "count": 4
+        },
+        {
+          "id": "t1_c_04_reward_2",
+          "type": "item",
+          "item": "create:brass_nugget",
+          "count": 8
+        },
+        {
+          "id": "t1_c_04_reward_3",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+
+    {
+      "id": "t1_create_05",
+      "title": "Andesite-Maschinerie",
+      "icon": "create:andesite_casing",
+      "x": 4.0,
+      "y": 8.0,
+      "subtitle": "Das Ende von Tier 1 — und der Anfang von etwas Großem",
+      "description": [
+        "Andesite-Casings, Mixer und Trichter — mit diesem Setup endet Tier 1.",
+        "Du hast Energie erzeugt, Erze verarbeitet und automatisiert.",
+        "Tier 2 beginnt mit Messing. Bereite dich vor."
+      ],
+      "dependencies": ["t1_create_04"],
+      "tasks": [
+        {
+          "id": "t1_c_05_task_1",
+          "type": "item",
+          "item": "create:andesite_casing",
+          "count": 4
+        },
+        {
+          "id": "t1_c_05_task_2",
+          "type": "item",
+          "item": "create:mechanical_mixer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_c_05_reward_1",
+          "type": "item",
+          "item": "create:zinc_ingot",
+          "count": 8
+        },
+        {
+          "id": "t1_c_05_reward_2",
+          "type": "item",
+          "item": "create:copper_ingot",
+          "count": 8
+        },
+        {
+          "id": "t1_c_05_reward_3",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+
     {
       "id": "t1_util_01",
       "title": "Waystones",
       "icon": "waystones:waystone",
-      "x": 3.0,
+      "x": 8.0,
       "y": 0.0,
       "subtitle": "Die Welt ist groß — behalte den Überblick",
       "description": [
@@ -203,6 +446,140 @@
           "xp": 100
         }
       ]
+    },
+
+    {
+      "id": "t1_explore_01",
+      "title": "Kompass der Natur",
+      "icon": "naturescompass:naturescompass",
+      "x": 8.0,
+      "y": 2.0,
+      "subtitle": "Die Welt gehört denen, die sie kennen",
+      "description": [
+        "Gaia Awakening erzeugt eine riesige, lebendige Welt.",
+        "Der Naturkompass hilft dir, Biome zu finden — nützlich für Ressourcen und Entdeckungen.",
+        "Stelle einen her und nutze ihn, um ein Biom deiner Wahl zu suchen."
+      ],
+      "dependencies": ["t1_util_01"],
+      "tasks": [
+        {
+          "id": "t1_e_01_task_1",
+          "type": "item",
+          "item": "naturescompass:naturescompass",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_e_01_reward_1",
+          "type": "item",
+          "item": "minecraft:map",
+          "count": 3
+        },
+        {
+          "id": "t1_e_01_reward_2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+
+    {
+      "id": "t1_nether_01",
+      "title": "Ins Höllenfeuer",
+      "icon": "minecraft:obsidian",
+      "x": 8.0,
+      "y": 4.0,
+      "subtitle": "Die Hölle wartet nicht",
+      "description": [
+        "Nether-Quartz ist essenziell für frühe Create-Rezepte.",
+        "Obsidian, Feuerstein, Stahl — und du kannst den Nether betreten.",
+        "Aber Vorsicht: ohne gute Rüstung bist du schneller tot als du denkst."
+      ],
+      "dependencies": ["t1_basics_03", "t1_explore_01"],
+      "tasks": [
+        {
+          "id": "t1_n_01_task_1",
+          "type": "item",
+          "item": "minecraft:obsidian",
+          "count": 10
+        },
+        {
+          "id": "t1_n_01_task_2",
+          "type": "item",
+          "item": "minecraft:flint_and_steel",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_n_01_reward_1",
+          "type": "item",
+          "item": "minecraft:nether_quartz",
+          "count": 16
+        },
+        {
+          "id": "t1_n_01_reward_2",
+          "type": "item",
+          "item": "minecraft:golden_carrot",
+          "count": 4
+        },
+        {
+          "id": "t1_n_01_reward_3",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+
+    {
+      "id": "t1_nether_02",
+      "title": "Quartz & Flamme",
+      "icon": "minecraft:nether_quartz",
+      "x": 8.0,
+      "y": 6.0,
+      "subtitle": "Der Nether gibt, der Nether nimmt",
+      "description": [
+        "Nether-Quartz ist die Ressource, die Create in Tier 1 braucht.",
+        "Blaze Rods öffnen später die Tür zum Verzauberungssystem.",
+        "Sammle beide — und komm lebend zurück."
+      ],
+      "dependencies": ["t1_nether_01"],
+      "tasks": [
+        {
+          "id": "t1_n_02_task_1",
+          "type": "item",
+          "item": "minecraft:nether_quartz",
+          "count": 32
+        },
+        {
+          "id": "t1_n_02_task_2",
+          "type": "item",
+          "item": "minecraft:blaze_rod",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t1_n_02_reward_1",
+          "type": "item",
+          "item": "create:electron_tube",
+          "count": 2
+        },
+        {
+          "id": "t1_n_02_reward_2",
+          "type": "item",
+          "item": "minecraft:potion",
+          "nbt": "{Potion:\"minecraft:fire_resistance\"}",
+          "count": 2
+        },
+        {
+          "id": "t1_n_02_reward_3",
+          "type": "xp",
+          "xp": 350
+        }
+      ]
     }
+
   ]
 }
