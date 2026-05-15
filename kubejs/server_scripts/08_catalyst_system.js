@@ -80,15 +80,15 @@ ServerEvents.recipes(event => {
         { seed: 'mysticalagriculture:emerald_seeds', base: 'minecraft:emerald' },
         { seed: 'mysticalagriculture:glowstone_seeds', base: 'minecraft:glowstone_dust' }
     ]
-    t3Seeds.forEach(({ seed, base }) => {
-        event.remove({ output: seed })
-        event.shaped(seed, [
+    t3Seeds.forEach(function(entry) {
+        event.remove({ output: entry.seed })
+        event.shaped(entry.seed, [
             'IBI',
             'BCB',
             'IBI'
         ], {
             I: 'mysticalagriculture:inferium_essence',
-            B: base,
+            B: entry.base,
             C: 'gaia:resource_catalyst'
         })
     })
@@ -107,15 +107,15 @@ ServerEvents.recipes(event => {
         { seed: 'mysticalagradditions:uranium_seeds',  base: 'mekanism:ingot_uranium' },
         { seed: 'mysticalagradditions:fluorite_seeds', base: 'mekanism:fluorite_gem' }
     ]
-    t4Seeds.forEach(({ seed, base }) => {
-        event.remove({ output: seed })
-        event.shaped(seed, [
+    t4Seeds.forEach(function(entry) {
+        event.remove({ output: entry.seed })
+        event.shaped(entry.seed, [
             'IBI',
             'BMB',
             'IBI'
         ], {
             I: 'mysticalagriculture:prudentium_essence',
-            B: base,
+            B: entry.base,
             M: 'gaia:mythic_catalyst'
         })
     })

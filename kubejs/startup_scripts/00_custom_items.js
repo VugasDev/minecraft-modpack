@@ -9,14 +9,10 @@ StartupEvents.registry('fluid', event => {
     // Verwendung: Catalyst Altar für Mythic Catalyst (statt Hyper Experience)
     event.create('gaia:mythic_liquid_xp')
         .displayName('Mythic Liquid XP')
-        .bucketItem(item => {
-            item.displayName('Bucket of Mythic Liquid XP')
-            item.rarity('epic')
-            item.glow(true)
-        })
         .viscosity(800)
         .density(1800)
         .color(0xFF00CCFF)
+    // Bucket-Item wird von KubeJS 2101 automatisch als gaia:mythic_liquid_xp_bucket erstellt
 })
 
 // ─── ITEMS ───────────────────────────────────────────────────────────────────

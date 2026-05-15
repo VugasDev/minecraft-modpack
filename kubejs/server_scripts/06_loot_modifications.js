@@ -75,14 +75,7 @@ LootJS.modifiers(event => {
 
 })
 
-// T3 RESOURCE CATALYST — Wandering Trader (RNG, 15% Spawn-Chance via Trade-Slot)
-// ServerEvents.trades ist der korrekte KubeJS 2101.x-Weg für Händler-Trades.
-// Der Trade taucht bei ~15% aller Wandering-Trader-Spawns auf (via maxTrades=1 + zufälliger Slot).
-ServerEvents.trades(event => {
-    event.addWanderingTrade(1, trade => {
-        trade.cost(Item.of('minecraft:emerald', 16))
-        trade.result('gaia:resource_catalyst')
-        trade.maxTrades(1)
-        trade.xp(0)
-    })
-})
+// T3 RESOURCE CATALYST — Wandering Trader
+// TODO: ServerEvents.trades existiert in KubeJS 2101 nicht — korrekten Event-Namen verifizieren.
+// Mögliche Alternativen: EntityEvents.spawnedWithContext, NeoForge WandererTradesEvent via Mixin.
+// Vorübergehend deaktiviert, damit keine Script-Fehler entstehen.
