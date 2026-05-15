@@ -8,12 +8,12 @@
 ## Welt-Seed (FESTGELEGT)
 
 ```
-50610127162125498
+1458109957658339347
 ```
 
 In `server.properties` setzen:
 ```properties
-level-seed=50610127162125498
+level-seed=1458109957658339347
 level-name=GaiaAwakening
 level-type=minecraft\:normal
 ```
@@ -23,6 +23,9 @@ exakt dieselbe Version + Config haben wie der Client der die Welt erstellt hat.
 Tectonic, Terralith, Lithostitched, YUNG's, When Dungeons Arise, Mekanism-Ore-Gen
 müssen identisch sein.
 
+> Welt mit diesem Seed generiert am 2026-05-15 in Profil `gaia-awakening-0.1.30-alpha`
+> ("New World (1)"). Bestätigt atemberaubende Terrain-Qualität mit aktueller Tectonic-Config.
+
 ---
 
 ## Tectonic-Config (Tall World)
@@ -30,13 +33,16 @@ müssen identisch sein.
 Die echte Config ist `config/tectonic.json` (NICHT `tectonic-common.toml`).
 Beim Server-Setup unbedingt die `tectonic.json` aus diesem Repo verwenden.
 
-Aktiv: **Tall World Mode**
+Aktiv: **Tall World Mode** (finalisiert mit Seed 1458109957658339347)
 - `global_terrain.max_y = 512`
 - `global_terrain.min_y = -128`
-- `global_terrain.vertical_scale = 2.5`
-- `global_terrain.elevation_boost = 1.6`
+- `global_terrain.vertical_scale = 1.8`
+- `global_terrain.elevation_boost = 1.0`
 - `general.snow_start_offset = 512`
 - `islands.enabled = true`
+- `continents.flat_terrain_skew = -0.15`
+- `continents.erosion_scale = 0.32`
+- `continents.ridge_scale = 0.35`
 
 ---
 
@@ -46,9 +52,9 @@ Die aktuelle Singleplayer-Welt hat bereits einen Großteil des Spawn-Bereichs vo
 Statt auf dem Server neu zu generieren, übernehmen wir die Region-Files direkt.
 
 ### Schritt 1: Welt-Backup (lokal)
-Backup-Pfad: `/home/vugas/minecraft-backups/gaia-awakening-<timestamp>/New_World_2/`
+Backup-Pfad: `/home/vugas/minecraft-backups/gaia-awakening-<timestamp>/New_World_1/`
 
-(Wurde am 2026-05-13 erstellt, 158 MB, exklusive `session.lock`)
+Quell-Pfad (lokal): `C:\Users\larss\AppData\Roaming\ModrinthApp\profiles\gaia-awakening-0.1.30-alpha\saves\New World (1)\`
 
 ### Schritt 2: Auf Server kopieren
 Auf dem Server-Host:
@@ -81,7 +87,7 @@ Mit zu übertragen sind:
 ### Schritt 3: Verifizieren
 Nach Server-Start prüfen:
 ```
-/seed   → muss 50610127162125498 ergeben
+/seed   → muss 1458109957658339347 ergeben
 ```
 
 Wenn der Seed übereinstimmt aber Chunks neu generieren statt geladen werden,
