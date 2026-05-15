@@ -1,6 +1,6 @@
 name = "Gaia Awakening"
 author = "VugasDev"
-version = "0.1.30-alpha"
+version = "0.1.31-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]

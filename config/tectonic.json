@@ -40,12 +40,12 @@
     "snow_start_offset": 512
   },
   "global_terrain": {
-    "elevation_boost": 1.0,
+    "elevation_boost": 0.8,
     "lava_tunnels": true,
     "max_y": 512,
     "min_y": -128,
     "ultrasmooth": false,
-    "vertical_scale": 1.8
+    "vertical_scale": 1.4
   },
   "islands": {
     "enabled": true,

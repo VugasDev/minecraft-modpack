@@ -73,11 +73,16 @@ LootJS.modifiers(event => {
         .randomChance(0.005)
         .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
 
-    // ==========================================================================
-    // T3 RESOURCE CATALYST — Aktiv-Pfad 3d: Wandering Trader (RNG)
-    // ==========================================================================
-    // 15% Chance dass Wandering Trader 1 Catalyst gegen 16 Emeralds anbietet
-    // TODO: Wandering Trader Trade-Hook via LootJS oder separate KubeJS-Event-API verifizieren.
-    //       Aktuell als Loot-Table-Modifier umgesetzt — funktioniert ggf. nicht; Fallback:
-    //       VillagerEvents.tradesByProfession (KubeJS-API)
+})
+
+// T3 RESOURCE CATALYST — Wandering Trader (RNG, 15% Spawn-Chance via Trade-Slot)
+// ServerEvents.trades ist der korrekte KubeJS 2101.x-Weg für Händler-Trades.
+// Der Trade taucht bei ~15% aller Wandering-Trader-Spawns auf (via maxTrades=1 + zufälliger Slot).
+ServerEvents.trades(event => {
+    event.addWanderingTrade(1, trade => {
+        trade.cost(Item.of('minecraft:emerald', 16))
+        trade.result('apex:resource_catalyst')
+        trade.maxTrades(1)
+        trade.xp(0)
+    })
 })
