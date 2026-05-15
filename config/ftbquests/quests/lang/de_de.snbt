@@ -1,0 +1,239 @@
+{
+    "tier_1_chapter.title": "Tier 1: Der Anfang",
+    "tier_2_chapter.title": "Tier 2: Messing und Maschinen",
+    "tier_3_chapter.title": "Tier 3: Energie und Automatisierung",
+    "tier_4_chapter.title": "Tier 4: Fortgeschrittene Systeme",
+    "tier_5_chapter.title": "Tier 5: Endgame",
+
+    "t1_basics_01.title": "Erstmal das Wichtigste",
+    "t1_basics_01.quest_subtitle": "Du schlägst einen Baum. Klassisch.",
+    "t1_basics_01.quest_desc": ["Du bist in einer riesigen, prozedural generierten Welt voller Staunen und Gefahr gespawnt.", "Dein erster Schritt? Einen Baum schlagen. Das ist Tradition.", "Baue einen Crafting-Tisch und sammle Holz. Das Abenteuer beginnt hier."],
+
+    "t1_basics_02.title": "Feuer und Erz",
+    "t1_basics_02.quest_subtitle": "Steine erhitzen, bis sie weinen. Funktioniert.",
+    "t1_basics_02.quest_desc": ["Schritt eins der menschlichen Zivilisation: Dinge ins Feuer stecken, bis etwas Nützliches rauskommt.", "Baue einen Ofen und schmelze etwas Eisen. Du wirst viel davon brauchen — vertrau uns."],
+
+    "t1_basics_03.title": "Eisenwille",
+    "t1_basics_03.quest_subtitle": "Weil Mobs nichts von deinen Gefühlen halten.",
+    "t1_basics_03.quest_desc": ["Die Nacht naht. Skelette haben Bögen. Du hast ein Holzschwert. Das ist kein fairer Kampf.", "Stelle eine komplette Eisenrüstung her. Kein halbes Zeug — Helm, Brustplatte, Hose, Stiefel.", "Gut auszusehen ist ein Bonus. Nicht zu sterben ist das Ziel."],
+
+    "t1_basics_04.title": "Nicht verhungern",
+    "t1_basics_04.quest_subtitle": "Ein Bett, etwas Brot und ein vages Gefühl von Hoffnung.",
+    "t1_basics_04.quest_desc": ["Hunger tötet langsam und Schlafen setzt deinen Spawn-Punkt. Beides ist wichtiger als du denkst.", "Baue ein Bett, damit du nach einem Creeper-Tod nicht am Weltspawn aufwachst.", "Backe Brot — Weizen ist überall und deinem Magen ist Ästhetik egal."],
+
+    "t1_create_01.title": "Zahnräder und Drehung",
+    "t1_create_01.quest_subtitle": "Physikbasierte Automatisierung beginnt hier.",
+    "t1_create_01.quest_desc": ["Create ist der zentrale Automatisierungs-Mod dieses Modpacks — und er läuft auf Rotationskraft, nicht auf Magie.", "Ein Wasserrad wandelt fließendes Wasser in Stresseinheiten (SU) um. Verbinde es mit einer Welle und schau zu, wie es sich dreht.", "Dies ist der Beginn von etwas Wunderschönem. Und Kompliziertem. Hauptsächlich Kompliziertem."],
+
+    "t1_create_02.title": "Mechanische Presse",
+    "t1_create_02.quest_subtitle": "Sie presst Dinge. Wunderschön.",
+    "t1_create_02.quest_desc": ["Die Mechanische Presse ist deine erste echte Create-Maschine — sie presst Barren zu Platten und mehr.", "Platziere sie über einem Becken, um die Ausgabe aufzufangen. Sie benötigt Rotationskraft von oben.", "Bleche, gepresste Gegenstände, Teig — wenn es zerquetscht werden muss, erledigt die Presse das."],
+
+    "t1_create_03.title": "Crushingräder",
+    "t1_create_03.quest_subtitle": "Zwei Räder. Doppeltes Erz. Keine Reue.",
+    "t1_create_03.quest_desc": ["Crushingräder sind das Fundament der APEX-Erzverarbeitungskette.", "Zwei gegenläufig rotierende Räder mahlen Erze zu zerkleinertem Erz — das ergibt 2-fachen Output gegenüber dem Schmelzen.", "Sie benötigen mindestens 256 SU kombinierte Stresskapazität und müssen in entgegengesetzten Richtungen drehen.", "Hier beginnt die Erzeffizienz. Schmelze niemals wieder rohes Erz."],
+
+    "t1_create_04.title": "Bänder und Trichter",
+    "t1_create_04.quest_subtitle": "Gegenstände manuell transportieren ist was für Anfänger. Lass Maschinen das machen.",
+    "t1_create_04.quest_desc": ["Manueller Gegenstandstransport endet hier. Mechanische Bänder tragen Gegenstände automatisch zwischen Maschinen.", "Andesit-Trichter schieben und ziehen Gegenstände aus Inventaren, Kisten und Maschineneingängen.", "Baue eine einfache Bandlinie: Eingangskiste → Crushingräder → Ausgangskiste. Keine Spielerinteraktion erforderlich."],
+
+    "t1_create_05.title": "Andesit-Maschinerie",
+    "t1_create_05.quest_subtitle": "Tier 1 ist vorbei. Messing kommt als Nächstes.",
+    "t1_create_05.quest_desc": ["Andesit-Gehäuse, Mischer, Trichter — das ist das vollständige Tier-1-Create-Setup.", "Du hast Energie erzeugt, Erz zerkleinert und Transport automatisiert.", "Jetzt brauchst du Messing. Das bedeutet Zink, Kupfer und einen Mechanischen Mischer bei der richtigen UPM.", "Tier 2 beginnt mit der Legierung, die dieses gesamte Modpack antreibt. Mach dich bereit."],
+
+    "t1_util_01.title": "Wegsteine",
+    "t1_util_01.quest_subtitle": "Die Welt ist riesig. Nutze Schnellreise.",
+    "t1_util_01.quest_desc": ["Gaia Awakening generiert eine riesige Welt mit weit auseinanderliegenden Biomen.", "Wegsteine ermöglichen dir, zwischen entdeckten Orten zu teleportieren — kostenlos und ohne Abklingzeit.", "Finde einen in einem Dorf oder einer Struktur, oder crafte deinen eigenen. Gib ihm einen sinnvollen Namen, nicht 'lol'."],
+
+    "t1_explore_01.title": "Natur-Kompass",
+    "t1_explore_01.quest_subtitle": "Da draußen ist ein Biom. Find es.",
+    "t1_explore_01.quest_desc": ["Gaia Awakening verwendet Tectonic und Terralith, um über 100 einzigartige Biome zu generieren.", "Manche Ressourcen erscheinen nur in bestimmten Biomen — und ohne ein Kartentool viel Glück beim Finden.", "Der Natur-Kompass lässt dich nach jedem Biom nach Namen suchen. Crafte einen und benutze ihn."],
+
+    "t1_nether_01.title": "Ab in die Hölle",
+    "t1_nether_01.quest_subtitle": "Pack deinen Feuerresistenz-Trank ein. Ernst gemeint.",
+    "t1_nether_01.quest_desc": ["Netherkristall ist essenziell für frühe Create-Rezepte. Du brauchst ihn. Er ist nur im Nether.", "Sammle Obsidian und crafte Feuerstein und Stahl, um das Portal zu öffnen.", "Der Nether ist nicht freundlich. Trage deine Eisenrüstung. Bring Essen. Fall nicht in Lava.", "Du wurdest gewarnt."],
+
+    "t1_nether_02.title": "Kristall und Flammen",
+    "t1_nether_02.quest_subtitle": "Der Nether gibt, der Nether nimmt.",
+    "t1_nether_02.quest_desc": ["Netherkristall treibt frühe Create-Komponenten an — Elektronenröhren, Geschwindigkeitsregler und mehr.", "Lohenruten schalten Brauen und Verzaubern frei und werden für den Tier-2-Fortschritt benötigt.", "Farme beides. Komm lebend zurück. Dieser letzte Teil ist wichtig."],
+
+    "t2_create_01.title": "Das goldene Zeitalter des Messings",
+    "t2_create_01.quest_subtitle": "Kupfer + Zink + Hitze = die Zukunft.",
+    "t2_create_01.quest_desc": ["Messing ist das Material, das alles Interessante in Create freischaltet.", "Mische Kupfer- und Zink-Barren in einem Mechanischen Mischer, der mit 130+ UPM läuft.", "Wenn dein Rad nicht schnell genug dreht, baue ein größeres. Oder zwei. Größe ist hier wichtig."],
+
+    "t2_create_02.title": "Messing-Gehäuse",
+    "t2_create_02.quest_subtitle": "Jede Maschine verdient eine ordentliche Hülle.",
+    "t2_create_02.quest_desc": ["Messing-Gehäuse beherbergen die fortgeschrittenen Create-Komponenten.", "Messing-Zeiger werden in Uhren und Sequenz-Gangwechslern verwendet — die es dir ermöglichen, mehrstufige Automatisierungssequenzen zu programmieren.", "Crafte beides. Du wirst sie von jetzt an ständig brauchen."],
+
+    "t2_create_03.title": "Mechanischer Crafter",
+    "t2_create_03.quest_subtitle": "Crafting, aber automatisiert.",
+    "t2_create_03.quest_desc": ["Der Mechanische Crafter automatisiert Crafting-Rezepte, die zu komplex — oder unmöglich — für einen normalen Tisch sind.", "Mehrere Schlüsselgegenstände in diesem Modpack, einschließlich des Resource Catalysts, können NUR hier hergestellt werden.", "Du benötigst mindestens 3 Crafter in einem Crafting-Grid-Muster angeordnet. Gegenstände treten von hinten ein und werden automatisch gecraftet.", "Baue ein 3x3-Gitter aus Craftern für vollständige Rezeptabdeckung."],
+
+    "t2_create_04.title": "Präzisionsmechanismus",
+    "t2_create_04.quest_subtitle": "Der wichtigste Gegenstand in Tier 2.",
+    "t2_create_04.quest_desc": ["Der Präzisionsmechanismus ist der Türhüter zu Tier 3.", "Er erfordert ein 5x5-Mechanisches-Crafter-Setup — und eine ganze Menge Zwischenkomponenten.", "Rezept beinhaltet: Goldnuggets, Elektronenröhren, Welle, Eisennuggets und ein Zahnrad.", "Ohne diesen Gegenstand kannst du den AE2 ME-Controller nicht bauen. Es gibt keine Abkürzung.", "Baue das Crafter-Setup sorgfältig. Starte das Rezept. Genieße die befriedigende Animation."],
+
+    "t2_create_05.title": "Mechanischer Arm",
+    "t2_create_05.quest_subtitle": "Er greift Dinge. Das ist buchstäblich alles. Er ist großartig.",
+    "t2_create_05.quest_desc": ["Der Mechanische Arm hebt Gegenstände von einer Maschine auf und legt sie in eine andere.", "Er ersetzt Dutzende von Trichtern, Bändern und Workarounds durch einen einzigen konfigurierbaren Block.", "Stelle seine Eingänge (z.B. Crushing-Räder-Ausgabe) und Ausgänge (z.B. Mekanism-Anreicherungs-Eingang) mit einem Schraubenschlüssel ein.", "Baue einen für deine Erzkette: Crushing-Räder → Arm → Mekanism-Anreicherungskammer. Schau zu, wie die Magie passiert."],
+
+    "t2_mek_01.title": "Osmium — Das neue Eisen",
+    "t2_mek_01.quest_subtitle": "Dicht, glänzend und absolut überall, sobald man sucht.",
+    "t2_mek_01.quest_desc": ["Osmium ist Mekanisms primäres Metall — verwendet in fast jeder Maschine, Schaltung und Komponente.", "Es spawnt in großen Adern tiefer als Eisen, mit einer höheren-als-Vanilla-Dichte dank unserer Erzkonfiguration.", "Du wirst viel davon brauchen. Fange jetzt an, es zu horten — dein zukünftiges Ich wird dir danken."],
+
+    "t2_mek_02.title": "Anreicherungskammer",
+    "t2_mek_02.quest_subtitle": "Doppelter Erzoutput. Der smarte Weg.",
+    "t2_mek_02.quest_desc": ["Die Anreicherungskammer verarbeitet zerquetschtes Erz (von Create Crushing-Rädern) zu Staub — das ergibt 2-fachen Erzoutput.", "Diese Maschine benötigt Forge-Energie (FE). Verbinde sie mit einem Create: New Age Alternator oder einem Solarpanel.", "Wichtig: Das Rezept für diese Maschine wurde geändert. Du benötigst Create-Zahnräder als Handwerkskomponente.", "Kein Messing-Tier Create-Setup = keine Anreicherungskammer. Die Progression ist absichtlich so gestaltet."],
+
+    "t2_mek_03.title": "Die APEX-Erzkette",
+    "t2_mek_03.quest_subtitle": "Crushing-Räder → Anreicherungskammer = 2x Erz. Für immer.",
+    "t2_mek_03.quest_desc": ["Dies ist die vollständige Tier-2-Erzkette: Erz abbauen → Crushing-Räder → Anreicherungskammer → Staub schmelzen → Barren.", "Ergebnis: 2 Barren pro Erzblock statt 1. Jeder Erzblock. Für den Rest des Spiels.", "Richte die vollständige Automatisierung ein: Bänder und Arme führen Erz ein, Barren kommen automatisch heraus.", "Die Tage des Schmelzens von rohem Erz sind vorbei. Schau nie zurück."],
+
+    "t2_mek_04.title": "Metallurgischer Infuser",
+    "t2_mek_04.quest_subtitle": "Weil normale Legierungen nicht fancy genug waren.",
+    "t2_mek_04.quest_desc": ["Der Metallurgische Infuser kombiniert Metalle mit Infusions-Materialien (Kohlenstoff, Redstone, Diamant usw.), um Legierungen herzustellen.", "Infundierte Legierung → Verstärkte Legierung → Atomare Legierung — jede Stufe schaltet fortgeschrittenere Mekanism-Komponenten frei.", "Zum Einstieg: Kohle im Ofen schmelzen, um Kohlenstoffstaub zu erhalten, dann Eisenbarren mit Kohlenstoff infundieren.", "Du wirst Infundierte Legierung für fast alles in Tier 3 und darüber hinaus benötigen."],
+
+    "t2_util_01.title": "Rucksack-Upgrade",
+    "t2_util_01.quest_subtitle": "36 Slots war nie genug.",
+    "t2_util_01.quest_desc": ["Du trägst Erz, Essen, Werkzeuge, Blöcke, und irgendwie ist trotzdem kein Platz für irgendetwas Nützliches.", "Sophisticated Backpacks lösen das. Crafte einen und trage ihn — er lagert Gegenstände unabhängig von deinem Inventar.", "Füge ein Magnet-Upgrade hinzu, um nahegelegene Gegenstandsdrops automatisch aufzusammeln. Deine Lebensqualität hat sich gerade erheblich verbessert."],
+
+    "t2_util_02.title": "Verzaubern, richtig gemacht",
+    "t2_util_02.quest_subtitle": "Apotheosis entfernt das Level-Limit. Bitte sehr.",
+    "t2_util_02.quest_desc": ["Vanilla-Verzaubern ist bei Level 30 gedeckelt und auf 3 Bücherregale begrenzt. Apotheosis ändert all das.", "Mit genug hochwertigen Bücherregalen kannst du die Verzauberungskraft weit über Vanilla-Grenzen hinaus steigern.", "Beginne mit einem Standard-Verzauberungstisch und 15 normalen Bücherregalen, um maximale Vanilla-Kraft freizuschalten.", "Später kannst du sie durch Apotheosis' aufgerüstete Bücherregale für noch höherstufige Verzauberungen ersetzen."],
+
+    "t2_util_03.title": "Organisierter Lagerraum",
+    "t2_util_03.quest_subtitle": "Eine Kiste für alles. Alles in seiner Kiste.",
+    "t2_util_03.quest_desc": ["Kisten sind Chaos. Functional Storage Drawers halten große Mengen eines einzelnen Gegenstands pro Slot.", "Eine 2x2-Schublade hält 4 Gegenstandstypen mit massiven Stapellimits. Perfekt für Erze, Barren und Holz.", "Füge einen Schubladen-Controller hinzu, um mehrere Schubladen in ein einziges Netzwerk zu verbinden — lege beliebige Gegenstände ein und sie finden automatisch ihren Platz.", "Dies ist deine frühe Lagerungslösung, bis AE2 in Tier 3 übernimmt."],
+
+    "t2_finale.title": "Bereit für Tier 3",
+    "t2_finale.quest_subtitle": "AE2 und Mekanism warten. Genauso wie deine Stromrechnung.",
+    "t2_finale.quest_desc": ["Du hast Messing gemeistert, Präzisionsmechanismen gebaut, deinen Erzoutput verdoppelt und deine Basis organisiert.", "Tier 3 öffnet Applied Energistics 2 — das mächtigste Lager- und Autocrafting-System im Pack.", "Der AE2 ME-Controller benötigt Präzisionsmechanismen. Gut, dass du bereits welche hast.", "Crafte den Elektromotor, um Rotationsenergie von Create mit Forge-Energie (FE) zu verbinden. Du wirst FE für alles Kommende benötigen."],
+
+    "t3_ae2_01.title": "Züchte deinen Quartz",
+    "t3_ae2_01.quest_subtitle": "AE2 beginnt in einem Eimer Wasser.",
+    "t3_ae2_01.quest_desc": ["Applied Energistics 2 benötigt Certus-Quarz — und die beste Quelle ist ihn selbst zu züchten.", "Wirf Certus-Quarz-Samen ins Wasser. Sie wachsen mit der Zeit zu vollen Kristallen.", "Fluix-Kristalle werden hergestellt, indem man Certus-Quarz, Nether-Quarz und Redstone gleichzeitig ins Wasser wirft.", "Beides ist essenziell. Züchte einen soliden Vorrat, bevor du weitermachst — du wirst sie schnell durchgehen."],
+
+    "t3_ae2_02.title": "ME-Controller",
+    "t3_ae2_02.quest_subtitle": "Das Gehirn deines Netzwerks. Behandle es gut.",
+    "t3_ae2_02.quest_desc": ["Der ME-Controller ist der zentrale Knoten jedes AE2-Netzwerks.", "Er benötigt eine konstante Energiezufuhr (FE), um zu funktionieren — verbinde ihn mit deinem Energienetz.", "Wichtig: Das Rezept wurde geändert. Es erfordert Präzisionsmechanismen als Kernkomponente.", "Dies erzwingt den Create-Tier-2-Fortschritt — keine Abkürzungen zu AE2.", "Platziere ihn, versorge ihn mit Strom, und schau zu, wie er blau leuchtet. Du lebst jetzt in der Zukunft."],
+
+    "t3_ae2_03.title": "Dein erstes ME-Netzwerk",
+    "t3_ae2_03.quest_subtitle": "Lagerung von überall zugänglich. Ja, von überall.",
+    "t3_ae2_03.quest_desc": ["Ein ME-Laufwerk hält Speicherzellen — dein digitales Inventar.", "Ein ME-Terminal gibt dir Zugriff auf alles im Netzwerk gespeicherte von einer einzigen Schnittstelle.", "Verbinde Controller → Laufwerk → Terminal mit ME-Kabeln (Glas oder Smart).", "Sobald dein Netzwerk live ist, wirst du dich fragen, wie du jemals ohne es gespielt hast.", "Tipp: Beginne mit 4k- oder 16k-Speicherzellen. Upgrade, wenn deine Gegenstandsanzahl wächst."],
+
+    "t3_ae2_04.title": "Autocrafting",
+    "t3_ae2_04.quest_subtitle": "Klick einen Knopf. Bekomme das Ding. Magie.",
+    "t3_ae2_04.quest_desc": ["AE2-Autocrafting lässt das Netzwerk automatisch und auf Abruf jeden Gegenstand für dich craften.", "Der Molekulare Assembler führt das eigentliche Crafting durch. Der Pattern-Provider füttert ihn mit Mustern.", "Kodiere Muster mit dem Muster-Kodierungsterminal: definiere was rein- und rausgeht.", "Richte Crafting-Muster für deine meistgenutzten Gegenstände ein (Eisenbarren, Schaltkreise, Gehäuse) und crafte nie wieder manuell.", "Dies ist das mächtigste System im Modpack. Investiere früh, erweitere oft."],
+
+    "t3_energy_01.title": "Rotation wird Strom",
+    "t3_energy_01.quest_subtitle": "Create dreht Dinge. Mekanism will Strom. Problem gelöst.",
+    "t3_energy_01.quest_desc": ["Create erzeugt Rotationskraft (SU/UPM). Mekanism und AE2 brauchen Forge-Energie (FE). Das ist nicht dasselbe.", "Create: New Age überbrückt diese Lücke. Der Alternator wandelt Rotationskraft in FE um.", "Je mehr UPM du ihm zuführst, desto mehr FE/t produziert er. Ein großes Wasserrad-Setup kann deine frühen Mekanism-Maschinen komfortabel versorgen.", "Verbinde den Ausgang des Alternators mit einem Energie-Würfel oder direkt via XNet-Kabel mit Maschinen."],
+
+    "t3_energy_02.title": "Energiespeicherung",
+    "t3_energy_02.quest_subtitle": "Puffere deine Energie. Maschinen sind bedürftig.",
+    "t3_energy_02.quest_desc": ["Generatoren produzieren Energie in Schüben. Maschinen verlangen eine konstante Versorgung. Ein Energie-Würfel glättet das aus.", "Der Basic Energy Cube speichert 4 Millionen FE. Verbinde deinen Alternator damit und deine Maschinen mit der anderen Seite.", "Crafte auch einen Basic Solar Generator — er produziert kostenlosen FE bei Tageslicht. Kein Brennstoff nötig, keine Wartung erforderlich.", "Passiver Solar + Create Alternator gibt dir ein solides, selbsttragendes frühes Stromsetup."],
+
+    "t3_energy_03.title": "XNet — Das Nervensystem",
+    "t3_energy_03.quest_subtitle": "Ein Kabel, um sie alle zu beherrschen.",
+    "t3_energy_03.quest_desc": ["XNet-Kabel sind die effizientesten Mehrzweckkabel im Pack.", "Ein einziges XNet-Netzwerk kann gleichzeitig Folgendes verwalten: Gegenstände, Flüssigkeiten, Energie und Redstone-Signale.", "Baue einen XNet-Controller, füge Konnektoren zu Maschinen hinzu und konfiguriere jede Verbindung in der Controller-GUI.", "Dies ersetzt ein Wirrwarr aus separaten Gegenstandsrohren, Flüssigkeitsrohren und Energiekabeln durch ein einziges, sauberes Netzwerk.", "Essenziell für die Verbindung deiner Erzkette, deines Energienetzes und deines Lagersystems in einem kohärenten Setup."],
+
+    "t3_pnc_01.title": "Luftkompressor",
+    "t3_pnc_01.quest_subtitle": "PneumaticCraft: Druckluft ist anscheinend auch Energie.",
+    "t3_pnc_01.quest_desc": ["PneumaticCraft verwendet Druckluft (mBar) als Energiequelle — völlig getrennt von FE.", "Der Luftkompressor erzeugt Druck durch Verbrennung von Brennstoff. Je höher der Druck, desto schneller arbeiten deine Maschinen.", "Rezepthinweis: Das Luftkompressor-Rezept wurde geändert, um Create-Komponenten zu erfordern — was den Messing-Tier-Fortschritt erzwingt.", "Verbinde den Kompressor mit einem Druckanzeiger und beobachte, wie die Nadel steigt. Lass ihn nicht explodieren."],
+
+    "t3_pnc_02.title": "Druckkammer",
+    "t3_pnc_02.quest_subtitle": "Ein Würfel aus Wänden, der unter Druck Dinge tut. Buchstäblich.",
+    "t3_pnc_02.quest_desc": ["Die Druckkammer ist die Kern-Handwerksstation von PneumaticCraft.", "Baue einen hohlen 3x3x3-Würfel aus Druckkammer-Wänden und zwei Druckkammer-Schnittstellen (für Gegenstands-I/O).", "Fülle sie mit Druckluft von deinem Kompressor und lege Gegenstände ein. Manche Rezepte produzieren Komponenten, die nur hier erhältlich sind.", "Komprimiertes Eisen — der Nether-Stern von PneumaticCraft — kommt von hier. Du wirst viel davon brauchen."],
+
+    "t3_ma_01.title": "Mystical Agriculture: Anfänge",
+    "t3_ma_01.quest_subtitle": "Du kannst jetzt Eisen anbauen. Verarbeite das erstmal.",
+    "t3_ma_01.quest_desc": ["Mystical Agriculture ermöglicht dir, Ressourcen genauso anzubauen wie Weizen — nur dass du statt Brot Diamanten bekommst.", "Inferium-Essenz ist die Grundlage von allem. Jeder höherstufige Same benötigt sie.", "Pflanze Inferium-Samen auf normalem Ackerland. Ernte die Essenz und verwende sie, um auf höhere Stufen upzugraden.", "Eine Gießkanne oder automatisierte Ernte (Create) beschleunigt den Prozess erheblich."],
+
+    "t3_ma_02.title": "Stufe-2-Samen",
+    "t3_ma_02.quest_subtitle": "Eisen. Aus Erde. Wir haben die Regeln nicht gemacht.",
+    "t3_ma_02.quest_desc": ["Stufe-2-Samen produzieren Eisen-, Kohle-, Stein- und Holzessenz — die Grundlagen, nachhaltig angebaut.", "Um sie herzustellen, benötigst du Prudentium-Essenz, die aus Inferium-Essenz gecraftet wird.", "Sobald du Eisensamen laufen hast, beginnt deine Erzabhängigkeit für Grundmetalle zu schwinden.", "Automatisiere die Ernte mit Create (Mechanischer Ernter auf einer Contraption) für maximalen Durchsatz."],
+
+    "t3_finale.title": "Tier 3 abgeschlossen",
+    "t3_finale.quest_subtitle": "AE2, Energie, Druck, Ernten — Tier 4 öffnet sich.",
+    "t3_finale.quest_desc": ["AE2 läuft, dein Energienetz ist stabil, PneumaticCraft ist unter Druck, und Pflanzen wachsen.", "Tier 4 führt 3-fache Erzverarbeitung, MEGA-Speicherzellen und das Resource-Catalyst-System ein — das Tor zu Mystical Agriculture Tier 3.", "Engineering-Prozessoren sind das Rückgrat aller AE2-Komponenten. Mache Extras.", "Advanced Control Circuits schalten Mekanism Tier-3-Maschinen frei. Du wirst beides in Zukunft brauchen."],
+
+    "t4_mek_01.title": "Reinigungskammer",
+    "t4_mek_01.quest_subtitle": "Dreifacher Erzoutput. Das x3-Zeitalter beginnt.",
+    "t4_mek_01.quest_desc": ["Die Reinigungskammer injiziert Sauerstoffgas in zerquetschtes Erz und wandelt es in Klumpen um — ein Schritt von 2x in Richtung 3x Erzoutput.", "Vollständige x3-Kette: Erz → Crusher (zerquetscht) → Reinigungskammer (Klumpen) → Crusher (schmutziger Staub) → Chemischer Wäscher (Staub) → Anreicherungskammer (Staub) → Schmelzer (Barren).", "Diese Maschine benötigt Forge-Energie und eine Sauerstoffgasversorgung (vom Elektrolytischen Separator, der Wasser spaltet).", "Wichtig: Das Rezept wurde geändert, um den Mechanischen Crafter mit Messing-Gehäusen zu erfordern. Kein Messing-Tier Create = keine Reinigungskammer.", "Richte zuerst den Elektrolytischen Separator ein — er spaltet Wasser in Wasserstoff und Sauerstoff, beides nützlich."],
+
+    "t4_mek_02.title": "Die x3-Erzkette",
+    "t4_mek_02.quest_subtitle": "Sechs Maschinen, ein Erzblock, drei Barren.",
+    "t4_mek_02.quest_desc": ["Die vollständige x3-Verarbeitungskette erfordert diese Maschinen in der Reihenfolge:", "1. Crusher — Erz → Zerquetschtes Erz", "2. Reinigungskammer (O2) — Zerquetschtes Erz → Klumpen", "3. Crusher — Klumpen → Schmutziger Staub", "4. Chemischer Wäscher (Wasser) — Schmutziger Staub → Staub", "5. Anreicherungskammer — Staub → Staub (2x)", "6. Energetischer Schmelzer — Staub → Barren", "Jede Maschine benötigt FE und die entsprechende Gasversorgung. Verwende XNet für die Flüssigkeitsleitung.", "Endresultat: 3 Eisenbarren aus 1 Eisenerzblock. Die Effizienz spricht für sich."],
+
+    "t4_mek_03.title": "Fortgeschrittene Legierungen",
+    "t4_mek_03.quest_subtitle": "Atomare Legierung und Veredeltes Obsidian. Das gute Zeug.",
+    "t4_mek_03.quest_desc": ["Mekanisms Endgame-Materialien erfordern eine vollständige Legierungskette: Eisen → Infundierte Legierung → Verstärkte Legierung → Atomare Legierung.", "Verstärkte Legierung erfordert Diamanten im Infuser. Atomare Legierung erfordert Veredeltes Obsidian.", "Veredeltes Obsidian: Obsidianstaub schmelzen (aus Obsidian im Crusher) → Veredelter Obsidian-Barren.", "Als Rüstung ist Veredeltes Obsidian nahezu unzerstörbar und bietet massiven Schutz.", "Atomare Legierung wird für Tier-5-Maschinen und den Fusionsreaktor-Controller benötigt. Horte beides."],
+
+    "t4_ae2_01.title": "ME-Laufwerk — Massenspeicher",
+    "t4_ae2_01.quest_subtitle": "Mehr Laufwerke. Mehr Zellen. Mehr Zeug gespeichert.",
+    "t4_ae2_01.quest_desc": ["Dein einzelnes ME-Laufwerk aus Tier 3 reicht nicht mehr aus. Zeit zu skalieren.", "Das ME-Laufwerk-Rezept wurde auf den Mechanischen Crafter mit Messing-Gehäusen aufgerüstet.", "Baue mehrere Laufwerke und fülle sie mit 256k- oder größeren Speicherzellen.", "Profi-Tipp: Verwende Speicher-Busse auf Schubladen-Controllern, um deinen AE2-Speicher auf physische Schubladen auszuweiten — das Beste aus beiden Welten."],
+
+    "t4_ae2_02.title": "MEGA-Zellen",
+    "t4_ae2_02.quest_subtitle": "1.000.000 Gegenstände. Eine Zelle. Völlig normal.",
+    "t4_ae2_02.quest_desc": ["MEGA-Zellen sind die größten Speicherzellen im Modpack — 1M, 4M, 16M und 64M Gegenstände pro Zelle.", "Sie erfordern erhebliche Certus-Quarz- und Fluix-Kristall-Investitionen zum Craften, aber die Auszahlung ist enorm.", "Eine einzige 64M-Zelle kann das gesamte Inventar deiner Basis mit Platz zum Atmen fassen.", "Kombiniere mit Applied Mekanistics (Tier 5), um Mekanism-Chemikalien ebenfalls in deinem AE2-Netzwerk zu lagern."],
+
+    "t4_catalyst_01.title": "Resource Catalyst",
+    "t4_catalyst_01.quest_subtitle": "Das Tor zu Mystical Agriculture Tier 3.",
+    "t4_catalyst_01.quest_desc": ["Der Resource Catalyst wird benötigt, um Tier-3-Mystical-Agriculture-Samen zu craften. Es gibt drei Wege, ihn zu bekommen:", "Weg 1 — Passiv: 0,5% Drop-Chance beim Abbauen von Erzadern mit Create Ore Excavation Bohrern.", "Weg 2 — Gecraftet: Baue ihn im Mechanischen Crafter mit MA-Essenzen (Eisen, Lapis, Quarz) + einem Apotheosis-Edelstein.", "Weg 3 — Aktiv: Garantierter Drop von Mowzie's Mobs Bossen (Ferrous Wroughtnaut, Frostmaw usw.) und Dungeonkisten (8% Chance in When Dungeons Arise, YUNGs Strukturen).", "Sammle mindestens 3 — einen pro Tier-3-Samen-Rezept, das du freischalten möchtest."],
+
+    "t4_ma_01.title": "Tier-3-Samen",
+    "t4_ma_01.quest_subtitle": "Diamanten. Wachsend. Im Boden.",
+    "t4_ma_01.quest_desc": ["Tier-3-Samen produzieren Gold-, Diamant- und Smaragd-Essenzen — die Luxusmaterialien.", "Rezeptänderung: Jeder Tier-3-Same erfordert einen Resource Catalyst als Handwerkskomponente.", "Kein Catalyst = keine T3-Samen. Das verhindert das Überspringen der Midgame-Erkundung und des Boss-Inhalts.", "Sobald du Diamant-Samen laufen hast, wird dein Diamantvorrat passiv und unendlich.", "Pflanze sie auf Essenz-Ackerland für einen 10% Wachstumsgeschwindigkeitsbonus."],
+
+    "t4_ars_01.title": "Ars Nouveau: Das Notizbuch",
+    "t4_ars_01.quest_subtitle": "Magie existiert. Wir haben es nur bis jetzt nicht erwähnt.",
+    "t4_ars_01.quest_desc": ["Ars Nouveau ist das Magie-System dieses Packs — Zaubersprüche, Rituale, magische Kreaturen und Automatisierung.", "Das abgenutzte Notizbuch ist deine Einführung. Lies es. Alles. Es erklärt alles.", "Source-Gems sind der magische Brennstoff. Du erzeugst sie über den Agronomischen Sourcelink (in der Nähe von Nutzpflanzen) oder den Vulkanischen Sourcelink (in der Nähe von Lava).", "Hauptgrund zum Investieren: Drygmys. Das sind magische Kreaturen, die automatisch Mob-Drops erzeugen — einschließlich Cataclysm-Boss-Drops."],
+
+    "t4_ars_02.title": "Drygmy-Farm",
+    "t4_ars_02.quest_subtitle": "Passive Mob-Drops. Ohne die Mobs zu töten.",
+    "t4_ars_02.quest_desc": ["Drygmys sind magische Kreaturen aus Ars Nouveau, die passiv Mob-Drops erzeugen — kein Töten erforderlich.", "Setup: Platziere Jars of Drygmy Whims in einem Encountrium-Kreis, beschwöre Drygmys mit einem Drygmy Charm und füge Mob Jars (oder Essenzen) in der Nähe hinzu.", "Die Drygmys produzieren periodisch Drops von jedem Mob, den sie erkennen.", "Mit einem Cataclysm Mob Effigy können sie dazu gebracht werden, Cataclysm-Boss-Drops zu produzieren — einschließlich Mythic Catalysts.", "Dies ist der EINZIGE Weg, die Mythic-Catalyst-Produktion zu automatisieren. Es erfordert zunächst Cataclysm-Boss-Kills, um das Effigy zu bekommen."],
+
+    "t4_create_ei.title": "Hyper-Erfahrung",
+    "t4_create_ei.quest_subtitle": "Flüssige XP. Industrieller Maßstab. Weil warum nicht.",
+    "t4_create_ei.quest_desc": ["Create: Enchantment Industry wandelt XP in flüssige Form um und verarbeitet sie dann zu Hyper-Erfahrung.", "Hyper-Erfahrung wird im Catalyst Altar verwendet — einer der drei Wege, einen Resource Catalyst herzustellen.", "Setup: XP über einen Experience Rotor sammeln (Mob-Farm in der Nähe) → in einem Tank lagern → durch ein Misch-Rezept laufen lassen, um Hyper-Erfahrung zu produzieren.", "Der Catalyst Altar verbraucht 1000 mB Hyper-Erfahrung (über einen Create Spout), um einen Resource Catalyst herzustellen.", "Dies ist die kontrollierteste Catalyst-Quelle — vollständig automatisierbar mit einem Create+Mekanism-Setup."],
+
+    "t4_finale.title": "Bereit für Tier 5",
+    "t4_finale.quest_subtitle": "Die Bosse warten. Genauso wie deine Beerdigung.",
+    "t4_finale.quest_desc": ["Tier 4 ist abgeschlossen. Du hast x3-Erzverarbeitung, massiven AE2-Speicher, Drygmy-Automatisierung und Hyper-XP-Produktion.", "Tier 5 beginnt mit Kampf. Cataclyms Boss-Linie ist die einzige Quelle für Mythic Catalysts und Singularity Shards.", "Der Netherite Monstrosity ist dein Einstiegspunkt — im Nether zu finden, lässt einen garantierten Resource Catalyst fallen.", "Die Apex-Bosse (Ignis, The Harbinger, Ender Guardian) lassen Mythic Catalysts und Singularity Shards für den Fusionsreaktor fallen.", "Bevor du angreifst: Veredeltes-Obsidian-Rüstung, Atomare-Legierungs-Tier-Ausrüstung und vollständige Verzauberungen werden dringend empfohlen.", "Stelle auch sicher, dass dein AE2-Autocrafting läuft. Du musst nach jedem Kampf Vorräte auffüllen."],
+
+    "t5_boss_01.title": "Netherite Monstrosity",
+    "t5_boss_01.quest_subtitle": "Es besteht aus Netherit. Viel Glück.",
+    "t5_boss_01.quest_desc": ["Das Netherite Monstrosity ist deine Einführung in die Cataclysm-Boss-Linie.", "Du findest es in riesigen Nether-Strukturen — es ist groß, gepanzert und nicht erfreut, dich zu sehen.", "Drops: Garantierter Resource Catalyst und gelegentlich seltene Cataclysm-spezifische Beute.", "Empfohlene Ausrüstung: Veredeltes-Obsidian-Rüstung (vollständig), ein starkes Schwert oder eine Axt mit hochwertigen Verzauberungen und viel Heilung.", "Wenn du stirbst, respawne, stocke auf und versuche es erneut. Das soll schwer sein."],
+
+    "t5_boss_02.title": "Ignis — Herr des Feuers",
+    "t5_boss_02.quest_subtitle": "Apex Boss I. Feuerresistenz ist keine Option.",
+    "t5_boss_02.quest_desc": ["Ignis ist der erste von drei Apex-Bossen — den schwersten Gegnern im Modpack.", "Er bewohnt vulkanische Biome und verwendet feuerbasierte Angriffe. Ohne Feuerresistenz stirbst du allein durch die Umgebung.", "Drops: Mythic Catalyst (1, garantiert) und Singularity Shards (1-2).", "Mythic Catalysts werden für Tier-4-MA-Samen benötigt. Singularity Shards werden für den Fusionsreaktor-Controller benötigt.", "Empfohlen: Feuerresistenz-Tränke, Totem der Unsterblichkeit, Veredeltes-Obsidian-Rüstung mit Protection IV, eine Waffe auf Mekanism Atomic Alloy-Niveau."],
+
+    "t5_boss_03.title": "The Harbinger und Ender Guardian",
+    "t5_boss_03.quest_subtitle": "Apex-Bosse II und III. Das Ende ist nicht sicher.",
+    "t5_boss_03.quest_desc": ["The Harbinger und der Ender Guardian befinden sich beide in End-Dimension-Strukturen.", "The Harbinger ist schnell, aggressiv und verwendet Teleportationsangriffe. Der Ender Guardian kommandiert die Leere.", "Beide lassen Singularity Shards fallen — du brauchst mehrere für den Fusionsreaktor-Controller.", "Zusammen mit Ignis gibt dir das Besiegen aller drei Apex-Bosse die Materialien für jedes Tier-5-Rezept.", "Tipp: Richte einen Wegstein im Ende ein, bevor du angreifst. Du wirst einen schnellen Weg zurück zu deiner Basis wollen."],
+
+    "t5_drygmy.title": "Mythic Catalyst: Automatisiert",
+    "t5_drygmy.quest_subtitle": "Boss-Drops, ohne den Bosskampf. Irgendwann.",
+    "t5_drygmy.quest_desc": ["Sobald du einen Apex-Boss getötet und sein Mob-Effigy erhalten hast, kannst du es neben einem Drygmy platzieren.", "Der Drygmy wird dann passiv Mythic Catalysts erzeugen — keine weiteren Boss-Runs mehr erforderlich.", "Dies ist der einzige Weg, die Mythic-Catalyst-Produktion vollständig zu automatisieren.", "Du wirst eine stetige Versorgung für Tier-4-MA-Samen und andere Rezepte benötigen.", "Setup: Drygmy-Farm (aus T4) + Cataclysm-Boss-Effigy daneben = automatisierte Mythic Catalysts."],
+
+    "t5_ma_01.title": "Tier-4-Samen — Mekanism-Metalle",
+    "t5_ma_01.quest_subtitle": "Osmium aus Erde. Die Bergbauindustrie ist tot.",
+    "t5_ma_01.quest_desc": ["Mystical Agradditions Tier-4-Samen produzieren Mekanism-Metalle: Osmium, Zinn, Blei, Uran und Fluorit.", "Jedes Samen-Rezept erfordert einen Mythic Catalyst — erhalten von Cataclysm Apex-Bossen oder deiner Drygmy-Farm.", "Sobald Osmium-Samen laufen, wird deine Mekanism-Versorgungskette selbsttragend.", "Uran-Samen liefern passives Uran für Mekanism-Generatoren, und Fluorit für den Elektrolytischen Separator.", "Pflanze auf Essenz-Ackerland für die beste Wachstumsrate. Automatisiere die Ernte mit Create für maximalen Durchsatz."],
+
+    "t5_digital_miner.title": "Digital Miner",
+    "t5_digital_miner.quest_subtitle": "Richte ihn auf den Boden. Schau zu, wie das Erz ankommt.",
+    "t5_digital_miner.quest_desc": ["Der Mekanism Digital Miner scannt automatisch einen konfigurierbaren Bereich und baut spezifische Blöcke ab.", "Stelle einen Filter für jeden Erz- oder Blocktyp ein und er wird den gesamten Radius systematisch abbauen, ohne dass du einen Finger rührst.", "Rezepthinweis: Erfordert den Mechanischen Crafter mit Veredeltem Obsidian und Präzisionsmechanismen.", "Energiebedarf: erhebliche FE/t — dein Alternator + Solar-Setup sollte vor dem Betrieb aufgerüstet werden.", "Platziere ihn, stelle den Filter ein, gib ihm Strom und ein Silk-Touch-äquivalentes Upgrade, und gehe weg."],
+
+    "t5_mega_cells.title": "MEGA-Zellen — Maximale Kapazität",
+    "t5_mega_cells.quest_subtitle": "64 Millionen Gegenstände. Keine Ausreden mehr für eine unordentliche Basis.",
+    "t5_mega_cells.quest_desc": ["Die 64M MEGA-Zelle ist die größte Speichereinheit im Pack. Eine Zelle. 64 Millionen Gegenstände. Du brauchst wahrscheinlich nicht mehr.", "Applied Mekanistics fügt Mekanism Chemical Cells für dein AE2-Netzwerk hinzu — lagere Sauerstoff, Wasserstoff und andere Gase direkt in ME-Laufwerken.", "Mit MEGA-Zellen + Applied Mekanistics kann dein AE2-Netzwerk deinen gesamten Materialfluss — Gegenstände und Chemikalien — an einem Ort verwalten.", "Das ist das Lager-Endgame. Baue es, fülle es und denke nie wieder über Lagerung nach."],
+
+    "t5_fusion_reactor.title": "Fusionsreaktor",
+    "t5_fusion_reactor.quest_subtitle": "Unbegrenzte Energie. Nein, wirklich.",
+    "t5_fusion_reactor.quest_desc": ["Der Mekanism Fusionsreaktor ist die mächtigste Energiequelle im Modpack.", "Einmal in Betrieb produziert er so viel FE/t, dass jeder andere Generator völlig obsolet wird.", "Das Controller-Rezept ist stark beschränkt — es erfordert:", "• Singularity Shards — nur von Cataclysm Apex-Bossen erhältlich (Ignis, Harbinger, Ender Guardian)", "• Atomare Legierung — Mekanisms Top-Tier-Legierung", "• Veredelter Obsidian-Barren — Mekanisms härtestes Material", "• AE2 ME-Controller — erfordert Präzisionsmechanismen", "Der Bau der vollständigen Reaktorstruktur erfordert zusätzliche Fusionsreaktor-Rahmen-Blöcke und einen Reaktorport.", "Brennstoff: D-T-Kraftstoff (Deuterium + Tritium, beides aus Wasser im Elektrolytischen Separator).", "Einmal gezündet, geht ihm nie der Brennstoff aus, solange du Wasser zuführst. Das ist das Energie-Endgame."],
+
+    "t5_finale.title": "Gaia erwacht",
+    "t5_finale.quest_subtitle": "Du hast alles gebaut. Angefangen mit einem Stock und zwei Holzplanken.",
+    "t5_finale.quest_desc": ["Du hast mit nichts angefangen. Du hast einen Baum geschlagen. Du hast einen Crafting-Tisch gebaut.", "Jetzt hast du einen Fusionsreaktor, ein vollständig automatisiertes AE2-Netzwerk, Mystical Agriculture, das jedes Metall im Spiel anbaut, und Cataclysm-Bosse, die sich selbst via Drygmys farmen.", "Der Haupt-Fortschritt von Gaia Awakening ist abgeschlossen.", "", "Aber die Welt ist noch da: Ars Nouveau Zaubermeisterschaft, Occultism-Rituale, Alexs Mobs und Caves zu erkunden, Steam 'n' Rails zu bauen, Apotheosis-Gipfel zu erreichen.", "Das Ende der Questlinie ist nicht das Ende des Spiels.", "Das ist es nie."]
+}

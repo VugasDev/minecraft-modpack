@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     // TODO: Verifiziere mystical_agriculture Essence-IDs in 1.21.1 (könnte
     //       'mystical_agriculture:iron_essence' oder 'mysticalagriculture:iron_essence' sein)
     event.recipes.create.mechanical_crafting(
-        'apex:resource_catalyst',
+        'gaia:resource_catalyst',
         [
             'III',
             'LGL',
@@ -35,28 +35,39 @@ ServerEvents.recipes(event => {
     )
 
     // ==========================================================================
-    // PFAD 3c: Catalyst Altar — Create:EI Spout Recipe (Hyper XP auf Altar)
+    // PFAD 3c: Catalyst Altar — Create:EI Spout Rezepte
     // ==========================================================================
-    // Mechanik: Spout sprüht Hyper Experience auf placed apex:catalyst_altar block.
-    // Ein interner Counter (via Block-NBT) zählt mB; bei 1000 mB → 1× Catalyst pop-out.
-    //
-    // Vereinfachte Implementation: Spout-Recipe direkt auf den Block, ohne Counter.
-    // Hyper XP ist teuer in Erzeugung (siehe enchantment_automation.js Mixer),
-    // damit ist die Catalyst-Erzeugung natürlich gegated.
-    //
-    // TODO: Exakte Create-Spout-Recipe-API in KubeJS 2101.x verifizieren.
-    //       Falls 'create:filling' nicht funktioniert: Alternative via BlockEvents
-    //       und Item-NBT-Counter implementieren.
-    // High-Level KubeJS Create-API für Spout (Filling).
-    // Spout sprüht 1000 mB Hyper XP auf Catalyst Altar Item → erzeugt Resource Catalyst.
+    // Variante A: Hyper Experience (1000 mB) → Resource Catalyst
     // Altar bleibt erhalten (per Recipe-Output zurückgegeben).
     event.recipes.create.filling(
-        ['apex:resource_catalyst', 'apex:catalyst_altar'],
-        ['apex:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
+        ['gaia:resource_catalyst', 'gaia:catalyst_altar'],
+        ['gaia:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
+    )
+
+    // Variante B: Mythic Liquid XP (500 mB) → Mythic Catalyst
+    // Mythic Liquid XP ist konzentrierter — halb so viel mB wie Hyper XP für den Resource Catalyst,
+    // aber Erzeugung von Mythic Liquid XP selbst ist teurer (braucht Singularity Shard im Mixer).
+    event.recipes.create.filling(
+        ['gaia:mythic_catalyst', 'gaia:catalyst_altar'],
+        ['gaia:catalyst_altar', Fluid.of('gaia:mythic_liquid_xp', 500)]
     )
 
     // ==========================================================================
-    // MA SEED-OVERRIDES — T3 Seeds verlangen apex:resource_catalyst zusätzlich
+    // MYTHIC LIQUID XP HERSTELLUNG — Create Mixing-Rezept
+    // ==========================================================================
+    // Hyper Experience (2000 mB) + Singularity Shard → Mythic Liquid XP (1000 mB)
+    // Erfordert Heated Mixing (Blaze Burner unter dem Mixer).
+    // Progression: Shard erst nach Apex-Boss-Kill verfügbar → natürlicher Gate.
+    event.recipes.create.mixing(
+        [Fluid.of('gaia:mythic_liquid_xp', 1000)],
+        [
+            Fluid.of('create_enchantment_industry:hyper_experience', 2000),
+            'gaia:singularity_shard'
+        ]
+    ).heated()
+
+    // ==========================================================================
+    // MA SEED-OVERRIDES — T3 Seeds verlangen gaia:resource_catalyst zusätzlich
     // ==========================================================================
     // Standard MA T3 Seed Recipe: 4× Inferium Essence + 4× T2 Seeds + 1× Tier-Material
     // Custom: ergänzt um 1× Catalyst.
@@ -78,12 +89,12 @@ ServerEvents.recipes(event => {
         ], {
             I: 'mysticalagriculture:inferium_essence',
             B: base,
-            C: 'apex:resource_catalyst'
+            C: 'gaia:resource_catalyst'
         })
     })
 
     // ==========================================================================
-    // MA SEED-OVERRIDES — T4 Seeds verlangen apex:mythic_catalyst zusätzlich
+    // MA SEED-OVERRIDES — T4 Seeds verlangen gaia:mythic_catalyst zusätzlich
     // ==========================================================================
     // Mekanism + AE2 Seeds aus Mystical Agradditions (T4).
     // Mythic Catalyst kommt NUR aus Cataclysm Apex-Bosse + Drygmys.
@@ -105,7 +116,7 @@ ServerEvents.recipes(event => {
         ], {
             I: 'mysticalagriculture:prudentium_essence',
             B: base,
-            M: 'apex:mythic_catalyst'
+            M: 'gaia:mythic_catalyst'
         })
     })
 })

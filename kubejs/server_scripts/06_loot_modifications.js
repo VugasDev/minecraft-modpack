@@ -14,7 +14,7 @@ LootJS.modifiers(event => {
     ]
     apexBosses.forEach(boss => {
         event.addEntityLootModifier(boss)
-            .addLoot(LootEntry.of('apex:singularity_shard').withCount(1, 2))
+            .addLoot(LootEntry.of('gaia:singularity_shard').withCount(1, 2))
     })
 
     // ==========================================================================
@@ -31,7 +31,7 @@ LootJS.modifiers(event => {
     ]
     t3CatalystBosses.forEach(boss => {
         event.addEntityLootModifier(boss)
-            .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
+            .addLoot(LootEntry.of('gaia:resource_catalyst').withCount(1))
     })
 
     // ==========================================================================
@@ -42,7 +42,7 @@ LootJS.modifiers(event => {
     // Alle anderen Endgame-Wege (Trader/Dungeons) liefern KEINEN Mythic Catalyst.
     apexBosses.forEach(boss => {
         event.addEntityLootModifier(boss)
-            .addLoot(LootEntry.of('apex:mythic_catalyst').withCount(1))
+            .addLoot(LootEntry.of('gaia:mythic_catalyst').withCount(1))
     })
 
     // ==========================================================================
@@ -52,15 +52,15 @@ LootJS.modifiers(event => {
     // TODO: Exakte Loot-Table-Pfade nach Boot verifizieren via /loottable list
     event.addLootTableModifier(/dungeons_arise:chests\/.*/)
         .randomChance(0.08)
-        .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
+        .addLoot(LootEntry.of('gaia:resource_catalyst').withCount(1))
 
     event.addLootTableModifier(/yungsbetterdungeons:chests\/.*/)
         .randomChance(0.08)
-        .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
+        .addLoot(LootEntry.of('gaia:resource_catalyst').withCount(1))
 
     event.addLootTableModifier(/yungsbetterstrongholds:chests\/.*/)
         .randomChance(0.10)
-        .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
+        .addLoot(LootEntry.of('gaia:resource_catalyst').withCount(1))
 
     // ==========================================================================
     // T3 RESOURCE CATALYST — Passiv-Pfad: Create Ore Excavation Vein Drops
@@ -71,7 +71,7 @@ LootJS.modifiers(event => {
     //       Block-Drop System — bei letzterem ggf. via BlockEvents-Hook umsetzen.
     event.addLootTableModifier(/createoreexcavation:vein\/.*/)
         .randomChance(0.005)
-        .addLoot(LootEntry.of('apex:resource_catalyst').withCount(1))
+        .addLoot(LootEntry.of('gaia:resource_catalyst').withCount(1))
 
 })
 
@@ -81,7 +81,7 @@ LootJS.modifiers(event => {
 ServerEvents.trades(event => {
     event.addWanderingTrade(1, trade => {
         trade.cost(Item.of('minecraft:emerald', 16))
-        trade.result('apex:resource_catalyst')
+        trade.result('gaia:resource_catalyst')
         trade.maxTrades(1)
         trade.xp(0)
     })

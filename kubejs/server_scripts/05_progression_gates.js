@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
     // --- Fusion Reactor Controller (T5 Endgame) ---
     // Erst nach Cataclysm Apex Boss (Ignis / Harbinger / Ender Guardian)
-    // apex:singularity_shard: custom Item, definiert in startup_scripts/00_custom_items.js
+    // gaia:singularity_shard: custom Item, definiert in startup_scripts/00_custom_items.js
     // Drop-Vergabe: server_scripts/06_loot_modifications.js (benötigt LootJS)
     // mekanism:sps_casing entfernt — SPS benötigt Fusion Reactor → Zirkelbezug/Deadlock
     event.remove({id: 'mekanismgenerators:fusion_reactor_controller'})
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         'ABA'
     ], {
         A: 'mekanism:alloy_atomic',
-        B: 'apex:singularity_shard',
+        B: 'gaia:singularity_shard',
         C: 'mekanism:ingot_refined_obsidian',
         D: 'ae2:controller'
     })

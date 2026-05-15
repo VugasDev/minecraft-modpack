@@ -4,8 +4,8 @@
 // Tier-Struktur:
 //   T1 — Vanilla Bookshelf       (max Eterna ~15)
 //   T2 — Apotheosis Blazing      (Nether-Tier, Gate: Blaze Rod + Nether Brick)
-//   T3 — apex:crystalline        (Mekanism+AE2, Gate: Osmium + Certus)
-//   T4 — apex:stellar            (End-Tier, Gate: Refined Obsidian + Ender Pearl)
+//   T3 — gaia:crystalline        (Mekanism+AE2, Gate: Osmium + Certus)
+//   T4 — gaia:stellar            (End-Tier, Gate: Refined Obsidian + Ender Pearl)
 //
 // Apotheosis Shelf Stats: kubejs/data/apotheosis/enchanting/shelves/
 // Custom Items: startup_scripts/00_custom_items.js
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     // Gate: Mekanism Osmium (Zone 3) + AE2 Certus Quartz
     // Apotheosis Stats: Eterna +4.0 / Quanta +0.75 / Arcana +0.5
     // =========================================================================
-    event.shaped('apex:crystalline_bookshelf', [
+    event.shaped('gaia:crystalline_bookshelf', [
         'ABA',
         'BCB',
         'ABA'
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     // Refined Obsidian ist Gate hinter Mekanism T3 (Obsidian Dust → Infusion Chamber)
     // Ender Pearl + End Stone signalisieren End-Dimension Erkundung
     // =========================================================================
-    event.shaped('apex:stellar_bookshelf', [
+    event.shaped('gaia:stellar_bookshelf', [
         'ABA',
         'BCB',
         'ABA'
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     })
 
     // =========================================================================
-    // apex:mythic_xp_shard
+    // gaia:mythic_xp_shard
     // Konzentriertes Mythic Liquid XP (~10.000 mB Equivalent)
     // Gate: Apotheosis Endgame (gem_dust) + Create:EI XP + apex Singularity
     //
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
     //       Alternativ: 'create_ei:experience_block', 'create_enchantedindustry:exp_nugget'
     //       o.ä. — in JEI/Modrinth Mod-Seite prüfen.
     // =========================================================================
-    event.shaped('apex:mythic_xp_shard', [
+    event.shaped('gaia:mythic_xp_shard', [
         'ABA',
         'BCB',
         'ABA'
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         A: 'apotheosis:gem_dust',
         // TODO: verify Create:EI XP item ID — could be create_ei:experience_nugget or similar
         B: 'create_ei:experience_nugget',
-        C: 'apex:singularity_shard'
+        C: 'gaia:singularity_shard'
     })
 
 })

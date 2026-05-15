@@ -158,7 +158,7 @@ function checkFundament(level, pos) {
         let found = false
         // ±3 y-Toleranz für Gelände-Unebenheiten
         for (let dy = -3; dy <= 3 && !found; dy++) {
-            if (level.getBlock(tx, pos.y + dy, tz).id === 'apex:gaia_pillar') found = true
+            if (level.getBlock(tx, pos.y + dy, tz).id === 'gaia:gaia_pillar') found = true
         }
         if (!found) {
             missing.push(`Säule ${i+1} fehlt — erwartet bei §e(${tx}, ${pos.y}, ${tz})§c`)
@@ -317,14 +317,14 @@ function triggerGaiaAwakening(level, pos, player) {
 
     // Einmaliges Sieg-Item — FTB Quests erkennt den Item-Erhalt als Quest-Abschluss-Bedingung
     // Definiert in: startup_scripts/00_custom_items.js
-    player.give('apex:gaia_awakening_token')
+    player.give('gaia:gaia_awakening_token')
 }
 
 // ========================
 // MAIN EVENT
 // ========================
 
-BlockEvents.rightClicked('apex:gaia_core', event => {
+BlockEvents.rightClicked('gaia:gaia_core', event => {
     let player = event.player
     let level  = event.level
     let pos    = event.block.pos

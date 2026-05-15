@@ -230,7 +230,7 @@
     {
       "id": "t4_catalyst_01",
       "title": "Resource Catalyst",
-      "icon": "apex:resource_catalyst",
+      "icon": "gaia:resource_catalyst",
       "x": 8.0,
       "y": 0.0,
       "subtitle": "The gate to Mystical Agriculture Tier 3.",
@@ -246,7 +246,7 @@
         {
           "id": "t4_cat_01_task_1",
           "type": "item",
-          "item": "apex:resource_catalyst",
+          "item": "gaia:resource_catalyst",
           "count": 3
         }
       ],
@@ -254,7 +254,7 @@
         {
           "id": "t4_cat_01_reward_1",
           "type": "item",
-          "item": "apex:resource_catalyst",
+          "item": "gaia:resource_catalyst",
           "count": 1
         },
         {
@@ -304,7 +304,7 @@
         {
           "id": "t4_ma_01_reward_2",
           "type": "item",
-          "item": "apex:resource_catalyst",
+          "item": "gaia:resource_catalyst",
           "count": 1
         },
         {

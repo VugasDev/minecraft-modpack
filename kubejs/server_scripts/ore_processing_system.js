@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_ore', 'create:crushed_raw_iron'],
         ['minecraft:gold_ore', 'create:crushed_raw_gold'],
         ['minecraft:copper_ore', 'create:crushed_raw_copper'],
-        ['mekanism:osmium_ore', 'apex:crushed_osmium']
+        ['mekanism:osmium_ore', 'gaia:crushed_osmium']
     ]
 
     crushedOres.forEach(([ore, crushed]) => {
@@ -24,9 +24,9 @@ ServerEvents.recipes(event => {
     //       Alternative-Implementierung: Custom KubeJS Block-Event oder Datapack-JSON.
     /*
     const apexMetals = [
-        ['mekanism:dust_iron', 'apex:refined_iron_pellet', 'minecraft:iron_ingot'],
-        ['mekanism:dust_gold', 'apex:refined_gold_pellet', 'minecraft:gold_ingot'],
-        ['mekanism:dust_osmium', 'apex:refined_osmium_pellet', 'mekanism:ingot_osmium']
+        ['mekanism:dust_iron', 'gaia:refined_iron_pellet', 'minecraft:iron_ingot'],
+        ['mekanism:dust_gold', 'gaia:refined_gold_pellet', 'minecraft:gold_ingot'],
+        ['mekanism:dust_osmium', 'gaia:refined_osmium_pellet', 'mekanism:ingot_osmium']
     ]
     apexMetals.forEach(([dust, pellet, ingot]) => {
         // PNC Pressure Chamber Recipe — Format zu verifizieren
