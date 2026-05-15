@@ -124,6 +124,15 @@ StartupEvents.registry('item', event => {
         .displayName('Nether Drill Head')
         .rarity('rare')
         .maxStackSize(1)
+
+    // Catalyst Drill Head — T4-Spezialist für Catalyst Nodes und Ley Lines
+    // Einziger Head der Catalyst Ley Lines (infinite) nutzbar macht
+    // Kleine Mythic Catalyst Chance auf beiden Node-Typen
+    event.create('gaia:catalyst_drill_head')
+        .displayName('Catalyst Drill Head')
+        .rarity('epic')
+        .maxStackSize(1)
+        .glow(true)
 })
 
 // ─── BLOCKS ──────────────────────────────────────────────────────────────────
@@ -143,6 +152,17 @@ StartupEvents.registry('block', event => {
         .displayName('Gaia Pillar')
         .hardness(30)
         .resistance(3600)
+
+    // Catalyst Node — Weltgenerierungs-Block für Catalyst Nodes und Ley Lines
+    // Spawn: selten, tief (Y < -32), glüht leicht
+    // Abbau: jeder Drill → finite Catalysts; catalyst_drill_head → Ley Line infinite nutzbar
+    event.create('gaia:catalyst_node')
+        .displayName('Catalyst Node')
+        .hardness(4.0)
+        .resistance(8.0)
+        .lightLevel(0.5)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
 
     // Catalyst Altar — Aktive Catalyst-Erzeugung via Create:EI Liquid XP Spout
     // Pfad 3c: 4× Apotheosis Gems + Mythic Liquid XP → Resource Catalyst (08_catalyst_system.js)

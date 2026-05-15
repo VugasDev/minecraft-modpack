@@ -1,15 +1,23 @@
 // 10_drill_heads.js — Create: Ore Excavation Custom Veins & Drill Head Upgrade-Pfad
 //
 // Drill-Head-Progression:
-//   Standard (COE built-in)          — Andesite / Iron / Steel / Diamond
-//   T3  gaia:osmium_drill_head       — Osmium-Ader, +Catalyst-Chance, +Osmium-Bonus
-//   T3  gaia:crystal_drill_head      — Certus/Amethyst-Ader, +Kristall-Bonus
-//   T3  gaia:nether_drill_head       — Nether-Ader (nur Nether), +Quartz/Gold-Bonus
+//   Standard (COE built-in)              — Andesite / Iron / Steel / Diamond
+//   T3  gaia:osmium_drill_head           — Osmium-Ader, +Catalyst-Chance, +Osmium-Bonus
+//   T3  gaia:crystal_drill_head          — Certus/Amethyst-Ader, +Kristall-Bonus
+//   T3  gaia:nether_drill_head           — Nether-Ader (nur Nether), +Quartz/Gold-Bonus
 //   T4  gaia:refined_obsidian_drill_head — Metall-Ader mit x3 Output + Catalyst
-//   T5  gaia:gaia_infused_drill_head — Mythische Ader, garantierter Catalyst + Shard-Chance
+//   T4  gaia:catalyst_drill_head         — Catalyst Node (finite) + Ley Line (infinite)
+//   T5  gaia:gaia_infused_drill_head     — Mythische Ader, garantierter Catalyst + Shard-Chance
+//
+// Catalyst-System:
+//   gaia:catalyst_node (alwaysFinite)  — Jeder Drill: kleine Catalyst-Menge; erschöpft sich
+//   gaia:catalyst_ley_line (alwaysInfinite) — Nur catalyst_drill_head nützlich; andere → Schotter
+//   catalyst_drill_head auf beiden: hoher Yield + kleine Mythic Catalyst Chance
+//
+// Alle Gaia-Adern sind alwaysFinite — verhindert endloses Farmen einer einzelnen Ader.
 //
 // Entity-Textur: assets/gaia/textures/entity/drill/<name>.png
-// Item-Tag:      #createoreexcavation:drills (via tags/11_drill_tags.js)
+// Item-Tag:      #createoreexcavation:drills (am Ende dieser Datei)
 
 ServerEvents.recipes(event => {
 
@@ -23,13 +31,14 @@ ServerEvents.recipes(event => {
     //   salt        = Zufallsseed (einzigartig pro Ader, sonst Überlappung)
 
     // ─── Osmium-Ader (T3) ─────────────────────────────────────────────────────
-    // Osmium-Erz, mitteldichte Adern, Overworld unter Y=16
+    // Osmium-Erz, mitteldichte Adern, Overworld unter Y=16, immer finite
     event.recipes.createoreexcavation.vein(
         '{"text": "Osmium Deposit", "color": "blue"}',
         'mekanism:osmium_ore'
     )
         .placement(512, 64, 91823741)
         .veinSize(1.5, 3.0)
+        .alwaysFinite()
         .biomeWhitelist('forge:is_overworld')
         .id('gaia:osmium_vein')
 
@@ -68,13 +77,14 @@ ServerEvents.recipes(event => {
     ).drill('gaia:gaia_infused_drill_head').priority(3).id('gaia:osmium_gaia_head')
 
     // ─── Certus-/Kristall-Ader (T3, Crystal Head) ─────────────────────────────
-    // Certus Quartz Ore als Kern; tief unter Y=0
+    // Certus Quartz Ore als Kern; tief unter Y=0, immer finite
     event.recipes.createoreexcavation.vein(
         '{"text": "Crystal Vein", "color": "aqua"}',
         'ae2:certus_quartz_ore'
     )
         .placement(768, 96, 37492015)
         .veinSize(1.0, 2.5)
+        .alwaysFinite()
         .biomeWhitelist('forge:is_overworld')
         .id('gaia:certus_vein')
 
@@ -104,13 +114,14 @@ ServerEvents.recipes(event => {
     ).drill('gaia:gaia_infused_drill_head').priority(2).id('gaia:certus_gaia_head')
 
     // ─── Nether-Ressourcen-Ader (T3, Nether Head) ─────────────────────────────
-    // Nether Quartz als Ader-Block; ausschließlich im Nether
+    // Nether Quartz als Ader-Block; ausschließlich im Nether, immer finite
     event.recipes.createoreexcavation.vein(
         '{"text": "Nether Vein", "color": "red"}',
         'minecraft:nether_quartz_ore'
     )
         .placement(512, 64, 65829374)
         .veinSize(2.0, 4.0)
+        .alwaysFinite()
         .biomeBlacklist('forge:is_overworld')
         .id('gaia:nether_vein')
 
@@ -142,13 +153,14 @@ ServerEvents.recipes(event => {
     ).drill('gaia:gaia_infused_drill_head').priority(2).id('gaia:nether_gaia_head')
 
     // ─── Veredeltes-Erz-Ader (T4, Refined Obsidian Head) ─────────────────────
-    // Deep Slate Iron als Matrix; seltene, tiefe Adern (Y < -40)
+    // Deep Slate Iron als Matrix; seltene, tiefe Adern (Y < -40), immer finite
     event.recipes.createoreexcavation.vein(
         '{"text": "Rich Metal Vein", "color": "gray"}',
         'minecraft:deepslate_iron_ore'
     )
         .placement(1024, 128, 44918273)
         .veinSize(2.0, 5.0)
+        .alwaysFinite()
         .biomeWhitelist('forge:is_overworld')
         .id('gaia:rich_metal_vein')
 
@@ -217,6 +229,66 @@ ServerEvents.recipes(event => {
         'gaia:mythic_vein', 400
     ).drill('gaia:gaia_infused_drill_head').priority(1).id('gaia:mythic_gaia_head')
 
+    // ─── Catalyst Node (T4, immer finite) ────────────────────────────────────
+    // gaia:catalyst_node Block, selten, tief (Y < -32), immer finite
+    // Jeder Drill bekommt etwas; catalyst_drill_head bekommt deutlich mehr + Mythic-Chance
+    event.recipes.createoreexcavation.vein(
+        '{"text": "Catalyst Node", "color": "gold"}',
+        'gaia:catalyst_node'
+    )
+        .placement(2048, 256, 73849201)
+        .veinSize(0.8, 1.5)
+        .alwaysFinite()
+        .biomeWhitelist('forge:is_overworld')
+        .id('gaia:catalyst_node_vein')
+
+    // Beliebiger Drill: 2-3 Resource Catalysts (erschöpft sich)
+    event.recipes.createoreexcavation.drilling(
+        [
+            Item.of('gaia:resource_catalyst', 2),
+            coeutil.processingOutput('gaia:resource_catalyst', 1)   // d.h. 2-3 gesamt
+        ],
+        'gaia:catalyst_node_vein', 500
+    ).id('gaia:catalyst_node_any_drill')
+
+    // Catalyst Drill Head: 5 Resource Catalysts + 8% Mythic Catalyst
+    event.recipes.createoreexcavation.drilling(
+        [
+            Item.of('gaia:resource_catalyst', 5),
+            coeutil.processingOutput('gaia:mythic_catalyst', 0.08)
+        ],
+        'gaia:catalyst_node_vein', 300
+    ).drill('gaia:catalyst_drill_head').priority(1).id('gaia:catalyst_node_catalyst_head')
+
+    // ─── Catalyst Ley Line (T4, immer infinite) ───────────────────────────────
+    // Gleicher Block (gaia:catalyst_node), andere Vein-ID + Placement-Seed
+    // alwaysInfinite — erschöpft sich NIE
+    // Andere Drills → Schotter (unbrauchbar); nur catalyst_drill_head gibt Catalysts
+    event.recipes.createoreexcavation.vein(
+        '{"text": "Catalyst Ley Line", "color": "light_purple"}',
+        'gaia:catalyst_node'
+    )
+        .placement(4096, 512, 91827364)
+        .veinSize(1.0, 1.0)
+        .alwaysInfinite()
+        .biomeWhitelist('forge:is_overworld')
+        .id('gaia:catalyst_ley_line')
+
+    // Beliebiger Drill: Schotter — kein nützlicher Output ohne richtigen Head
+    event.recipes.createoreexcavation.drilling(
+        Item.of('minecraft:cobblestone', 1),
+        'gaia:catalyst_ley_line', 800
+    ).id('gaia:ley_line_any_drill')
+
+    // Catalyst Drill Head: 3 Resource Catalysts + 5% Mythic Catalyst (infinite!)
+    event.recipes.createoreexcavation.drilling(
+        [
+            Item.of('gaia:resource_catalyst', 3),
+            coeutil.processingOutput('gaia:mythic_catalyst', 0.05)
+        ],
+        'gaia:catalyst_ley_line', 350
+    ).drill('gaia:catalyst_drill_head').priority(1).id('gaia:ley_line_catalyst_head')
+
     // =========================================================================
     // DRILL HEAD HANDWERK-REZEPTE
     // =========================================================================
@@ -266,6 +338,18 @@ ServerEvents.recipes(event => {
         B: 'create:brass_casing'
     })
 
+    // Catalyst Drill Head — T4 (Spezialist, Gate: 4× Resource Catalyst + Refined Obsidian)
+    // Benötigt bereits gefertigte Catalysts → natürliches Progression-Gate
+    event.shaped('gaia:catalyst_drill_head', [
+        'CRC',
+        'RPR',
+        'CRC'
+    ], {
+        C: 'gaia:resource_catalyst',
+        R: 'mekanism:ingot_refined_obsidian',
+        P: 'create:precision_mechanism'
+    })
+
     // Gaia-Infused Drill Head — T5 (Upgrade vom Refined Obsidian Head)
     event.shapeless('gaia:gaia_infused_drill_head', [
         'gaia:refined_obsidian_drill_head',
@@ -294,6 +378,7 @@ ServerEvents.tags('item', event => {
         'gaia:crystal_drill_head',
         'gaia:nether_drill_head',
         'gaia:refined_obsidian_drill_head',
+        'gaia:catalyst_drill_head',
         'gaia:gaia_infused_drill_head'
     ])
 })
