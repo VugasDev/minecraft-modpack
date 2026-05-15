@@ -1,0 +1,539 @@
+{
+  "id": "tier_2_chapter",
+  "title": "Tier 2: Messing & Maschinen",
+  "icon": "create:brass_ingot",
+  "default_quest_shape": "circle",
+  "quests": [
+
+    {
+      "id": "t2_create_01",
+      "title": "Das goldene Zeitalter des Messings",
+      "icon": "create:brass_ingot",
+      "x": 0.0,
+      "y": 0.0,
+      "subtitle": "Kupfer trifft Zink — Messing entsteht",
+      "description": [
+        "Messing ist der Schlüssel zu Tier 2.",
+        "Schmelze Kupfer und Zink im Mechanical Mixer zusammen — das geht nur mit genug RPM.",
+        "Stelle sicher, dass dein Wasserrad genug Energie liefert, oder bau ein großes."
+      ],
+      "dependencies": ["t1_create_05"],
+      "tasks": [
+        {
+          "id": "t2_c_01_task_1",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_c_01_reward_1",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8
+        },
+        {
+          "id": "t2_c_01_reward_2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+
+    {
+      "id": "t2_create_02",
+      "title": "Messing-Verkleidung",
+      "icon": "create:brass_casing",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Maschinen brauchen ein Gehäuse",
+      "description": [
+        "Brass Casings sind die Hülle der fortgeschrittenen Create-Maschinen.",
+        "Brass Hands zeigen dir die Zeit — und sind für den Sequenced Gearshift notwendig.",
+        "Stelle beides her."
+      ],
+      "dependencies": ["t2_create_01"],
+      "tasks": [
+        {
+          "id": "t2_c_02_task_1",
+          "type": "item",
+          "item": "create:brass_casing",
+          "count": 4
+        },
+        {
+          "id": "t2_c_02_task_2",
+          "type": "item",
+          "item": "create:brass_hand",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_c_02_reward_1",
+          "type": "item",
+          "item": "create:brass_casing",
+          "count": 4
+        },
+        {
+          "id": "t2_c_02_reward_2",
+          "type": "xp",
+          "xp": 350
+        }
+      ]
+    },
+
+    {
+      "id": "t2_create_03",
+      "title": "Mechanical Crafter",
+      "icon": "create:mechanical_crafter",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Crafting auf einem neuen Level",
+      "description": [
+        "Der Mechanical Crafter ist dein Eintritt in die automatisierte Herstellung.",
+        "Bestimmte Rezepte — darunter der Resource Catalyst — funktionieren NUR hier.",
+        "Du brauchst mindestens drei davon für ein 3×1-Crafter-Setup."
+      ],
+      "dependencies": ["t2_create_02"],
+      "tasks": [
+        {
+          "id": "t2_c_03_task_1",
+          "type": "item",
+          "item": "create:mechanical_crafter",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_c_03_reward_1",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 16
+        },
+        {
+          "id": "t2_c_03_reward_2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+
+    {
+      "id": "t2_create_04",
+      "title": "Precision Mechanism",
+      "icon": "create:precision_mechanism",
+      "x": 0.0,
+      "y": 6.0,
+      "subtitle": "Das Herzstück von Tier 2",
+      "description": [
+        "Das Precision Mechanism ist das anspruchsvollste Item von Tier 2.",
+        "Es wird in einem 5×5 Mechanical Crafter hergestellt — kein normaler Tisch kann das.",
+        "Ohne dieses Item kommst du nicht an den AE2 ME-Controller heran.",
+        "Baue dir das Setup sorgfältig auf."
+      ],
+      "dependencies": ["t2_create_03"],
+      "tasks": [
+        {
+          "id": "t2_c_04_task_1",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_c_04_reward_1",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1
+        },
+        {
+          "id": "t2_c_04_reward_2",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 24
+        },
+        {
+          "id": "t2_c_04_reward_3",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+
+    {
+      "id": "t2_create_05",
+      "title": "Mechanischer Arm",
+      "icon": "create:mechanical_arm",
+      "x": 0.0,
+      "y": 8.0,
+      "subtitle": "Greift. Trägt. Automatisiert.",
+      "description": [
+        "Der Mechanical Arm greift Items von Maschinen und legt sie in andere ab.",
+        "Er ersetzt dutzende manuelle Schritte — sobald er einmal läuft, läuft er für immer.",
+        "Ideal für die Ore-Processing-Chain: Crushing Wheels → Mixer → Enricher."
+      ],
+      "dependencies": ["t2_create_04"],
+      "tasks": [
+        {
+          "id": "t2_c_05_task_1",
+          "type": "item",
+          "item": "create:mechanical_arm",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_c_05_reward_1",
+          "type": "item",
+          "item": "create:mechanical_arm",
+          "count": 1
+        },
+        {
+          "id": "t2_c_05_reward_2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+
+    {
+      "id": "t2_mek_01",
+      "title": "Osmium — das Neue Eisen",
+      "icon": "mekanism:ingot_osmium",
+      "x": 4.0,
+      "y": 0.0,
+      "subtitle": "Selten, schwer, unverzichtbar",
+      "description": [
+        "Osmium ist Mekanisms Grundrohstoff — das Eisen für den Fortschritt.",
+        "Du findest es tiefer als normales Eisen, dafür in größeren Adern.",
+        "Sammel genug, um erste Mekanism-Maschinen zu bauen."
+      ],
+      "dependencies": ["t2_create_01"],
+      "tasks": [
+        {
+          "id": "t2_m_01_task_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 32
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_m_01_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 8
+        },
+        {
+          "id": "t2_m_01_reward_2",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+
+    {
+      "id": "t2_mek_02",
+      "title": "Enrichment Chamber",
+      "icon": "mekanism:enrichment_chamber",
+      "x": 4.0,
+      "y": 2.0,
+      "subtitle": "Ore-Doubling beginnt hier",
+      "description": [
+        "Die Enrichment Chamber verarbeitet gemahlenes Erz zu Staub — doppelter Output.",
+        "Das Rezept wurde modifiziert: du brauchst Create-Zahnräder als Antrieb.",
+        "Kein Create-Setup, kein Enricher. So einfach ist das."
+      ],
+      "dependencies": ["t2_mek_01", "t2_create_04"],
+      "tasks": [
+        {
+          "id": "t2_m_02_task_1",
+          "type": "item",
+          "item": "mekanism:enrichment_chamber",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_m_02_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 16
+        },
+        {
+          "id": "t2_m_02_reward_2",
+          "type": "item",
+          "item": "create:cogwheel",
+          "count": 8
+        },
+        {
+          "id": "t2_m_02_reward_3",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+
+    {
+      "id": "t2_mek_03",
+      "title": "Die APEX Ore-Chain",
+      "icon": "mekanism:dust_iron",
+      "x": 4.0,
+      "y": 4.0,
+      "subtitle": "Crushing Wheels → Mixer → Enricher: doppelter Output",
+      "description": [
+        "Jetzt läuft die APEX Ore-Chain.",
+        "Crushing Wheels mahlen Erz → Mixer verarbeitet weiter → Enrichment Chamber verdoppelt.",
+        "Baue die Kette vollständig auf und verarbeite Eisenerz zu doppeltem Staub."
+      ],
+      "dependencies": ["t2_mek_02"],
+      "tasks": [
+        {
+          "id": "t2_m_03_task_1",
+          "type": "item",
+          "item": "mekanism:dust_iron",
+          "count": 16
+        },
+        {
+          "id": "t2_m_03_task_2",
+          "type": "item",
+          "item": "mekanism:dust_osmium",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_m_03_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 16
+        },
+        {
+          "id": "t2_m_03_reward_2",
+          "type": "xp",
+          "xp": 550
+        }
+      ]
+    },
+
+    {
+      "id": "t2_mek_04",
+      "title": "Metallurgical Infuser",
+      "icon": "mekanism:metallurgical_infuser",
+      "x": 4.0,
+      "y": 6.0,
+      "subtitle": "Legierungen für die Zukunft",
+      "description": [
+        "Der Metallurgical Infuser kombiniert Metalle mit Infuse-Materialien.",
+        "Infused Alloy und Reinforced Alloy sind essenziell für T3-Maschinen.",
+        "Stelle Carbon Dust her (Kohle → Infuser) und produziere deine ersten Alloys."
+      ],
+      "dependencies": ["t2_mek_03"],
+      "tasks": [
+        {
+          "id": "t2_m_04_task_1",
+          "type": "item",
+          "item": "mekanism:metallurgical_infuser",
+          "count": 1
+        },
+        {
+          "id": "t2_m_04_task_2",
+          "type": "item",
+          "item": "mekanism:alloy_infused",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_m_04_reward_1",
+          "type": "item",
+          "item": "mekanism:alloy_infused",
+          "count": 8
+        },
+        {
+          "id": "t2_m_04_reward_2",
+          "type": "item",
+          "item": "mekanism:basic_control_circuit",
+          "count": 4
+        },
+        {
+          "id": "t2_m_04_reward_3",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+
+    {
+      "id": "t2_util_01",
+      "title": "Rucksack-Upgrade",
+      "icon": "sophisticatedbackpacks:backpack",
+      "x": 8.0,
+      "y": 0.0,
+      "subtitle": "32 Slots reichen nicht mehr",
+      "description": [
+        "Du sammelst mehr, als du tragen kannst.",
+        "Sophisticated Backpacks lösen das Problem elegant — und lassen sich upgraden.",
+        "Stelle deinen ersten Rucksack her und rüste ihn mit einem Magnet-Upgrade aus."
+      ],
+      "dependencies": ["t2_create_01"],
+      "tasks": [
+        {
+          "id": "t2_u_01_task_1",
+          "type": "item",
+          "item": "sophisticatedbackpacks:backpack",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_u_01_reward_1",
+          "type": "item",
+          "item": "sophisticatedbackpacks:magnet_upgrade",
+          "count": 1
+        },
+        {
+          "id": "t2_u_01_reward_2",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+
+    {
+      "id": "t2_util_02",
+      "title": "Verzauberung meistern",
+      "icon": "apothicenchanting:altar",
+      "x": 8.0,
+      "y": 2.0,
+      "subtitle": "Apotheosis: Enchanting ohne Lücken",
+      "description": [
+        "Vanilla-Verzauberung ist begrenzt. Apotheosis hebt diese Grenzen auf.",
+        "Baue den Apotheosis Enchanting Altar und umgebe ihn mit hochwertigen Bücherregalen.",
+        "Erste Enchantments auf T2-Rüstung machen einen spürbaren Unterschied."
+      ],
+      "dependencies": ["t1_nether_02", "t2_util_01"],
+      "tasks": [
+        {
+          "id": "t2_u_02_task_1",
+          "type": "item",
+          "item": "minecraft:enchanting_table",
+          "count": 1
+        },
+        {
+          "id": "t2_u_02_task_2",
+          "type": "item",
+          "item": "minecraft:bookshelf",
+          "count": 15
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_u_02_reward_1",
+          "type": "item",
+          "item": "minecraft:lapis_lazuli",
+          "count": 32
+        },
+        {
+          "id": "t2_u_02_reward_2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+
+    {
+      "id": "t2_util_03",
+      "title": "Geordnetes Lager",
+      "icon": "functionalstorage:oak_1x2_drawer",
+      "x": 8.0,
+      "y": 4.0,
+      "subtitle": "Chaos im Inventar ist der Tod der Produktivität",
+      "description": [
+        "Functional Storage Drawers fassen große Mengen eines einzigen Items.",
+        "Ideal für Erze, Barren und Holz — die Dinge, die sich unkontrolliert anhäufen.",
+        "Stelle einen Drawer Controller her, um mehrere Drawers als Einheit zu verwalten."
+      ],
+      "dependencies": ["t2_util_01"],
+      "tasks": [
+        {
+          "id": "t2_u_03_task_1",
+          "type": "item",
+          "item": "functionalstorage:oak_1x2_drawer",
+          "count": 4
+        },
+        {
+          "id": "t2_u_03_task_2",
+          "type": "item",
+          "item": "functionalstorage:drawer_controller",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_u_03_reward_1",
+          "type": "item",
+          "item": "functionalstorage:oak_4x4_drawer",
+          "count": 2
+        },
+        {
+          "id": "t2_u_03_reward_2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+
+    {
+      "id": "t2_finale",
+      "title": "Bereit für Tier 3",
+      "icon": "create:electron_tube",
+      "x": 4.0,
+      "y": 8.0,
+      "subtitle": "AE2 und Mekanism warten",
+      "description": [
+        "Du hast Messing gemeistert, Precision Mechanisms gebaut und Erze verdoppelt.",
+        "Jetzt steht Tier 3 offen: Applied Energistics 2 und fortgeschrittene Mekanism-Systeme.",
+        "Der AE2 ME-Controller benötigt Precision Mechanisms — gut, dass du welche hast.",
+        "Stelle den Electric Motor her: er verbindet Create-Kinematik mit Forge Energy."
+      ],
+      "dependencies": ["t2_create_05", "t2_mek_04", "t2_util_03"],
+      "tasks": [
+        {
+          "id": "t2_fin_task_1",
+          "type": "item",
+          "item": "createaddition:electric_motor",
+          "count": 1
+        },
+        {
+          "id": "t2_fin_task_2",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t2_fin_reward_1",
+          "type": "item",
+          "item": "ae2:certus_quartz_crystal",
+          "count": 16
+        },
+        {
+          "id": "t2_fin_reward_2",
+          "type": "item",
+          "item": "mekanism:alloy_reinforced",
+          "count": 4
+        },
+        {
+          "id": "t2_fin_reward_3",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    }
+
+  ]
+}
