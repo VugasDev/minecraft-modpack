@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gaia:item/mythic_liquid_xp_bucket"
+  }
+}

@@ -37,18 +37,16 @@ ServerEvents.recipes(event => {
     // ==========================================================================
     // PFAD 3c: Catalyst Altar — Create:EI Spout Rezepte
     // ==========================================================================
-    // Variante A: Hyper Experience (1000 mB) → Resource Catalyst
-    // Altar bleibt erhalten (per Recipe-Output zurückgegeben).
+    // Variante A: Catalyst Altar + Hyper Experience (1000 mB) → Resource Catalyst
+    // Altar wird verbraucht (Create filling hat immer 1 Output). Altar ist günstig herzustellen.
     event.recipes.create.filling(
-        ['gaia:resource_catalyst', 'gaia:catalyst_altar'],
+        'gaia:resource_catalyst',
         ['gaia:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
     )
 
-    // Variante B: Mythic Liquid XP (500 mB) → Mythic Catalyst
-    // Mythic Liquid XP ist konzentrierter — halb so viel mB wie Hyper XP für den Resource Catalyst,
-    // aber Erzeugung von Mythic Liquid XP selbst ist teurer (braucht Singularity Shard im Mixer).
+    // Variante B: Catalyst Altar + Mythic Liquid XP (500 mB) → Mythic Catalyst
     event.recipes.create.filling(
-        ['gaia:mythic_catalyst', 'gaia:catalyst_altar'],
+        'gaia:mythic_catalyst',
         ['gaia:catalyst_altar', Fluid.of('gaia:mythic_liquid_xp', 500)]
     )
 

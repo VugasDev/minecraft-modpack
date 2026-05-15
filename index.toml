@@ -1137,6 +1137,10 @@ file = "config/xnetgases.toml"
 hash = "39b423a5786f48f0f479cac4004734fc2eae55a9607b5e931a6f9f4373b5e945"
 
 [[files]]
+file = "kubejs/assets/gaia/models/item/mythic_liquid_xp_bucket.json"
+hash = "5c9290a4fc149510e2f6772dcd96acfe4fbc3d4ae63a74285385f851f53194cb"
+
+[[files]]
 file = "kubejs/assets/gaia/textures/block/catalyst_altar.png"
 hash = "457f7aba5a1744e179f322996c9393dc558cb22f1e7b89cc9adb67ec86706038"
 
@@ -1258,7 +1262,7 @@ hash = "d0485ae68732096e4651d4aa0720f1e22727e8a1c4c4134ff6715dea6728fcac"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "32f75488a8e0331ff7037c0281c4867105313ed48aeea2ea1d6f362655ccf46d"
+hash = "ed97d5c8cd6b3e00a955562e9c6fa0313860dfa47e8ef0fe26371af268af8782"
 
 [[files]]
 file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
@@ -1326,7 +1330,7 @@ hash = "fb6b368cb00eb431879b1952ba5248f9c283603979a4f06f3f54e57f225c1a9b"
 
 [[files]]
 file = "kubejs/server_scripts/08_catalyst_system.js"
-hash = "9293dda5ea792a76c4aed8e2e92ef3ba82793139df62d8a7f005785bb6181b10"
+hash = "e8818f73a76416589ed1aca7bd43313f1481d2c9b135a5237a80ee0bf1f6ca69"
 
 [[files]]
 file = "kubejs/server_scripts/09_mechanical_crafter_recipes.js"
@@ -1334,7 +1338,7 @@ hash = "b1184fe1f76ba6556e83510d0ec41d14fe56d8e2b8b0971748d732ec135a7387"
 
 [[files]]
 file = "kubejs/server_scripts/10_drill_heads.js"
-hash = "130788d70bdf9551f4274c2d5dc77019c83531e85c6f6179480764701836888c"
+hash = "b71907d693d8e1aaf5dcee0538de43fa9d4e966eab8bbdaab2d36a541c255d56"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment_automation.js"
@@ -1346,7 +1350,7 @@ hash = "66fde3759a8d79e501e0ea61b5f9cb5b158cdd876604a6cdb09ca02b72a766b0"
 
 [[files]]
 file = "kubejs/startup_scripts/00_custom_items.js"
-hash = "1f616cd4129261b8cc5734dfa9c844a111029dc563b2cfa00ecbac94fc04249b"
+hash = "ac2f87babdf38fd72581631589ae5524d15c5dd014f705415c49fe13b868d0bb"
 
 [[files]]
 file = "mods/ae2.pw.toml"
