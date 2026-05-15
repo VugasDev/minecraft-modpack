@@ -1,21 +1,21 @@
 {
   "id": "tier_2_chapter",
-  "title": "Tier 2: Messing & Maschinen",
+  "title": "Tier 2: Brass and Machines",
   "icon": "create:brass_ingot",
   "default_quest_shape": "circle",
   "quests": [
 
     {
       "id": "t2_create_01",
-      "title": "Das goldene Zeitalter des Messings",
+      "title": "The Golden Age of Brass",
       "icon": "create:brass_ingot",
       "x": 0.0,
       "y": 0.0,
-      "subtitle": "Kupfer trifft Zink — Messing entsteht",
+      "subtitle": "Copper + Zinc + heat = the future.",
       "description": [
-        "Messing ist der Schlüssel zu Tier 2.",
-        "Schmelze Kupfer und Zink im Mechanical Mixer zusammen — das geht nur mit genug RPM.",
-        "Stelle sicher, dass dein Wasserrad genug Energie liefert, oder bau ein großes."
+        "Brass is the material that unlocks everything interesting in Create.",
+        "Mix Copper and Zinc Ingots in a Mechanical Mixer running at 130+ RPM.",
+        "If your wheel doesn't spin fast enough, build a bigger one. Or two. Size matters here."
       ],
       "dependencies": ["t1_create_05"],
       "tasks": [
@@ -43,15 +43,15 @@
 
     {
       "id": "t2_create_02",
-      "title": "Messing-Verkleidung",
+      "title": "Brass Casing",
       "icon": "create:brass_casing",
       "x": 0.0,
       "y": 2.0,
-      "subtitle": "Maschinen brauchen ein Gehäuse",
+      "subtitle": "Every machine deserves a proper shell.",
       "description": [
-        "Brass Casings sind die Hülle der fortgeschrittenen Create-Maschinen.",
-        "Brass Hands zeigen dir die Zeit — und sind für den Sequenced Gearshift notwendig.",
-        "Stelle beides her."
+        "Brass Casings house the advanced Create components.",
+        "Brass Hands are used in clocks and Sequenced Gearshifts — which let you program multi-step automation sequences.",
+        "Craft both. You'll need them constantly from here on."
       ],
       "dependencies": ["t2_create_01"],
       "tasks": [
@@ -89,11 +89,12 @@
       "icon": "create:mechanical_crafter",
       "x": 0.0,
       "y": 4.0,
-      "subtitle": "Crafting auf einem neuen Level",
+      "subtitle": "Crafting, but make it automated.",
       "description": [
-        "Der Mechanical Crafter ist dein Eintritt in die automatisierte Herstellung.",
-        "Bestimmte Rezepte — darunter der Resource Catalyst — funktionieren NUR hier.",
-        "Du brauchst mindestens drei davon für ein 3×1-Crafter-Setup."
+        "The Mechanical Crafter automates crafting recipes that are too complex — or impossible — for a regular table.",
+        "Several key items in this modpack, including the Resource Catalyst, can ONLY be made here.",
+        "You need at least 3 Crafters arranged in a crafting grid pattern. Items enter from the back and get crafted automatically.",
+        "Build a 3x3 grid of Crafters for full recipe coverage."
       ],
       "dependencies": ["t2_create_02"],
       "tasks": [
@@ -125,12 +126,13 @@
       "icon": "create:precision_mechanism",
       "x": 0.0,
       "y": 6.0,
-      "subtitle": "Das Herzstück von Tier 2",
+      "subtitle": "The most important item in Tier 2.",
       "description": [
-        "Das Precision Mechanism ist das anspruchsvollste Item von Tier 2.",
-        "Es wird in einem 5×5 Mechanical Crafter hergestellt — kein normaler Tisch kann das.",
-        "Ohne dieses Item kommst du nicht an den AE2 ME-Controller heran.",
-        "Baue dir das Setup sorgfältig auf."
+        "The Precision Mechanism is the gatekeeper of Tier 3.",
+        "It requires a 5x5 Mechanical Crafter setup — and quite a few intermediate components.",
+        "Recipe involves: Gold Nuggets, Electron Tubes, Shaft, Iron Nuggets, and a Cogwheel.",
+        "Without this item you cannot build the AE2 ME Controller. There is no shortcut.",
+        "Build the crafter setup carefully. Run the recipe. Enjoy the satisfying animation."
       ],
       "dependencies": ["t2_create_03"],
       "tasks": [
@@ -164,15 +166,16 @@
 
     {
       "id": "t2_create_05",
-      "title": "Mechanischer Arm",
+      "title": "Mechanical Arm",
       "icon": "create:mechanical_arm",
       "x": 0.0,
       "y": 8.0,
-      "subtitle": "Greift. Trägt. Automatisiert.",
+      "subtitle": "It grabs things. That's literally it. It rules.",
       "description": [
-        "Der Mechanical Arm greift Items von Maschinen und legt sie in andere ab.",
-        "Er ersetzt dutzende manuelle Schritte — sobald er einmal läuft, läuft er für immer.",
-        "Ideal für die Ore-Processing-Chain: Crushing Wheels → Mixer → Enricher."
+        "The Mechanical Arm picks up items from one machine and deposits them into another.",
+        "It replaces dozens of funnels, belts, and workarounds with a single configurable block.",
+        "Set its inputs (e.g., Crushing Wheels output) and outputs (e.g., Enrichment Chamber input) using a Wrench.",
+        "Build one for your ore chain: Crushing Wheels → Arm → Mekanism Enricher. Watch the magic happen."
       ],
       "dependencies": ["t2_create_04"],
       "tasks": [
@@ -200,15 +203,15 @@
 
     {
       "id": "t2_mek_01",
-      "title": "Osmium — das Neue Eisen",
+      "title": "Osmium — The New Iron",
       "icon": "mekanism:ingot_osmium",
       "x": 4.0,
       "y": 0.0,
-      "subtitle": "Selten, schwer, unverzichtbar",
+      "subtitle": "Dense, shiny, and absolutely everywhere once you look.",
       "description": [
-        "Osmium ist Mekanisms Grundrohstoff — das Eisen für den Fortschritt.",
-        "Du findest es tiefer als normales Eisen, dafür in größeren Adern.",
-        "Sammel genug, um erste Mekanism-Maschinen zu bauen."
+        "Osmium is Mekanism's primary metal — used in almost every machine, circuit, and component.",
+        "It spawns in large veins deeper than iron, with a higher-than-vanilla density thanks to our ore config.",
+        "You'll need a lot of it. Start stockpiling now — your future self will thank you."
       ],
       "dependencies": ["t2_create_01"],
       "tasks": [
@@ -240,11 +243,12 @@
       "icon": "mekanism:enrichment_chamber",
       "x": 4.0,
       "y": 2.0,
-      "subtitle": "Ore-Doubling beginnt hier",
+      "subtitle": "Double ore output. The smart way.",
       "description": [
-        "Die Enrichment Chamber verarbeitet gemahlenes Erz zu Staub — doppelter Output.",
-        "Das Rezept wurde modifiziert: du brauchst Create-Zahnräder als Antrieb.",
-        "Kein Create-Setup, kein Enricher. So einfach ist das."
+        "The Enrichment Chamber processes Crushed Ore (from Create Crushing Wheels) into Dust — giving 2x ore output.",
+        "This machine requires Forge Energy (FE). Connect it to a Create: New Age Alternator or a solar panel.",
+        "Important: The recipe for this machine has been modified. You need Create Cogwheels as a crafting component.",
+        "No Brass-tier Create setup = no Enrichment Chamber. The progression is intentional."
       ],
       "dependencies": ["t2_mek_01", "t2_create_04"],
       "tasks": [
@@ -278,15 +282,16 @@
 
     {
       "id": "t2_mek_03",
-      "title": "Die APEX Ore-Chain",
+      "title": "The APEX Ore Chain",
       "icon": "mekanism:dust_iron",
       "x": 4.0,
       "y": 4.0,
-      "subtitle": "Crushing Wheels → Mixer → Enricher: doppelter Output",
+      "subtitle": "Crushing Wheels → Enricher = 2x ore. Forever.",
       "description": [
-        "Jetzt läuft die APEX Ore-Chain.",
-        "Crushing Wheels mahlen Erz → Mixer verarbeitet weiter → Enrichment Chamber verdoppelt.",
-        "Baue die Kette vollständig auf und verarbeite Eisenerz zu doppeltem Staub."
+        "This is the full Tier 2 ore chain: mine ore → Crushing Wheels → Enrichment Chamber → smelt dust → ingot.",
+        "Result: 2 ingots per ore block instead of 1. Every ore block. For the rest of the game.",
+        "Set up the full automation: belts and arms feeding ore in, ingots coming out automatically.",
+        "The days of smelting raw ore are over. Never look back."
       ],
       "dependencies": ["t2_mek_02"],
       "tasks": [
@@ -324,11 +329,12 @@
       "icon": "mekanism:metallurgical_infuser",
       "x": 4.0,
       "y": 6.0,
-      "subtitle": "Legierungen für die Zukunft",
+      "subtitle": "Because regular alloys weren't fancy enough.",
       "description": [
-        "Der Metallurgical Infuser kombiniert Metalle mit Infuse-Materialien.",
-        "Infused Alloy und Reinforced Alloy sind essenziell für T3-Maschinen.",
-        "Stelle Carbon Dust her (Kohle → Infuser) und produziere deine ersten Alloys."
+        "The Metallurgical Infuser combines metals with infuse-type materials (Carbon, Redstone, Diamond, etc.) to create Alloys.",
+        "Infused Alloy → Reinforced Alloy → Atomic Alloy — each tier unlocks more advanced Mekanism components.",
+        "To get started: smelt Coal in a furnace to get Carbon Dust (or use the Crusher), then infuse Iron Ingots with Carbon.",
+        "You'll need Infused Alloy for almost everything in Tier 3 and beyond."
       ],
       "dependencies": ["t2_mek_03"],
       "tasks": [
@@ -368,15 +374,15 @@
 
     {
       "id": "t2_util_01",
-      "title": "Rucksack-Upgrade",
+      "title": "Backpack Upgrade",
       "icon": "sophisticatedbackpacks:backpack",
       "x": 8.0,
       "y": 0.0,
-      "subtitle": "32 Slots reichen nicht mehr",
+      "subtitle": "36 slots was never enough.",
       "description": [
-        "Du sammelst mehr, als du tragen kannst.",
-        "Sophisticated Backpacks lösen das Problem elegant — und lassen sich upgraden.",
-        "Stelle deinen ersten Rucksack her und rüste ihn mit einem Magnet-Upgrade aus."
+        "You're carrying ore, food, tools, blocks, and somehow still have no space for anything useful.",
+        "Sophisticated Backpacks solve this. Craft one and wear it — it stores items independently of your inventory.",
+        "Add a Magnet Upgrade to auto-collect nearby item drops. Your quality of life just went up significantly."
       ],
       "dependencies": ["t2_create_01"],
       "tasks": [
@@ -404,15 +410,16 @@
 
     {
       "id": "t2_util_02",
-      "title": "Verzauberung meistern",
-      "icon": "apothicenchanting:altar",
+      "title": "Enchanting, Properly",
+      "icon": "minecraft:enchanting_table",
       "x": 8.0,
       "y": 2.0,
-      "subtitle": "Apotheosis: Enchanting ohne Lücken",
+      "subtitle": "Apotheosis removes the level cap. You're welcome.",
       "description": [
-        "Vanilla-Verzauberung ist begrenzt. Apotheosis hebt diese Grenzen auf.",
-        "Baue den Apotheosis Enchanting Altar und umgebe ihn mit hochwertigen Bücherregalen.",
-        "Erste Enchantments auf T2-Rüstung machen einen spürbaren Unterschied."
+        "Vanilla enchanting is capped at level 30 and limited to 3 bookshelves. Apotheosis changes all of that.",
+        "With enough high-tier bookshelves, you can push enchanting power far beyond vanilla limits.",
+        "Start with a standard Enchanting Table and 15 regular Bookshelves to unlock max vanilla power.",
+        "Later you can replace them with Apotheosis' upgraded bookshelves for even higher-level enchantments."
       ],
       "dependencies": ["t1_nether_02", "t2_util_01"],
       "tasks": [
@@ -446,15 +453,16 @@
 
     {
       "id": "t2_util_03",
-      "title": "Geordnetes Lager",
+      "title": "Organized Storage",
       "icon": "functionalstorage:oak_1x2_drawer",
       "x": 8.0,
       "y": 4.0,
-      "subtitle": "Chaos im Inventar ist der Tod der Produktivität",
+      "subtitle": "A chest for everything. Everything in its chest.",
       "description": [
-        "Functional Storage Drawers fassen große Mengen eines einzigen Items.",
-        "Ideal für Erze, Barren und Holz — die Dinge, die sich unkontrolliert anhäufen.",
-        "Stelle einen Drawer Controller her, um mehrere Drawers als Einheit zu verwalten."
+        "Chests are chaos. Functional Storage Drawers hold large quantities of a single item per slot.",
+        "A 2x2 Drawer holds 4 item types with massive stack limits. Perfect for ores, ingots, and wood.",
+        "Add a Drawer Controller to link multiple drawers into a single network — insert any item and it finds its home automatically.",
+        "This is your early game storage solution until AE2 takes over in Tier 3."
       ],
       "dependencies": ["t2_util_01"],
       "tasks": [
@@ -488,16 +496,16 @@
 
     {
       "id": "t2_finale",
-      "title": "Bereit für Tier 3",
+      "title": "Ready for Tier 3",
       "icon": "create:electron_tube",
       "x": 4.0,
       "y": 8.0,
-      "subtitle": "AE2 und Mekanism warten",
+      "subtitle": "AE2 and Mekanism await. So does your electricity bill.",
       "description": [
-        "Du hast Messing gemeistert, Precision Mechanisms gebaut und Erze verdoppelt.",
-        "Jetzt steht Tier 3 offen: Applied Energistics 2 und fortgeschrittene Mekanism-Systeme.",
-        "Der AE2 ME-Controller benötigt Precision Mechanisms — gut, dass du welche hast.",
-        "Stelle den Electric Motor her: er verbindet Create-Kinematik mit Forge Energy."
+        "You've mastered Brass, built Precision Mechanisms, doubled your ore output, and organized your base.",
+        "Tier 3 opens up Applied Energistics 2 — the most powerful storage and autocrafting system in the pack.",
+        "The AE2 ME Controller requires Precision Mechanisms. Good thing you already have some.",
+        "Craft the Electric Motor to bridge Create's rotational energy with Forge Energy (FE). You'll need FE for everything ahead."
       ],
       "dependencies": ["t2_create_05", "t2_mek_04", "t2_util_03"],
       "tasks": [

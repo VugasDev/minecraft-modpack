@@ -1,6 +1,6 @@
 {
   "id": "tier_4_chapter",
-  "title": "Tier 4: Fortgeschrittene Systeme",
+  "title": "Tier 4: Advanced Systems",
   "icon": "mekanism:purification_chamber",
   "default_quest_shape": "circle",
   "quests": [
@@ -11,12 +11,13 @@
       "icon": "mekanism:purification_chamber",
       "x": 0.0,
       "y": 0.0,
-      "subtitle": "Ore x3 — dreifacher Output",
+      "subtitle": "Triple ore output. The x3 era begins.",
       "description": [
-        "Die Purification Chamber ist der Schritt von x2 auf x3 Erzverarbeitung.",
-        "Sie injiziert Sauerstoff in gemahlenes Erz — das Ergebnis: drei Barren statt zwei.",
-        "Das Rezept erfordert den Mechanical Crafter: du brauchst Brass-Casings als Gate.",
-        "Kein Brass-Tier, kein x3. Die Progression ist klar."
+        "The Purification Chamber injects Oxygen gas into Crushed Ore, converting it into Clumps — a step up from 2x toward 3x ore output.",
+        "Full x3 chain: Ore → Crusher (Crushed) → Purification Chamber (Clumps) → Crusher (Dirty Dust) → Chemical Washer (Dust) → Enricher (Dust) → Smelter (Ingot).",
+        "This machine requires Forge Energy and an Oxygen gas supply (from an Electrolytic Separator splitting water).",
+        "Important: The recipe has been modified to require the Mechanical Crafter with Brass Casings. No Brass-tier Create = no Purification Chamber.",
+        "Set up the Electrolytic Separator first — it splits water into Hydrogen and Oxygen, both useful."
       ],
       "dependencies": ["t3_finale"],
       "tasks": [
@@ -44,15 +45,21 @@
 
     {
       "id": "t4_mek_02",
-      "title": "Die x3 Ore-Chain",
+      "title": "The x3 Ore Chain",
       "icon": "mekanism:chemical_dissolution_chamber",
       "x": 0.0,
       "y": 2.0,
-      "subtitle": "Crushing → Purification → Enrichment → x3",
+      "subtitle": "Six machines, one ore block, three ingots.",
       "description": [
-        "Die vollständige x3-Chain: Erz → Crushed Ore → Clumps → Dirty Dust → Dust → Ingot.",
-        "Jeder Schritt erfordert eine andere Mekanism-Maschine und Strom.",
-        "Baue die komplette Kette und verarbeite Eisenerz zu dreifachem Output."
+        "The complete x3 processing chain requires these machines in sequence:",
+        "1. Crusher — Ore → Crushed Ore",
+        "2. Purification Chamber (O2) — Crushed Ore → Clumps",
+        "3. Crusher — Clumps → Dirty Dust",
+        "4. Chemical Washer (Water) — Dirty Dust → Dust",
+        "5. Enrichment Chamber — Dust → Dust (2x)",
+        "6. Energized Smelter — Dust → Ingot",
+        "Each machine needs FE and the appropriate gas supply. Use XNet to manage the fluid routing.",
+        "End result: 3 Iron Ingots from 1 Iron Ore block. The efficiency speaks for itself."
       ],
       "dependencies": ["t4_mek_01"],
       "tasks": [
@@ -92,15 +99,17 @@
 
     {
       "id": "t4_mek_03",
-      "title": "Fortgeschrittene Legierungen",
+      "title": "Advanced Alloys",
       "icon": "mekanism:alloy_atomic",
       "x": 0.0,
       "y": 4.0,
-      "subtitle": "Refined Obsidian und Atomic Alloy",
+      "subtitle": "Atomic Alloy and Refined Obsidian. The good stuff.",
       "description": [
-        "Tier-4-Maschinen und der Fusion Reactor in Tier 5 benötigen Atomic Alloy.",
-        "Refined Obsidian ist schwer herzustellen — aber als Rüstungsmaterial unübertroffen.",
-        "Produziere beide und du bist für Tier 5 vorbereitet."
+        "Mekanism's endgame materials require a full alloy chain: Iron → Infused Alloy → Reinforced Alloy → Atomic Alloy.",
+        "Reinforced Alloy requires Diamonds in the infuser. Atomic Alloy requires Refined Obsidian.",
+        "Refined Obsidian: smelt Obsidian Dust (from Obsidian in the Crusher) → Refined Obsidian Ingot.",
+        "As armor, Refined Obsidian is nearly indestructible and provides massive protection.",
+        "Atomic Alloy is required for Tier 5 machines and the Fusion Reactor Controller. Stockpile both."
       ],
       "dependencies": ["t4_mek_02"],
       "tasks": [
@@ -140,15 +149,16 @@
 
     {
       "id": "t4_ae2_01",
-      "title": "ME Drive — Massenspeicher",
+      "title": "ME Drive — Mass Storage",
       "icon": "ae2:drive",
       "x": 4.0,
       "y": 0.0,
-      "subtitle": "Das AE2 Storage-Upgrade",
+      "subtitle": "More drives. More cells. More stuff stored.",
       "description": [
-        "Dein erstes ME Drive war der Einstieg. Jetzt brauchst du mehr.",
-        "Das Rezept wurde auf den Mechanical Crafter hochgestuft — Brass-Casings als Gate.",
-        "Baue mehrere Drives und fülle sie mit großen Storage Cells."
+        "Your single ME Drive from Tier 3 won't cut it anymore. Time to scale up.",
+        "The ME Drive recipe has been upgraded to require the Mechanical Crafter with Brass Casings.",
+        "Build multiple drives and fill them with 256k or larger Storage Cells.",
+        "Pro tip: Use Storage Buses on Drawer Controllers to extend your AE2 storage into physical drawers — best of both worlds."
       ],
       "dependencies": ["t3_finale"],
       "tasks": [
@@ -186,11 +196,12 @@
       "icon": "megacells:mega_item_cell_1m",
       "x": 4.0,
       "y": 2.0,
-      "subtitle": "1 Million Items. Eine Zelle.",
+      "subtitle": "1,000,000 items. One cell. Perfectly normal.",
       "description": [
-        "MEGA Cells sind die größten Storage Cells im Pack — 1M, 4M, 16M, 64M Items.",
-        "Hergestellt aus großen Mengen Certus Quartz und Fluix Crystals.",
-        "Eine einzige 64M-Zelle kann dein gesamtes Inventar schlucken und noch Platz haben."
+        "MEGA Cells are the largest storage cells in the modpack — 1M, 4M, 16M, and 64M items per cell.",
+        "They require significant Certus Quartz and Fluix Crystal investment to craft, but the payoff is enormous.",
+        "A single 64M cell can hold your entire base's inventory with room to spare.",
+        "Combine with Applied Mekanistics (Tier 5) to store Mekanism chemicals in your AE2 network as well."
       ],
       "dependencies": ["t4_ae2_01"],
       "tasks": [
@@ -222,14 +233,13 @@
       "icon": "apex:resource_catalyst",
       "x": 8.0,
       "y": 0.0,
-      "subtitle": "Das Tor zu MA Tier 3",
+      "subtitle": "The gate to Mystical Agriculture Tier 3.",
       "description": [
-        "Der Resource Catalyst ist das Gate für Tier-3-MA-Samen.",
-        "Es gibt drei Wege, ihn zu erhalten:",
-        "1. Passiv: Drop beim Abbau von Erzadern (Create Ore Excavation, 0.5%)",
-        "2. Alternativ: Im Mechanical Crafter aus MA-Essences herstellen",
-        "3. Aktiv: Drop von Boss-Mobs oder aus Dungeon-Truhen",
-        "Sammle genug für deine ersten T3-Samen."
+        "The Resource Catalyst is required to craft Tier 3 Mystical Agriculture seeds. There are three ways to get it:",
+        "Path 1 — Passive: 0.5% drop chance when mining ore veins with Create Ore Excavation drills.",
+        "Path 2 — Crafted: Build it in the Mechanical Crafter using MA Essences (Iron, Lapis, Quartz) + an Apotheosis gem.",
+        "Path 3 — Active: Guaranteed drop from Mowzie's Mobs bosses (Ferrous Wroughtnaut, Frostmaw, etc.) and dungeon chests (8% chance in When Dungeons Arise, YUNG's structures).",
+        "Collect at least 3 — one per Tier 3 seed recipe you want to unlock."
       ],
       "dependencies": ["t3_finale"],
       "tasks": [
@@ -257,15 +267,17 @@
 
     {
       "id": "t4_ma_01",
-      "title": "MA Tier-3-Samen",
+      "title": "Tier 3 Seeds",
       "icon": "mysticalagriculture:diamond_seeds",
       "x": 8.0,
       "y": 2.0,
-      "subtitle": "Diamanten aus dem Boden",
+      "subtitle": "Diamonds. Growing. In the ground.",
       "description": [
-        "Tier-3-Samen produzieren Gold, Diamanten und Smaragde.",
-        "Das Rezept wurde modifiziert: du brauchst einen Resource Catalyst.",
-        "Kein Catalyst, keine T3-Samen. Die Progression erzwingt Exploration oder Automatisierung."
+        "Tier 3 seeds produce Gold, Diamond, and Emerald Essences — the luxury materials.",
+        "Recipe change: each Tier 3 seed requires a Resource Catalyst as a crafting component.",
+        "No Catalyst = no T3 seeds. This prevents skipping the mid-game exploration and boss content.",
+        "Once you have Diamond Seeds running, your diamond supply becomes passive and infinite.",
+        "Plant them on Essence Farmland for a 10% growth speed bonus."
       ],
       "dependencies": ["t4_catalyst_01"],
       "tasks": [
@@ -305,15 +317,16 @@
 
     {
       "id": "t4_ars_01",
-      "title": "Ars Nouveau: Zauberbuch",
+      "title": "Ars Nouveau: The Notebook",
       "icon": "ars_nouveau:worn_notebook",
       "x": 8.0,
       "y": 4.0,
-      "subtitle": "Magie trifft Maschine",
+      "subtitle": "Magic exists. We just didn't mention it until now.",
       "description": [
-        "Ars Nouveau ist das Magie-System dieses Modpacks.",
-        "Das Worn Notebook erklärt alle Zauber, Rituale und Wesen.",
-        "Lies es sorgfältig — Drygmys werden in Tier 5 wichtig."
+        "Ars Nouveau is this pack's magic system — spells, rituals, magical creatures, and automation.",
+        "The Worn Notebook is your introduction. Read it. All of it. It explains everything.",
+        "Source Gems are the magical fuel. You'll generate them via Agronomic Sourcelink (near crops) or Volcanic Sourcelink (near lava).",
+        "Key reason to invest: Drygmys. They're magical creatures that automatically generate mob drops — including Cataclysm boss drops."
       ],
       "dependencies": ["t4_catalyst_01"],
       "tasks": [
@@ -347,16 +360,17 @@
 
     {
       "id": "t4_ars_02",
-      "title": "Drygmy-Farm",
+      "title": "Drygmy Farm",
       "icon": "ars_nouveau:drygmy_charm",
       "x": 8.0,
       "y": 6.0,
-      "subtitle": "Automatische Mob-Drop-Farm per Ritual",
+      "subtitle": "Passive mob drops. Without killing the mobs.",
       "description": [
-        "Drygmys sind magische Wesen, die Mob-Drops farmen — ohne die Mobs zu töten.",
-        "Mit einer Cataclysm-Mob-Effigy können sie sogar Cataclysm-Boss-Drops produzieren.",
-        "Das ist der einzige Weg, Mythic Catalysts zu automatisieren.",
-        "Richte deine erste Drygmy-Farm ein."
+        "Drygmys are magical creatures from Ars Nouveau that generate mob drops passively — no killing required.",
+        "Setup: place a Jars of Drygmy Whims in an Encountrium circle, summon Drygmys using a Drygmy Charm, and add Mob Jars (or Essences) nearby.",
+        "The Drygmys will periodically produce drops from any mob they recognize.",
+        "Using a Cataclysm Mob Effigy, they can be made to produce Cataclysm boss drops — including Mythic Catalysts.",
+        "This is the ONLY way to automate Mythic Catalyst production. It requires Cataclysm boss kills to get the Effigy first."
       ],
       "dependencies": ["t4_ars_01"],
       "tasks": [
@@ -394,11 +408,13 @@
       "icon": "create_enchantment_industry:experience_rotor",
       "x": 4.0,
       "y": 4.0,
-      "subtitle": "Create: Enchantment Industry",
+      "subtitle": "Liquid XP. Industrial scale. Because why not.",
       "description": [
-        "Create: Enchantment Industry wandelt normale XP-Flüssigkeit in Hyper Experience um.",
-        "Hyper Experience ist die Ressource für den Catalyst Altar — einen der drei Wege zum Resource Catalyst.",
-        "Baue den Mixer-Setup: Experience-Flüssigkeit → Hyper Experience."
+        "Create: Enchantment Industry converts XP into liquid form, then processes it into Hyper Experience.",
+        "Hyper Experience is used in the Catalyst Altar — one of the three ways to craft a Resource Catalyst.",
+        "Setup: Collect XP via an Experience Rotor (mob farm nearby) → store in a tank → run through a Mixing recipe to produce Hyper Experience.",
+        "The Catalyst Altar consumes 1000 mB of Hyper Experience (via a Create Spout) to produce one Resource Catalyst.",
+        "This is the most controllable Catalyst source — fully automatable with a Create+Mekanism setup."
       ],
       "dependencies": ["t4_mek_01", "t3_ae2_04"],
       "tasks": [
@@ -426,17 +442,18 @@
 
     {
       "id": "t4_finale",
-      "title": "Bereit für Tier 5",
+      "title": "Ready for Tier 5",
       "icon": "cataclysm:netherite_monstrosity_spawn_egg",
       "x": 4.0,
       "y": 8.0,
-      "subtitle": "Die Bosse warten",
+      "subtitle": "The bosses are waiting. So is your funeral.",
       "description": [
-        "Tier 4 ist abgeschlossen. Du hast x3-Verarbeitung, AE2-Massenspeicher und Ars Nouveau.",
-        "Tier 5 beginnt mit dem Kampf gegen Cataclysm-Bosse.",
-        "Der Netherite Monstrosity ist der Einstieg — er droppt den ersten Resource Catalyst garantiert.",
-        "Die Apex-Bosse (Ignis, Harbinger, Ender Guardian) droppen Mythic Catalysts und Singularity Shards.",
-        "Stelle dich vor: Refined-Obsidian-Rüstung, Atomic Alloy, AE2-Autocrafting laufend."
+        "Tier 4 is done. You have x3 ore processing, massive AE2 storage, Drygmy automation, and Hyper XP production.",
+        "Tier 5 begins with combat. Cataclysm's boss line is the only source of Mythic Catalysts and Singularity Shards.",
+        "The Netherite Monstrosity is your entry point — found in the Nether, drops a guaranteed Resource Catalyst.",
+        "The Apex Bosses (Ignis, The Harbinger, Ender Guardian) drop Mythic Catalysts and Singularity Shards needed for the Fusion Reactor.",
+        "Before engaging: Refined Obsidian armor, Atomic Alloy-tier equipment, and full enchantments are strongly recommended.",
+        "Also make sure your AE2 autocrafting is running. You'll need to replenish supplies after each fight."
       ],
       "dependencies": ["t4_mek_03", "t4_ae2_02", "t4_ars_02", "t4_create_ei"],
       "tasks": [

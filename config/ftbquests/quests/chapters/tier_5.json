@@ -11,12 +11,13 @@
       "icon": "cataclysm:netherite_monstrosity_spawn_egg",
       "x": 0.0,
       "y": 0.0,
-      "subtitle": "Der erste Cataclysm-Boss",
+      "subtitle": "It's made of Netherite. Good luck.",
       "description": [
-        "Das Netherite Monstrosity ist der Einstieg in die Cataclysm-Boss-Linie.",
-        "Du findest es im Nether — in riesigen Fortresses oder als Spawn.",
-        "Es droppt garantiert einen Resource Catalyst.",
-        "Dieser Kampf testet, ob deine Rüstung und Ausrüstung wirklich gut genug sind."
+        "The Netherite Monstrosity is your introduction to the Cataclysm boss line.",
+        "You'll find it lurking in massive Nether structures — it is large, armored, and not happy to see you.",
+        "Drops: guaranteed Resource Catalyst, and occasionally rare Cataclysm-specific loot.",
+        "Recommended loadout: Refined Obsidian armor (full set), a strong sword or axe with high-tier enchantments, and plenty of healing.",
+        "If you die, respawn, restock, try again. This is supposed to be hard."
       ],
       "dependencies": ["t4_finale"],
       "tasks": [
@@ -50,16 +51,17 @@
 
     {
       "id": "t5_boss_02",
-      "title": "Ignis — Herr des Feuers",
+      "title": "Ignis — Lord of Fire",
       "icon": "cataclysm:ignis_spawn_egg",
       "x": 0.0,
       "y": 2.0,
-      "subtitle": "Apex-Boss I: Feuerresistenz ist Pflicht",
+      "subtitle": "Apex Boss I. Fire Resistance is not optional.",
       "description": [
-        "Ignis ist der erste der drei Apex-Bosse.",
-        "Er droppt Mythic Catalysts und Singularity Shards — beide sind für Tier-5-Rezepte essentiell.",
-        "Feuerresistenz-Tränke, Refined-Obsidian-Rüstung und volle Enchantments sind Minimum.",
-        "Der Kampf findet in einer vulkanischen Umgebung statt — bring genug Nahrung."
+        "Ignis is the first of three Apex Bosses — the hardest enemies in the modpack.",
+        "It inhabits volcanic biomes and uses fire-based attacks. Without Fire Resistance, you will die to the environment alone.",
+        "Drops: Mythic Catalyst (1, guaranteed) and Singularity Shards (1-2).",
+        "Mythic Catalysts are required for Tier 4 MA seeds. Singularity Shards are needed for the Fusion Reactor Controller.",
+        "Recommended: Fire Resistance potions, Totem of Undying, Refined Obsidian armor with Protection IV, a Mekanism Atomic Alloy-tier weapon."
       ],
       "dependencies": ["t5_boss_01"],
       "tasks": [
@@ -93,16 +95,17 @@
 
     {
       "id": "t5_boss_03",
-      "title": "The Harbinger & Ender Guardian",
+      "title": "The Harbinger and Ender Guardian",
       "icon": "cataclysm:ender_guardian_spawn_egg",
       "x": 0.0,
       "y": 4.0,
-      "subtitle": "Apex-Bosse II & III: Die Shards vervollständigen",
+      "subtitle": "Apex Bosses II and III. The End is not safe.",
       "description": [
-        "The Harbinger lauert in der End-Dimension.",
-        "Der Ender Guardian bewacht das Herz des Endes.",
-        "Beide droppen Singularity Shards — du brauchst sie für den Fusion Reactor Controller.",
-        "Töte beide, um genug Shards für das Endgame zu sammeln."
+        "The Harbinger and the Ender Guardian are both found in End-dimension structures.",
+        "The Harbinger is fast, aggressive, and uses teleportation attacks. The Ender Guardian commands the void.",
+        "Both drop Singularity Shards — you need multiple for the Fusion Reactor Controller.",
+        "Together with Ignis, defeating all three Apex Bosses gives you the materials for every Tier 5 recipe.",
+        "Tip: Set up a Waystone in the End before engaging. You'll want a fast way back to your base."
       ],
       "dependencies": ["t5_boss_02"],
       "tasks": [
@@ -142,15 +145,17 @@
 
     {
       "id": "t5_drygmy",
-      "title": "Cataclysm Drygmy-Automatisierung",
+      "title": "Mythic Catalyst: Automated",
       "icon": "ars_nouveau:drygmy_charm",
       "x": 0.0,
       "y": 6.0,
-      "subtitle": "Mythic Catalysts auf Autopilot",
+      "subtitle": "Boss drops, without the boss fight. Eventually.",
       "description": [
-        "Mit einer Cataclysm-Mob-Effigy kann deine Drygmy-Farm Mythic Catalysts produzieren.",
-        "Das ist die einzige Möglichkeit, Mythic Catalysts ohne wiederholte Boss-Kämpfe zu bekommen.",
-        "Richte die Farm ein — du wirst viele Catalysts für MA T4-Samen brauchen."
+        "Once you've killed an Apex Boss and obtained their Mob Effigy, you can place it near a Drygmy.",
+        "The Drygmy will then generate Mythic Catalysts passively — no more boss runs required.",
+        "This is the only way to fully automate Mythic Catalyst production.",
+        "You'll need a steady supply for Tier 4 MA seeds and any other recipes using them.",
+        "Setup: Drygmy Farm (from T4) + Cataclysm Boss Effigy adjacent = automated Mythic Catalysts."
       ],
       "dependencies": ["t5_boss_02", "t4_ars_02"],
       "tasks": [
@@ -178,16 +183,17 @@
 
     {
       "id": "t5_ma_01",
-      "title": "MA Tier-4-Samen",
+      "title": "Tier 4 Seeds — Mekanism Metals",
       "icon": "mysticalagradditions:osmium_seeds",
       "x": 4.0,
       "y": 0.0,
-      "subtitle": "Osmium, Tin, Lead — aus dem Boden",
+      "subtitle": "Osmium from dirt. The mining industry is dead.",
       "description": [
-        "Tier-4-Samen produzieren Mekanism-Metalle: Osmium, Tin, Lead, Uranium und Fluorite.",
-        "Das Rezept verlangt einen Mythic Catalyst — nur aus Cataclysm-Apex-Bossen.",
-        "Automatisierbar via Drygmy-Farm mit Cataclysm-Effigy.",
-        "Mit diesen Samen wird Osmium-Mangel Geschichte."
+        "Mystical Agradditions Tier 4 seeds produce Mekanism metals: Osmium, Tin, Lead, Uranium, and Fluorite.",
+        "Each seed recipe requires a Mythic Catalyst — obtained from Cataclysm Apex Bosses or your Drygmy farm.",
+        "Once Osmium Seeds are running, your Mekanism supply chain becomes self-sustaining.",
+        "Uranium Seeds provide passive Uranium for Mekanism Generators, and Fluorite for the Electrolytic Separator.",
+        "Plant on Essence Farmland for the best growth rate. Automate harvesting with Create for maximum throughput."
       ],
       "dependencies": ["t5_drygmy"],
       "tasks": [
@@ -231,11 +237,13 @@
       "icon": "mekanism:digital_miner",
       "x": 4.0,
       "y": 2.0,
-      "subtitle": "Automatisches Mining auf Knopfdruck",
+      "subtitle": "Point it at the ground. Watch the ore arrive.",
       "description": [
-        "Der Digital Miner von Mekanism durchsucht automatisch einen großen Bereich nach Erzen.",
-        "Das Rezept erfordert Refined Obsidian und Precision Mechanisms — hergestellt im Mechanical Crafter.",
-        "Einmal aufgestellt, hört er nicht mehr auf, bis kein Erz mehr da ist."
+        "The Mekanism Digital Miner automatically scans a configurable area and mines specific blocks.",
+        "Set a filter for any ore or block type and it will systematically strip-mine the entire radius without you lifting a finger.",
+        "Recipe note: Requires the Mechanical Crafter with Refined Obsidian and Precision Mechanisms.",
+        "Power requirement: significant FE/t — your Alternator + Solar setup should be upgraded before running this.",
+        "Place it, set the filter, give it power and a Silk Touch-equivalent upgrade, and walk away."
       ],
       "dependencies": ["t4_finale"],
       "tasks": [
@@ -263,15 +271,16 @@
 
     {
       "id": "t5_mega_cells",
-      "title": "MEGA Cells — maximale Kapazität",
+      "title": "MEGA Cells — Maximum Capacity",
       "icon": "megacells:mega_item_cell_64m",
       "x": 4.0,
       "y": 4.0,
-      "subtitle": "64 Millionen Items. Eine Zelle.",
+      "subtitle": "64 million items. Zero excuses for a messy base.",
       "description": [
-        "Die 64M MEGA Cell ist die größte Storage-Zelle im Pack.",
-        "Mit Applied Mekanistics kommen dazu noch Mekanism-Chemikalien-Zellen.",
-        "Rüste dein ME-System auf maximale Kapazität auf."
+        "The 64M MEGA Cell is the largest storage unit in the pack. One cell. 64 million items. You probably don't need more.",
+        "Applied Mekanistics adds Mekanism Chemical Cells for your AE2 network — store Oxygen, Hydrogen, and other gases directly in ME Drives.",
+        "With MEGA Cells + Applied Mekanistics, your AE2 network can manage your entire material flow — items and chemicals — in one place.",
+        "This is the storage endgame. Build it, fill it, and never think about storage again."
       ],
       "dependencies": ["t5_digital_miner", "t4_ae2_02"],
       "tasks": [
@@ -309,16 +318,18 @@
       "icon": "mekanismgenerators:fusion_reactor_controller",
       "x": 8.0,
       "y": 0.0,
-      "subtitle": "Unbegrenzte Energie — das Endgame beginnt",
+      "subtitle": "Unlimited power. No, really.",
       "description": [
-        "Der Fusion Reactor ist das mächtigste Energiesystem im Pack.",
-        "Er erzeugt so viel FE, dass jede andere Energiequelle überflüssig wird.",
-        "Das Controller-Rezept wurde stark modifiziert:",
-        "— Singularity Shards (nur aus Cataclysm Apex-Bossen)",
-        "— Atomic Alloy",
-        "— Refined Obsidian",
-        "— AE2 ME Controller",
-        "Kein anderer Weg führt hierher."
+        "The Mekanism Fusion Reactor is the most powerful energy source in the modpack.",
+        "Once running, it produces so much FE/t that every other generator becomes completely obsolete.",
+        "The Controller recipe is heavily gated — it requires:",
+        "• Singularity Shards — only obtainable from Cataclysm Apex Bosses (Ignis, Harbinger, Ender Guardian)",
+        "• Atomic Alloy — top-tier Mekanism alloy",
+        "• Refined Obsidian Ingots — Mekanism's hardest material",
+        "• AE2 ME Controller — requires Precision Mechanisms",
+        "Building the full reactor structure requires additional Fusion Reactor Frame blocks and a reactor port.",
+        "Fuel: D-T Fuel (Deuterium + Tritium, both from water in the Electrolytic Separator).",
+        "Once ignited, it never runs out of fuel as long as you supply water. This is the energy endgame."
       ],
       "dependencies": ["t5_boss_03", "t4_mek_03"],
       "tasks": [
@@ -352,18 +363,19 @@
 
     {
       "id": "t5_finale",
-      "title": "Gaia erwacht",
+      "title": "Gaia Awakens",
       "icon": "apex:gaia_core",
       "x": 4.0,
       "y": 8.0,
-      "subtitle": "Du hast alles gebaut. Gaia erwacht.",
+      "subtitle": "You built it all. From a stick and two planks.",
       "description": [
-        "Du hast die Progression von Stein bis zum Fusion Reactor durchlaufen.",
-        "Erze abgebaut, Automation aufgebaut, Bosse besiegt, Dimensionen erkundet.",
-        "Gaia Awakening ist vollständig.",
+        "You started with nothing. You punched a tree. You built a Crafting Table.",
+        "Now you have a Fusion Reactor, a fully automated AE2 network, Mystical Agriculture growing every metal in the game, and Cataclysm bosses farming themselves via Drygmys.",
+        "The main progression of Gaia Awakening is complete.",
         "",
-        "Aber es gibt noch mehr zu entdecken — Ars Nouveau, Occultism, Alex's Mobs, Steam 'n' Rails...",
-        "Das Ende ist nur der Anfang."
+        "But the world is still out there: Ars Nouveau spell mastery, Occultism rituals, Alex's Mobs and Caves to explore, Steam 'n' Rails to build, Apotheosis pinnacles to reach.",
+        "The end of the quest line is not the end of the game.",
+        "It never is."
       ],
       "dependencies": ["t5_fusion_reactor", "t5_ma_01", "t5_mega_cells"],
       "tasks": [

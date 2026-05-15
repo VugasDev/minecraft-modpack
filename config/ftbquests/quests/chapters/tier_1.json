@@ -1,20 +1,21 @@
 {
   "id": "tier_1_chapter",
-  "title": "Tier 1: Der Einstieg",
+  "title": "Tier 1: The Beginning",
   "icon": "minecraft:crafting_table",
   "default_quest_shape": "circle",
   "quests": [
 
     {
       "id": "t1_basics_01",
-      "title": "Erste Schritte",
+      "title": "First Things First",
       "icon": "minecraft:crafting_table",
       "x": 0.0,
       "y": 0.0,
-      "subtitle": "Der Beginn aller Dinge",
+      "subtitle": "You punch a tree. Classy.",
       "description": [
-        "Willkommen! Bevor die Maschinen laufen, müssen die Grundlagen stimmen.",
-        "Baue einen Handwerkstisch und fälle deinen ersten Baum."
+        "You've spawned into a massive, procedurally generated world full of wonder and danger.",
+        "Your first move? Punch a tree. It's tradition at this point.",
+        "Craft a Crafting Table and collect some wood. The adventure begins here."
       ],
       "tasks": [
         {
@@ -59,14 +60,14 @@
 
     {
       "id": "t1_basics_02",
-      "title": "Feuer und Erz",
+      "title": "Fire and Ore",
       "icon": "minecraft:furnace",
       "x": 0.0,
       "y": 2.0,
-      "subtitle": "Der erste Schmelzofen",
+      "subtitle": "Heat rocks until they cry. It works.",
       "description": [
-        "Kohle und Eisenerz — die Basis jeder Zivilisation.",
-        "Baue deinen ersten Ofen und schmelze Eisen zu Barren."
+        "Step one of human civilization: shove things into fire until something useful comes out.",
+        "Build a furnace and smelt some iron. You'll need a lot of it — trust us."
       ],
       "dependencies": ["t1_basics_01"],
       "tasks": [
@@ -100,14 +101,15 @@
 
     {
       "id": "t1_basics_03",
-      "title": "Eiserne Entschlossenheit",
+      "title": "Iron Will",
       "icon": "minecraft:iron_chestplate",
       "x": 0.0,
       "y": 4.0,
-      "subtitle": "Rüstung schützt. Kein Wenn, kein Aber.",
+      "subtitle": "Because mobs don't care about your feelings.",
       "description": [
-        "Die Welt da draußen ist gefährlich — besonders nachts.",
-        "Stelle dir eine vollständige Eisen-Rüstung her und beweise, dass du bereit bist."
+        "Night is coming. Skeletons have bows. You have a wooden sword. This is not a fair fight.",
+        "Craft a full set of iron armor. No partial credit — helmet, chestplate, leggings, boots.",
+        "Looking good is a bonus. Not dying is the point."
       ],
       "dependencies": ["t1_basics_02"],
       "tasks": [
@@ -159,14 +161,15 @@
 
     {
       "id": "t1_basics_04",
-      "title": "Überleben gesichert",
+      "title": "Don't Starve",
       "icon": "minecraft:cooked_beef",
       "x": 0.0,
       "y": 6.0,
-      "subtitle": "Ein Bett, ein Brot, ein Plan",
+      "subtitle": "A bed, some bread, and a vague sense of hope.",
       "description": [
-        "Hunger ist der stille Feind.",
-        "Stelle Nahrung sicher und schlafe, um deinen Spawn zu setzen."
+        "Hunger kills slowly and sleep resets your spawn. Both matter more than you think.",
+        "Craft a bed so you don't wake up at world spawn after dying to a creeper.",
+        "Bake some bread — wheat is everywhere and your stomach doesn't care about aesthetics."
       ],
       "dependencies": ["t1_basics_02"],
       "tasks": [
@@ -200,14 +203,15 @@
 
     {
       "id": "t1_create_01",
-      "title": "Zahnräder & Energie",
+      "title": "Gears and Spin",
       "icon": "create:water_wheel",
       "x": 4.0,
       "y": 0.0,
-      "subtitle": "Der Einstieg in die Create-Physik",
+      "subtitle": "Physics-based automation starts here.",
       "description": [
-        "Das Wasserrad ist dein erster Schritt, um kinetische Energie zu erzeugen.",
-        "Baue es und verbinde es mit einem Schacht."
+        "Create is this modpack's core automation mod — and it runs on rotational force, not magic.",
+        "A Water Wheel turns flowing water into Stress Units (SU). Connect it to a Shaft and watch it spin.",
+        "This is the beginning of something beautiful. And complicated. Mostly complicated."
       ],
       "dependencies": ["t1_basics_01"],
       "tasks": [
@@ -241,15 +245,15 @@
 
     {
       "id": "t1_create_02",
-      "title": "Mechanische Presse",
+      "title": "Mechanical Press",
       "icon": "create:mechanical_press",
       "x": 4.0,
       "y": 2.0,
-      "subtitle": "Rohmaterialien formen",
+      "subtitle": "It presses things. Beautifully.",
       "description": [
-        "Rohmaterialien müssen verarbeitet werden.",
-        "Die Presse ist das erste Werkzeug, um Platten aus Ingots herzustellen.",
-        "Kombiniere sie mit einem Becken für automatisiertes Pressen."
+        "The Mechanical Press is your first real Create machine — it presses ingots into plates and more.",
+        "Place it above a Basin to catch the output. It needs rotational force from above.",
+        "Sheet metal, packed items, dough — if it needs squishing, the Press handles it."
       ],
       "dependencies": ["t1_create_01"],
       "tasks": [
@@ -287,11 +291,12 @@
       "icon": "create:crushing_wheel",
       "x": 4.0,
       "y": 4.0,
-      "subtitle": "Der Beginn der APEX Ore-Chain",
+      "subtitle": "Two wheels. Double the ore. Zero regrets.",
       "description": [
-        "Das Herzstück deiner frühen Erzverarbeitung.",
-        "Zwei Räder, ein Ziel: doppelter Output.",
-        "Ab hier beginnt das echte Ore-Processing — zeige, was du kannst."
+        "Crushing Wheels are the foundation of the APEX Ore Processing chain.",
+        "Two counter-rotating wheels grind ores into crushed ore — giving you 2x output vs. smelting.",
+        "They need at least 256 SU of combined stress capacity and must spin in opposite directions.",
+        "This is where ore efficiency begins. Don't smelt raw ore ever again."
       ],
       "dependencies": ["t1_create_02"],
       "tasks": [
@@ -319,15 +324,15 @@
 
     {
       "id": "t1_create_04",
-      "title": "Förderbänder & Trichter",
+      "title": "Belts and Funnels",
       "icon": "create:mechanical_belt",
       "x": 4.0,
       "y": 6.0,
-      "subtitle": "Automatisierung beginnt hier",
+      "subtitle": "Moving items is beneath you. Let machines do it.",
       "description": [
-        "Kein Spieler soll ewig Items von Hand verschieben.",
-        "Förderbänder und mechanische Trichter sind die Grundlage jeder Automatisierung.",
-        "Baue deine erste automatische Transportkette."
+        "Manual item transport ends here. Mechanical Belts carry items between machines automatically.",
+        "Andesite Funnels push and pull items from inventories, chests, and machine inputs.",
+        "Set up a simple belt line: input chest → Crushing Wheels → output chest. No player interaction required."
       ],
       "dependencies": ["t1_create_03"],
       "tasks": [
@@ -367,15 +372,16 @@
 
     {
       "id": "t1_create_05",
-      "title": "Andesite-Maschinerie",
+      "title": "Andesite Machinery",
       "icon": "create:andesite_casing",
       "x": 4.0,
       "y": 8.0,
-      "subtitle": "Das Ende von Tier 1 — und der Anfang von etwas Großem",
+      "subtitle": "Tier 1 is over. Brass is next.",
       "description": [
-        "Andesite-Casings, Mixer und Trichter — mit diesem Setup endet Tier 1.",
-        "Du hast Energie erzeugt, Erze verarbeitet und automatisiert.",
-        "Tier 2 beginnt mit Messing. Bereite dich vor."
+        "Andesite Casings, Mixers, Funnels — this is the full Tier 1 Create setup.",
+        "You've generated power, crushed ore, and automated transport.",
+        "Now you need Brass. That means Zinc, Copper, and a Mechanical Mixer running at the right RPM.",
+        "Tier 2 starts with the alloy that runs this entire modpack. Get ready."
       ],
       "dependencies": ["t1_create_04"],
       "tasks": [
@@ -419,10 +425,11 @@
       "icon": "waystones:waystone",
       "x": 8.0,
       "y": 0.0,
-      "subtitle": "Die Welt ist groß — behalte den Überblick",
+      "subtitle": "The world is huge. Use fast travel.",
       "description": [
-        "Waystones sind deine Ankerpunkte in der Welt.",
-        "Finde einen in der Natur oder baue deinen ersten."
+        "Gaia Awakening generates a massive world with biomes spread far apart.",
+        "Waystones let you teleport between discovered locations — for free, with no cooldown (depending on config).",
+        "Find one in a village or structure, or craft your own. Name it something useful, not 'lol'."
       ],
       "dependencies": ["t1_basics_01"],
       "tasks": [
@@ -450,15 +457,15 @@
 
     {
       "id": "t1_explore_01",
-      "title": "Kompass der Natur",
+      "title": "Nature's Compass",
       "icon": "naturescompass:naturescompass",
       "x": 8.0,
       "y": 2.0,
-      "subtitle": "Die Welt gehört denen, die sie kennen",
+      "subtitle": "There's a biome out there. Find it.",
       "description": [
-        "Gaia Awakening erzeugt eine riesige, lebendige Welt.",
-        "Der Naturkompass hilft dir, Biome zu finden — nützlich für Ressourcen und Entdeckungen.",
-        "Stelle einen her und nutze ihn, um ein Biom deiner Wahl zu suchen."
+        "Gaia Awakening uses Tectonic and Terralith to generate over 100 unique biomes.",
+        "Some resources only appear in specific biomes — and without a map tool, good luck finding them.",
+        "Nature's Compass lets you search for any biome by name. Craft one and use it."
       ],
       "dependencies": ["t1_util_01"],
       "tasks": [
@@ -486,15 +493,16 @@
 
     {
       "id": "t1_nether_01",
-      "title": "Ins Höllenfeuer",
+      "title": "Into Hell",
       "icon": "minecraft:obsidian",
       "x": 8.0,
       "y": 4.0,
-      "subtitle": "Die Hölle wartet nicht",
+      "subtitle": "Pack your fire resistance. Seriously.",
       "description": [
-        "Nether-Quartz ist essenziell für frühe Create-Rezepte.",
-        "Obsidian, Feuerstein, Stahl — und du kannst den Nether betreten.",
-        "Aber Vorsicht: ohne gute Rüstung bist du schneller tot als du denkst."
+        "Nether Quartz is essential for early Create recipes. You need it. It's only in the Nether.",
+        "Collect Obsidian and craft a Flint and Steel to open the portal.",
+        "The Nether is not friendly. Wear your iron armor. Bring food. Don't fall in lava.",
+        "You were warned."
       ],
       "dependencies": ["t1_basics_03", "t1_explore_01"],
       "tasks": [
@@ -534,15 +542,15 @@
 
     {
       "id": "t1_nether_02",
-      "title": "Quartz & Flamme",
+      "title": "Quartz and Flames",
       "icon": "minecraft:nether_quartz",
       "x": 8.0,
       "y": 6.0,
-      "subtitle": "Der Nether gibt, der Nether nimmt",
+      "subtitle": "The Nether gives, the Nether taketh away.",
       "description": [
-        "Nether-Quartz ist die Ressource, die Create in Tier 1 braucht.",
-        "Blaze Rods öffnen später die Tür zum Verzauberungssystem.",
-        "Sammle beide — und komm lebend zurück."
+        "Nether Quartz powers early Create components — Electron Tubes, speed controllers, and more.",
+        "Blaze Rods unlock brewing and enchanting, and are needed for Tier 2 progression.",
+        "Farm both. Come back alive. That last part is important."
       ],
       "dependencies": ["t1_nether_01"],
       "tasks": [
