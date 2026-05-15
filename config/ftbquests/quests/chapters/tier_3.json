@@ -1,0 +1,525 @@
+{
+  "id": "tier_3_chapter",
+  "title": "Tier 3: Energie & Automation",
+  "icon": "ae2:controller",
+  "default_quest_shape": "circle",
+  "quests": [
+
+    {
+      "id": "t3_ae2_01",
+      "title": "Certus Quarz züchten",
+      "icon": "ae2:certus_quartz_crystal",
+      "x": 0.0,
+      "y": 0.0,
+      "subtitle": "AE2 beginnt im Wasser",
+      "description": [
+        "Applied Energistics 2 braucht Certus Quartz — und der wächst nur in Wasser.",
+        "Wirf Certus Quartz Seeds ins Wasser. Mit dem Richtigen Biome-Bonus wachsen sie schneller.",
+        "Sammle genug für deinen ersten ME-Controller."
+      ],
+      "dependencies": ["t2_finale"],
+      "tasks": [
+        {
+          "id": "t3_a_01_task_1",
+          "type": "item",
+          "item": "ae2:certus_quartz_crystal",
+          "count": 32
+        },
+        {
+          "id": "t3_a_01_task_2",
+          "type": "item",
+          "item": "ae2:fluix_crystal",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_a_01_reward_1",
+          "type": "item",
+          "item": "ae2:certus_quartz_seed",
+          "count": 4
+        },
+        {
+          "id": "t3_a_01_reward_2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+
+    {
+      "id": "t3_ae2_02",
+      "title": "ME Controller",
+      "icon": "ae2:controller",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Das Gehirn deines Netzwerks",
+      "description": [
+        "Der ME Controller ist das Herzstück jedes AE2-Systems.",
+        "Das Rezept wurde modifiziert: du brauchst Precision Mechanisms als Antrieb.",
+        "Ohne Create-Tier-2-Fortschritt kein AE2. So ist die Progression gedacht."
+      ],
+      "dependencies": ["t3_ae2_01"],
+      "tasks": [
+        {
+          "id": "t3_a_02_task_1",
+          "type": "item",
+          "item": "ae2:controller",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_a_02_reward_1",
+          "type": "item",
+          "item": "ae2:certus_quartz_crystal",
+          "count": 16
+        },
+        {
+          "id": "t3_a_02_reward_2",
+          "type": "item",
+          "item": "ae2:fluix_crystal",
+          "count": 8
+        },
+        {
+          "id": "t3_a_02_reward_3",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+
+    {
+      "id": "t3_ae2_03",
+      "title": "Das erste ME-Netzwerk",
+      "icon": "ae2:drive",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Storage, überall verfügbar",
+      "description": [
+        "Ein ME Drive speichert Storage Cells — dein digitales Lager.",
+        "Das ME Terminal gibt dir Zugriff auf alles im Netzwerk.",
+        "Verbinde Controller, Drive und Terminal über ME-Kabel. Dein erstes Netzwerk lebt."
+      ],
+      "dependencies": ["t3_ae2_02"],
+      "tasks": [
+        {
+          "id": "t3_a_03_task_1",
+          "type": "item",
+          "item": "ae2:drive",
+          "count": 1
+        },
+        {
+          "id": "t3_a_03_task_2",
+          "type": "item",
+          "item": "ae2:terminal",
+          "count": 1
+        },
+        {
+          "id": "t3_a_03_task_3",
+          "type": "item",
+          "item": "ae2:item_storage_cell_4k",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_a_03_reward_1",
+          "type": "item",
+          "item": "ae2:item_storage_cell_16k",
+          "count": 1
+        },
+        {
+          "id": "t3_a_03_reward_2",
+          "type": "xp",
+          "xp": 700
+        }
+      ]
+    },
+
+    {
+      "id": "t3_ae2_04",
+      "title": "Autocrafting",
+      "icon": "ae2:molecular_assembler",
+      "x": 0.0,
+      "y": 6.0,
+      "subtitle": "Crafting auf Knopfdruck",
+      "description": [
+        "Der Molecular Assembler führt Crafting-Aufträge aus dem Netzwerk aus.",
+        "Der Pattern Provider liefert ihm die Muster.",
+        "Zusammen automatisieren sie jedes Crafting-Rezept — für immer."
+      ],
+      "dependencies": ["t3_ae2_03"],
+      "tasks": [
+        {
+          "id": "t3_a_04_task_1",
+          "type": "item",
+          "item": "ae2:molecular_assembler",
+          "count": 1
+        },
+        {
+          "id": "t3_a_04_task_2",
+          "type": "item",
+          "item": "ae2:pattern_provider",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_a_04_reward_1",
+          "type": "item",
+          "item": "ae2:blank_pattern",
+          "count": 16
+        },
+        {
+          "id": "t3_a_04_reward_2",
+          "type": "xp",
+          "xp": 750
+        }
+      ]
+    },
+
+    {
+      "id": "t3_energy_01",
+      "title": "Rotation wird Strom",
+      "icon": "create_new_age:alternator",
+      "x": 4.0,
+      "y": 0.0,
+      "subtitle": "Create: New Age verbindet Kinematik mit Forge Energy",
+      "description": [
+        "Create erzeugt Rotationsenergie — Mekanism und AE2 brauchen Forge Energy (FE).",
+        "Der Alternator von Create: New Age wandelt Drehmoment in FE um.",
+        "Je mehr RPM du lieferst, desto mehr FE/t erzeugst du. Baue groß."
+      ],
+      "dependencies": ["t2_finale"],
+      "tasks": [
+        {
+          "id": "t3_e_01_task_1",
+          "type": "item",
+          "item": "create_new_age:alternator",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_e_01_reward_1",
+          "type": "item",
+          "item": "create_new_age:connector",
+          "count": 4
+        },
+        {
+          "id": "t3_e_01_reward_2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+
+    {
+      "id": "t3_energy_02",
+      "title": "Energie speichern",
+      "icon": "mekanism:basic_energy_cube",
+      "x": 4.0,
+      "y": 2.0,
+      "subtitle": "Ein Puffer, der Spitzen abfängt",
+      "description": [
+        "Generatoren produzieren Energie ungleichmäßig — Maschinen brauchen konstanten Input.",
+        "Der Mekanism Energy Cube puffert FE und gibt es gleichmäßig ab.",
+        "Stelle auch einen Basic Solar Generator her: freie Energie tagsüber."
+      ],
+      "dependencies": ["t3_energy_01"],
+      "tasks": [
+        {
+          "id": "t3_e_02_task_1",
+          "type": "item",
+          "item": "mekanism:basic_energy_cube",
+          "count": 1
+        },
+        {
+          "id": "t3_e_02_task_2",
+          "type": "item",
+          "item": "mekanismgenerators:basic_solar_generator",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_e_02_reward_1",
+          "type": "item",
+          "item": "mekanism:advanced_energy_cube",
+          "count": 1
+        },
+        {
+          "id": "t3_e_02_reward_2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+
+    {
+      "id": "t3_energy_03",
+      "title": "XNet — Das Nervensystem",
+      "icon": "xnet:controller",
+      "x": 4.0,
+      "y": 4.0,
+      "subtitle": "Kabel, die alles können",
+      "description": [
+        "XNet ist die effizienteste Kabeliösung für große Basis-Netzwerke.",
+        "Ein XNet-Kabel transportiert Items, Flüssigkeiten, Energie und Redstone gleichzeitig.",
+        "Baue deinen ersten Controller und verbinde deine Maschinen damit."
+      ],
+      "dependencies": ["t3_energy_02"],
+      "tasks": [
+        {
+          "id": "t3_e_03_task_1",
+          "type": "item",
+          "item": "xnet:controller",
+          "count": 1
+        },
+        {
+          "id": "t3_e_03_task_2",
+          "type": "item",
+          "item": "xnet:connector",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_e_03_reward_1",
+          "type": "item",
+          "item": "xnet:connector",
+          "count": 8
+        },
+        {
+          "id": "t3_e_03_reward_2",
+          "type": "xp",
+          "xp": 450
+        }
+      ]
+    },
+
+    {
+      "id": "t3_pnc_01",
+      "title": "Druckluft-Kompressor",
+      "icon": "pneumaticcraft:air_compressor",
+      "x": 8.0,
+      "y": 0.0,
+      "subtitle": "PneumaticCraft: Luft ist Energie",
+      "description": [
+        "PneumaticCraft nutzt Druckluft als Energieform.",
+        "Der Air Compressor erzeugt Druck aus Brennstoff — oder mit Create-Komponenten.",
+        "Das Rezept wurde angepasst: du brauchst Create-Bauteile als Mechanismus."
+      ],
+      "dependencies": ["t2_finale"],
+      "tasks": [
+        {
+          "id": "t3_p_01_task_1",
+          "type": "item",
+          "item": "pneumaticcraft:air_compressor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_p_01_reward_1",
+          "type": "item",
+          "item": "pneumaticcraft:pressure_tube",
+          "count": 8
+        },
+        {
+          "id": "t3_p_01_reward_2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+
+    {
+      "id": "t3_pnc_02",
+      "title": "Pressure Chamber",
+      "icon": "pneumaticcraft:pressure_chamber_wall",
+      "x": 8.0,
+      "y": 2.0,
+      "subtitle": "Die erste Druckkammer",
+      "description": [
+        "Die Pressure Chamber ist das Herz von PneumaticCraft.",
+        "Sie komprimiert Items unter Druck — einige Rezepte sind nur hier möglich.",
+        "Baue eine 3×3×3-Kammer aus Pressure Chamber Walls und einem Interface."
+      ],
+      "dependencies": ["t3_pnc_01"],
+      "tasks": [
+        {
+          "id": "t3_p_02_task_1",
+          "type": "item",
+          "item": "pneumaticcraft:pressure_chamber_wall",
+          "count": 20
+        },
+        {
+          "id": "t3_p_02_task_2",
+          "type": "item",
+          "item": "pneumaticcraft:pressure_chamber_interface",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_p_02_reward_1",
+          "type": "item",
+          "item": "pneumaticcraft:compressed_iron_block",
+          "count": 4
+        },
+        {
+          "id": "t3_p_02_reward_2",
+          "type": "xp",
+          "xp": 550
+        }
+      ]
+    },
+
+    {
+      "id": "t3_ma_01",
+      "title": "Mystical Agriculture: Anfänge",
+      "icon": "mysticalagriculture:inferium_seeds",
+      "x": 8.0,
+      "y": 4.0,
+      "subtitle": "Erze wachsen jetzt im Boden",
+      "description": [
+        "Mystical Agriculture ermöglicht es, Ressourcen anzubauen wie Weizen.",
+        "Inferium Essence ist die Grundlage — sie wird für alle Samen höherer Tier benötigt.",
+        "Pflanze Inferium Seeds auf Farmland und baue deine erste Ernte ein."
+      ],
+      "dependencies": ["t3_pnc_02"],
+      "tasks": [
+        {
+          "id": "t3_ma_01_task_1",
+          "type": "item",
+          "item": "mysticalagriculture:inferium_seeds",
+          "count": 4
+        },
+        {
+          "id": "t3_ma_01_task_2",
+          "type": "item",
+          "item": "mysticalagriculture:inferium_essence",
+          "count": 32
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_ma_01_reward_1",
+          "type": "item",
+          "item": "mysticalagriculture:prosperity_shard",
+          "count": 4
+        },
+        {
+          "id": "t3_ma_01_reward_2",
+          "type": "item",
+          "item": "mysticalagriculture:inferium_seeds",
+          "count": 4
+        },
+        {
+          "id": "t3_ma_01_reward_3",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+
+    {
+      "id": "t3_ma_02",
+      "title": "Tier-2-Samen",
+      "icon": "mysticalagriculture:iron_seeds",
+      "x": 8.0,
+      "y": 6.0,
+      "subtitle": "Eisen wächst jetzt. Ernsthaft.",
+      "description": [
+        "Tier-2-Samen produzieren Eisen, Kohle, Stein und Holz-Essences.",
+        "Du brauchst Prudentium Essence als Upgrade-Material — hergestellt aus Inferium.",
+        "Stelle Iron Seeds und Coal Seeds her und baue sie an."
+      ],
+      "dependencies": ["t3_ma_01"],
+      "tasks": [
+        {
+          "id": "t3_ma_02_task_1",
+          "type": "item",
+          "item": "mysticalagriculture:iron_seeds",
+          "count": 1
+        },
+        {
+          "id": "t3_ma_02_task_2",
+          "type": "item",
+          "item": "mysticalagriculture:coal_seeds",
+          "count": 1
+        },
+        {
+          "id": "t3_ma_02_task_3",
+          "type": "item",
+          "item": "mysticalagriculture:prudentium_essence",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_ma_02_reward_1",
+          "type": "item",
+          "item": "mysticalagriculture:iron_essence",
+          "count": 16
+        },
+        {
+          "id": "t3_ma_02_reward_2",
+          "type": "xp",
+          "xp": 550
+        }
+      ]
+    },
+
+    {
+      "id": "t3_finale",
+      "title": "Tier 3 abgeschlossen",
+      "icon": "ae2:engineering_processor",
+      "x": 4.0,
+      "y": 8.0,
+      "subtitle": "Automation, Energie, Druck — Tier 4 öffnet sich",
+      "description": [
+        "Du hast AE2 eingerichtet, Energie erzeugt, PNC aufgebaut und MA gestartet.",
+        "Tier 4 wartet mit fortgeschrittener Erzverarbeitung, MEGA-Storage und MA T3-Samen.",
+        "Stelle Engineering Processors her — sie sind das Rückgrat aller AE2-Komponenten."
+      ],
+      "dependencies": ["t3_ae2_04", "t3_energy_03", "t3_ma_02"],
+      "tasks": [
+        {
+          "id": "t3_fin_task_1",
+          "type": "item",
+          "item": "ae2:engineering_processor",
+          "count": 4
+        },
+        {
+          "id": "t3_fin_task_2",
+          "type": "item",
+          "item": "mekanism:advanced_control_circuit",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t3_fin_reward_1",
+          "type": "item",
+          "item": "ae2:item_storage_cell_64k",
+          "count": 2
+        },
+        {
+          "id": "t3_fin_reward_2",
+          "type": "item",
+          "item": "mekanism:alloy_reinforced",
+          "count": 8
+        },
+        {
+          "id": "t3_fin_reward_3",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "id": "tier_5_chapter",
+  "title": "Tier 5: Endgame",
+  "icon": "mekanismgenerators:fusion_reactor_controller",
+  "default_quest_shape": "square",
+  "quests": [
+
+    {
+      "id": "t5_boss_01",
+      "title": "Netherite Monstrosity",
+      "icon": "cataclysm:netherite_monstrosity_spawn_egg",
+      "x": 0.0,
+      "y": 0.0,
+      "subtitle": "Der erste Cataclysm-Boss",
+      "description": [
+        "Das Netherite Monstrosity ist der Einstieg in die Cataclysm-Boss-Linie.",
+        "Du findest es im Nether — in riesigen Fortresses oder als Spawn.",
+        "Es droppt garantiert einen Resource Catalyst.",
+        "Dieser Kampf testet, ob deine Rüstung und Ausrüstung wirklich gut genug sind."
+      ],
+      "dependencies": ["t4_finale"],
+      "tasks": [
+        {
+          "id": "t5_b_01_task_1",
+          "type": "kill",
+          "entity": "cataclysm:netherite_monstrosity",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_b_01_reward_1",
+          "type": "item",
+          "item": "apex:resource_catalyst",
+          "count": 2
+        },
+        {
+          "id": "t5_b_01_reward_2",
+          "type": "item",
+          "item": "minecraft:golden_apple",
+          "count": 4
+        },
+        {
+          "id": "t5_b_01_reward_3",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+
+    {
+      "id": "t5_boss_02",
+      "title": "Ignis — Herr des Feuers",
+      "icon": "cataclysm:ignis_spawn_egg",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Apex-Boss I: Feuerresistenz ist Pflicht",
+      "description": [
+        "Ignis ist der erste der drei Apex-Bosse.",
+        "Er droppt Mythic Catalysts und Singularity Shards — beide sind für Tier-5-Rezepte essentiell.",
+        "Feuerresistenz-Tränke, Refined-Obsidian-Rüstung und volle Enchantments sind Minimum.",
+        "Der Kampf findet in einer vulkanischen Umgebung statt — bring genug Nahrung."
+      ],
+      "dependencies": ["t5_boss_01"],
+      "tasks": [
+        {
+          "id": "t5_b_02_task_1",
+          "type": "kill",
+          "entity": "cataclysm:ignis",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_b_02_reward_1",
+          "type": "item",
+          "item": "apex:mythic_catalyst",
+          "count": 1
+        },
+        {
+          "id": "t5_b_02_reward_2",
+          "type": "item",
+          "item": "apex:singularity_shard",
+          "count": 1
+        },
+        {
+          "id": "t5_b_02_reward_3",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    },
+
+    {
+      "id": "t5_boss_03",
+      "title": "The Harbinger & Ender Guardian",
+      "icon": "cataclysm:ender_guardian_spawn_egg",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Apex-Bosse II & III: Die Shards vervollständigen",
+      "description": [
+        "The Harbinger lauert in der End-Dimension.",
+        "Der Ender Guardian bewacht das Herz des Endes.",
+        "Beide droppen Singularity Shards — du brauchst sie für den Fusion Reactor Controller.",
+        "Töte beide, um genug Shards für das Endgame zu sammeln."
+      ],
+      "dependencies": ["t5_boss_02"],
+      "tasks": [
+        {
+          "id": "t5_b_03_task_1",
+          "type": "kill",
+          "entity": "cataclysm:the_harbinger",
+          "count": 1
+        },
+        {
+          "id": "t5_b_03_task_2",
+          "type": "kill",
+          "entity": "cataclysm:ender_guardian",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_b_03_reward_1",
+          "type": "item",
+          "item": "apex:singularity_shard",
+          "count": 2
+        },
+        {
+          "id": "t5_b_03_reward_2",
+          "type": "item",
+          "item": "apex:mythic_catalyst",
+          "count": 2
+        },
+        {
+          "id": "t5_b_03_reward_3",
+          "type": "xp",
+          "xp": 2500
+        }
+      ]
+    },
+
+    {
+      "id": "t5_drygmy",
+      "title": "Cataclysm Drygmy-Automatisierung",
+      "icon": "ars_nouveau:drygmy_charm",
+      "x": 0.0,
+      "y": 6.0,
+      "subtitle": "Mythic Catalysts auf Autopilot",
+      "description": [
+        "Mit einer Cataclysm-Mob-Effigy kann deine Drygmy-Farm Mythic Catalysts produzieren.",
+        "Das ist die einzige Möglichkeit, Mythic Catalysts ohne wiederholte Boss-Kämpfe zu bekommen.",
+        "Richte die Farm ein — du wirst viele Catalysts für MA T4-Samen brauchen."
+      ],
+      "dependencies": ["t5_boss_02", "t4_ars_02"],
+      "tasks": [
+        {
+          "id": "t5_dry_task_1",
+          "type": "item",
+          "item": "apex:mythic_catalyst",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_dry_reward_1",
+          "type": "item",
+          "item": "ars_nouveau:drygmy_charm",
+          "count": 2
+        },
+        {
+          "id": "t5_dry_reward_2",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+
+    {
+      "id": "t5_ma_01",
+      "title": "MA Tier-4-Samen",
+      "icon": "mysticalagradditions:osmium_seeds",
+      "x": 4.0,
+      "y": 0.0,
+      "subtitle": "Osmium, Tin, Lead — aus dem Boden",
+      "description": [
+        "Tier-4-Samen produzieren Mekanism-Metalle: Osmium, Tin, Lead, Uranium und Fluorite.",
+        "Das Rezept verlangt einen Mythic Catalyst — nur aus Cataclysm-Apex-Bossen.",
+        "Automatisierbar via Drygmy-Farm mit Cataclysm-Effigy.",
+        "Mit diesen Samen wird Osmium-Mangel Geschichte."
+      ],
+      "dependencies": ["t5_drygmy"],
+      "tasks": [
+        {
+          "id": "t5_ma_01_task_1",
+          "type": "item",
+          "item": "mysticalagradditions:osmium_seeds",
+          "count": 1
+        },
+        {
+          "id": "t5_ma_01_task_2",
+          "type": "item",
+          "item": "mysticalagradditions:uranium_seeds",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_ma_01_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 32
+        },
+        {
+          "id": "t5_ma_01_reward_2",
+          "type": "item",
+          "item": "apex:mythic_catalyst",
+          "count": 1
+        },
+        {
+          "id": "t5_ma_01_reward_3",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    },
+
+    {
+      "id": "t5_digital_miner",
+      "title": "Digital Miner",
+      "icon": "mekanism:digital_miner",
+      "x": 4.0,
+      "y": 2.0,
+      "subtitle": "Automatisches Mining auf Knopfdruck",
+      "description": [
+        "Der Digital Miner von Mekanism durchsucht automatisch einen großen Bereich nach Erzen.",
+        "Das Rezept erfordert Refined Obsidian und Precision Mechanisms — hergestellt im Mechanical Crafter.",
+        "Einmal aufgestellt, hört er nicht mehr auf, bis kein Erz mehr da ist."
+      ],
+      "dependencies": ["t4_finale"],
+      "tasks": [
+        {
+          "id": "t5_dm_task_1",
+          "type": "item",
+          "item": "mekanism:digital_miner",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_dm_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 64
+        },
+        {
+          "id": "t5_dm_reward_2",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+
+    {
+      "id": "t5_mega_cells",
+      "title": "MEGA Cells — maximale Kapazität",
+      "icon": "megacells:mega_item_cell_64m",
+      "x": 4.0,
+      "y": 4.0,
+      "subtitle": "64 Millionen Items. Eine Zelle.",
+      "description": [
+        "Die 64M MEGA Cell ist die größte Storage-Zelle im Pack.",
+        "Mit Applied Mekanistics kommen dazu noch Mekanism-Chemikalien-Zellen.",
+        "Rüste dein ME-System auf maximale Kapazität auf."
+      ],
+      "dependencies": ["t5_digital_miner", "t4_ae2_02"],
+      "tasks": [
+        {
+          "id": "t5_mc_task_1",
+          "type": "item",
+          "item": "megacells:mega_item_cell_64m",
+          "count": 1
+        },
+        {
+          "id": "t5_mc_task_2",
+          "type": "item",
+          "item": "appliedmekanistics:mek_cell_component",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_mc_reward_1",
+          "type": "item",
+          "item": "megacells:mega_item_cell_64m",
+          "count": 1
+        },
+        {
+          "id": "t5_mc_reward_2",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    },
+
+    {
+      "id": "t5_fusion_reactor",
+      "title": "Fusion Reactor",
+      "icon": "mekanismgenerators:fusion_reactor_controller",
+      "x": 8.0,
+      "y": 0.0,
+      "subtitle": "Unbegrenzte Energie — das Endgame beginnt",
+      "description": [
+        "Der Fusion Reactor ist das mächtigste Energiesystem im Pack.",
+        "Er erzeugt so viel FE, dass jede andere Energiequelle überflüssig wird.",
+        "Das Controller-Rezept wurde stark modifiziert:",
+        "— Singularity Shards (nur aus Cataclysm Apex-Bossen)",
+        "— Atomic Alloy",
+        "— Refined Obsidian",
+        "— AE2 ME Controller",
+        "Kein anderer Weg führt hierher."
+      ],
+      "dependencies": ["t5_boss_03", "t4_mek_03"],
+      "tasks": [
+        {
+          "id": "t5_fr_task_1",
+          "type": "item",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_fr_reward_1",
+          "type": "item",
+          "item": "mekanism:alloy_atomic",
+          "count": 16
+        },
+        {
+          "id": "t5_fr_reward_2",
+          "type": "item",
+          "item": "apex:gaia_awakening_token",
+          "count": 1
+        },
+        {
+          "id": "t5_fr_reward_3",
+          "type": "xp",
+          "xp": 5000
+        }
+      ]
+    },
+
+    {
+      "id": "t5_finale",
+      "title": "Gaia erwacht",
+      "icon": "apex:gaia_core",
+      "x": 4.0,
+      "y": 8.0,
+      "subtitle": "Du hast alles gebaut. Gaia erwacht.",
+      "description": [
+        "Du hast die Progression von Stein bis zum Fusion Reactor durchlaufen.",
+        "Erze abgebaut, Automation aufgebaut, Bosse besiegt, Dimensionen erkundet.",
+        "Gaia Awakening ist vollständig.",
+        "",
+        "Aber es gibt noch mehr zu entdecken — Ars Nouveau, Occultism, Alex's Mobs, Steam 'n' Rails...",
+        "Das Ende ist nur der Anfang."
+      ],
+      "dependencies": ["t5_fusion_reactor", "t5_ma_01", "t5_mega_cells"],
+      "tasks": [
+        {
+          "id": "t5_fin_task_1",
+          "type": "item",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "count": 1
+        },
+        {
+          "id": "t5_fin_task_2",
+          "type": "item",
+          "item": "apex:gaia_awakening_token",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t5_fin_reward_1",
+          "type": "item",
+          "item": "minecraft:nether_star",
+          "count": 1
+        },
+        {
+          "id": "t5_fin_reward_2",
+          "type": "item",
+          "item": "apex:gaia_core",
+          "count": 1
+        },
+        {
+          "id": "t5_fin_reward_3",
+          "type": "xp",
+          "xp": 10000
+        }
+      ]
+    }
+
+  ]
+}

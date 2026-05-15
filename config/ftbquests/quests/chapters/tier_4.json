@@ -1,0 +1,478 @@
+{
+  "id": "tier_4_chapter",
+  "title": "Tier 4: Fortgeschrittene Systeme",
+  "icon": "mekanism:purification_chamber",
+  "default_quest_shape": "circle",
+  "quests": [
+
+    {
+      "id": "t4_mek_01",
+      "title": "Purification Chamber",
+      "icon": "mekanism:purification_chamber",
+      "x": 0.0,
+      "y": 0.0,
+      "subtitle": "Ore x3 — dreifacher Output",
+      "description": [
+        "Die Purification Chamber ist der Schritt von x2 auf x3 Erzverarbeitung.",
+        "Sie injiziert Sauerstoff in gemahlenes Erz — das Ergebnis: drei Barren statt zwei.",
+        "Das Rezept erfordert den Mechanical Crafter: du brauchst Brass-Casings als Gate.",
+        "Kein Brass-Tier, kein x3. Die Progression ist klar."
+      ],
+      "dependencies": ["t3_finale"],
+      "tasks": [
+        {
+          "id": "t4_m_01_task_1",
+          "type": "item",
+          "item": "mekanism:purification_chamber",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_m_01_reward_1",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 32
+        },
+        {
+          "id": "t4_m_01_reward_2",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+
+    {
+      "id": "t4_mek_02",
+      "title": "Die x3 Ore-Chain",
+      "icon": "mekanism:chemical_dissolution_chamber",
+      "x": 0.0,
+      "y": 2.0,
+      "subtitle": "Crushing → Purification → Enrichment → x3",
+      "description": [
+        "Die vollständige x3-Chain: Erz → Crushed Ore → Clumps → Dirty Dust → Dust → Ingot.",
+        "Jeder Schritt erfordert eine andere Mekanism-Maschine und Strom.",
+        "Baue die komplette Kette und verarbeite Eisenerz zu dreifachem Output."
+      ],
+      "dependencies": ["t4_mek_01"],
+      "tasks": [
+        {
+          "id": "t4_m_02_task_1",
+          "type": "item",
+          "item": "mekanism:crusher",
+          "count": 1
+        },
+        {
+          "id": "t4_m_02_task_2",
+          "type": "item",
+          "item": "mekanism:chemical_oxidizer",
+          "count": 1
+        },
+        {
+          "id": "t4_m_02_task_3",
+          "type": "item",
+          "item": "mekanism:chemical_washer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_m_02_reward_1",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 64
+        },
+        {
+          "id": "t4_m_02_reward_2",
+          "type": "xp",
+          "xp": 900
+        }
+      ]
+    },
+
+    {
+      "id": "t4_mek_03",
+      "title": "Fortgeschrittene Legierungen",
+      "icon": "mekanism:alloy_atomic",
+      "x": 0.0,
+      "y": 4.0,
+      "subtitle": "Refined Obsidian und Atomic Alloy",
+      "description": [
+        "Tier-4-Maschinen und der Fusion Reactor in Tier 5 benötigen Atomic Alloy.",
+        "Refined Obsidian ist schwer herzustellen — aber als Rüstungsmaterial unübertroffen.",
+        "Produziere beide und du bist für Tier 5 vorbereitet."
+      ],
+      "dependencies": ["t4_mek_02"],
+      "tasks": [
+        {
+          "id": "t4_m_03_task_1",
+          "type": "item",
+          "item": "mekanism:alloy_atomic",
+          "count": 4
+        },
+        {
+          "id": "t4_m_03_task_2",
+          "type": "item",
+          "item": "mekanism:ingot_refined_obsidian",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_m_03_reward_1",
+          "type": "item",
+          "item": "mekanism:alloy_atomic",
+          "count": 4
+        },
+        {
+          "id": "t4_m_03_reward_2",
+          "type": "item",
+          "item": "mekanism:ingot_refined_obsidian",
+          "count": 4
+        },
+        {
+          "id": "t4_m_03_reward_3",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+
+    {
+      "id": "t4_ae2_01",
+      "title": "ME Drive — Massenspeicher",
+      "icon": "ae2:drive",
+      "x": 4.0,
+      "y": 0.0,
+      "subtitle": "Das AE2 Storage-Upgrade",
+      "description": [
+        "Dein erstes ME Drive war der Einstieg. Jetzt brauchst du mehr.",
+        "Das Rezept wurde auf den Mechanical Crafter hochgestuft — Brass-Casings als Gate.",
+        "Baue mehrere Drives und fülle sie mit großen Storage Cells."
+      ],
+      "dependencies": ["t3_finale"],
+      "tasks": [
+        {
+          "id": "t4_a_01_task_1",
+          "type": "item",
+          "item": "ae2:drive",
+          "count": 2
+        },
+        {
+          "id": "t4_a_01_task_2",
+          "type": "item",
+          "item": "ae2:item_storage_cell_256k",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_a_01_reward_1",
+          "type": "item",
+          "item": "ae2:item_storage_cell_256k",
+          "count": 2
+        },
+        {
+          "id": "t4_a_01_reward_2",
+          "type": "xp",
+          "xp": 750
+        }
+      ]
+    },
+
+    {
+      "id": "t4_ae2_02",
+      "title": "MEGA Cells",
+      "icon": "megacells:mega_item_cell_1m",
+      "x": 4.0,
+      "y": 2.0,
+      "subtitle": "1 Million Items. Eine Zelle.",
+      "description": [
+        "MEGA Cells sind die größten Storage Cells im Pack — 1M, 4M, 16M, 64M Items.",
+        "Hergestellt aus großen Mengen Certus Quartz und Fluix Crystals.",
+        "Eine einzige 64M-Zelle kann dein gesamtes Inventar schlucken und noch Platz haben."
+      ],
+      "dependencies": ["t4_ae2_01"],
+      "tasks": [
+        {
+          "id": "t4_a_02_task_1",
+          "type": "item",
+          "item": "megacells:mega_item_cell_1m",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_a_02_reward_1",
+          "type": "item",
+          "item": "megacells:mega_item_cell_4m",
+          "count": 1
+        },
+        {
+          "id": "t4_a_02_reward_2",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+
+    {
+      "id": "t4_catalyst_01",
+      "title": "Resource Catalyst",
+      "icon": "apex:resource_catalyst",
+      "x": 8.0,
+      "y": 0.0,
+      "subtitle": "Das Tor zu MA Tier 3",
+      "description": [
+        "Der Resource Catalyst ist das Gate für Tier-3-MA-Samen.",
+        "Es gibt drei Wege, ihn zu erhalten:",
+        "1. Passiv: Drop beim Abbau von Erzadern (Create Ore Excavation, 0.5%)",
+        "2. Alternativ: Im Mechanical Crafter aus MA-Essences herstellen",
+        "3. Aktiv: Drop von Boss-Mobs oder aus Dungeon-Truhen",
+        "Sammle genug für deine ersten T3-Samen."
+      ],
+      "dependencies": ["t3_finale"],
+      "tasks": [
+        {
+          "id": "t4_cat_01_task_1",
+          "type": "item",
+          "item": "apex:resource_catalyst",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_cat_01_reward_1",
+          "type": "item",
+          "item": "apex:resource_catalyst",
+          "count": 1
+        },
+        {
+          "id": "t4_cat_01_reward_2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+
+    {
+      "id": "t4_ma_01",
+      "title": "MA Tier-3-Samen",
+      "icon": "mysticalagriculture:diamond_seeds",
+      "x": 8.0,
+      "y": 2.0,
+      "subtitle": "Diamanten aus dem Boden",
+      "description": [
+        "Tier-3-Samen produzieren Gold, Diamanten und Smaragde.",
+        "Das Rezept wurde modifiziert: du brauchst einen Resource Catalyst.",
+        "Kein Catalyst, keine T3-Samen. Die Progression erzwingt Exploration oder Automatisierung."
+      ],
+      "dependencies": ["t4_catalyst_01"],
+      "tasks": [
+        {
+          "id": "t4_ma_01_task_1",
+          "type": "item",
+          "item": "mysticalagriculture:diamond_seeds",
+          "count": 1
+        },
+        {
+          "id": "t4_ma_01_task_2",
+          "type": "item",
+          "item": "mysticalagriculture:gold_seeds",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_ma_01_reward_1",
+          "type": "item",
+          "item": "mysticalagriculture:diamond_essence",
+          "count": 8
+        },
+        {
+          "id": "t4_ma_01_reward_2",
+          "type": "item",
+          "item": "apex:resource_catalyst",
+          "count": 1
+        },
+        {
+          "id": "t4_ma_01_reward_3",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+
+    {
+      "id": "t4_ars_01",
+      "title": "Ars Nouveau: Zauberbuch",
+      "icon": "ars_nouveau:worn_notebook",
+      "x": 8.0,
+      "y": 4.0,
+      "subtitle": "Magie trifft Maschine",
+      "description": [
+        "Ars Nouveau ist das Magie-System dieses Modpacks.",
+        "Das Worn Notebook erklärt alle Zauber, Rituale und Wesen.",
+        "Lies es sorgfältig — Drygmys werden in Tier 5 wichtig."
+      ],
+      "dependencies": ["t4_catalyst_01"],
+      "tasks": [
+        {
+          "id": "t4_ars_01_task_1",
+          "type": "item",
+          "item": "ars_nouveau:worn_notebook",
+          "count": 1
+        },
+        {
+          "id": "t4_ars_01_task_2",
+          "type": "item",
+          "item": "ars_nouveau:source_gem",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_ars_01_reward_1",
+          "type": "item",
+          "item": "ars_nouveau:source_gem",
+          "count": 16
+        },
+        {
+          "id": "t4_ars_01_reward_2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+
+    {
+      "id": "t4_ars_02",
+      "title": "Drygmy-Farm",
+      "icon": "ars_nouveau:drygmy_charm",
+      "x": 8.0,
+      "y": 6.0,
+      "subtitle": "Automatische Mob-Drop-Farm per Ritual",
+      "description": [
+        "Drygmys sind magische Wesen, die Mob-Drops farmen — ohne die Mobs zu töten.",
+        "Mit einer Cataclysm-Mob-Effigy können sie sogar Cataclysm-Boss-Drops produzieren.",
+        "Das ist der einzige Weg, Mythic Catalysts zu automatisieren.",
+        "Richte deine erste Drygmy-Farm ein."
+      ],
+      "dependencies": ["t4_ars_01"],
+      "tasks": [
+        {
+          "id": "t4_ars_02_task_1",
+          "type": "item",
+          "item": "ars_nouveau:drygmy_charm",
+          "count": 1
+        },
+        {
+          "id": "t4_ars_02_task_2",
+          "type": "item",
+          "item": "ars_nouveau:whirlisprig_charm",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_ars_02_reward_1",
+          "type": "item",
+          "item": "ars_nouveau:drygmy_charm",
+          "count": 2
+        },
+        {
+          "id": "t4_ars_02_reward_2",
+          "type": "xp",
+          "xp": 700
+        }
+      ]
+    },
+
+    {
+      "id": "t4_create_ei",
+      "title": "Hyper Experience",
+      "icon": "create_enchantment_industry:experience_rotor",
+      "x": 4.0,
+      "y": 4.0,
+      "subtitle": "Create: Enchantment Industry",
+      "description": [
+        "Create: Enchantment Industry wandelt normale XP-Flüssigkeit in Hyper Experience um.",
+        "Hyper Experience ist die Ressource für den Catalyst Altar — einen der drei Wege zum Resource Catalyst.",
+        "Baue den Mixer-Setup: Experience-Flüssigkeit → Hyper Experience."
+      ],
+      "dependencies": ["t4_mek_01", "t3_ae2_04"],
+      "tasks": [
+        {
+          "id": "t4_ei_task_1",
+          "type": "item",
+          "item": "create_enchantment_industry:experience_rotor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_ei_reward_1",
+          "type": "item",
+          "item": "create_enchantment_industry:experience_rotor",
+          "count": 1
+        },
+        {
+          "id": "t4_ei_reward_2",
+          "type": "xp",
+          "xp": 700
+        }
+      ]
+    },
+
+    {
+      "id": "t4_finale",
+      "title": "Bereit für Tier 5",
+      "icon": "cataclysm:netherite_monstrosity_spawn_egg",
+      "x": 4.0,
+      "y": 8.0,
+      "subtitle": "Die Bosse warten",
+      "description": [
+        "Tier 4 ist abgeschlossen. Du hast x3-Verarbeitung, AE2-Massenspeicher und Ars Nouveau.",
+        "Tier 5 beginnt mit dem Kampf gegen Cataclysm-Bosse.",
+        "Der Netherite Monstrosity ist der Einstieg — er droppt den ersten Resource Catalyst garantiert.",
+        "Die Apex-Bosse (Ignis, Harbinger, Ender Guardian) droppen Mythic Catalysts und Singularity Shards.",
+        "Stelle dich vor: Refined-Obsidian-Rüstung, Atomic Alloy, AE2-Autocrafting laufend."
+      ],
+      "dependencies": ["t4_mek_03", "t4_ae2_02", "t4_ars_02", "t4_create_ei"],
+      "tasks": [
+        {
+          "id": "t4_fin_task_1",
+          "type": "item",
+          "item": "mekanism:ingot_refined_obsidian",
+          "count": 8
+        },
+        {
+          "id": "t4_fin_task_2",
+          "type": "item",
+          "item": "mekanism:refined_obsidian_helmet",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "t4_fin_reward_1",
+          "type": "item",
+          "item": "mekanism:alloy_atomic",
+          "count": 8
+        },
+        {
+          "id": "t4_fin_reward_2",
+          "type": "item",
+          "item": "ae2:item_storage_cell_64k",
+          "count": 4
+        },
+        {
+          "id": "t4_fin_reward_3",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    }
+
+  ]
+}
