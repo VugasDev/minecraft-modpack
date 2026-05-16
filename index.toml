@@ -745,24 +745,24 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_1.json"
-hash = "ba6cf8fe5e4e85c22736fc160ecaae45fa0c85bcc4bf6e3bbf24772284441778"
+file = "config/ftbquests/quests/chapters/tier_1.snbt"
+hash = "16c05ca840ed2adda6060921aa8c799f1603229a3225c090c52fc0151de61d87"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_2.json"
-hash = "02b4a993035fd116ab210df78afb4a878c58c3c285bf187bf71aed44f890c0b8"
+file = "config/ftbquests/quests/chapters/tier_2.snbt"
+hash = "3dc77becbee3e142d251a37b029970d61fefb7f3b2ac09f7b55fa2dae95325b3"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_3.json"
-hash = "0a02b706d871f2627064f644d35bf93c789c39981afe9d5fe2c3efcc11b0e752"
+file = "config/ftbquests/quests/chapters/tier_3.snbt"
+hash = "796b18140bf1f1d30c50b5b5d0359f2bfe847bdc89a570ad9b3a741e0e08b75c"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_4.json"
-hash = "b53c4ca9633862f5e8ffe0aadf3d55217d869732cc4791b6f0589e74a0e2fb45"
+file = "config/ftbquests/quests/chapters/tier_4.snbt"
+hash = "a2d5d460c2e350f5578f20c780f7ad1ce523336310ab2872e5ba681f524cf5ca"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_5.json"
-hash = "d4840a50f22f42798114776b441859bfa844487326c4d1750c44a3f7eb99e908"
+file = "config/ftbquests/quests/chapters/tier_5.snbt"
+hash = "a3e56c7c3d49a6abe4fa277992cdb617d898f3c910caef293045b5c212f486f8"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -1262,7 +1262,7 @@ hash = "d0485ae68732096e4651d4aa0720f1e22727e8a1c4c4134ff6715dea6728fcac"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "ed97d5c8cd6b3e00a955562e9c6fa0313860dfa47e8ef0fe26371af268af8782"
+hash = "89464b4482d5fbd59a18f3ee44ea423ed255719c283e52f9e9b424981037f333"
 
 [[files]]
 file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
@@ -1314,7 +1314,7 @@ hash = "d4f60290b92430c51d1c4554d8ce31b1af79ad4b509fd5bcbebcf3aa540ded5c"
 
 [[files]]
 file = "kubejs/server_scripts/04_gaia_scanner.js"
-hash = "0a068384368e06e6d34393a45ddb8eb02b6335eb08793801a4e9de412f678ca4"
+hash = "7c30f8d5067358c4f1551ee5e8b46b95670d5c25d57ff4a45917153e94871ad9"
 
 [[files]]
 file = "kubejs/server_scripts/05_progression_gates.js"
@@ -1330,7 +1330,7 @@ hash = "fb6b368cb00eb431879b1952ba5248f9c283603979a4f06f3f54e57f225c1a9b"
 
 [[files]]
 file = "kubejs/server_scripts/08_catalyst_system.js"
-hash = "e8818f73a76416589ed1aca7bd43313f1481d2c9b135a5237a80ee0bf1f6ca69"
+hash = "3cf66b9209de7e9b08bbf8804ef8f519731d815da1d357307b5362e664a020f0"
 
 [[files]]
 file = "kubejs/server_scripts/09_mechanical_crafter_recipes.js"

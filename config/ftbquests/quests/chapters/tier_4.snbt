@@ -1,0 +1,541 @@
+{
+	id: "tier_4_chapter"
+	title: "Tier 4: Advanced Systems"
+	icon: "mekanism:purification_chamber"
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "t4_mek_01"
+			title: "Purification Chamber"
+			icon: "mekanism:purification_chamber"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Triple ore output. The x3 era begins."
+			description: [
+				"The Purification Chamber injects Oxygen gas into Crushed Ore, converting it into Clumps — a step up from 2x toward 3x ore output."
+				"Full x3 chain: Ore → Crusher (Crushed) → Purification Chamber (Clumps) → Crusher (Dirty Dust) → Chemical Washer (Dust) → Enricher (Dust) → Smelter (Ingot)."
+				"This machine requires Forge Energy and an Oxygen gas supply (from an Electrolytic Separator splitting water)."
+				"Important: The recipe has been modified to require the Mechanical Crafter with Brass Casings. No Brass-tier Create = no Purification Chamber."
+				"Set up the Electrolytic Separator first — it splits water into Hydrogen and Oxygen, both useful."
+			]
+			dependencies: [
+				"t3_finale"
+			]
+			tasks: [
+				{
+					id: "t4_m_01_task_1"
+					type: "item"
+					item: "mekanism:purification_chamber"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_m_01_reward_1"
+					type: "item"
+					item: "mekanism:ingot_osmium"
+					count: 32L
+				}
+				{
+					id: "t4_m_01_reward_2"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_mek_02"
+			title: "The x3 Ore Chain"
+			icon: "mekanism:chemical_dissolution_chamber"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Six machines, one ore block, three ingots."
+			description: [
+				"The complete x3 processing chain requires these machines in sequence:"
+				"1. Crusher — Ore → Crushed Ore"
+				"2. Purification Chamber (O2) — Crushed Ore → Clumps"
+				"3. Crusher — Clumps → Dirty Dust"
+				"4. Chemical Washer (Water) — Dirty Dust → Dust"
+				"5. Enrichment Chamber — Dust → Dust (2x)"
+				"6. Energized Smelter — Dust → Ingot"
+				"Each machine needs FE and the appropriate gas supply. Use XNet to manage the fluid routing."
+				"End result: 3 Iron Ingots from 1 Iron Ore block. The efficiency speaks for itself."
+			]
+			dependencies: [
+				"t4_mek_01"
+			]
+			tasks: [
+				{
+					id: "t4_m_02_task_1"
+					type: "item"
+					item: "mekanism:crusher"
+					count: 1L
+					consume_items: false
+				}
+				{
+					id: "t4_m_02_task_2"
+					type: "item"
+					item: "mekanism:chemical_oxidizer"
+					count: 1L
+					consume_items: false
+				}
+				{
+					id: "t4_m_02_task_3"
+					type: "item"
+					item: "mekanism:chemical_washer"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_m_02_reward_1"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 64L
+				}
+				{
+					id: "t4_m_02_reward_2"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_mek_03"
+			title: "Advanced Alloys"
+			icon: "mekanism:alloy_atomic"
+			x: 0.0d
+			y: 4.0d
+			subtitle: "Atomic Alloy and Refined Obsidian. The good stuff."
+			description: [
+				"Mekanism's endgame materials require a full alloy chain: Iron → Infused Alloy → Reinforced Alloy → Atomic Alloy."
+				"Reinforced Alloy requires Diamonds in the infuser. Atomic Alloy requires Refined Obsidian."
+				"Refined Obsidian: smelt Obsidian Dust (from Obsidian in the Crusher) → Refined Obsidian Ingot."
+				"As armor, Refined Obsidian is nearly indestructible and provides massive protection."
+				"Atomic Alloy is required for Tier 5 machines and the Fusion Reactor Controller. Stockpile both."
+			]
+			dependencies: [
+				"t4_mek_02"
+			]
+			tasks: [
+				{
+					id: "t4_m_03_task_1"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 4L
+					consume_items: false
+				}
+				{
+					id: "t4_m_03_task_2"
+					type: "item"
+					item: "mekanism:ingot_refined_obsidian"
+					count: 4L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_m_03_reward_1"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 4L
+				}
+				{
+					id: "t4_m_03_reward_2"
+					type: "item"
+					item: "mekanism:ingot_refined_obsidian"
+					count: 4L
+				}
+				{
+					id: "t4_m_03_reward_3"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_ae2_01"
+			title: "ME Drive — Mass Storage"
+			icon: "ae2:drive"
+			x: 4.0d
+			y: 0.0d
+			subtitle: "More drives. More cells. More stuff stored."
+			description: [
+				"Your single ME Drive from Tier 3 won't cut it anymore. Time to scale up."
+				"The ME Drive recipe has been upgraded to require the Mechanical Crafter with Brass Casings."
+				"Build multiple drives and fill them with 256k or larger Storage Cells."
+				"Pro tip: Use Storage Buses on Drawer Controllers to extend your AE2 storage into physical drawers — best of both worlds."
+			]
+			dependencies: [
+				"t3_finale"
+			]
+			tasks: [
+				{
+					id: "t4_a_01_task_1"
+					type: "item"
+					item: "ae2:drive"
+					count: 2L
+					consume_items: false
+				}
+				{
+					id: "t4_a_01_task_2"
+					type: "item"
+					item: "ae2:item_storage_cell_256k"
+					count: 2L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_a_01_reward_1"
+					type: "item"
+					item: "ae2:item_storage_cell_256k"
+					count: 2L
+				}
+				{
+					id: "t4_a_01_reward_2"
+					type: "xp"
+					xp: 750
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_ae2_02"
+			title: "MEGA Cells"
+			icon: "megacells:mega_item_cell_1m"
+			x: 4.0d
+			y: 2.0d
+			subtitle: "1,000,000 items. One cell. Perfectly normal."
+			description: [
+				"MEGA Cells are the largest storage cells in the modpack — 1M, 4M, 16M, and 64M items per cell."
+				"They require significant Certus Quartz and Fluix Crystal investment to craft, but the payoff is enormous."
+				"A single 64M cell can hold your entire base's inventory with room to spare."
+				"Combine with Applied Mekanistics (Tier 5) to store Mekanism chemicals in your AE2 network as well."
+			]
+			dependencies: [
+				"t4_ae2_01"
+			]
+			tasks: [
+				{
+					id: "t4_a_02_task_1"
+					type: "item"
+					item: "megacells:mega_item_cell_1m"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_a_02_reward_1"
+					type: "item"
+					item: "megacells:mega_item_cell_4m"
+					count: 1L
+				}
+				{
+					id: "t4_a_02_reward_2"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_catalyst_01"
+			title: "Resource Catalyst"
+			icon: "gaia:resource_catalyst"
+			x: 8.0d
+			y: 0.0d
+			subtitle: "The gate to Mystical Agriculture Tier 3."
+			description: [
+				"The Resource Catalyst is required to craft Tier 3 Mystical Agriculture seeds. There are three ways to get it:"
+				"Path 1 — Passive: 0.5% drop chance when mining ore veins with Create Ore Excavation drills."
+				"Path 2 — Crafted: Build it in the Mechanical Crafter using MA Essences (Iron, Lapis, Quartz) + an Apotheosis gem."
+				"Path 3 — Active: Guaranteed drop from Mowzie's Mobs bosses (Ferrous Wroughtnaut, Frostmaw, etc.) and dungeon chests (8% chance in When Dungeons Arise, YUNG's structures)."
+				"Collect at least 3 — one per Tier 3 seed recipe you want to unlock."
+			]
+			dependencies: [
+				"t3_finale"
+			]
+			tasks: [
+				{
+					id: "t4_cat_01_task_1"
+					type: "item"
+					item: "gaia:resource_catalyst"
+					count: 3L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_cat_01_reward_1"
+					type: "item"
+					item: "gaia:resource_catalyst"
+					count: 1L
+				}
+				{
+					id: "t4_cat_01_reward_2"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_ma_01"
+			title: "Tier 3 Seeds"
+			icon: "mysticalagriculture:diamond_seeds"
+			x: 8.0d
+			y: 2.0d
+			subtitle: "Diamonds. Growing. In the ground."
+			description: [
+				"Tier 3 seeds produce Gold, Diamond, and Emerald Essences — the luxury materials."
+				"Recipe change: each Tier 3 seed requires a Resource Catalyst as a crafting component."
+				"No Catalyst = no T3 seeds. This prevents skipping the mid-game exploration and boss content."
+				"Once you have Diamond Seeds running, your diamond supply becomes passive and infinite."
+				"Plant them on Essence Farmland for a 10% growth speed bonus."
+			]
+			dependencies: [
+				"t4_catalyst_01"
+			]
+			tasks: [
+				{
+					id: "t4_ma_01_task_1"
+					type: "item"
+					item: "mysticalagriculture:diamond_seeds"
+					count: 1L
+					consume_items: false
+				}
+				{
+					id: "t4_ma_01_task_2"
+					type: "item"
+					item: "mysticalagriculture:gold_seeds"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_ma_01_reward_1"
+					type: "item"
+					item: "mysticalagriculture:diamond_essence"
+					count: 8L
+				}
+				{
+					id: "t4_ma_01_reward_2"
+					type: "item"
+					item: "gaia:resource_catalyst"
+					count: 1L
+				}
+				{
+					id: "t4_ma_01_reward_3"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_ars_01"
+			title: "Ars Nouveau: The Notebook"
+			icon: "ars_nouveau:worn_notebook"
+			x: 8.0d
+			y: 4.0d
+			subtitle: "Magic exists. We just didn't mention it until now."
+			description: [
+				"Ars Nouveau is this pack's magic system — spells, rituals, magical creatures, and automation."
+				"The Worn Notebook is your introduction. Read it. All of it. It explains everything."
+				"Source Gems are the magical fuel. You'll generate them via Agronomic Sourcelink (near crops) or Volcanic Sourcelink (near lava)."
+				"Key reason to invest: Drygmys. They're magical creatures that automatically generate mob drops — including Cataclysm boss drops."
+			]
+			dependencies: [
+				"t4_catalyst_01"
+			]
+			tasks: [
+				{
+					id: "t4_ars_01_task_1"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+					count: 1L
+					consume_items: false
+				}
+				{
+					id: "t4_ars_01_task_2"
+					type: "item"
+					item: "ars_nouveau:source_gem"
+					count: 16L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_ars_01_reward_1"
+					type: "item"
+					item: "ars_nouveau:source_gem"
+					count: 16L
+				}
+				{
+					id: "t4_ars_01_reward_2"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_ars_02"
+			title: "Drygmy Farm"
+			icon: "ars_nouveau:drygmy_charm"
+			x: 8.0d
+			y: 6.0d
+			subtitle: "Passive mob drops. Without killing the mobs."
+			description: [
+				"Drygmys are magical creatures from Ars Nouveau that generate mob drops passively — no killing required."
+				"Setup: place a Jars of Drygmy Whims in an Encountrium circle, summon Drygmys using a Drygmy Charm, and add Mob Jars (or Essences) nearby."
+				"The Drygmys will periodically produce drops from any mob they recognize."
+				"Using a Cataclysm Mob Effigy, they can be made to produce Cataclysm boss drops — including Mythic Catalysts."
+				"This is the ONLY way to automate Mythic Catalyst production. It requires Cataclysm boss kills to get the Effigy first."
+			]
+			dependencies: [
+				"t4_ars_01"
+			]
+			tasks: [
+				{
+					id: "t4_ars_02_task_1"
+					type: "item"
+					item: "ars_nouveau:drygmy_charm"
+					count: 1L
+					consume_items: false
+				}
+				{
+					id: "t4_ars_02_task_2"
+					type: "item"
+					item: "ars_nouveau:whirlisprig_charm"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_ars_02_reward_1"
+					type: "item"
+					item: "ars_nouveau:drygmy_charm"
+					count: 2L
+				}
+				{
+					id: "t4_ars_02_reward_2"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_create_ei"
+			title: "Hyper Experience"
+			icon: "create_enchantment_industry:experience_rotor"
+			x: 4.0d
+			y: 4.0d
+			subtitle: "Liquid XP. Industrial scale. Because why not."
+			description: [
+				"Create: Enchantment Industry converts XP into liquid form, then processes it into Hyper Experience."
+				"Hyper Experience is used in the Catalyst Altar — one of the three ways to craft a Resource Catalyst."
+				"Setup: Collect XP via an Experience Rotor (mob farm nearby) → store in a tank → run through a Mixing recipe to produce Hyper Experience."
+				"The Catalyst Altar consumes 1000 mB of Hyper Experience (via a Create Spout) to produce one Resource Catalyst."
+				"This is the most controllable Catalyst source — fully automatable with a Create+Mekanism setup."
+			]
+			dependencies: [
+				"t4_mek_01"
+				"t3_ae2_04"
+			]
+			tasks: [
+				{
+					id: "t4_ei_task_1"
+					type: "item"
+					item: "create_enchantment_industry:experience_rotor"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_ei_reward_1"
+					type: "item"
+					item: "create_enchantment_industry:experience_rotor"
+					count: 1L
+				}
+				{
+					id: "t4_ei_reward_2"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "circle"
+		}
+		{
+			id: "t4_finale"
+			title: "Ready for Tier 5"
+			icon: "cataclysm:netherite_monstrosity_spawn_egg"
+			x: 4.0d
+			y: 8.0d
+			subtitle: "The bosses are waiting. So is your funeral."
+			description: [
+				"Tier 4 is done. You have x3 ore processing, massive AE2 storage, Drygmy automation, and Hyper XP production."
+				"Tier 5 begins with combat. Cataclysm's boss line is the only source of Mythic Catalysts and Singularity Shards."
+				"The Netherite Monstrosity is your entry point — found in the Nether, drops a guaranteed Resource Catalyst."
+				"The Apex Bosses (Ignis, The Harbinger, Ender Guardian) drop Mythic Catalysts and Singularity Shards needed for the Fusion Reactor."
+				"Before engaging: Refined Obsidian armor, Atomic Alloy-tier equipment, and full enchantments are strongly recommended."
+				"Also make sure your AE2 autocrafting is running. You'll need to replenish supplies after each fight."
+			]
+			dependencies: [
+				"t4_mek_03"
+				"t4_ae2_02"
+				"t4_ars_02"
+				"t4_create_ei"
+			]
+			tasks: [
+				{
+					id: "t4_fin_task_1"
+					type: "item"
+					item: "mekanism:ingot_refined_obsidian"
+					count: 8L
+					consume_items: false
+				}
+				{
+					id: "t4_fin_task_2"
+					type: "item"
+					item: "mekanism:refined_obsidian_helmet"
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "t4_fin_reward_1"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 8L
+				}
+				{
+					id: "t4_fin_reward_2"
+					type: "item"
+					item: "ae2:item_storage_cell_64k"
+					count: 4L
+				}
+				{
+					id: "t4_fin_reward_3"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "circle"
+		}
+	]
+	group: ""
+	order_index: 3
+}

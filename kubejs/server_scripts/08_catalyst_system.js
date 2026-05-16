@@ -1,82 +1,27 @@
 // 08_catalyst_system.js
-// 3-Pfad Catalyst-System für MA T3+T4 Seed-Gating
+// 3-path Catalyst system for MA T3+T4 Seed gating
 //
-// Pfade:
-//   1. Passiv: Drop von Ore Excavation Veins (06_loot_modifications.js)
-//   2. MA-Alternativ: Mechanical Crafter Rezept (siehe unten)
-//   3. Aktiv: Boss/Dungeon Drops (06_loot_modifications.js) + Catalyst Altar (siehe unten)
+// Paths:
+//   1. Passive:    Drop from Ore Excavation Veins (06_loot_modifications.js)
+//   2. MA-Alt:     Mechanical Crafter recipe (below)
+//   3. Active:     Boss/Dungeon drops (06_loot_modifications.js) + Catalyst Altar (below)
 //
-// Mythic Catalyst: nur Cataclysm Apex-Bosse → via Drygmys automatisierbar (Ars Nouveau)
+// Mythic Catalyst: Cataclysm Apex bosses only → automatable via Drygmys (Ars Nouveau)
+
+// ==========================================================================
+// MA SEED OVERRIDES — own block so Create-recipe errors don't kill these
+// ==========================================================================
 
 ServerEvents.recipes(event => {
 
-    // ==========================================================================
-    // PFAD 2: MA-Alternativ — Mechanical Crafter Recipe für Resource Catalyst
-    // ==========================================================================
-    // Verlangt T2 MA Essences (Iron + Lapis + Quartz) + Apotheosis Gem + Bone Block.
-    // Kann NUR im Mechanical Crafter gecraftet werden — keine Crafting-Table-Variante.
-    // Erzwingt Brass-Tier Create-Adoption auch für reine Bauern.
-    //
-    // TODO: Verifiziere mystical_agriculture Essence-IDs in 1.21.1 (könnte
-    //       'mystical_agriculture:iron_essence' oder 'mysticalagriculture:iron_essence' sein)
-    event.recipes.create.mechanical_crafting(
-        'gaia:resource_catalyst',
-        [
-            'III',
-            'LGL',
-            'QQQ'
-        ],
-        {
-            I: 'mysticalagriculture:iron_essence',
-            L: 'mysticalagriculture:lapis_essence',
-            Q: 'mysticalagriculture:nether_quartz_essence',
-            G: 'apotheosis:common_material'   // Common Gem-Material aus Apotheosis
-        }
-    )
-
-    // ==========================================================================
-    // PFAD 3c: Catalyst Altar — Create:EI Spout Rezepte
-    // ==========================================================================
-    // Variante A: Catalyst Altar + Hyper Experience (1000 mB) → Resource Catalyst
-    // Altar wird verbraucht (Create filling hat immer 1 Output). Altar ist günstig herzustellen.
-    event.recipes.create.filling(
-        'gaia:resource_catalyst',
-        ['gaia:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
-    )
-
-    // Variante B: Catalyst Altar + Mythic Liquid XP (500 mB) → Mythic Catalyst
-    event.recipes.create.filling(
-        'gaia:mythic_catalyst',
-        ['gaia:catalyst_altar', Fluid.of('gaia:mythic_liquid_xp', 500)]
-    )
-
-    // ==========================================================================
-    // MYTHIC LIQUID XP HERSTELLUNG — Create Mixing-Rezept
-    // ==========================================================================
-    // Hyper Experience (2000 mB) + Singularity Shard → Mythic Liquid XP (1000 mB)
-    // Erfordert Heated Mixing (Blaze Burner unter dem Mixer).
-    // Progression: Shard erst nach Apex-Boss-Kill verfügbar → natürlicher Gate.
-    event.recipes.create.mixing(
-        [Fluid.of('gaia:mythic_liquid_xp', 1000)],
-        [
-            Fluid.of('create_enchantment_industry:hyper_experience', 2000),
-            'gaia:singularity_shard'
-        ]
-    ).heated()
-
-    // ==========================================================================
-    // MA SEED-OVERRIDES — T3 Seeds verlangen gaia:resource_catalyst zusätzlich
-    // ==========================================================================
-    // Standard MA T3 Seed Recipe: 4× Inferium Essence + 4× T2 Seeds + 1× Tier-Material
-    // Custom: ergänzt um 1× Catalyst.
-    //
-    // TODO: Verifiziere die exakten Standard-Rezept-IDs in MA 1.21.1.
-    //       Möglicherweise heißen sie 'mysticalagriculture:gold_seeds' o.ä.
+    // T3 Seeds require gaia:resource_catalyst
+    // Standard MA T3 recipe: 4× Inferium + 4× T2 material + center item
+    // Override: center = Resource Catalyst
     const t3Seeds = [
-        { seed: 'mysticalagriculture:gold_seeds',    base: 'minecraft:gold_ingot' },
-        { seed: 'mysticalagriculture:diamond_seeds', base: 'minecraft:diamond' },
-        { seed: 'mysticalagriculture:emerald_seeds', base: 'minecraft:emerald' },
-        { seed: 'mysticalagriculture:glowstone_seeds', base: 'minecraft:glowstone_dust' }
+        { seed: 'mysticalagriculture:gold_seeds',     base: 'minecraft:gold_ingot' },
+        { seed: 'mysticalagriculture:diamond_seeds',  base: 'minecraft:diamond' },
+        { seed: 'mysticalagriculture:emerald_seeds',  base: 'minecraft:emerald' },
+        { seed: 'mysticalagriculture:glowstone_seeds',base: 'minecraft:glowstone_dust' }
     ]
     t3Seeds.forEach(function(entry) {
         event.remove({ output: entry.seed })
@@ -91,13 +36,8 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // ==========================================================================
-    // MA SEED-OVERRIDES — T4 Seeds verlangen gaia:mythic_catalyst zusätzlich
-    // ==========================================================================
-    // Mekanism + AE2 Seeds aus Mystical Agradditions (T4).
-    // Mythic Catalyst kommt NUR aus Cataclysm Apex-Bosse + Drygmys.
-    //
-    // TODO: Verifiziere mysticalagradditions Seed-IDs
+    // T4 Seeds (Mystical Agradditions) require gaia:mythic_catalyst
+    // Mythic Catalyst only from Cataclysm Apex bosses + Drygmy farm
     const t4Seeds = [
         { seed: 'mysticalagradditions:osmium_seeds',   base: 'mekanism:ingot_osmium' },
         { seed: 'mysticalagradditions:tin_seeds',      base: 'mekanism:ingot_tin' },
@@ -117,4 +57,54 @@ ServerEvents.recipes(event => {
             M: 'gaia:mythic_catalyst'
         })
     })
+})
+
+// ==========================================================================
+// CREATE RECIPES — separate block; errors here don't affect seed overrides
+// ==========================================================================
+
+ServerEvents.recipes(event => {
+
+    // PATH 2: MA-Alt — Mechanical Crafter recipe for Resource Catalyst
+    // Requires T2 MA Essences (Iron + Lapis + Quartz) + Apotheosis Gem + center
+    // Only craftable in Mechanical Crafter — no crafting table shortcut
+    // TODO: verify apotheosis gem item ID in 1.21.1 (apotheosis:common_gem ?)
+    event.recipes.create.mechanical_crafting(
+        'gaia:resource_catalyst',
+        [
+            'III',
+            'LGL',
+            'QQQ'
+        ],
+        {
+            I: 'mysticalagriculture:iron_essence',
+            L: 'mysticalagriculture:lapis_essence',
+            Q: 'mysticalagriculture:nether_quartz_essence',
+            G: 'apotheosis:common_gem'
+        }
+    )
+
+    // PATH 3c: Catalyst Altar — Create:EI Spout recipes
+    // Variant A: Catalyst Altar + Hyper Experience (1000 mB) → Resource Catalyst
+    event.recipes.create.filling(
+        'gaia:resource_catalyst',
+        ['gaia:catalyst_altar', Fluid.of('create_enchantment_industry:hyper_experience', 1000)]
+    )
+
+    // Variant B: Catalyst Altar + Mythic Liquid XP (500 mB) → Mythic Catalyst
+    event.recipes.create.filling(
+        'gaia:mythic_catalyst',
+        ['gaia:catalyst_altar', Fluid.of('gaia:mythic_liquid_xp', 500)]
+    )
+
+    // MYTHIC LIQUID XP — Create Mixing recipe
+    // Hyper Experience (2000 mB) + Singularity Shard → Mythic Liquid XP (1000 mB)
+    // Requires heated mixing (Blaze Burner under Mixer)
+    event.recipes.create.mixing(
+        [Fluid.of('gaia:mythic_liquid_xp', 1000)],
+        [
+            Fluid.of('create_enchantment_industry:hyper_experience', 2000),
+            'gaia:singularity_shard'
+        ]
+    ).heated()
 })

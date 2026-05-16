@@ -161,7 +161,7 @@ function checkFundament(level, pos) {
             if (level.getBlock(tx, pos.y + dy, tz).id === 'gaia:gaia_pillar') found = true
         }
         if (!found) {
-            missing.push(`Säule ${i+1} fehlt — erwartet bei §e(${tx}, ${pos.y}, ${tz})§c`)
+            missing.push(`Pillar ${i+1} missing — expected at §e(${tx}, ${pos.y}, ${tz})§c`)
         }
     })
     return { ok: missing.length === 0, missing: missing }
@@ -170,11 +170,11 @@ function checkFundament(level, pos) {
 function checkDigital(level, pos) {
     let missing = []
     if (!findBlock(level, pos.x, pos.y, pos.z, DIGITAL_RADIUS, ['ae2:controller'])) {
-        missing.push('ME Controller nicht gefunden (Radius ' + DIGITAL_RADIUS + ')')
+        missing.push('ME Controller not found (radius ' + DIGITAL_RADIUS + ')')
     }
     let units = countUpTo(level, pos.x, pos.y, pos.z, DIGITAL_RADIUS, ['ae2:crafting_unit'], AE2_CRAFTING_COUNT)
     if (units < AE2_CRAFTING_COUNT) {
-        missing.push(`Nur ${units}/${AE2_CRAFTING_COUNT} AE2 Crafting Units gefunden`)
+        missing.push(`${units}/${AE2_CRAFTING_COUNT} AE2 Crafting Units found`)
     }
     return { ok: missing.length === 0, missing: missing }
 }
@@ -182,7 +182,7 @@ function checkDigital(level, pos) {
 function checkReactor(level, pos) {
     let missing = []
     if (!findBlock(level, pos.x, pos.y, pos.z, REACTOR_RADIUS, ['mekanismgenerators:fusion_reactor_controller'])) {
-        missing.push('Mekanism Fusion Reactor nicht gefunden (Radius ' + REACTOR_RADIUS + ')')
+        missing.push('Mekanism Fusion Reactor not found (radius ' + REACTOR_RADIUS + ')')
     }
     return { ok: missing.length === 0, missing: missing }
 }
@@ -193,12 +193,12 @@ function checkCreate(level, pos) {
     // Steam Engine Tier 9 — 9x create:steam_engine im Radius
     let steamCount = countUpTo(level, pos.x, pos.y, pos.z, CREATE_RADIUS, ['create:steam_engine'], STEAM_ENGINE_COUNT)
     if (steamCount < STEAM_ENGINE_COUNT) {
-        missing.push(`Nur ${steamCount}/${STEAM_ENGINE_COUNT} Steam Engines (Tier 9 benötigt)`)
+        missing.push(`${steamCount}/${STEAM_ENGINE_COUNT} Steam Engines (Tier 9 required)`)
     }
 
-    // Luftschiff im Luftbahnhof über dem Core
+    // Airship at dock above the Core
     if (!findAirship(level, pos.x, pos.y, pos.z)) {
-        missing.push(`Kein Luftschiff im Luftbahnhof (${AIRSHIP_MIN_Y}–${AIRSHIP_MAX_Y} Blöcke über Core, Radius ${AIRSHIP_RADIUS_XZ})`)
+        missing.push(`No airship at dock (${AIRSHIP_MIN_Y}–${AIRSHIP_MAX_Y} blocks above Core, radius ${AIRSHIP_RADIUS_XZ})`)
     }
 
     // Doppelschienen-Kreuz
@@ -222,7 +222,7 @@ function checkCreate(level, pos) {
         }
     }
     if (!hasCross) {
-        missing.push('Kein Doppelschienen-Kreuz in der Nähe des Cores gefunden')
+        missing.push('No rail cross found near the Core')
     }
 
     // Optional: Kreisverkehr (kein Fail — nur Bonus-Feedback)
@@ -265,37 +265,37 @@ function saveState(level, pos, updates) {
 // ========================
 
 function sendStatus(player, state) {
-    player.tell('§6§l╔══════ GAIA KATHEDRALE ══════╗§r')
-    player.tell(state.fundament ? '§a ✔ Fundament§r'      : '§c ✘ Fundament§r')
-    player.tell(state.digital   ? '§a ✔ Digitales Herz§r' : '§c ✘ Digitales Herz§r')
-    player.tell(state.reactor   ? '§a ✔ Reaktor-Sync§r'   : '§c ✘ Reaktor-Sync§r')
-    player.tell(state.create    ? '§a ✔ Create-Herz§r'    : '§c ✘ Create-Herz§r')
+    player.tell('§6§l╔══════ GAIA CATHEDRAL ══════╗§r')
+    player.tell(state.fundament ? '§a ✔ Foundation§r'   : '§c ✘ Foundation§r')
+    player.tell(state.digital   ? '§a ✔ Digital Heart§r': '§c ✘ Digital Heart§r')
+    player.tell(state.reactor   ? '§a ✔ Reactor Sync§r' : '§c ✘ Reactor Sync§r')
+    player.tell(state.create    ? '§a ✔ Create Heart§r' : '§c ✘ Create Heart§r')
     if (state.complete) {
-        player.tell('§6§l ★★★ GAIA IST ERWACHT ★★★§r')
+        player.tell('§6§l ★★★ GAIA HAS AWAKENED ★★★§r')
     } else {
         let done = [state.fundament, state.digital, state.reactor, state.create].filter(Boolean).length
-        player.tell(`§e ${done}/4 Module aktiv§r`)
-        player.tell('§7 Schleichen + Rechtsklick zum Scannen§r')
+        player.tell(`§e ${done}/4 modules active§r`)
+        player.tell('§7 Sneak + Right-Click to scan§r')
     }
     player.tell('§6§l╚════════════════════════════╝§r')
 }
 
 function sendScanResult(player, results) {
-    player.tell('§6§l╔══════ SCAN-ERGEBNIS ══════╗§r')
+    player.tell('§6§l╔══════ SCAN RESULT ══════╗§r')
 
     let modules = [
-        { name: 'Fundament',      r: results.fundament },
-        { name: 'Digitales Herz', r: results.digital   },
-        { name: 'Reaktor-Sync',   r: results.reactor   },
-        { name: 'Create-Herz',    r: results.create    }
+        { name: 'Foundation',   r: results.fundament },
+        { name: 'Digital Heart',r: results.digital   },
+        { name: 'Reactor Sync', r: results.reactor   },
+        { name: 'Create Heart', r: results.create    }
     ]
     modules.forEach(m => {
         player.tell(m.r.ok ? `§a ✔ ${m.name}§r` : `§c ✘ ${m.name}§r`)
         if (!m.r.ok) m.r.missing.forEach(msg => player.tell(`§7   → ${msg}§r`))
         if (m.r.hasRoundabout !== undefined) {
             player.tell(m.r.hasRoundabout
-                ? '§b   ★ Kreisverkehr erkannt! (Bonus)§r'
-                : '§8   ○ Kein Kreisverkehr (optional)§r')
+                ? '§b   ★ Roundabout detected! (Bonus)§r'
+                : '§8   ○ No roundabout (optional)§r')
         }
     })
 
@@ -309,9 +309,9 @@ function sendScanResult(player, results) {
 function triggerGaiaAwakening(level, pos, player) {
     level.players.forEach(p => {
         p.tell('§d§l╔══════════════════════════════════════════╗')
-        p.tell('§d§l     DIE GAIA-KATHEDRALE IST ERWACHT!')
-        p.tell('§7§l  Der Kern pulsiert. Das Zeitalter der Maschinen')
-        p.tell('§7§l         und der Magie ist vollendet.')
+        p.tell('§d§l       THE GAIA CATHEDRAL HAS AWAKENED!')
+        p.tell('§7§l  The core pulses. The age of machines')
+        p.tell('§7§l       and magic is complete.')
         p.tell('§d§l╚══════════════════════════════════════════╝')
     })
 
@@ -334,7 +334,7 @@ BlockEvents.rightClicked('gaia:gaia_core', event => {
         return
     }
 
-    player.tell('§e⚙ Gaia-Scan läuft... (kann kurz dauern)§r')
+    player.tell('§e⚙ Gaia scan running... (may take a moment)§r')
 
     let results = {
         fundament: checkFundament(level, pos),
