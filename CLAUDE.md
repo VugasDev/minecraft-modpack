@@ -27,6 +27,7 @@ Eigenständig — kein Homelab-Infrastruktur-Bezug.
 
 ## Entwicklungs-Regeln
 - Vor komplexen Aufgaben: `~/projects/docs/common-mistakes.md` (Sektionen [ALLE] + [@code])
+- Backlog/Ideen (projektübergreifend) → `~/projects/docs/BACKLOG.md` (Format-Regeln dort); keine projektlokalen Backlog-Dateien anlegen
 - Nur ändern was explizit angefragt wurde; Inputs validieren
 - Mod-Vorschläge immer mit CurseForge/Modrinth-Verfügbarkeit begründen
 - Auf Kompatibilität zwischen Mods achten (insb. API-Konflikte)
