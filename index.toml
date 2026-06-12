@@ -746,27 +746,83 @@ hash = "6359364663ea3c418cacb79500bb529d4988ce1089d6e73ed5b2eef526f2e6d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+hash = "ec653e7213818b5270dbc65ed9fdf42874963e92da068f732811e83d8ed16848"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_1.snbt"
-hash = "16c05ca840ed2adda6060921aa8c799f1603229a3225c090c52fc0151de61d87"
+file = "config/ftbquests/quests/chapters/t1_create.snbt"
+hash = "04ce7837bae13847745494ca3ae7c2c3e50bf593075e547991f63f7d4e21ee7b"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "3dc77becbee3e142d251a37b029970d61fefb7f3b2ac09f7b55fa2dae95325b3"
+file = "config/ftbquests/quests/chapters/t1_exploration.snbt"
+hash = "281df41281d35a8ef3e883911d4e1a25d155b99f041f969ca37a4f64d8df57f7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_3.snbt"
-hash = "796b18140bf1f1d30c50b5b5d0359f2bfe847bdc89a570ad9b3a741e0e08b75c"
+file = "config/ftbquests/quests/chapters/t1_survival.snbt"
+hash = "94645f7cd8a8bb627cad0a58e84564a0a7d29665c737a744315607b6223ac278"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_4.snbt"
-hash = "a2d5d460c2e350f5578f20c780f7ad1ce523336310ab2872e5ba681f524cf5ca"
+file = "config/ftbquests/quests/chapters/t2_create_brass.snbt"
+hash = "852524e42a48a9a2f98125d8619f058c685237196b7cfefcc9a7913b9660116b"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/tier_5.snbt"
-hash = "a3e56c7c3d49a6abe4fa277992cdb617d898f3c910caef293045b5c212f486f8"
+file = "config/ftbquests/quests/chapters/t2_kitchen.snbt"
+hash = "00c81a0d83157c0a1b18ff9be60b15fc04803fe5cd64eccbdfa9e4ce336aa546"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t2_mekanism.snbt"
+hash = "2ff56ec815854703b5976efff1393c4f5f82c178fd31849c7e88512583c9f7fd"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t2_storage.snbt"
+hash = "753c9dab8170be96d571ee9041a7a490a328e06c1d6315bc7194478b295edc03"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_ae2.snbt"
+hash = "5af4ff61d0f7a5033516c9c786a259b272af37d9c405244aaf0e7c6e9079fe78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_ma.snbt"
+hash = "a30a79e09c87377cb7b4e8b3143d33d1290538afa5d8f9b1e162bdeb4ba431eb"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_magic.snbt"
+hash = "d8bac6cfb96a587dc79aecf189fb372e8d7c635a031d095ddd1d09d82629e2c2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_pnc.snbt"
+hash = "8390b69e3c3c3a794de672e293c4a96d2fa7cfdc4cc1b0e700d771f6f94bf552"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_power.snbt"
+hash = "a4f7ecf073f912db0d96753abb1ff48396bc0f066d714f24c6f6597e5ce5d67b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_ae2_mega.snbt"
+hash = "d8e36f1799ecb67a41ad8d6c9dfe950fc1b2d175db3d6b421223d4778b2b7057"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_ars.snbt"
+hash = "864588f685bf3f85c1319aeae3a6c339f1dda96844cce5a40f0462573fed4479"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_catalyst.snbt"
+hash = "cc5f15301ee684ae9ec6bb59fef9f51a8b86129e3a066eaa15b6269d6f65e0ce"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_enchant.snbt"
+hash = "d83a83fa295b2947576201ada6e4246d7946659470690de82932f241926a70bc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_mekanism.snbt"
+hash = "8860888bb8b02575d0f7f99497f024aeaf55963eba2330e0d585f8b358372340"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t5_bosses.snbt"
+hash = "70f66e14b8d20b0214f20ecb8a7d8b36870f96b1203b37150f133de6a81b5834"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t5_endgame.snbt"
+hash = "bf609f83913c5e3553457ac2649a14aa88515f3e6877c0f0948743ca212be777"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -1266,7 +1322,7 @@ hash = "d0485ae68732096e4651d4aa0720f1e22727e8a1c4c4134ff6715dea6728fcac"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "89464b4482d5fbd59a18f3ee44ea423ed255719c283e52f9e9b424981037f333"
+hash = "ad6c957a53b22df6484c43743fb3801e9abb35e51df446d7b23c22f7aefc7187"
 
 [[files]]
 file = "kubejs/data/apex/worldgen/world_preset/grand_journey.json"
@@ -2025,3 +2081,55 @@ metafile = true
 file = "mods/yungs-better-witch-huts.pw.toml"
 hash = "9854b699d5a067c46ac99b1dedeeb529bff3fc18dd079e29b438c4cbf9725f68"
 metafile = true
+
+[[files]]
+file = "tools/generate_quests.py"
+hash = "9fdc4098d96e518e64d10b0da82e8ad99c1ea1194b3e6d68c3eee1506949a8ab"
+
+[[files]]
+file = "tools/questgen/__pycache__/lib.cpython-312.pyc"
+hash = "0cf62ba31e503848b920ac683969d0c1f6f2e8dba255d4ef6ca9733f14accc7e"
+
+[[files]]
+file = "tools/questgen/__pycache__/t1.cpython-312.pyc"
+hash = "c1bdd369584a315ef9e5d32b7a7e0af8393657a2909f62d038d2145ea86ea506"
+
+[[files]]
+file = "tools/questgen/__pycache__/t2.cpython-312.pyc"
+hash = "49342a151554ef80cb636a93d749e6a698a274007f978a847bada1b039322644"
+
+[[files]]
+file = "tools/questgen/__pycache__/t3.cpython-312.pyc"
+hash = "ec1dd72f28c749dd9c01c6ee4ab99da40daf92f771c22e1613f520c31b658192"
+
+[[files]]
+file = "tools/questgen/__pycache__/t4.cpython-312.pyc"
+hash = "18d1a821f224154e2cd9e83ec9e84e51783ce891e5bbdf46825e15558c98ffeb"
+
+[[files]]
+file = "tools/questgen/__pycache__/t5.cpython-312.pyc"
+hash = "66c32cc8f631c6d32d784493abce2f1eb904d6fb56ea03623358165724c8a006"
+
+[[files]]
+file = "tools/questgen/lib.py"
+hash = "dff789897d1bc9ec6cd85360b8cf5a201948092c5f03043206bc259c0cdaaae0"
+
+[[files]]
+file = "tools/questgen/t1.py"
+hash = "2c1fd684ebc5a414f0f0a0940673ab8c54814f352c8e7add74ed33d25b1b3072"
+
+[[files]]
+file = "tools/questgen/t2.py"
+hash = "520cb3f3b4bc9046a1b9180222d10acbd9e60ff9d83a81af2116810f3b0c68ac"
+
+[[files]]
+file = "tools/questgen/t3.py"
+hash = "788f8653e8be1b8f7edcd73d2434fa641854346e37e052a9383cc8ed2f6b1e77"
+
+[[files]]
+file = "tools/questgen/t4.py"
+hash = "609d7071364737e6f2b0b33c428732869b7b5d6f6144c224ee48708e4ad19e05"
+
+[[files]]
+file = "tools/questgen/t5.py"
+hash = "320e19b03ee67ef6e5ddbd490b0e4f188f894ba85970435db96b0e77aa13693c"
