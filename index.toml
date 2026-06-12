@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "README.md"
+hash = "89ee018f33838fdb0607a1704c6501b09ac3c1156d40e7aaf9d31e8da7d30d63"
+
+[[files]]
 file = "config/DistantHorizons.toml"
 hash = "8ba7ee5cbb18369c02b6669ab6726256e3aa10137c3dd0b418059788656f0245"
 
@@ -726,7 +730,7 @@ hash = "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825"
 
 [[files]]
 file = "config/ftbchunks-client.snbt"
-hash = "15300f8f00ba9872ed2fbae97822374e76188ab6c9354628ee8274e9b5c0ded3"
+hash = "ccb7fccfecf3638ae1a03715d7c79bb18637ad088754dae281c6d8eab0b2a333"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
@@ -1330,7 +1334,7 @@ hash = "fb6b368cb00eb431879b1952ba5248f9c283603979a4f06f3f54e57f225c1a9b"
 
 [[files]]
 file = "kubejs/server_scripts/08_catalyst_system.js"
-hash = "3cf66b9209de7e9b08bbf8804ef8f519731d815da1d357307b5362e664a020f0"
+hash = "29447bf50bd55cd11909e3ffba3595c857e03e3b7e58aeb8b440bf9b454863c5"
 
 [[files]]
 file = "kubejs/server_scripts/09_mechanical_crafter_recipes.js"
@@ -1565,6 +1569,11 @@ metafile = true
 [[files]]
 file = "mods/enigmaticlegacy+.pw.toml"
 hash = "fd9691ef6743dc05152ed0467098603ced1380096f5cb086ef30c2f1f11936f9"
+metafile = true
+
+[[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
 metafile = true
 
 [[files]]

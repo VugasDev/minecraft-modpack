@@ -36,14 +36,14 @@ ServerEvents.recipes(event => {
         })
     })
 
-    // T4 Seeds (Mystical Agradditions) require gaia:mythic_catalyst
+    // T4 Seeds (Mystical Agriculture base) require gaia:mythic_catalyst
     // Mythic Catalyst only from Cataclysm Apex bosses + Drygmy farm
     const t4Seeds = [
-        { seed: 'mysticalagradditions:osmium_seeds',   base: 'mekanism:ingot_osmium' },
-        { seed: 'mysticalagradditions:tin_seeds',      base: 'mekanism:ingot_tin' },
-        { seed: 'mysticalagradditions:lead_seeds',     base: 'mekanism:ingot_lead' },
-        { seed: 'mysticalagradditions:uranium_seeds',  base: 'mekanism:ingot_uranium' },
-        { seed: 'mysticalagradditions:fluorite_seeds', base: 'mekanism:fluorite_gem' }
+        { seed: 'mysticalagriculture:osmium_seeds',   base: 'mekanism:ingot_osmium' },
+        { seed: 'mysticalagriculture:tin_seeds',      base: 'mekanism:ingot_tin' },
+        { seed: 'mysticalagriculture:lead_seeds',     base: 'mekanism:ingot_lead' },
+        { seed: 'mysticalagriculture:uranium_seeds',  base: 'mekanism:ingot_uranium' },
+        { seed: 'mysticalagriculture:fluorite_seeds', base: 'mekanism:fluorite_gem' }
     ]
     t4Seeds.forEach(function(entry) {
         event.remove({ output: entry.seed })

@@ -128,7 +128,8 @@
 		
 		# Enable minimap
 		# Default: true
-		enabled: true
+		# Disabled: JourneyMap handles the minimap
+		enabled: false
 		
 		# Show entities on minimap
 		# Default: true
