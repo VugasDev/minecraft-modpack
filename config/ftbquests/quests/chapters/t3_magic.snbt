@@ -1,0 +1,357 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t3_magic"
+	group: "0000000000040000"
+	icon: "ars_nouveau:worn_notebook"
+	id: "0000000000045000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000021008"
+			]
+			description: [
+				"Ars Nouveau begins with the Worn Notebook — your in-game guide to everything magical."
+				"Craft it with a book and lapis, and start reading."
+			]
+			icon: "ars_nouveau:worn_notebook"
+			id: "0000000000045001"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000045001"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "B000000000045001"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Required reading."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045001"
+					item: "ars_nouveau:worn_notebook"
+					type: "item"
+				}
+			]
+			title: "The Worn Notebook"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045001"
+			]
+			description: [
+				"The Novice Spell Book lets you craft custom spells from glyphs: Projectile-Harm, Break, Light — you design them."
+				"Create glyphs at the Scribes Table using XP and items."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "0000000000045002"
+			rewards: [
+				{
+					id: "A000000000045002"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "B000000000045002"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Abracadabra, professionally."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045002"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000045002"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			title: "Novice Spellbook"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045002"
+			]
+			description: [
+				"Magical machines need Source. The Agronomic Sourcelink generates it from growing crops nearby."
+				"Store it in Source Jars next to your magical workstations."
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "0000000000045003"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000045003"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "B000000000045003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Mana, but artisanal."
+			tasks: [
+				{
+					count: 2L
+					id: "1000000000045003"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000045003"
+					item: "ars_nouveau:agronomic_sourcelink"
+					type: "item"
+				}
+			]
+			title: "Source of Power"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045003"
+			]
+			description: [
+				"The Imbuement Chamber converts lapis and amethyst into Source Gems — the magical crafting material."
+				"It draws from nearby Source Jars automatically."
+			]
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "0000000000045004"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000045004"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "B000000000045004"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Lapis goes in. Magic comes out."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045004"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+			]
+			title: "Imbuement Chamber"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045004"
+			]
+			description: [
+				"The Enchanting Apparatus with Arcane Pedestals crafts all advanced Ars gear: armor, charms, and the next spellbook tiers."
+			]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "0000000000045005"
+			rewards: [
+				{
+					count: 12L
+					id: "A000000000045005"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "B000000000045005"
+					type: "xp"
+					xp: 175
+				}
+			]
+			subtitle: "The magical multitool."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045005"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+			]
+			title: "Enchanting Apparatus"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045005"
+			]
+			description: [
+				"Upgrade to the Apprentice Spell Book for stronger spells and more mana."
+				"The Archmage tier awaits in Tier 4 — with Drygmys that farm bosses for you."
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "0000000000045006"
+			rewards: [
+				{
+					id: "A000000000045006"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "B000000000045006"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Now with 100% more glyph slots."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045006"
+					item: "ars_nouveau:apprentice_spell_book"
+					type: "item"
+				}
+			]
+			title: "Apprentice Graduation"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000045004"
+			]
+			description: [
+				"Starbuncles transport items between inventories — pay them in gold nuggets."
+				"They're adorable, slightly chaotic and surprisingly efficient."
+			]
+			icon: "ars_nouveau:starbuncle_charm"
+			id: "0000000000045007"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000045007"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000045007"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Gold-powered gremlin logistics."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045007"
+					item: "ars_nouveau:starbuncle_charm"
+					type: "item"
+				}
+			]
+			title: "Starbuncle Express"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000045002"
+			]
+			description: [
+				"Iron's Spells 'n Spellbooks adds a second magic system: find spell scrolls in dungeons and inscribe them into spellbooks."
+				"Lightning, fire, evocation — collect rare scrolls from structures and bosses."
+			]
+			icon: "minecraft:writable_book"
+			id: "0000000000045008"
+			optional: true
+			rewards: [
+				{
+					count: 6L
+					id: "A000000000045008"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000045008"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			subtitle: "Fireball goes whoosh."
+			tasks: [
+				{
+					id: "1000000000045008"
+					title: "Find an Iron's Spellbooks scroll"
+					type: "checkmark"
+				}
+			]
+			title: "Scrolls of Power"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000045003"
+			]
+			description: [
+				"Occultism lets you summon spirits for storage, mining and crafting. Start with the Dictionary of Spirits."
+				"Its Storage Actuator is a whole dimensional storage system — a dark-arts alternative to AE2."
+			]
+			icon: "minecraft:soul_lantern"
+			id: "0000000000045009"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000045009"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "B000000000045009"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "C000000000045009"
+					type: "xp"
+					xp: 175
+				}
+			]
+			shape: "diamond"
+			subtitle: "Summoning spirits for fun and profit."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000045009"
+					item: "occultism:dictionary_of_spirits"
+					type: "item"
+				}
+			]
+			title: "Deal with the Devil"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "School of Magic"
+}

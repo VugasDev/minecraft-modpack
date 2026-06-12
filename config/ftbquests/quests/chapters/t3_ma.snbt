@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t3_ma"
+	group: "0000000000040000"
+	icon: "mysticalagriculture:inferium_essence"
+	id: "0000000000044000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000021007"
+			]
+			description: [
+				"Mystical Agriculture lets you GROW resources. Prosperity Shards come from prosperity ore underground."
+				"These shards build your seed infrastructure — mine generously."
+			]
+			icon: "mysticalagriculture:prosperity_shard"
+			id: "0000000000044001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000044001"
+					item: "mysticalagriculture:prosperity_shard"
+					type: "item"
+				}
+				{
+					id: "B000000000044001"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Rocks of pure potential."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000044001"
+					item: "mysticalagriculture:prosperity_shard"
+					type: "item"
+				}
+			]
+			title: "Prosperity"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000044001"
+			]
+			description: [
+				"Inferium Essence drops from mobs and inferium ore — but the real play is growing it with Inferium Seeds."
+				"It upgrades through five essence tiers: Inferium, Prudentium, Tertium, Imperium, Supremium."
+			]
+			icon: "mysticalagriculture:inferium_essence"
+			id: "0000000000044002"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000044002"
+					item: "mysticalagriculture:inferium_seeds"
+					type: "item"
+				}
+				{
+					id: "B000000000044002"
+					type: "xp"
+					xp: 125
+				}
+			]
+			subtitle: "Essence of everything."
+			tasks: [
+				{
+					count: 32L
+					id: "1000000000044002"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000044002"
+					item: "mysticalagriculture:inferium_seeds"
+					type: "item"
+				}
+			]
+			title: "Inferium"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000044002"
+			]
+			description: [
+				"The Infusion Altar with eight Pedestals crafts the higher-tier seeds."
+				"Build it in the open — it needs line of sight to work its magic."
+			]
+			icon: "mysticalagriculture:infusion_altar"
+			id: "0000000000044003"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000044003"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000044003"
+					type: "xp"
+					xp: 175
+				}
+			]
+			subtitle: "Stonehenge, but useful."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000044003"
+					item: "mysticalagriculture:infusion_altar"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2000000000044003"
+					item: "mysticalagriculture:infusion_pedestal"
+					type: "item"
+				}
+			]
+			title: "Infusion Altar"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000044003"
+			]
+			description: [
+				"Craft your first metal seed — iron or coal are great starters."
+				"Plant on farmland; Rich Soil from Farmer's Delight makes them grow faster!"
+				"Heads up: Tier 3 seeds (diamond, emerald, gold) need a Resource Catalyst. That story continues in Tier 4."
+			]
+			icon: "mysticalagriculture:iron_seeds"
+			id: "0000000000044004"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000044004"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000044004"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Iron grows on trees now. Well, stalks."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000044004"
+					item: "mysticalagriculture:iron_seeds"
+					type: "item"
+				}
+			]
+			title: "Tier 2 Seeds"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000044003"
+			]
+			description: [
+				"The Seed Reprocessor turns unwanted seeds back into essence. Nothing wasted."
+				"Great when your farm outgrows its old seed tiers."
+			]
+			icon: "mysticalagriculture:seed_reprocessor"
+			id: "0000000000044005"
+			optional: true
+			rewards: [
+				{
+					count: 64L
+					id: "A000000000044005"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000044005"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Recycle your botany."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000044005"
+					item: "mysticalagriculture:seed_reprocessor"
+					type: "item"
+				}
+			]
+			title: "Seed Reprocessor"
+			x: 4.5d
+			y: 1.5d
+		}
+	]
+	title: "Mystical Farming"
+}

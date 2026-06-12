@@ -1,0 +1,195 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_ars"
+	group: "0000000000050000"
+	icon: "ars_nouveau:drygmy_charm"
+	id: "0000000000054000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000045006"
+			]
+			description: [
+				"Drygmys channel nearby mobs to produce their drops WITHOUT killing them."
+				"Yes, that includes bosses. Let that sink in."
+			]
+			icon: "ars_nouveau:drygmy_charm"
+			id: "0000000000054001"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000054001"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "B000000000054001"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Mossy little loot goblin."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000054001"
+					item: "ars_nouveau:drygmy_charm"
+					type: "item"
+				}
+			]
+			title: "The Drygmy"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000054001"
+			]
+			description: [
+				"Build a Drygmy enclosure with captured mobs and a steady Source supply."
+				"Capture a Cataclysm boss with this setup later and it will generate Mythic Catalyst materials for Tier 5!"
+			]
+			icon: "minecraft:moss_block"
+			id: "0000000000054002"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000054002"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000054002"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			subtitle: "The boss farm of legend."
+			tasks: [
+				{
+					id: "1000000000054002"
+					title: "Build a working Drygmy farm"
+					type: "checkmark"
+				}
+			]
+			title: "Drygmy Farm"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000054001"
+			]
+			description: [
+				"The Archmage Spell Book is the highest tier — maximum mana, maximum glyph slots."
+				"Your spells are now limited only by imagination and source supply."
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "0000000000054003"
+			rewards: [
+				{
+					id: "A000000000054003"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "B000000000054003"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Final form: paperwork wizard."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000054003"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+			]
+			title: "Archmage"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000054001"
+			]
+			description: [
+				"Whirlisprigs harvest and replant crops around them — a fully magical farm."
+				"Pair with your Mystical Agriculture fields for hands-free essence."
+			]
+			icon: "ars_nouveau:whirlisprig_charm"
+			id: "0000000000054004"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000054004"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000054004"
+					type: "xp"
+					xp: 175
+				}
+			]
+			shape: "diamond"
+			subtitle: "Botanical workforce."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000054004"
+					item: "ars_nouveau:whirlisprig_charm"
+					type: "item"
+				}
+			]
+			title: "Whirlisprig Gardens"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000054003"
+			]
+			description: [
+				"Wixies craft items and brew potions from materials in nearby containers."
+				"A magical alternative to autocrafting — with more attitude."
+			]
+			icon: "ars_nouveau:wixie_charm"
+			id: "0000000000054005"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000054005"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "B000000000054005"
+					type: "xp"
+					xp: 175
+				}
+			]
+			shape: "diamond"
+			subtitle: "Potion brewing, outsourced."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000054005"
+					item: "ars_nouveau:wixie_charm"
+					type: "item"
+				}
+			]
+			title: "Wixie's Workshop"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "Magical Automation"
+}

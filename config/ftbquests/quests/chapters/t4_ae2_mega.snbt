@@ -1,0 +1,165 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_ae2_mega"
+	group: "0000000000050000"
+	icon: "megacells:item_storage_cell_64m"
+	id: "0000000000052000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000042007"
+			]
+			description: [
+				"Scale up your network: multiple ME Drives with bigger cells."
+				"Pro tip: partition cells per item type so bulk items don't clog your fancy storage."
+			]
+			icon: "ae2:drive"
+			id: "0000000000052001"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000052001"
+					item: "ae2:item_storage_cell_256k"
+					type: "item"
+				}
+				{
+					id: "B000000000052001"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "RAID, Minecraft edition."
+			tasks: [
+				{
+					count: 2L
+					id: "1000000000052001"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2000000000052001"
+					item: "ae2:item_storage_cell_64k"
+					type: "item"
+				}
+			]
+			title: "Drive Array"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000052001"
+			]
+			description: [
+				"MEGA Cells extends AE2 with cells from 1M up to a ludicrous 256M items."
+				"Built from Sky Steel — found in meteorites or crafted."
+			]
+			icon: "megacells:item_storage_cell_1m"
+			id: "0000000000052002"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000052002"
+					item: "megacells:item_storage_cell_4m"
+					type: "item"
+				}
+				{
+					id: "B000000000052002"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "Storage with a gym membership."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000052002"
+					item: "megacells:item_storage_cell_1m"
+					type: "item"
+				}
+			]
+			title: "Enter MEGA"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000052002"
+			]
+			description: [
+				"A single 64M cell holds more than 1000 double chests."
+				"At this point your storage problem is officially a rounding error."
+			]
+			icon: "megacells:item_storage_cell_64m"
+			id: "0000000000052003"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000052003"
+					item: "megacells:cell_component_64m"
+					type: "item"
+				}
+				{
+					id: "B000000000052003"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			subtitle: "Hoarding, but make it digital."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000052003"
+					item: "megacells:item_storage_cell_64m"
+					type: "item"
+				}
+			]
+			title: "64M — Practically Infinite"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000052001"
+			]
+			description: [
+				"Quantum Network Bridges link ME networks across ANY distance — even across dimensions."
+				"Mining outpost in the Nether, main base at home: one seamless network."
+			]
+			icon: "ae2:quantum_ring"
+			id: "0000000000052004"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000052004"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+				{
+					id: "B000000000052004"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			subtitle: "Your network. Everywhere. Yes, even there."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000052004"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+			]
+			title: "Quantum Bridge"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "Mass Storage"
+}

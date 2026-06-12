@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t5_bosses"
+	group: "0000000000060000"
+	icon: "minecraft:wither_skeleton_skull"
+	id: "0000000000061000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000051003"
+				"0000000000052003"
+				"0000000000054002"
+			]
+			description: [
+				"Beyond this point lie the Cataclysm Apex bosses — the hardest fights in the pack."
+				"Recommended: socketed gear, high-tier enchantments, buff foods, a respawn plan and friends who owe you favors."
+			]
+			icon: "minecraft:netherite_chestplate"
+			id: "0000000000061001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000061001"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "B000000000061001"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "gear"
+			subtitle: "Gear check. This is not a drill."
+			tasks: [
+				{
+					id: "1000000000061001"
+					title: "I am prepared. Probably."
+					type: "checkmark"
+				}
+			]
+			title: "Ready for Tier 5"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000061001"
+			]
+			description: [
+				"The Netherite Monstrosity lurks in Cataclysm's Soul Black Smith dungeons."
+				"It hits like a meteor and summons lava. Ranged attacks and fire resistance are your friends."
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "0000000000061002"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000061002"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000061002"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			subtitle: "A wall of angry metal."
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "1000000000061002"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Netherite Monstrosity"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000061002"
+			]
+			description: [
+				"Ignis awaits in the Burning Arena — a duelist with phases, shields and flame combos."
+				"Learn the patterns. Respect the sword. Loot the legend."
+			]
+			icon: "minecraft:blaze_powder"
+			id: "0000000000061003"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000061003"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "B000000000061003"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			subtitle: "The floor is literally lava."
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					id: "1000000000061003"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ignis, Lord of Fire"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000061003"
+			]
+			description: [
+				"The Harbinger hovers in Ruined Citadels: lasers, missiles, death from above."
+				"Bring ranged weapons and cover. Its remains build powerful tech gear."
+			]
+			icon: "minecraft:redstone_block"
+			id: "0000000000061004"
+			rewards: [
+				{
+					count: 3L
+					id: "A000000000061004"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000061004"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			subtitle: "Laser-guided doom machine."
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "1000000000061004"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Harbinger"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000061004"
+			]
+			description: [
+				"Deep in the Ruined Fortress of the End, the Ender Guardian punches reality itself."
+				"Gravity attacks, teleport punishes, arena control. The ultimate melee test."
+			]
+			icon: "minecraft:ender_eye"
+			id: "0000000000061005"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000061005"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "B000000000061005"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+			subtitle: "The End's final boss. The dragon was the tutorial."
+			tasks: [
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "1000000000061005"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ender Guardian"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000061002"
+			]
+			description: [
+				"Apex bosses drop Singularity Shards — the key ingredient for Mythic Liquid XP."
+				"Your Drygmy farm can generate these passively from a captured boss. Automation beats heroism."
+			]
+			icon: "gaia:singularity_shard"
+			id: "0000000000061006"
+			rewards: [
+				{
+					id: "A000000000061006"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "B000000000061006"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Fragments of compressed victory."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000061006"
+					item: "gaia:singularity_shard"
+					type: "item"
+				}
+			]
+			title: "Singularity Shards"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000061006"
+			]
+			description: [
+				"The Mythic Catalyst gates Tier 4 seeds: craft it at the Catalyst Altar with Mythic Liquid XP, or claim it from Apex bosses."
+				"Either way, you earned this."
+			]
+			icon: "gaia:mythic_catalyst"
+			id: "0000000000061007"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000061007"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000061007"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			subtitle: "The rarest of keys."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000061007"
+					item: "gaia:mythic_catalyst"
+					type: "item"
+				}
+			]
+			title: "Mythic Catalyst"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000061001"
+			]
+			description: [
+				"The vanilla Wither — almost quaint by this pack's standards, but nether stars power beacons and high-tier crafts."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "0000000000061008"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000061008"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000061008"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			subtitle: "A classic. Still rude."
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "1000000000061008"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Wither"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0000000000061001"
+			]
+			description: [
+				"Killing the Warden is strictly optional and widely considered a bad idea."
+				"Which is exactly why there's a reward for it."
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "0000000000061009"
+			optional: true
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000061009"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000061009"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			shape: "diamond"
+			subtitle: "Shhhhhh."
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "1000000000061009"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Warden"
+			x: 3.0d
+			y: -1.5d
+		}
+	]
+	title: "Apex Predators"
+}

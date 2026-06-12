@@ -1,0 +1,344 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t2_mekanism"
+	group: "0000000000030000"
+	icon: "mekanism:metallurgic_infuser"
+	id: "0000000000032000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000021007"
+			]
+			description: [
+				"Osmium is Mekanism's foundation metal, found underground everywhere."
+				"Tip: our custom Crushed Osmium from Create crushing wheels smelts into ingots too."
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "0000000000032001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000032001"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					id: "B000000000032001"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Heavier. Bluer. Better."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000032001"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			title: "Osmium — The New Iron"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032001"
+			]
+			description: [
+				"The Metallurgic Infuser combines materials with infusion types: redstone, carbon, diamond."
+				"It crafts Infused Alloys and Steel — the ingredients of every other Mekanism machine."
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "0000000000032002"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000032002"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					id: "B000000000032002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "The machine that makes the machines."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032002"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+			]
+			title: "Metallurgic Infuser"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032002"
+			]
+			description: [
+				"Infuse iron with carbon twice (via Enriched Carbon) to make steel."
+				"Steel Casings are the chassis of all Mekanism machines — stock up."
+			]
+			icon: "mekanism:ingot_steel"
+			id: "0000000000032003"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000032003"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000032003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Iron, but it went to the gym."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000032003"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Steel Yourself"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032003"
+				"0000000000031006"
+			]
+			description: [
+				"The Enrichment Chamber doubles ores into dust and enriches materials for infusion."
+				"Combined with an Energized Smelter or furnace, this is reliable x2 ore processing."
+			]
+			icon: "mekanism:enrichment_chamber"
+			id: "0000000000032004"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000032004"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					id: "B000000000032004"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Ores go in. MORE comes out."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032004"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+			]
+			title: "Enrichment Chamber"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032004"
+			]
+			description: [
+				"Run your raw ores through the Enrichment Chamber and smelt the dust."
+				"Later tiers add Purification (x3) and Chemical Injection (x4) — this is just the beginning."
+			]
+			icon: "mekanism:dust_iron"
+			id: "0000000000032005"
+			rewards: [
+				{
+					count: 24L
+					id: "A000000000032005"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "B000000000032005"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Twice the metal, none of the guilt."
+			tasks: [
+				{
+					count: 32L
+					id: "1000000000032005"
+					item: "mekanism:dust_iron"
+					type: "item"
+				}
+			]
+			title: "The x2 Ore Chain"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032004"
+			]
+			description: [
+				"Mekanism machines run on Forge Energy. The Basic Energy Cube stores it and shares it."
+				"Power it from Create Crafts and Additions generators — more on that in Tier 3."
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "0000000000032006"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000032006"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					id: "B000000000032006"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "A battery the size of your ambitions."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032006"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+			]
+			title: "Stored Energy"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000032003"
+			]
+			description: [
+				"The Heat Generator burns fuel or passively converts adjacent lava into power."
+				"Surround it with lava for free trickle energy — perfect for your first machines."
+			]
+			icon: "mekanismgenerators:heat_generator"
+			id: "0000000000032007"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000032007"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "B000000000032007"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "diamond"
+			subtitle: "Lava-powered and proud."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032007"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+			]
+			title: "Heat Generator"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000032003"
+			]
+			description: [
+				"Mekanism fluid tanks stack their capacity when upgraded and work as portable buckets in your hand."
+				"Sneak-right-click to toggle bucket mode."
+			]
+			icon: "mekanism:basic_fluid_tank"
+			id: "0000000000032008"
+			optional: true
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000032008"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "B000000000032008"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "It holds liquid. Revolutionary."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032008"
+					item: "mekanism:basic_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Tanks for Everything"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000032002"
+			]
+			description: [
+				"The Configurator sets machine sides: input here, output there, eject automatically."
+				"Master it and your machines chain together without any pipes at all."
+			]
+			icon: "mekanism:configurator"
+			id: "0000000000032009"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000032009"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					id: "B000000000032009"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "The Swiss Army wrench."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000032009"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			title: "The Configurator"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "Green Machines"
+}

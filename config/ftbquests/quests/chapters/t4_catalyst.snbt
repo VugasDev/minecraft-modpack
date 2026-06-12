@@ -1,0 +1,312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_catalyst"
+	group: "0000000000050000"
+	icon: "gaia:resource_catalyst"
+	id: "0000000000053000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000044004"
+				"0000000000031005"
+			]
+			description: [
+				"Tier 3 seeds (diamond, emerald, gold, glowstone) need the Resource Catalyst. Three ways to get one:"
+				"1. PASSIVE: rare drop from Create Ore Excavation veins."
+				"2. CRAFT: Mechanical Crafter recipe with essences and an Apotheosis gem."
+				"3. ALTAR: fill a Catalyst Altar with Hyper Experience using a Create Spout."
+			]
+			icon: "gaia:resource_catalyst"
+			id: "0000000000053001"
+			rewards: [
+				{
+					count: 64L
+					id: "A000000000053001"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000053001"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "The key to growing the un-growable."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053001"
+					item: "gaia:resource_catalyst"
+					type: "item"
+				}
+			]
+			title: "Resource Catalyst"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000053001"
+			]
+			description: [
+				"With a Resource Catalyst in hand, craft a Tier 3 seed at last."
+				"Diamond, emerald, gold or glowstone — your farm now prints wealth."
+			]
+			icon: "mysticalagriculture:diamond_seeds"
+			id: "0000000000053002"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000053002"
+					item: "mysticalagriculture:diamond_essence"
+					type: "item"
+				}
+				{
+					id: "B000000000053002"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "Diamonds. On stalks."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053002"
+					item: "mysticalagriculture:diamond_seeds"
+					type: "item"
+				}
+			]
+			title: "Tier 3 Seeds"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031006"
+			]
+			description: [
+				"Create Ore Excavation drills tap ore veins for INFINITE resources — powered by Create rotation."
+				"Use the Vein Atlas to find veins. Drilling them can also drop Resource Catalysts!"
+			]
+			icon: "createoreexcavation:drill"
+			id: "0000000000053003"
+			rewards: [
+				{
+					count: 64L
+					id: "A000000000053003"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "B000000000053003"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Infinite ores, finite patience."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053003"
+					item: "createoreexcavation:drill"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000053003"
+					item: "createoreexcavation:vein_atlas"
+					type: "item"
+				}
+			]
+			title: "Vein Mining"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000053003"
+			]
+			description: [
+				"Our custom Drill Heads upgrade your excavation: the Osmium Drill Head speeds up vein drilling."
+				"Crafted from osmium and machine parts — the first of five tiers."
+			]
+			icon: "gaia:osmium_drill_head"
+			id: "0000000000053004"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000053004"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					id: "B000000000053004"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Custom hardware for serious mining."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053004"
+					item: "gaia:osmium_drill_head"
+					type: "item"
+				}
+			]
+			title: "Osmium Drill Head"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000053004"
+				"0000000000051004"
+			]
+			description: [
+				"The Refined Obsidian Drill Head is the Tier 4 workhorse — faster veins, better catalyst chances."
+			]
+			icon: "gaia:refined_obsidian_drill_head"
+			id: "0000000000053005"
+			rewards: [
+				{
+					id: "A000000000053005"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "B000000000053005"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Drills harder. Lasts longer."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053005"
+					item: "gaia:refined_obsidian_drill_head"
+					type: "item"
+				}
+			]
+			title: "Obsidian Upgrade"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000053004"
+			]
+			description: [
+				"The Crystal Drill Head specializes in crystal veins — certus, amethyst, fluorite."
+			]
+			icon: "gaia:crystal_drill_head"
+			id: "0000000000053006"
+			optional: true
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000053006"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "B000000000053006"
+					type: "xp"
+					xp: 175
+				}
+			]
+			shape: "diamond"
+			subtitle: "Sparkly AND functional."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053006"
+					item: "gaia:crystal_drill_head"
+					type: "item"
+				}
+			]
+			title: "Crystal Clear"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000053004"
+			]
+			description: [
+				"The Nether Drill Head excels at Nether veins — quartz, gold, ancient debris."
+			]
+			icon: "gaia:nether_drill_head"
+			id: "0000000000053007"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000053007"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "B000000000053007"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "diamond"
+			subtitle: "Rated for lava. Mostly."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053007"
+					item: "gaia:nether_drill_head"
+					type: "item"
+				}
+			]
+			title: "Hot Stuff"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000053001"
+			]
+			description: [
+				"The Catalyst Altar converts liquid experience into catalysts: a Create Spout fills it with Hyper Experience."
+				"This is the automatable path — set it up and catalysts become renewable."
+			]
+			icon: "gaia:catalyst_altar"
+			id: "0000000000053008"
+			optional: true
+			rewards: [
+				{
+					id: "A000000000053008"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "B000000000053008"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "XP in, catalyst out."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000053008"
+					item: "gaia:catalyst_altar"
+					type: "item"
+				}
+			]
+			title: "Altar of Power"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "The Catalyst"
+}

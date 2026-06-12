@@ -1,0 +1,294 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_mekanism"
+	group: "0000000000050000"
+	icon: "mekanism:purification_chamber"
+	id: "0000000000051000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000042007"
+				"0000000000041005"
+			]
+			description: [
+				"The Purification Chamber uses oxygen to turn raw ore into THREE clumps instead of two dusts."
+				"Feed it oxygen from an Electrolytic Separator splitting water. Welcome to x3 ore processing."
+			]
+			icon: "mekanism:purification_chamber"
+			id: "0000000000051001"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000051001"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					id: "B000000000051001"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Now with 50% more ore."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000051001"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+			]
+			title: "Purification Chamber"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000051001"
+			]
+			description: [
+				"Full chain: Purification Chamber makes clumps, Crusher makes dirty dust, Enrichment Chamber cleans it, smelt to ingots."
+				"Automate it with XNet or AE2 and never think about ores again."
+			]
+			icon: "mekanism:dust_osmium"
+			id: "0000000000051002"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000051002"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "B000000000051002"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "C000000000051002"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Clump. Shard. Dust. Ingot. Profit."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000051002"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "2000000000051002"
+					item: "mekanism:dust_osmium"
+					type: "item"
+				}
+			]
+			title: "The x3 Ore Chain"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000051002"
+			]
+			description: [
+				"Reinforced Alloy needs diamond infusion, Atomic Alloy needs Refined Obsidian."
+				"These alloys gate Mekanism's endgame: the Digital Miner, teleporters and the Fusion Reactor."
+			]
+			icon: "mekanism:alloy_atomic"
+			id: "0000000000051003"
+			rewards: [
+				{
+					id: "A000000000051003"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "B000000000051003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "The good stuff."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000051003"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2000000000051003"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+			]
+			title: "Advanced Alloys"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000051003"
+			]
+			description: [
+				"Refined Obsidian is one of the strongest materials in the game."
+				"You will need it for atomic alloys — and for our custom Refined Obsidian Drill Head."
+			]
+			icon: "mekanism:ingot_refined_obsidian"
+			id: "0000000000051004"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000051004"
+					item: "mekanism:ingot_refined_glowstone"
+					type: "item"
+				}
+				{
+					id: "B000000000051004"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Obsidian, but it lifts."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000051004"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
+				}
+			]
+			title: "Refined Obsidian"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000051002"
+			]
+			description: [
+				"The Mekanism Jetpack runs on hydrogen from an Electrolytic Separator."
+				"Hover mode (toggle with a keybind) makes building megastructures painless. A worthy detour."
+			]
+			icon: "mekanism:jetpack"
+			id: "0000000000051005"
+			optional: true
+			rewards: [
+				{
+					id: "A000000000051005"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "B000000000051005"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "OSHA has left the chat."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000051005"
+					item: "mekanism:jetpack"
+					type: "item"
+				}
+			]
+			title: "Personal Flight"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000051003"
+			]
+			description: [
+				"One tool to replace them all: pickaxe, shovel, axe, sword and hoe — with adjustable speed modes."
+				"Vein mode plus FTB Ultimine equals geological war crimes."
+			]
+			icon: "mekanism:atomic_disassembler"
+			id: "0000000000051006"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000051006"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000051006"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "diamond"
+			subtitle: "The drill that ate a sword."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000051006"
+					item: "mekanism:atomic_disassembler"
+					type: "item"
+				}
+			]
+			title: "Atomic Disassembler"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000051004"
+			]
+			description: [
+				"The Chemical Oxidizer and Washer prepare hydrogen chloride for x4 ore processing via the Chemical Injection Chamber."
+				"The rabbit hole goes deep — and the yields go up."
+			]
+			icon: "mekanism:chemical_oxidizer"
+			id: "0000000000051007"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000051007"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000051007"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			shape: "diamond"
+			subtitle: "x4 is calling."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000051007"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000051007"
+					item: "mekanism:chemical_washer"
+					type: "item"
+				}
+			]
+			title: "Chemistry Lab"
+			x: 4.5d
+			y: 1.5d
+		}
+	]
+	title: "Heavy Industry"
+}

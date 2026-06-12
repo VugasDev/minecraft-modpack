@@ -1,0 +1,312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t3_power"
+	group: "0000000000040000"
+	icon: "createaddition:electric_motor"
+	id: "0000000000041000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000031006"
+				"0000000000032006"
+			]
+			description: [
+				"Create Crafts and Additions bridges the two worlds: the Alternator turns Create rotation into Forge Energy."
+				"Hook it to your windmill or water wheels and watch the FE flow."
+			]
+			icon: "createaddition:alternator"
+			id: "0000000000041001"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000041001"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					id: "B000000000041001"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Spin me right round."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041001"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+			]
+			title: "Rotation Becomes Power"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000041001"
+			]
+			description: [
+				"The Electric Motor does the reverse: FE in, rotation out. Compact, adjustable, no blaze required."
+				"Together with the Alternator you can route power anywhere as electricity."
+			]
+			icon: "createaddition:electric_motor"
+			id: "0000000000041002"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000041002"
+					item: "minecraft:copper_block"
+					type: "item"
+				}
+				{
+					id: "B000000000041002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "And back again."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041002"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			title: "Electric Motor"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000041002"
+			]
+			description: [
+				"Powah adds dedicated FE generators: Furnators burn fuel, Thermo Generators sit on heat sources, Solar Panels love the sun."
+				"Cheap, scalable and upgradeable through six tiers."
+			]
+			icon: "powah:furnator_basic"
+			id: "0000000000041003"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000041003"
+					item: "powah:thermo_generator_basic"
+					type: "item"
+				}
+				{
+					id: "B000000000041003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "It generates. It just works."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041003"
+					item: "powah:furnator_basic"
+					type: "item"
+				}
+			]
+			title: "Powah Unlocked"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000041003"
+			]
+			description: [
+				"Batteries buffer your power so machines never starve during demand spikes."
+				"Energy Cells, Energy Cubes, Accumulators — pick your flavor, but have a buffer."
+			]
+			icon: "powah:battery_basic"
+			id: "0000000000041004"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000041004"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+				{
+					id: "B000000000041004"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Save it for a rainy day."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041004"
+					item: "powah:battery_basic"
+					type: "item"
+				}
+			]
+			title: "Energy Storage"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000041004"
+			]
+			description: [
+				"XNet routes items, fluids AND energy through a single cable network with per-connector rules."
+				"One controller can manage your entire base. The learning curve pays off forever."
+			]
+			icon: "xnet:controller"
+			id: "0000000000041005"
+			rewards: [
+				{
+					id: "A000000000041005"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "B000000000041005"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "One cable. Everything. Everywhere."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041005"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2000000000041005"
+					item: "xnet:connector_blue"
+					type: "item"
+				}
+			]
+			title: "XNet — The Nervous System"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000041002"
+			]
+			description: [
+				"Create: New Age generators scale with your shaft network: build a generator from coils and magnets for serious FE output."
+				"A large setup outperforms stacks of small generators."
+			]
+			icon: "create_new_age:generator_coil"
+			id: "0000000000041006"
+			optional: true
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000041006"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+				{
+					id: "B000000000041006"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Big spin energy."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041006"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+			]
+			title: "Generator Coil"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000041003"
+			]
+			description: [
+				"Mekanism Solar Generators produce clean passive power all day."
+				"Pro tip: this world has seasons — output varies. Wind power works at night too."
+			]
+			icon: "mekanismgenerators:solar_generator"
+			id: "0000000000041007"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000041007"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000041007"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "diamond"
+			subtitle: "Photovoltaic and proud."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041007"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+			]
+			title: "Here Comes the Sun"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000041003"
+			]
+			description: [
+				"Wind Generators scale output with altitude. This world's peaks reach Y=512."
+				"Build a turbine farm on a Tectonic mega-mountain and laugh at fuel costs forever."
+			]
+			icon: "mekanismgenerators:wind_generator"
+			id: "0000000000041008"
+			optional: true
+			rewards: [
+				{
+					id: "A000000000041008"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+				{
+					id: "B000000000041008"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "Higher is better. Y=512 exists."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000041008"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+			]
+			title: "Gone with the Wind"
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+	title: "Power Up"
+}

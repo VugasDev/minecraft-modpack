@@ -1,0 +1,404 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t2_create_brass"
+	group: "0000000000030000"
+	icon: "create:brass_casing"
+	id: "0000000000031000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000002200B"
+				"000000000002100E"
+			]
+			description: [
+				"Right-click a Blaze with an empty Blaze Burner to capture it. Yes, really."
+				"Place it under a Basin and feed it fuel — now your Mixer can smelt. This unlocks brass."
+			]
+			icon: "create:blaze_burner"
+			id: "0000000000031001"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000031001"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					id: "B000000000031001"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Pet fire demon. Do not feed after midnight. Do feed constantly otherwise."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000031001"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Blaze Burner"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031001"
+			]
+			description: [
+				"Mix copper and zinc in a heated Basin (Blaze Burner below, Mixer above) to create brass."
+				"Brass is THE Tier 2 material. Automate it immediately — you need stacks."
+			]
+			icon: "create:brass_ingot"
+			id: "0000000000031002"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000031002"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "B000000000031002"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "C000000000031002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Copper plus zinc plus fire equals progress."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000031002"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "Brass!"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031002"
+			]
+			description: [
+				"Brass Casings unlock the smart side of Create: precise machines, smart funnels and complex automation."
+			]
+			icon: "create:brass_casing"
+			id: "0000000000031003"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000031003"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000031003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Now in gold-ish."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000031003"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			title: "Brass Casing"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031003"
+			]
+			description: [
+				"Sand rose quartz on a grindstone or with a belt sander setup, then combine for Electron Tubes."
+				"These little circuits go into every advanced Create machine."
+			]
+			icon: "create:electron_tube"
+			id: "0000000000031004"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000031004"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "B000000000031004"
+					type: "xp"
+					xp: 125
+				}
+			]
+			subtitle: "Polished rose quartz, now with opinions."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000031004"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			title: "Electron Tubes"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000031003"
+				"0000000000031004"
+			]
+			description: [
+				"Mechanical Crafters chain together into custom crafting grids that run automatically."
+				"You need a 3x3 of them for some of our custom recipes — including the Resource Catalyst later!"
+			]
+			icon: "create:mechanical_crafter"
+			id: "0000000000031005"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000031005"
+					item: "create:brass_casing"
+					type: "item"
+				}
+				{
+					id: "B000000000031005"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "A 3x3 grid with commitment issues."
+			tasks: [
+				{
+					count: 9L
+					id: "1000000000031005"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+			]
+			title: "Mechanical Crafter"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031005"
+			]
+			description: [
+				"The Precision Mechanism is crafted in stages on a Depot with a Deployer — Ponder it to see the dance."
+				"This component gates almost all advanced tech in this pack. Automate it and prosper."
+			]
+			icon: "create:precision_mechanism"
+			id: "0000000000031006"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000031006"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "B000000000031006"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Fiddly. Worth it."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000031006"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			title: "Precision Mechanism"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031006"
+			]
+			description: [
+				"The Mechanical Arm moves items between any inputs and outputs you select with it before placing."
+				"The final piece of Create logistics. Your factory is now officially smarter than you."
+			]
+			icon: "create:mechanical_arm"
+			id: "0000000000031007"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000031007"
+					item: "create:brass_hand"
+					type: "item"
+				}
+				{
+					id: "B000000000031007"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "You, but automated."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000031007"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+			]
+			title: "Mechanical Arm"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000031003"
+			]
+			description: [
+				"Brass Funnels filter what they pick up. Brass Tunnels split items across parallel belts and balance entire systems."
+				"Build a sorted storage wall and feel the serenity."
+			]
+			icon: "create:brass_funnel"
+			id: "0000000000031008"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000031008"
+					item: "create:filter"
+					type: "item"
+				}
+				{
+					id: "B000000000031008"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Tunnel vision, the good kind."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000031008"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2000000000031008"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			title: "Smart Sorting"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000031003"
+			]
+			description: [
+				"Create has full train support — lay tracks, assemble a train with a Train Station, set up schedules."
+				"Steam 'n' Rails adds even more: conductors, switches and track types. Connect your bases in style!"
+			]
+			icon: "create:track"
+			id: "0000000000031009"
+			optional: true
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000031009"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "B000000000031009"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "C000000000031009"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			subtitle: "Choo choo, but mechanical."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000031009"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000031009"
+					item: "create:train_station"
+					type: "item"
+				}
+			]
+			title: "All Aboard!"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000031006"
+			]
+			description: [
+				"Deployers place blocks, use tools, plant crops and click things — anything you can do, on repeat, forever."
+				"Essential for Precision Mechanism automation."
+			]
+			icon: "create:deployer"
+			id: "000000000003100A"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A00000000003100A"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "B00000000003100A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "A hand on a stick. Surprisingly versatile."
+			tasks: [
+				{
+					count: 2L
+					id: "100000000003100A"
+					item: "create:deployer"
+					type: "item"
+				}
+			]
+			title: "The Deployer"
+			x: 7.5d
+			y: 1.5d
+		}
+	]
+	title: "The Brass Age"
+}

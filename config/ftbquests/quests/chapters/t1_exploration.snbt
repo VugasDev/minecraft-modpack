@@ -1,0 +1,311 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t1_exploration"
+	group: "0000000000020000"
+	icon: "naturescompass:naturescompass"
+	id: "0000000000023000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This world mixes Tectonic and Terralith — over 100 biomes, towering peaks up to Y=512 and underground rivers."
+				"Nature's Compass locates any biome. Craft it and go sightseeing."
+			]
+			icon: "naturescompass:naturescompass"
+			id: "0000000000023001"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000023001"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					id: "B000000000023001"
+					type: "xp"
+					xp: 75
+				}
+			]
+			subtitle: "Which way to the jungle?"
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000023001"
+					item: "naturescompass:naturescompass"
+					type: "item"
+				}
+			]
+			title: "Nature's Compass"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000023001"
+			]
+			description: [
+				"The Explorer's Compass finds STRUCTURES: dungeons, strongholds, witch huts, bastions and everything modded."
+				"When Dungeons Arise structures are massive — bring supplies and a sword."
+			]
+			icon: "explorerscompass:explorerscompass"
+			id: "0000000000023002"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000023002"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "B000000000023002"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Which way to the loot?"
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000023002"
+					item: "explorerscompass:explorerscompass"
+					type: "item"
+				}
+			]
+			title: "Explorer's Compass"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000023001"
+			]
+			description: [
+				"Lootr makes every loot chest per-player — teammates can open the same chest and get their own loot. No more ninja-looting!"
+				"Loot any naturally generated chest to complete this."
+			]
+			icon: "minecraft:chest"
+			id: "0000000000023003"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000023003"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "B000000000023003"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "diamond"
+			subtitle: "Your loot is YOUR loot."
+			tasks: [
+				{
+					id: "1000000000023003"
+					title: "Open a Lootr chest"
+					type: "checkmark"
+				}
+			]
+			title: "Finders Keepers"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000023002"
+			]
+			description: [
+				"Artifacts hide in dungeon loot and special structures: night-vision goggles, cloud step boots, lucky scarves and more."
+				"They go into your Curios slots (press G to view). Find one!"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "0000000000023004"
+			optional: true
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000023004"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000023004"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Museum-grade equipment."
+			tasks: [
+				{
+					id: "1000000000023004"
+					title: "Find any Artifact"
+					type: "checkmark"
+				}
+			]
+			title: "Artifact Hunter"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000023002"
+			]
+			description: [
+				"When Dungeons Arise spawns colossal structures: flying ships, fortified castles, jungle temples."
+				"Clear one out. The loot is excellent — and so are the ambushes."
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "0000000000023005"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000023005"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "B000000000023005"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "C000000000023005"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "diamond"
+			subtitle: "It's a trap. Go anyway."
+			tasks: [
+				{
+					id: "1000000000023005"
+					title: "Raid a large dungeon structure"
+					type: "checkmark"
+				}
+			]
+			title: "Dungeon Delver"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000023002"
+			]
+			description: [
+				"Your first real boss: Mowzie's Ferrous Wroughtnaut waits in underground chambers."
+				"Attack its back when it gets stuck after a swing. Patience beats panic."
+			]
+			icon: "minecraft:iron_block"
+			id: "0000000000023006"
+			rewards: [
+				{
+					count: 6L
+					id: "A000000000023006"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000023006"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "It only moves when you do. Wait, no, it always moves."
+			tasks: [
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "1000000000023006"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ferrous Wroughtnaut"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000023006"
+			]
+			description: [
+				"The Frostmaw guards an ice crystal in frozen biomes. It hits like a truck and freezes you solid."
+				"Bring fire, patience and a backup plan. The Ice Crystal reward is a powerful weapon."
+			]
+			icon: "minecraft:packed_ice"
+			id: "0000000000023007"
+			optional: true
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000023007"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "B000000000023007"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			subtitle: "A very good boy. A very ANGRY good boy."
+			tasks: [
+				{
+					entity: "mowziesmobs:frostmaw"
+					id: "1000000000023007"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Frostmaw"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000023001"
+			]
+			description: [
+				"Place Waystones at key locations: your mine, the village, that one mountain with the view."
+				"A good network turns a 4000-block trek into a click."
+			]
+			icon: "waystones:waystone"
+			id: "0000000000023008"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000023008"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "B000000000023008"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Public transport, medieval edition."
+			tasks: [
+				{
+					count: 3L
+					id: "1000000000023008"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			title: "Waystone Network"
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	title: "Into the Wild"
+}

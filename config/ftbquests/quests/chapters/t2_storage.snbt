@@ -1,0 +1,195 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t2_storage"
+	group: "0000000000030000"
+	icon: "functionalstorage:storage_controller"
+	id: "0000000000033000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000021007"
+			]
+			description: [
+				"Functional Storage drawers hold huge amounts of a single item — perfect for cobble, ingots and crops."
+				"Double-click to deposit all matching items from your inventory."
+			]
+			icon: "functionalstorage:oak_2"
+			id: "0000000000033001"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000033001"
+					item: "functionalstorage:oak_4"
+					type: "item"
+				}
+				{
+					id: "B000000000033001"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "One item type, thousands of them."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000033001"
+					item: "functionalstorage:oak_2"
+					type: "item"
+				}
+			]
+			title: "Drawers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000033001"
+			]
+			description: [
+				"Link your drawer wall to a Storage Controller and interact with ALL drawers through one block."
+				"Throw items at it. Seriously, just throw them — it sorts everything in."
+			]
+			icon: "functionalstorage:storage_controller"
+			id: "0000000000033002"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000033002"
+					item: "functionalstorage:oak_4"
+					type: "item"
+				}
+				{
+					id: "B000000000033002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "One block to rule them all."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000033002"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+			]
+			title: "Storage Controller"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000033001"
+			]
+			description: [
+				"Sophisticated Storage chests and barrels take the same upgrades as the backpacks: stack upgrades, auto-smelting, even compacting."
+				"Upgrade tiers multiply capacity — a netherite chest holds a small warehouse."
+			]
+			icon: "minecraft:chest"
+			id: "0000000000033003"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000033003"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000033003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Chests with a college degree."
+			tasks: [
+				{
+					id: "1000000000033003"
+					title: "Craft and upgrade a Sophisticated chest or barrel"
+					type: "checkmark"
+				}
+			]
+			title: "Sophisticated Storage"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000033001"
+			]
+			description: [
+				"The Simple Magnet pulls dropped items toward you. Toggle it with a keybind."
+				"Combined with your backpack magnet upgrade, nothing touches the floor ever again."
+			]
+			icon: "simplemagnets:basicmagnet"
+			id: "0000000000033004"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000033004"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000033004"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "Items come to YOU now."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000033004"
+					item: "simplemagnets:basicmagnet"
+					type: "item"
+				}
+			]
+			title: "Magnet Time"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000033003"
+			]
+			description: [
+				"Carry On lets you pick up chests, machines — even mobs — by sneak-right-clicking with an empty hand."
+				"Relocate your whole base without breaking a single block."
+			]
+			icon: "minecraft:shulker_box"
+			id: "0000000000033005"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000033005"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+				{
+					id: "B000000000033005"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "Gym membership finally pays off."
+			tasks: [
+				{
+					id: "1000000000033005"
+					title: "Carry a block or mob with Carry On"
+					type: "checkmark"
+				}
+			]
+			title: "Just Carry It"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "Stay Organized"
+}

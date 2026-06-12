@@ -1,0 +1,153 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_enchant"
+	group: "0000000000050000"
+	icon: "minecraft:enchanting_table"
+	id: "0000000000055000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000043003"
+			]
+			description: [
+				"Apotheosis gems drop from monsters — each carries stat bonuses based on rarity."
+				"Socket them into gear at a Smithing Table. Collect, compare, combine."
+			]
+			icon: "apotheosis:gem"
+			id: "0000000000055001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000055001"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					id: "B000000000055001"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Mobs drop jewelry now."
+			tasks: [
+				{
+					count: 3L
+					id: "1000000000055001"
+					item: "apotheosis:gem"
+					type: "item"
+				}
+			]
+			title: "Gem Hunter"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000055001"
+			]
+			description: [
+				"Use a Sigil of Socketing to add gem sockets to your gear, then slot in your best gems."
+				"Higher rarity gems give absurd bonuses — Mythic gems can double your damage."
+			]
+			icon: "minecraft:smithing_table"
+			id: "0000000000055002"
+			rewards: [
+				{
+					id: "A000000000055002"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "B000000000055002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Gear with extra steps. Worth it."
+			tasks: [
+				{
+					id: "1000000000055002"
+					title: "Socket a gem into your gear"
+					type: "checkmark"
+				}
+			]
+			title: "Socket to Me"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000055002"
+			]
+			description: [
+				"Create: Enchantment Industry turns experience into a FLUID. The Experience Rotor harvests it from belts of items."
+				"Condense regular XP into Hyper Experience — fuel for the Catalyst Altar and high-tier enchanting."
+			]
+			icon: "create_enchantment_industry:experience_rotor"
+			id: "0000000000055003"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000055003"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "B000000000055003"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "XP. In a pipe. What a time to be alive."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000055003"
+					item: "create_enchantment_industry:experience_rotor"
+					type: "item"
+				}
+			]
+			title: "Liquid Knowledge"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000055003"
+			]
+			description: [
+				"Our custom system: the PneumaticCraft Pressure Chamber pushes enchantments BEYOND vanilla caps."
+				"Higher pressure tiers (3.5, 5.5, 7.5 bar) unlock enchantment levels up to GODLIKE. Check the Enchantment Library to store and combine."
+			]
+			icon: "pneumaticcraft:pressure_chamber_valve"
+			id: "0000000000055004"
+			rewards: [
+				{
+					id: "A000000000055004"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "B000000000055004"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Enchantments past the legal limit."
+			tasks: [
+				{
+					id: "1000000000055004"
+					title: "Use the pressure enchanting system"
+					type: "checkmark"
+				}
+			]
+			title: "Pressure Enchanting"
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+	title: "Beyond Vanilla Enchanting"
+}

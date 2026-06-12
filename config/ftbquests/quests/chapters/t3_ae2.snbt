@@ -1,0 +1,401 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t3_ae2"
+	group: "0000000000040000"
+	icon: "ae2:controller"
+	id: "0000000000042000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000041004"
+			]
+			description: [
+				"Applied Energistics 2 stores your items as DATA. First ingredient: Certus Quartz from meteorites and underground budding blocks."
+				"Grow more from Certus Seeds in water — Growth Accelerators speed it up."
+			]
+			icon: "ae2:certus_quartz_crystal"
+			id: "0000000000042001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000042001"
+					item: "ae2:certus_quartz_seed"
+					type: "item"
+				}
+				{
+					id: "B000000000042001"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "The crystal that started it all."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000042001"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Certus Quartz"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042001"
+			]
+			description: [
+				"Throw Charged Certus, Redstone and Quartz into water — they fuse into Fluix Crystal, AE2's core material."
+				"Charge Certus in the Charger powered by your shiny new FE network."
+			]
+			icon: "ae2:fluix_crystal"
+			id: "0000000000042002"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000042002"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					id: "B000000000042002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Drop. Zap. Crystal."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000042002"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+			]
+			title: "Fluix Fusion"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042002"
+			]
+			description: [
+				"The Inscriber stamps processors using Presses found in meteorites — Explorer's Compass can locate those!"
+				"You need Silicon, Logic, Calculation and Engineering presses for the full set."
+			]
+			icon: "ae2:inscriber"
+			id: "0000000000042003"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000042003"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "B000000000042003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Silicon Valley, block form."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000042003"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+			]
+			title: "The Inscriber"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042003"
+			]
+			description: [
+				"Stamp gold for Logic, Certus for Calculation, Diamond for Engineering processors."
+				"Automate the Inscriber chain with belts or XNet — you will need processors forever."
+			]
+			icon: "ae2:engineering_processor"
+			id: "0000000000042004"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000042004"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "B000000000042004"
+					type: "xp"
+					xp: 175
+				}
+			]
+			subtitle: "Tiny brains for big networks."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000042004"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Processors"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042004"
+			]
+			description: [
+				"The Controller is the heart of your ME network, providing channels through its faces."
+				"Power it, cable it, and prepare for the storage revolution."
+			]
+			icon: "ae2:controller"
+			id: "0000000000042005"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000042005"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					id: "B000000000042005"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "The brain awakens."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000042005"
+					item: "ae2:controller"
+					type: "item"
+				}
+			]
+			title: "ME Controller"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042005"
+			]
+			description: [
+				"Connect a Terminal, an ME Drive and a storage cell: all your items, searchable, in one screen."
+				"Type @create in the terminal search to filter by mod. Your chest wall is officially obsolete."
+			]
+			icon: "ae2:terminal"
+			id: "0000000000042006"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000042006"
+					item: "ae2:item_storage_cell_16k"
+					type: "item"
+				}
+				{
+					id: "B000000000042006"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Goodbye, chest monster."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000042006"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000042006"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3000000000042006"
+					item: "ae2:item_storage_cell_4k"
+					type: "item"
+				}
+			]
+			title: "Your First ME Network"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042006"
+			]
+			description: [
+				"Encode recipes into Patterns, give them to Pattern Providers with Molecular Assemblers, and the network crafts ON DEMAND."
+				"This is the single biggest quality-of-life jump in the entire pack."
+			]
+			icon: "ae2:pattern_provider"
+			id: "0000000000042007"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000042007"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					id: "B000000000042007"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "Request. Receive. Repeat."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000042007"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2000000000042007"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3000000000042007"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
+			title: "Autocrafting"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000042006"
+			]
+			description: [
+				"The Crafting Terminal combines a crafting grid with full network access — craft straight from storage."
+			]
+			icon: "ae2:crafting_terminal"
+			id: "0000000000042008"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000042008"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "B000000000042008"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "diamond"
+			subtitle: "A crafting table with infinite pockets."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000042008"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Crafting Terminal"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000042002"
+			]
+			description: [
+				"Growth Accelerators make crystal seeds mature in seconds instead of hours."
+				"Build a small crystal farm — Certus and Fluix demand never stops."
+			]
+			icon: "ae2:growth_accelerator"
+			id: "0000000000042009"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000042009"
+					item: "ae2:certus_quartz_seed"
+					type: "item"
+				}
+				{
+					id: "B000000000042009"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Crystals on a schedule."
+			tasks: [
+				{
+					count: 2L
+					id: "1000000000042009"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+			]
+			title: "Grow Op"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000042007"
+			]
+			description: [
+				"The Wireless Terminal accesses your network from anywhere in range of a Wireless Access Point."
+				"Build it once, never walk back to the terminal room again."
+			]
+			icon: "ae2:wireless_terminal"
+			id: "000000000004200A"
+			optional: true
+			rewards: [
+				{
+					id: "A00000000004200A"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+				{
+					id: "B00000000004200A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "Your base, in your pocket."
+			tasks: [
+				{
+					count: 1L
+					id: "100000000004200A"
+					item: "ae2:wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Wireless Freedom"
+			x: 9.0d
+			y: 1.5d
+		}
+	]
+	title: "Going Digital"
+}

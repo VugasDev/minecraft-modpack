@@ -1,0 +1,614 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t1_survival"
+	group: "0000000000020000"
+	icon: "minecraft:campfire"
+	id: "0000000000021000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to Gaia Awakening! This world is taller, wilder and far more dangerous than vanilla."
+				"Your first move? Punch a tree. It's tradition at this point."
+				"Open your quest book anytime to see what's next. Diamond-shaped quests are optional side content with juicy rewards."
+			]
+			icon: "minecraft:crafting_table"
+			id: "0000000000021001"
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000021001"
+					item: "minecraft:stone_pickaxe"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "B000000000021001"
+					item: "minecraft:stone_axe"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "C000000000021001"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "D000000000021001"
+					type: "xp"
+					xp: 50
+				}
+			]
+			subtitle: "You punch a tree. Classy."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021001"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000021001"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+			]
+			title: "Welcome to Gaia"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000021001"
+			]
+			description: [
+				"Step one of civilization: shove things into fire until something useful comes out."
+				"Build a furnace and smelt some iron. You will need a LOT of it later — trust us."
+			]
+			icon: "minecraft:furnace"
+			id: "0000000000021002"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000021002"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "B000000000021002"
+					type: "xp"
+					xp: 75
+				}
+			]
+			subtitle: "Heat rocks until they cry. It works."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021002"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2000000000021002"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Fire and Ore"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000021002"
+			]
+			description: [
+				"Night is coming. Skeletons have bows. You have a wooden sword. This is not a fair fight."
+				"Craft a full set of iron armor — helmet, chestplate, leggings, boots. No partial credit."
+			]
+			icon: "minecraft:iron_chestplate"
+			id: "0000000000021003"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000021003"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "B000000000021003"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "C000000000021003"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Mobs don't care about your feelings."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021003"
+					item: "minecraft:iron_helmet"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000021003"
+					item: "minecraft:iron_chestplate"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "3000000000021003"
+					item: "minecraft:iron_leggings"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "4000000000021003"
+					item: "minecraft:iron_boots"
+					type: "item"
+				}
+			]
+			title: "Iron Will"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000021001"
+			]
+			description: [
+				"Craft a bed and set your spawn. The world is huge — dying 3000 blocks from home is a lesson you only need once."
+			]
+			icon: "minecraft:red_bed"
+			id: "0000000000021004"
+			optional: true
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000021004"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "B000000000021004"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "diamond"
+			subtitle: "Phantoms are watching."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021004"
+					item: "minecraft:white_bed"
+					type: "item"
+				}
+			]
+			title: "A Place to Sleep"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000021002"
+			]
+			description: [
+				"Farmer's Delight adds proper cooking. Craft a Cooking Pot and a Stove, then cook real meals."
+				"Good food gives the Nourishment buff — better saturation than vanilla snacks."
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "0000000000021005"
+			optional: true
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000021005"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "B000000000021005"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+				{
+					id: "C000000000021005"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "diamond"
+			subtitle: "Bread is a personality trait."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021005"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000021005"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+			]
+			title: "Farm to Table"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000021005"
+			]
+			description: [
+				"Serene Seasons is active: crops only grow in their fertile seasons!"
+				"Craft a Calendar to track the current season. Plan your farms accordingly — or use greenhouse glass."
+			]
+			icon: "minecraft:clock"
+			id: "0000000000021006"
+			optional: true
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000021006"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "B000000000021006"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			subtitle: "Winter is coming. Literally."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021006"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+			]
+			title: "Seasons Change"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000021003"
+			]
+			description: [
+				"Dig deep — diamonds spawn below Y=16, and this world goes DOWN to Y=-128."
+				"Underground rivers and massive caves make mining here an adventure of its own."
+			]
+			icon: "minecraft:diamond"
+			id: "0000000000021007"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000021007"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "B000000000021007"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Shiny rocks that make better rocks."
+			tasks: [
+				{
+					count: 3L
+					id: "1000000000021007"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Diamonds!"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000021007"
+			]
+			description: [
+				"Build an Enchanting Table. Apotheosis overhauls the whole system — more shelves, more stats, better results."
+				"Later, our custom pressure-enchanting system will push enchantments far beyond vanilla limits."
+			]
+			icon: "minecraft:enchanting_table"
+			id: "0000000000021008"
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000021008"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "B000000000021008"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "C000000000021008"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Bibliophile with benefits."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000021008"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2000000000021008"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+			]
+			title: "Enchanted"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000021001"
+			]
+			description: [
+				"Open the map (press M) and claim chunks with FTB Chunks. Claimed chunks are protected from other players and explosions."
+				"JourneyMap (press J) gives you the full world map and waypoints."
+			]
+			icon: "minecraft:filled_map"
+			id: "0000000000021009"
+			optional: true
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000021009"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "B000000000021009"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			subtitle: "Mine! All mine!"
+			tasks: [
+				{
+					id: "1000000000021009"
+					title: "Claim at least one chunk"
+					type: "checkmark"
+				}
+			]
+			title: "Claim Your Land"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000021003"
+			]
+			description: [
+				"FTB Ultimine: hold the grave key (`) while mining to break whole veins, chop whole trees or harvest whole fields at once."
+				"It costs hunger, so keep snacks around."
+			]
+			icon: "minecraft:iron_pickaxe"
+			id: "000000000002100A"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A00000000002100A"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "B00000000002100A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			subtitle: "Hold the magic button."
+			tasks: [
+				{
+					id: "100000000002100A"
+					title: "Use Ultimine to break a vein"
+					type: "checkmark"
+				}
+			]
+			title: "One Block? All Blocks!"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000021007"
+			]
+			description: [
+				"Sophisticated Backpacks are upgradeable inventories you wear. Craft one, then add upgrades like magnets, feeding or auto-smelting."
+				"This reward magnet upgrade alone is worth the detour."
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "000000000002100B"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A00000000002100B"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "B00000000002100B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "Pockets. Lots of pockets."
+			tasks: [
+				{
+					count: 1L
+					id: "100000000002100B"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "Pack Mule"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000021008"
+			]
+			description: [
+				"Craft a Waystone and place it at your base. Activate any Waystone you find in villages or dungeons to teleport between them."
+				"The world is enormous — this is how you survive it."
+			]
+			icon: "waystones:waystone"
+			id: "000000000002100C"
+			rewards: [
+				{
+					count: 8L
+					id: "A00000000002100C"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "B00000000002100C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Fast travel unlocked."
+			tasks: [
+				{
+					count: 1L
+					id: "100000000002100C"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			title: "Set a Waypoint Home"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000002100C"
+			]
+			description: [
+				"Build a Nether portal. You need Nether resources for what comes next: quartz for machines, blaze rods for brass."
+				"Bring fire resistance. Seriously."
+			]
+			icon: "minecraft:obsidian"
+			id: "000000000002100D"
+			rewards: [
+				{
+					count: 2L
+					id: "A00000000002100D"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "B00000000002100D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "What could possibly go wrong?"
+			tasks: [
+				{
+					count: 10L
+					id: "100000000002100D"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "200000000002100D"
+					item: "minecraft:flint_and_steel"
+					type: "item"
+				}
+			]
+			title: "Into Hell"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"000000000002100D"
+			]
+			description: [
+				"Hunt blazes in a Nether fortress. Blaze rods power the Blaze Burners you need for the Brass Age."
+				"Grab some quartz while you're there — the machines are hungry."
+			]
+			icon: "minecraft:blaze_rod"
+			id: "000000000002100E"
+			rewards: [
+				{
+					count: 4L
+					id: "A00000000002100E"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "B00000000002100E"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "C00000000002100E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			subtitle: "Number one import: angry fire men."
+			tasks: [
+				{
+					count: 4L
+					id: "100000000002100E"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "200000000002100E"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			title: "Blaze It"
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+	title: "First Steps"
+}

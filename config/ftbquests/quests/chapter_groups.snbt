@@ -1,3 +1,9 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "0000000000020000", title: "Tier 1: The Beginning" }
+		{ id: "0000000000030000", title: "Tier 2: Brass and Machines" }
+		{ id: "0000000000040000", title: "Tier 3: Energy and Automation" }
+		{ id: "0000000000050000", title: "Tier 4: Advanced Systems" }
+		{ id: "0000000000060000", title: "Tier 5: Endgame" }
+	]
 }

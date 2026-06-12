@@ -1,0 +1,490 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t1_create"
+	group: "0000000000020000"
+	icon: "create:cogwheel"
+	id: "0000000000022000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Create is the heart of this pack. Everything starts with Andesite Alloy: andesite plus iron or zinc nuggets."
+				"Make a stack — you will burn through it faster than you think."
+			]
+			icon: "create:andesite_alloy"
+			id: "0000000000022001"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000022001"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "B000000000022001"
+					type: "xp"
+					xp: 50
+				}
+			]
+			subtitle: "The cornerstone of engineering."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000022001"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022001"
+			]
+			description: [
+				"Shafts carry rotation, cogwheels redirect it and change speed. This is the language of Create — learn it well."
+				"Ponder any Create block (hover + W) for an interactive 3D tutorial!"
+			]
+			icon: "create:cogwheel"
+			id: "0000000000022002"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000022002"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "B000000000022002"
+					type: "xp"
+					xp: 50
+				}
+			]
+			subtitle: "Spin to win."
+			tasks: [
+				{
+					count: 8L
+					id: "1000000000022002"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2000000000022002"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "Shafts and Cogs"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022002"
+			]
+			description: [
+				"Water Wheels are your first power source. Place them in flowing water — more flow faces, more speed."
+				"Stress is Create's power budget: generators add capacity, machines consume it. Goggles show the numbers."
+			]
+			icon: "create:water_wheel"
+			id: "0000000000022003"
+			rewards: [
+				{
+					count: 2L
+					id: "A000000000022003"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "B000000000022003"
+					type: "xp"
+					xp: 75
+				}
+			]
+			subtitle: "Hydroelectric, sort of."
+			tasks: [
+				{
+					count: 3L
+					id: "1000000000022003"
+					item: "create:water_wheel"
+					type: "item"
+				}
+			]
+			title: "Water Power"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022002"
+			]
+			description: [
+				"The Wrench rotates and picks up machines. Goggles show stress, speed and capacity when you look at components."
+				"No engineer leaves home without them."
+			]
+			icon: "create:goggles"
+			id: "0000000000022004"
+			optional: true
+			rewards: [
+				{
+					count: 1L
+					id: "A000000000022004"
+					item: "create:clipboard"
+					type: "item"
+				}
+				{
+					id: "B000000000022004"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "diamond"
+			subtitle: "Safety third."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000022004"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000022004"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Engineer's Toolkit"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0000000000022003"
+			]
+			description: [
+				"The Mechanical Press flattens ingots into sheets and compacts blocks in a Basin below it."
+				"Iron sheets are everywhere in Create recipes — automate this early."
+			]
+			icon: "create:mechanical_press"
+			id: "0000000000022005"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000022005"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					id: "B000000000022005"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Flat is a feature."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000022005"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000022005"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "Press On"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022005"
+			]
+			description: [
+				"Mixer plus Basin combines ingredients automatically. With a Blaze Burner below it can even smelt mixtures — remember that for brass!"
+			]
+			icon: "create:mechanical_mixer"
+			id: "0000000000022006"
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000022006"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "B000000000022006"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Stir vigorously."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000022006"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000022006"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Mixing It Up"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000022005"
+			]
+			description: [
+				"Two Crushing Wheels spinning toward each other pulverize anything dropped between them."
+				"Crushed raw ores can be washed for bonus output — this is your ore doubling!"
+			]
+			icon: "create:crushing_wheel"
+			id: "0000000000022007"
+			rewards: [
+				{
+					count: 12L
+					id: "A000000000022007"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "B000000000022007"
+					type: "xp"
+					xp: 125
+				}
+			]
+			subtitle: "Rocks go in. Better rocks come out."
+			tasks: [
+				{
+					count: 2L
+					id: "1000000000022007"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+			]
+			title: "Crushing It"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022007"
+			]
+			description: [
+				"Crush raw iron into crushed ore, then wash it with an Encased Fan blowing through water for nuggets and bonus drops."
+				"Set this up once and never waste a raw ore again."
+			]
+			icon: "create:crushed_raw_iron"
+			id: "0000000000022008"
+			optional: true
+			rewards: [
+				{
+					count: 32L
+					id: "A000000000022008"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "B000000000022008"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					id: "C000000000022008"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Free real estate."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000022008"
+					item: "create:crushed_raw_iron"
+					type: "item"
+				}
+			]
+			title: "Double Your Ores"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000022007"
+			]
+			description: [
+				"Belts move items between machines, funnels load and unload them. This is how factories are born."
+				"Combine with Depots and you can automate nearly every Create process."
+			]
+			icon: "create:andesite_funnel"
+			id: "0000000000022009"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000022009"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "B000000000022009"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "The conveyor lifestyle."
+			tasks: [
+				{
+					count: 4L
+					id: "1000000000022009"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2000000000022009"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			title: "Belts and Funnels"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022009"
+			]
+			description: [
+				"Filters attach to funnels and tunnels to sort items. Brass tunnels later split belts into entire sorting systems."
+			]
+			icon: "create:filter"
+			id: "000000000002200A"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A00000000002200A"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "B00000000002200A"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "diamond"
+			subtitle: "Sorting hat, industrial edition."
+			tasks: [
+				{
+					count: 2L
+					id: "100000000002200A"
+					item: "create:filter"
+					type: "item"
+				}
+			]
+			title: "Smart Logistics"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000022009"
+			]
+			description: [
+				"Andesite Casings are the chassis of the early Create age. With these you have mastered Tier 1 engineering."
+				"Next stop: the Brass Age — but you'll need blaze rods from the Nether first."
+			]
+			icon: "create:andesite_casing"
+			id: "000000000002200B"
+			rewards: [
+				{
+					count: 32L
+					id: "A00000000002200B"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "B00000000002200B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			subtitle: "Graduation, part one."
+			tasks: [
+				{
+					count: 8L
+					id: "100000000002200B"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			title: "Andesite Casing"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000022003"
+			]
+			description: [
+				"A Windmill Bearing with at least 8 sail blocks gives you slow but STRONG rotation — way more stress capacity than water wheels."
+				"Build it big. Build it beautiful."
+			]
+			icon: "create:windmill_bearing"
+			id: "000000000002200C"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A00000000002200C"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					id: "B00000000002200C"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "diamond"
+			subtitle: "Don Quixote was onto something."
+			tasks: [
+				{
+					count: 1L
+					id: "100000000002200C"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "200000000002200C"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "Windmill"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "The Andesite Age"
+}

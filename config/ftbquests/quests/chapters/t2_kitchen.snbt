@@ -1,0 +1,134 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t2_kitchen"
+	group: "0000000000030000"
+	icon: "farmersdelight:iron_knife"
+	id: "0000000000034000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000021005"
+			]
+			description: [
+				"The knife harvests crops gently and cuts ingredients on the Cutting Board for extra portions."
+				"Knife plus Cutting Board equals double the food from the same harvest."
+			]
+			icon: "farmersdelight:iron_knife"
+			id: "0000000000034001"
+			rewards: [
+				{
+					count: 4L
+					id: "A000000000034001"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "B000000000034001"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Cutting-edge technology."
+			tasks: [
+				{
+					count: 1L
+					id: "1000000000034001"
+					item: "farmersdelight:iron_knife"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2000000000034001"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Sharp Knife, Sharp Mind"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000034001"
+			]
+			description: [
+				"Rich Soil accelerates crop growth and never needs re-tilling. Compost organic material to make it."
+				"Your Mystical Agriculture farm will thank you later."
+			]
+			icon: "farmersdelight:rich_soil"
+			id: "0000000000034002"
+			rewards: [
+				{
+					count: 8L
+					id: "A000000000034002"
+					item: "minecraft:bone_block"
+					type: "item"
+				}
+				{
+					id: "B000000000034002"
+					type: "xp"
+					xp: 125
+				}
+			]
+			subtitle: "Dirt, deluxe edition."
+			tasks: [
+				{
+					count: 16L
+					id: "1000000000034002"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			title: "Rich Soil"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000034001"
+			]
+			description: [
+				"Cook a proper multi-ingredient meal in the Cooking Pot. Big meals give Nourishment — passive saturation regen."
+				"Feed your whole team before a boss fight. Trust the buff."
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "0000000000034003"
+			optional: true
+			rewards: [
+				{
+					count: 16L
+					id: "A000000000034003"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "B000000000034003"
+					item: "minecraft:cake"
+					type: "item"
+				}
+				{
+					id: "C000000000034003"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			subtitle: "Saturation is a love language."
+			tasks: [
+				{
+					id: "1000000000034003"
+					title: "Cook a meal in the Cooking Pot"
+					type: "checkmark"
+				}
+			]
+			title: "Feast Mode"
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Chef's Table"
+}
